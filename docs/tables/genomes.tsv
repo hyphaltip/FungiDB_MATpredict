@@ -1,0 +1,2 @@
+sample	status	reason	organism	taxid	phylum	contigs	length_bp	n50	wall_seconds	genetic_code	families_attempted	routing_mode	not_searched_reason	n_loci	idiomorphs	two_idiomorphs	homothallic_candidate	zygosity	n_withheld
+AfumigatusA1163	report					55	29205420	3791214	68	1	Ascomycota:MAT	lineage		1	MAT1-1		1		1

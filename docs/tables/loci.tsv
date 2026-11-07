@@ -1,0 +1,2 @@
+sample	family	contig	start	end	idiomorph	idiomorph_class	confidence	locus_class	detection_pass	core_span	supported_span	beyond_supported_bp	genes_found	genes_missing	polished_genes	merged_from	fragmented
+AfumigatusA1163	Ascomycota:MAT	scf_000003_A_fumigatus_A1163	2517390	2530649	MAT1-1	MAT1-1	high	homothallic_candidate	strict	2517390-2530649	2517390-2530649	0	MAT1-1-1;MAT1-2-1;APN2;SLA2;COX13		5		False

@@ -33,7 +33,17 @@ mkdir -p "$WORK" "$OUT" "$LOGS_DIR"
 zcat "$GENOME_GZ" > "$WORK/$abbrev.genome.fasta"
 PROTEIN_ARG=()
 if [ -s "$PROTEIN_GZ" ]; then
-    zcat "$PROTEIN_GZ" > "$WORK/$abbrev.proteins.fasta"
+    # MATPredict needs each protein defline to carry its genomic location as
+    # 'contig:start-end:strand'. FungiDB deflines carry
+    # '... | location=contig:start-end(-) | ...', so rewrite them to
+    # '>protein_id contig:start-end:-'.
+    zcat "$PROTEIN_GZ" | awk '
+        /^>/ { id=substr($1,2); loc="";
+               if (match($0, /location=[^ |]+/)) { loc=substr($0, RSTART+9, RLENGTH-9);
+                   sub(/\(/, ":", loc); sub(/\)/, "", loc) }
+               print ">" id (loc=="" ? "" : " " loc); next }
+        { print }' > "$WORK/$abbrev.proteins.fasta"
+    head -1 "$WORK/$abbrev.proteins.fasta"
     PROTEIN_ARG=(--proteins "$WORK/$abbrev.proteins.fasta")
 fi
 

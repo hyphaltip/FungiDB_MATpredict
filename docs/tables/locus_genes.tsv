@@ -1,0 +1,6 @@
+sample	locus_id	family	idiomorph	confidence	contig	start	end	fdb_gene_id	fdb_name	fdb_type	fdb_start	fdb_end	fdb_strand	fdb_description
+AfumigatusA1163	Ascomycota_MAT_0	Ascomycota:MAT	MAT1-1	high	scf_000003_A_fumigatus_A1163	2517390	2530649	AFUB_042870		protein_coding_gene	2517390	2518214	-	Has domain(s) with predicted cytochrome-c oxidase activity and mitochondrial respiratory chain complex IV localization
+AfumigatusA1163	Ascomycota_MAT_0	Ascomycota:MAT	MAT1-1	high	scf_000003_A_fumigatus_A1163	2517390	2530649	AFUB_042880		protein_coding_gene	2518491	2520679	+	Has domain(s) with predicted nuclease activity and role in DNA repair
+AfumigatusA1163	Ascomycota_MAT_0	Ascomycota:MAT	MAT1-1	high	scf_000003_A_fumigatus_A1163	2517390	2530649	AFUB_042890		protein_coding_gene	2521591	2522628	-	Protein of unknown function
+AfumigatusA1163	Ascomycota_MAT_0	Ascomycota:MAT	MAT1-1	high	scf_000003_A_fumigatus_A1163	2517390	2530649	AFUB_042900		protein_coding_gene	2522745	2523902	+	Ortholog(s) have role in ascospore formation
+AfumigatusA1163	Ascomycota_MAT_0	Ascomycota:MAT	MAT1-1	high	scf_000003_A_fumigatus_A1163	2517390	2530649	AFUB_042910		protein_coding_gene	2526379	2530649	-	Ortholog(s) have role in actin filament organization, spore germination, establishment of cell polarity, endocytosis, maintenance of cell polarity and actin cortical patch localization
