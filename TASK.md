@@ -54,3 +54,13 @@ data before step 2.
 3. A short summary per genome: MAT call, number of annotated MAT genes,
    number of unannotated MAT genes, and any genomes MATPredict could not
    route or search (`not_searched`).
+
+## Publishing
+
+Publish results on the GitHub Pages site (https://hyphaltip.github.io/FungiDB_MATpredict/),
+which serves `docs/` on `main`:
+
+- Copy each per-genome MATPredict `report.html` into `docs/reports/<genome>/`.
+- Copy the combined tables (`genomes.tsv`, `loci.tsv`) and the comparison
+  tables from the Deliverables section into `docs/tables/`.
+- Link every report and table from `docs/index.md`.
