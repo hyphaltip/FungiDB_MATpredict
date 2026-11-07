@@ -10,7 +10,12 @@
 # one; run any step for another release with, for example,
 #     FUNGIDB_RELEASE=68 bash scripts/03_submit.sh
 
-PROJECT_DIR="${PROJECT_DIR:-${SLURM_SUBMIT_DIR:-$PWD}}"
+# Order: PROJECT_DIR if set; else the current directory when it holds config.sh
+# (an interactive shell may itself run inside a SLURM job with an unrelated
+# SLURM_SUBMIT_DIR); else SLURM_SUBMIT_DIR (a submitted job).
+if [ -z "${PROJECT_DIR:-}" ]; then
+    if [ -f "$PWD/config.sh" ]; then PROJECT_DIR="$PWD"; else PROJECT_DIR="${SLURM_SUBMIT_DIR:-$PWD}"; fi
+fi
 if [ ! -f "$PROJECT_DIR/config.sh" ]; then
     echo "config.sh: PROJECT_DIR=$PROJECT_DIR does not hold config.sh. Run from the repository root." >&2
     exit 1
