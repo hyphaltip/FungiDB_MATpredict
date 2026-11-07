@@ -3,7 +3,9 @@ title: FungiDB release 71
 ---
 # FungiDB release 71
 
-Generated 2026-11-06 with MATPredict v0.8.1, gmg v0.3.2, index bfd-reps-2026.10.5-s20000.gmgi, taxonomy 2026-10-01. Rows are ordered by GmG phylum, then genome; click a column header to sort, or type in the filter box (for example a phylum name).
+Generated 2026-11-06. Software recorded in the run reports: MATPredict v0.8.1 (3a62e6302b), database 86f18d232e: 313 genomes
+
+Rows are ordered by GmG phylum, then genome; click a column header to sort, or type in the filter box (for example a phylum name).
 
 <div class="stats"><div class="stat"><b>313</b><span>genomes</span></div><div class="stat"><b>274</b><span>MAT locus called</span></div><div class="stat"><b>8</b><span>not searched</span></div><div class="stat"><b>0</b><span>failed</span></div><div class="stat"><b>83</b><span>MAT genes not annotated</span></div></div>
 

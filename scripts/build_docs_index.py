@@ -37,6 +37,49 @@ def phylum_call(run_dir: Path) -> dict:
     return {"phylum": g.get("phylum") or "", "reason": g.get("reason") or "", "note": g.get("note") or ""}
 
 
+def run_provenance(run_dir: Path) -> dict:
+    """Tool versions recorded in detection_report.yaml: matpredict (git describe), commit, database sha256, gmg."""
+    y = run_dir / "detection_report.yaml"
+    if not y.is_file():
+        return {}
+    try:
+        import yaml
+        run = (yaml.safe_load(open(y)) or {}).get("run") or {}
+    except Exception:
+        return {}
+    code = run.get("code") or {}
+    db = run.get("database") or {}
+    guess = (run.get("phylum_guess") or {})
+    ver = code.get("git_describe") or run.get("matpredict_version") or ""
+    if code.get("dirty"):
+        ver += " (dirty)"
+    return {"matpredict": ver, "commit": (code.get("commit") or "")[:10],
+            "database": (db.get("content_sha256") or "")[:10], "gmg": guess.get("gmg_version") or "",
+            "gmg_index": guess.get("index") or "", "taxonomy": run.get("taxonomy_source") or ""}
+
+
+def provenance_summary(runs: Path) -> tuple[str, dict]:
+    """One line naming every distinct MATPredict version (with run counts) used in a release, plus the counts."""
+    from collections import Counter
+    vers, extra = Counter(), {}
+    if runs.is_dir():
+        for d in sorted(runs.iterdir()):
+            p = run_provenance(d)
+            if p.get("matpredict"):
+                key = f"MATPredict {p['matpredict']} ({p['commit']}), database {p['database']}"
+                vers[key] += 1
+                extra = p
+    if not vers:
+        return "no runs", {}
+    parts = [f"{k}: {n} genomes" for k, n in vers.most_common()]
+    line = "; ".join(parts)
+    if extra.get("gmg"):
+        line += f". {extra['gmg']}, index {extra['gmg_index']}. {extra['taxonomy']}"
+    if len(vers) > 1:
+        line = f"**Runs come from {len(vers)} different MATPredict builds.** " + line
+    return line, dict(vers)
+
+
 def badge(text: str, cls: str) -> str:
     return f'<span class="badge {cls}">{text}</span>' if text else "—"
 
@@ -126,9 +169,12 @@ def write_release(docs: Path, results: Path, rel: str, versions: str) -> dict:
     res = results / f"release-{rel}"
     rows, counts, by_phylum = results_table(res, docs_rel, "")
     phyla = sorted(by_phylum.items(), key=lambda kv: -kv[1]["genomes"])
+    prov_line, prov = provenance_summary(res / "matpredict")
+    counts["versions"] = ", ".join(k.split(" (")[0].replace("MATPredict ", "") for k in prov) or "—"
     out = ["---", f"title: FungiDB release {rel}", "---",
            f"# FungiDB release {rel}", "",
-           f"Generated {datetime.date.today()} with {versions}. Rows are ordered by GmG phylum, then genome; "
+           f"Generated {datetime.date.today()}. Software recorded in the run reports: {prov_line}", "",
+           "Rows are ordered by GmG phylum, then genome; "
            "click a column header to sort, or type in the filter box (for example a phylum name).", "",
            stats_strip([("genomes", counts["genomes"]), ("MAT locus called", counts["with_locus"]),
                         ("not searched", counts["not_searched"]), ("failed", counts["failed"]),
@@ -154,17 +200,18 @@ def write_top(docs: Path, results: Path, releases: list[str], versions: str, cou
     out = ["---", "title: Releases", "---", "# Releases", "",
            "[MATPredict](https://github.com/stajichlab/MATPredict) mating-type (MAT) locus calls on FungiDB "
            "genomes, compared with the FungiDB gene annotation. Results are kept per FungiDB release; "
-           f"release {releases[0]} is the primary set. Generated {datetime.date.today()} with {versions}.", "",
+           f"release {releases[0]} is the primary set. Generated {datetime.date.today()}; the MATPredict version is the one "
+           "recorded in each run's report (see a release page for the commit and database checksum).", "",
            "## Releases", "",
-           "| Release | Genomes run | MAT locus called | Not searched | Failed | MAT genes without annotation |",
-           "| --- | --- | --- | --- | --- | --- |"]
+           "| Release | MATPredict version | Genomes run | MAT locus called | Not searched | Failed | MAT genes without annotation |",
+           "| --- | --- | --- | --- | --- | --- | --- |"]
     for i, rel in enumerate(releases):
         c = counts_by_rel.get(rel)
         if c is None:
-            out.append(f"| release {rel} | not run yet | | | | |")
+            out.append(f"| release {rel} | | not run yet | | | | |")
             continue
         tag = " (primary)" if i == 0 else ""
-        out.append(f"| [release {rel}](release-{rel}/){tag} | {c['genomes']} | {c['with_locus']} | "
+        out.append(f"| [release {rel}](release-{rel}/){tag} | {c.get('versions', '—')} | {c['genomes']} | {c['with_locus']} | "
                    f"{c['not_searched']} | {c['failed']} | {c['unannotated_genes']} |")
     changes = results / "release_changes.tsv"
     if changes.is_file():
