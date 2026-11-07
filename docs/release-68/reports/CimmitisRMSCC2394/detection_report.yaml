@@ -1,0 +1,685 @@
+run:
+  sample: CimmitisRMSCC2394
+  organism: null
+  taxid: null
+  phylum: null
+  matpredict_version: 0.8.1
+  code:
+    git_describe: v0.8.1
+    dirty: false
+    commit: 3a62e6302b8e7633490237829e8febafef77e432
+    source_version: 0.8.1
+  database:
+    root: /bigdata/stajichlab/jstajich/projects/FungiDB_MATpredict/tools/MATPredict/db
+    content_sha256: 86f18d232e4fe95d19f5e26c1e6cfc758f36c8d235204ef790b01e19832510cc
+    records: 185
+  taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+  genome:
+    file: CimmitisRMSCC2394.genome.fasta
+    sha256: b32bcfe1c9a6aad8a4932250c20794799d8411ed24dca7175a50a1c4556b1ebf
+    contigs: 31
+    length_bp: 28908395
+    n50: 3573598
+  proteins: null
+  parameters:
+    phylum: Ascomycota
+    phylum_guess:
+      requested: auto
+      status: ok
+      usable: true
+      reason: null
+      phylum: Ascomycota
+      phylum_taxid: 4890
+      deepest_rank: species
+      routing_taxid: 33184
+      routing_taxid_rank: family
+      flags: []
+      gmg_version: gmg 0.3.2 (66055154a)
+      index: bfd-reps-2026.10.5-s20000.gmgi
+      index_sha256: 0f319567f1cab17643e1daf7ffdc0e3b312bd43913e351568108d67a4a19702c
+      index_spec: bfd-reps-2026.10.5-s20000.gmgi
+      note: GmG called phylum Ascomycota
+      action: routed
+      weak_call_accepted: false
+      genetic_code: 1
+      genetic_code_from: family taxid 33184
+      routed_by: family taxid 33184 (lineage)
+    exhaustive: false
+    genetic_code: 1
+    exclude_records: null
+    annotation: null
+    min_hits: 2
+    min_identity: null
+    require_core_role: true
+    max_polished_clusters_per_family: 6
+    polish_strong_identity: 50.0
+    polish_core_pair: true
+    preset: null
+    partial_core_policy: 'off'
+    homothallic_policy: 'off'
+    confidence_cap_policy: 'off'
+    cross_family_policy: 'off'
+    fallback_after_withheld_policy: 'off'
+    strong_single_gene_policy: 'off'
+    scoped_roster_policy: 'off'
+    scoped_roster: 'off: BGL1,GAP1 not searched'
+    supported_min_bitscore: 33.0
+  started: '2026-11-07T01:48:02Z'
+  wall_seconds: 67
+routing_mode: lineage
+routing_error: null
+fallback_search: null
+not_searched_reason: null
+genetic_code: 1
+genetic_code_error: null
+taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+suppressed_unpolished: 16
+suppressed_flank_carried: 0
+suppressed_mat_gene_gate: 0
+suppressed_paralog_class: 0
+suppressed_loci:
+- family: Ascomycota:MAT
+  contig: DS028093.1
+  start: 1364506
+  end: 1388766
+  idiomorph: MAT1-1
+  polished_genes: 0
+  genes_found:
+  - MAT1-1-1
+  - APN2
+  core_span:
+    start: 1364506
+    end: 1388766
+    beyond_core_bp: 0
+  supported_span:
+    start: 1364506
+    end: 1388766
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: DS028093.1
+  start: 3460504
+  end: 3462415
+  idiomorph: MAT1-2
+  polished_genes: 0
+  genes_found:
+  - MAT1-2-1
+  - COX13
+  core_span:
+    start: 3460504
+    end: 3462415
+    beyond_core_bp: 0
+  supported_span:
+    start: 3460504
+    end: 3462415
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: DS028093.1
+  start: 4254870
+  end: 4278115
+  idiomorph: MAT1-1
+  polished_genes: 0
+  genes_found:
+  - APN2
+  - COX13
+  - MAT1-1-2
+  core_span:
+    start: 4254870
+    end: 4278115
+    beyond_core_bp: 0
+  supported_span:
+    start: 4254870
+    end: 4278115
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: DS028093.1
+  start: 4938184
+  end: 4945431
+  idiomorph: MAT1-1
+  polished_genes: 0
+  genes_found:
+  - MAT1-1-1
+  - APN2
+  core_span:
+    start: 4938184
+    end: 4945431
+    beyond_core_bp: 0
+  supported_span:
+    start: 4938184
+    end: 4945431
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: DS028094.1
+  start: 3522875
+  end: 3543953
+  idiomorph: MAT1-2
+  polished_genes: 0
+  genes_found:
+  - MAT1-2-1
+  - APN2
+  core_span:
+    start: 3522875
+    end: 3543953
+    beyond_core_bp: 0
+  supported_span:
+    start: 3522875
+    end: 3543953
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: DS028094.1
+  start: 3897355
+  end: 3932417
+  idiomorph: MAT1-2
+  polished_genes: 0
+  genes_found:
+  - MAT1-1-1
+  - MAT1-2-1
+  - SLA2
+  core_span:
+    start: 3897355
+    end: 3909774
+    beyond_core_bp: 22643
+  supported_span:
+    start: 3897355
+    end: 3909774
+    min_bitscore: 33.0
+    beyond_supported_bp: 22643
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: DS028097.1
+  start: 200227
+  end: 201871
+  idiomorph: MAT1-2
+  polished_genes: 0
+  genes_found:
+  - MAT1-2-1
+  - APN2
+  core_span:
+    start: 200242
+    end: 201871
+    beyond_core_bp: 15
+  supported_span:
+    start: 200242
+    end: 201871
+    min_bitscore: 33.0
+    beyond_supported_bp: 15
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: DS028097.1
+  start: 2312267
+  end: 2327957
+  idiomorph: MAT1-1
+  polished_genes: 0
+  genes_found:
+  - MAT1-1-1
+  - APN2
+  - MAT1-1-5
+  core_span:
+    start: 2312267
+    end: 2327957
+    beyond_core_bp: 0
+  supported_span:
+    start: 2312267
+    end: 2327957
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: DS028096.1
+  start: 669409
+  end: 688446
+  idiomorph: MAT1-2
+  polished_genes: 0
+  genes_found:
+  - MAT1-2-1
+  - APN2
+  core_span:
+    start: 683001
+    end: 688446
+    beyond_core_bp: 13592
+  supported_span:
+    start: 683001
+    end: 688446
+    min_bitscore: 33.0
+    beyond_supported_bp: 13592
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: DS028096.1
+  start: 1407904
+  end: 1431606
+  idiomorph: MAT1-2
+  polished_genes: 0
+  genes_found:
+  - MAT1-2-1
+  - APN2
+  core_span:
+    start: 1407904
+    end: 1431606
+    beyond_core_bp: 0
+  supported_span:
+    start: 1407904
+    end: 1431606
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: DS028096.1
+  start: 2197673
+  end: 2205315
+  idiomorph: MAT1-2
+  polished_genes: 0
+  genes_found:
+  - MAT1-2-1
+  - APN2
+  core_span:
+    start: 2197673
+    end: 2205315
+    beyond_core_bp: 0
+  supported_span:
+    start: 2197673
+    end: 2205315
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: DS028096.1
+  start: 3196860
+  end: 3249756
+  idiomorph: MAT1-1
+  polished_genes: 0
+  genes_found:
+  - MAT1-1-1
+  - MAT1-2-1
+  - APN2
+  - MAT1-1-3
+  core_span:
+    start: 3196860
+    end: 3249756
+    beyond_core_bp: 0
+  supported_span:
+    start: 3196860
+    end: 3249756
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: DS028099.1
+  start: 468892
+  end: 478864
+  idiomorph: MAT1-1
+  polished_genes: 0
+  genes_found:
+  - MAT1-1-1
+  - APN2
+  core_span:
+    start: 468892
+    end: 478864
+    beyond_core_bp: 0
+  supported_span:
+    start: 468892
+    end: 478864
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: DS028095.1
+  start: 778112
+  end: 826084
+  idiomorph: MAT1-1
+  polished_genes: 0
+  genes_found:
+  - MAT1-1-1
+  - MAT1-2-1
+  - APN2
+  - SLA2
+  core_span:
+    start: 778112
+    end: 826084
+    beyond_core_bp: 0
+  supported_span:
+    start: 778112
+    end: 826084
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: DS028100.1
+  start: 371587
+  end: 416014
+  idiomorph: MAT1-2
+  polished_genes: 0
+  genes_found:
+  - APN2
+  - SLA2
+  - CIMG_00407
+  core_span:
+    start: 371587
+    end: 416014
+    beyond_core_bp: 0
+  supported_span:
+    start: 371587
+    end: 416014
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: DS028103.1
+  start: 359874
+  end: 402836
+  idiomorph: MAT1-1
+  polished_genes: 0
+  genes_found:
+  - MAT1-1-1
+  - APN2
+  - MAT1-1-3
+  core_span:
+    start: 359874
+    end: 402836
+    beyond_core_bp: 0
+  supported_span:
+    start: 359874
+    end: 402836
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+assembly_gap_at_locus: []
+zygosity: null
+two_idiomorphs: []
+receptor_arrays_note: 'Receptor arrays occur for both mating and non-mating STE3-like
+  receptors (the study found arrays holding paralogs beside the mating receptors in
+  Coprinopsis cinerea and Schizophyllum commune), so array membership does not establish
+  that a locus is a mating receptor. receptor_array_support is a flag on the evidence
+  behind an array; it never changes a call, its confidence or its verification label.
+  receptor_cassette_* fields describe pheromone-precursor cassette structure (2 or
+  more strict-CAAX ORFs within 5 kb of a receptor locus; class C when that many of
+  those ORFs also carry tblastn precursor homology). They are descriptive only: the
+  CAAX scan is also what admits a PR call, so cassettes are circular as confirmation;
+  own-species curated precursors are a self-hit for class C; tandem receptors may
+  be merged into one locus. They never change a call, tier, label, confidence or count.'
+receptor_arrays: []
+families_attempted:
+- Ascomycota:MAT
+detected:
+- family: Ascomycota:MAT
+  contig: DS028093.1
+  start: 1149675
+  end: 1163183
+  core_span:
+    start: 1149675
+    end: 1163183
+    beyond_core_bp: 0
+  supported_span:
+    start: 1149675
+    end: 1163183
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  confidence: high
+  resolution_flags:
+  - partial_core
+  resolution_flag_genes:
+    partial_core:
+    - MAT1-2-4
+  idiomorph: MAT1-2
+  idiomorph_class: MAT1-2
+  idiomorph_candidates:
+  - idiomorph: MAT1-2
+    score: 570.0
+  detection_pass: strict
+  locus_class: mat_locus
+  idiomorph_unmodelled: false
+  verification: null
+  merged_from: []
+  subloci: []
+  polished_genes: 5
+  distinct_intervals: 5
+  span_exceeds_plausible_bound: false
+  idiomorph_margin: 66.75200000000001
+  idiomorph_classifier: null
+  confidence_ignored_genes:
+  - MAT1-1-3
+  idiomorph_resolutions:
+  - contig: DS028093.1
+    winner: MAT1-2-1
+    loser: MAT1-1-3
+    winner_identity: 93.581
+    loser_identity: 26.829
+    overlap_fraction: 1.0
+    winner_coverage: 82.0
+    loser_coverage: 86.0
+    basis: first_pass_identity
+    winner_model_score: null
+    winner_hmm_score: null
+    loser_hmm_score: null
+    loser_model_score: null
+    winner_span:
+    - 1153751
+    - 1154638
+    loser_span:
+    - 1154147
+    - 1154686
+  ambiguous_with: []
+  genes_found:
+  - MAT1-2-1
+  - APN2
+  - SLA2
+  - COX13
+  - MAT1-2-4
+  - CIMG_00407
+  genes_missing: []
+  genes_not_searchable: []
+  fragmented: false
+  reference_records:
+  - 5127_mo44_MAT_MAT1-1
+  - 5501_rs_MAT_MAT1-2
+  - 746128_af293_MAT_MAT1-2
+  segments:
+  - contig: DS028093.1
+    start: 1149675
+    end: 1163183
+    contig_edge_distance: 1149674
+  gene_evidence:
+  - gene: COX13
+    role: flanking_conserved
+    contig: DS028093.1
+    start: 1149675
+    end: 1150340
+    strand: '-'
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 5501_rs_MAT_MAT1-2
+    method: exonerate_refine
+    status: polished_agree
+    alternate_model: null
+    exons:
+    - start: 1149675
+      end: 1149717
+    - start: 1149809
+      end: 1149816
+    - start: 1149877
+      end: 1150036
+    - start: 1150091
+      end: 1150115
+    - start: 1150172
+      end: 1150340
+    evalue: 4.06e-34
+    bitscore: 124.0
+  - gene: APN2
+    role: flanking_conserved
+    contig: DS028093.1
+    start: 1150960
+    end: 1153013
+    strand: +
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 5501_rs_MAT_MAT1-2
+    method: exonerate_refine
+    status: polished_disagree
+    alternate_model:
+      contig: DS028093.1
+      start: 1150960
+      end: 1153016
+      strand: +
+      exons:
+      - start: 1150960
+        end: 1150991
+      - start: 1151111
+        end: 1151156
+      - start: 1151207
+        end: 1151339
+      - start: 1151386
+        end: 1153016
+      identity: 96.59
+      method: miniprot_refine
+    exons:
+    - start: 1150960
+      end: 1150987
+    - start: 1151042
+      end: 1151054
+    - start: 1151111
+      end: 1151156
+    - start: 1151207
+      end: 1151339
+    - start: 1151386
+      end: 1152095
+    - start: 1152144
+      end: 1153013
+    evalue: 0.0
+    bitscore: 1095.0
+  - gene: MAT1-2-1
+    role: core_MAT
+    contig: DS028093.1
+    start: 1153751
+    end: 1154877
+    strand: '-'
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 5501_rs_MAT_MAT1-2
+    method: exonerate_refine
+    status: polished_agree
+    alternate_model: null
+    exons:
+    - start: 1153751
+      end: 1154289
+    - start: 1154344
+      end: 1154636
+    - start: 1154696
+      end: 1154877
+    evalue: 0.0
+    bitscore: 570.0
+  - gene: MAT1-1-3
+    role: core_MAT
+    contig: DS028093.1
+    start: 1154147
+    end: 1154638
+    strand: '-'
+    identity: 26.829
+    coverage: 86.0
+    reference_record: 5127_mo44_MAT_MAT1-1
+    method: tblastn_genome
+    status: not_polish_candidate
+    alternate_model: null
+    lost_to: MAT1-2-1
+    exons: null
+    evalue: 2.21e-08
+    bitscore: 52.0
+  - gene: CIMG_00407
+    role: core_MAT
+    contig: DS028093.1
+    start: 1155322
+    end: 1156215
+    strand: +
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 5501_rs_MAT_MAT1-2
+    method: exonerate_refine
+    status: polished_agree
+    alternate_model: null
+    exons:
+    - start: 1155322
+      end: 1155857
+    - start: 1155911
+      end: 1156083
+    - start: 1156136
+      end: 1156215
+    evalue: 7.89e-146
+    bitscore: 369.0
+  - gene: MAT1-2-4
+    role: core_MAT
+    contig: DS028093.1
+    start: 1155960
+    end: 1156082
+    strand: +
+    identity: 34.146
+    coverage: 16.0
+    reference_record: 746128_af293_MAT_MAT1-2
+    method: tblastn_genome
+    status: unpolished
+    alternate_model: null
+    exons: null
+    evalue: 9.06e-07
+    bitscore: 35.8
+  - gene: SLA2
+    role: flanking_conserved
+    contig: DS028093.1
+    start: 1159253
+    end: 1163183
+    strand: '-'
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 5501_rs_MAT_MAT1-2
+    method: exonerate_refine
+    status: polished_agree
+    alternate_model: null
+    exons:
+    - start: 1159253
+      end: 1159333
+    - start: 1159419
+      end: 1160633
+    - start: 1160685
+      end: 1160834
+    - start: 1160909
+      end: 1161957
+    - start: 1162010
+      end: 1162194
+    - start: 1162248
+      end: 1162305
+    - start: 1162382
+      end: 1162462
+    - start: 1162546
+      end: 1162703
+    - start: 1162806
+      end: 1162881
+    - start: 1162940
+      end: 1162957
+    - start: 1163019
+      end: 1163065
+    - start: 1163134
+      end: 1163183
+    evalue: 0.0
+    bitscore: 911.0
+not_detected: []

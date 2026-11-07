@@ -1,0 +1,7 @@
+##gff-version 3
+##sequence-region UFAJ01000036 19669 25533
+UFAJ01000036	MATPredict	MAT_locus	19669	25533	.	.	.	ID=Ascomycota_MATsc_0;family=Ascomycota:MATsc;confidence=medium;idiomorph=MATa;fragmented=false;core_start=19687;core_end=25533;beyond_core_bp=18;supported_start=19687;supported_end=25533;beyond_supported_bp=18;ambiguous_with=Ascomycota:MTL;reference_records=28985_nrrl-y-1140_MATsc_MATa,4932_s288c_MATsc_HMRa
+UFAJ01000036	MATPredict	gene	19687	19944	.	-	.	ID=Ascomycota_MATsc_0.gene0;Parent=Ascomycota_MATsc_0;Name=MATA2;role=core_MAT;present=true;identity=30.233;reference_record=28985_nrrl-y-1140_MATsc_MATa;method=tblastn_genome;status=unpolished;coverage=32.0
+UFAJ01000036	MATPredict	gene	21890	22149	.	+	.	ID=Ascomycota_MATsc_0.gene1;Parent=Ascomycota_MATsc_0;Name=MATA1;role=core_MAT;present=true;identity=43.1;reference_record=4932_s288c_MATsc_HMRa;method=exonerate_refine;status=polished_single;coverage=46.0
+UFAJ01000036	MATPredict	gene	22336	25533	.	-	.	ID=Ascomycota_MATsc_0.gene2;Parent=Ascomycota_MATsc_0;Name=sla2;role=flanking_conserved;present=true;identity=48.3;reference_record=28985_nrrl-y-1140_MATsc_MATa;method=diamond_proteome;status=not_polish_candidate;coverage=56.2
+UFAJ01000036	MATPredict	gene	19669	25533	.	.	.	ID=Ascomycota_MATsc_0.gene3;Parent=Ascomycota_MATsc_0;Name=cha1;present=false;not_searchable=true

@@ -1,0 +1,9 @@
+##gff-version 3
+##sequence-region KN905664 39402 45817
+KN905664	MATPredict	MAT_locus	39402	45817	.	.	.	ID=Basidiomycota_MAT_0;family=Basidiomycota:MAT;confidence=medium;idiomorph=alpha;fragmented=false;core_start=39402;core_end=45817;beyond_core_bp=0;supported_start=39402;supported_end=45817;beyond_supported_bp=0;reference_records=40410_jec20_MAT_a,40410_jec21_MAT_alpha
+KN905664	MATPredict	gene	39402	40720	.	+	.	ID=Basidiomycota_MAT_0.gene0;Parent=Basidiomycota_MAT_0;Name=STE3;role=core_MAT;present=true;identity=90.5;reference_record=40410_jec21_MAT_alpha;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+KN905664	MATPredict	gene	45701	45817	.	-	.	ID=Basidiomycota_MAT_0.gene1;Parent=Basidiomycota_MAT_0;Name=MFalpha;role=core_MAT;present=true;identity=94.7;reference_record=40410_jec21_MAT_alpha;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+KN905664	MATPredict	gene	39402	45817	.	.	.	ID=Basidiomycota_MAT_0.gene3;Parent=Basidiomycota_MAT_0;Name=FAO1;present=false
+KN905664	MATPredict	gene	39402	45817	.	.	.	ID=Basidiomycota_MAT_0.gene4;Parent=Basidiomycota_MAT_0;Name=PAN6;present=false
+KN905664	MATPredict	gene	39402	45817	.	.	.	ID=Basidiomycota_MAT_0.gene5;Parent=Basidiomycota_MAT_0;Name=NOG2;present=false;not_searchable=true
+KN905664	MATPredict	gene	39402	45817	.	.	.	ID=Basidiomycota_MAT_0.gene6;Parent=Basidiomycota_MAT_0;Name=UAP1;present=false;not_searchable=true

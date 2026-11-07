@@ -1,0 +1,8 @@
+##gff-version 3
+##sequence-region PEKT02000003 845925 853762
+PEKT02000003	MATPredict	MAT_locus	845925	853762	.	.	.	ID=Ascomycota_MTL_0;family=Ascomycota:MTL;confidence=high;idiomorph=A;fragmented=false;core_start=845925;core_end=853762;beyond_core_bp=0;supported_start=845925;supported_end=853762;beyond_supported_bp=0;reference_records=498019_b11205_MTL_A,498019_b11243_MTL_A
+PEKT02000003	MATPredict	gene	845925	847559	.	-	.	ID=Ascomycota_MTL_0.gene0;Parent=Ascomycota_MTL_0;Name=PAP1;role=flanking_variable;present=true;identity=100.0;reference_record=498019_b11205_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+PEKT02000003	MATPredict	gene	847786	849075	.	+	.	ID=Ascomycota_MTL_0.gene1;Parent=Ascomycota_MTL_0;Name=OBP1;role=flanking_variable;present=true;identity=100.0;reference_record=498019_b11205_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+PEKT02000003	MATPredict	gene	849738	852365	.	+	.	ID=Ascomycota_MTL_0.gene2;Parent=Ascomycota_MTL_0;Name=PIK1;role=flanking_variable;present=true;identity=100.0;reference_record=498019_b11205_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+PEKT02000003	MATPredict	gene	852451	853064	.	+	.	ID=Ascomycota_MTL_0.gene3;Parent=Ascomycota_MTL_0;Name=MTLA2;role=core_MAT;present=true;identity=98.68;reference_record=498019_b11243_MTL_A;method=exonerate_refine;status=polished_disagree;coverage=100.0;alt_method=miniprot_refine;alt_contig=PEKT02000003;alt_start=852451;alt_end=853067;alt_identity=92.5
+PEKT02000003	MATPredict	gene	853144	853762	.	+	.	ID=Ascomycota_MTL_0.gene4;Parent=Ascomycota_MTL_0;Name=MTLA1;role=core_MAT;present=true;identity=100.0;reference_record=498019_b11205_MTL_A;method=exonerate_refine;status=polished_agree;coverage=100.0

@@ -1,0 +1,9 @@
+##gff-version 3
+##sequence-region KZ826050 4113 11201
+KZ826050	MATPredict	MAT_locus	4113	11201	.	.	.	ID=Ascomycota_MAT_0;family=Ascomycota:MAT;confidence=high;idiomorph=MAT1-2;fragmented=false;core_start=4113;core_end=11201;beyond_core_bp=0;supported_start=4113;supported_end=11201;beyond_supported_bp=0;reference_records=162425_fgsc-a4_MAT_combined,199306_silveira_MAT_MAT1-2,230073_uamh-1363_MAT_MAT1-1,2903220_liq80xsp_MAT_combined,5501_rs_MAT_MAT1-2,746128_af293_MAT_MAT1-2
+KZ826050	MATPredict	gene	4113	5032	.	-	.	ID=Ascomycota_MAT_0.gene0;Parent=Ascomycota_MAT_0;Name=MAT1-2-4;role=core_MAT;present=true;identity=45.8;reference_record=746128_af293_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=96.0
+KZ826050	MATPredict	gene	4189	4365	.	-	.	ID=Ascomycota_MAT_0.gene1;Parent=Ascomycota_MAT_0;Name=CIMG_00407;role=core_MAT;present=true;identity=30.508;reference_record=5501_rs_MAT_MAT1-2;method=tblastn_genome;status=unpolished;coverage=16.0
+KZ826050	MATPredict	gene	5541	6684	.	+	.	ID=Ascomycota_MAT_0.gene2;Parent=Ascomycota_MAT_0;Name=MAT1-2-1;role=core_MAT;present=true;identity=52.3;reference_record=199306_silveira_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=58.6
+KZ826050	MATPredict	gene	7885	10016	.	-	.	ID=Ascomycota_MAT_0.gene3;Parent=Ascomycota_MAT_0;Name=APN2;role=flanking_conserved;present=true;identity=88.6;reference_record=2903220_liq80xsp_MAT_combined;method=diamond_proteome;status=not_polish_candidate;coverage=36.7
+KZ826050	MATPredict	gene	10446	11201	.	+	.	ID=Ascomycota_MAT_0.gene4;Parent=Ascomycota_MAT_0;Name=COX13;role=flanking_conserved;present=true;identity=81.1;reference_record=162425_fgsc-a4_MAT_combined;method=diamond_proteome;status=not_polish_candidate;coverage=78.4
+KZ826050	MATPredict	gene	4113	11201	.	.	.	ID=Ascomycota_MAT_0.gene6;Parent=Ascomycota_MAT_0;Name=SLA2;present=false

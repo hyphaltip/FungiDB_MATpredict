@@ -1,0 +1,339 @@
+run:
+  sample: SjaponicusyFS275
+  organism: null
+  taxid: null
+  phylum: null
+  matpredict_version: 0.8.1
+  code:
+    git_describe: v0.8.1
+    dirty: false
+    commit: 3a62e6302b8e7633490237829e8febafef77e432
+    source_version: 0.8.1
+  database:
+    root: /bigdata/stajichlab/jstajich/projects/FungiDB_MATpredict/tools/MATPredict/db
+    content_sha256: 86f18d232e4fe95d19f5e26c1e6cfc758f36c8d235204ef790b01e19832510cc
+    records: 185
+  taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+  genome:
+    file: SjaponicusyFS275.genome.fasta
+    sha256: f458d6a5aae3744a374718896bef7f3f5e609318af5d52985cfeefe538266ee3
+    contigs: 33
+    length_bp: 11813213
+    n50: 3866997
+  proteins: SjaponicusyFS275.proteins.fasta
+  parameters:
+    phylum: Ascomycota
+    phylum_guess:
+      requested: auto
+      status: low_confidence
+      usable: true
+      reason: null
+      phylum: Ascomycota
+      phylum_taxid: 4890
+      deepest_rank: family
+      routing_taxid: 4894
+      routing_taxid_rank: family
+      flags:
+      - high_N
+      gmg_version: gmg 0.3.2 (66055154a)
+      index: bfd-reps-2026.10.5-s20000.gmgi
+      index_sha256: 0f319567f1cab17643e1daf7ffdc0e3b312bd43913e351568108d67a4a19702c
+      index_spec: bfd-reps-2026.10.5-s20000.gmgi
+      note: GmG called phylum Ascomycota
+      action: routed
+      weak_call_accepted: false
+      genetic_code: 1
+      genetic_code_from: family taxid 4894
+      routed_by: family taxid 4894 (lineage)
+    exhaustive: false
+    genetic_code: 1
+    exclude_records: null
+    annotation: null
+    min_hits: 2
+    min_identity: null
+    require_core_role: true
+    max_polished_clusters_per_family: 6
+    polish_strong_identity: 50.0
+    polish_core_pair: true
+    preset: null
+    partial_core_policy: 'off'
+    homothallic_policy: 'off'
+    confidence_cap_policy: 'off'
+    cross_family_policy: 'off'
+    fallback_after_withheld_policy: 'off'
+    strong_single_gene_policy: 'off'
+    scoped_roster_policy: 'off'
+    scoped_roster: null
+    supported_min_bitscore: 33.0
+  started: '2026-11-07T02:02:18Z'
+  wall_seconds: 14
+routing_mode: lineage
+routing_error: null
+fallback_search: null
+not_searched_reason: null
+genetic_code: 1
+genetic_code_error: null
+taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+suppressed_unpolished: 12
+suppressed_flank_carried: 0
+suppressed_mat_gene_gate: 0
+suppressed_paralog_class: 0
+suppressed_loci:
+- family: Ascomycota:PM
+  contig: KE651168
+  start: 194684
+  end: 194830
+  idiomorph: P
+  polished_genes: 0
+  genes_found:
+  - matPi
+  core_span:
+    start: 194684
+    end: 194830
+    beyond_core_bp: 0
+  supported_span:
+    start: 194684
+    end: 194830
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:PM
+  contig: KE651168
+  start: 991078
+  end: 993025
+  idiomorph: M
+  polished_genes: 1
+  genes_found:
+  - matMc
+  - matPi
+  core_span:
+    start: 991078
+    end: 993010
+    beyond_core_bp: 15
+  supported_span:
+    start: 991078
+    end: 993010
+    min_bitscore: 33.0
+    beyond_supported_bp: 15
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:PM
+  contig: KE651168
+  start: 1305075
+  end: 1305278
+  idiomorph: P
+  polished_genes: 0
+  genes_found:
+  - matPi
+  core_span:
+    start: 1305075
+    end: 1305278
+    beyond_core_bp: 0
+  supported_span:
+    start: 1305075
+    end: 1305278
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:PM
+  contig: KE651168
+  start: 2709667
+  end: 2709843
+  idiomorph: P
+  polished_genes: 0
+  genes_found:
+  - matPi
+  core_span:
+    start: 2709667
+    end: 2709843
+    beyond_core_bp: 0
+  supported_span:
+    start: 2709667
+    end: 2709843
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:PM
+  contig: KE651166
+  start: 483756
+  end: 483956
+  idiomorph: P
+  polished_genes: 0
+  genes_found:
+  - matPi
+  core_span:
+    start: 483756
+    end: 483956
+    beyond_core_bp: 0
+  supported_span:
+    start: 483756
+    end: 483956
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:PM
+  contig: KE651166
+  start: 664730
+  end: 665026
+  idiomorph: P
+  polished_genes: 0
+  genes_found:
+  - matPi
+  core_span:
+    start: 664730
+    end: 665026
+    beyond_core_bp: 0
+  supported_span:
+    start: 664730
+    end: 665026
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:PM
+  contig: KE651166
+  start: 1831483
+  end: 1835397
+  idiomorph: P
+  polished_genes: 0
+  genes_found:
+  - matPi
+  core_span:
+    start: 1831483
+    end: 1831656
+    beyond_core_bp: 3741
+  supported_span:
+    start: 1831483
+    end: 1831656
+    min_bitscore: 33.0
+    beyond_supported_bp: 3741
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:PM
+  contig: KE651166
+  start: 2244345
+  end: 2244464
+  idiomorph: M
+  polished_genes: 0
+  genes_found:
+  - matMi
+  core_span:
+    start: 2244345
+    end: 2244464
+    beyond_core_bp: 0
+  supported_span:
+    start: 2244345
+    end: 2244464
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:PM
+  contig: KE651166
+  start: 2273249
+  end: 2273371
+  idiomorph: P
+  polished_genes: 0
+  genes_found:
+  - matPi
+  core_span:
+    start: 2273249
+    end: 2273371
+    beyond_core_bp: 0
+  supported_span:
+    start: 2273249
+    end: 2273371
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:PM
+  contig: KE651166
+  start: 2603667
+  end: 2603828
+  idiomorph: M
+  polished_genes: 0
+  genes_found:
+  - matMi
+  core_span:
+    start: 2603667
+    end: 2603828
+    beyond_core_bp: 0
+  supported_span:
+    start: 2603667
+    end: 2603828
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:PM
+  contig: KE651167
+  start: 3433960
+  end: 3434079
+  idiomorph: P
+  polished_genes: 0
+  genes_found:
+  - matPi
+  core_span:
+    start: 3433960
+    end: 3434079
+    beyond_core_bp: 0
+  supported_span:
+    start: 3433960
+    end: 3434079
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:PM
+  contig: KE651167
+  start: 3621431
+  end: 3621526
+  idiomorph: P
+  polished_genes: 0
+  genes_found:
+  - matPi
+  core_span:
+    start: 3621431
+    end: 3621526
+    beyond_core_bp: 0
+  supported_span:
+    start: 3621431
+    end: 3621526
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+assembly_gap_at_locus: []
+zygosity: null
+two_idiomorphs: []
+receptor_arrays_note: 'Receptor arrays occur for both mating and non-mating STE3-like
+  receptors (the study found arrays holding paralogs beside the mating receptors in
+  Coprinopsis cinerea and Schizophyllum commune), so array membership does not establish
+  that a locus is a mating receptor. receptor_array_support is a flag on the evidence
+  behind an array; it never changes a call, its confidence or its verification label.
+  receptor_cassette_* fields describe pheromone-precursor cassette structure (2 or
+  more strict-CAAX ORFs within 5 kb of a receptor locus; class C when that many of
+  those ORFs also carry tblastn precursor homology). They are descriptive only: the
+  CAAX scan is also what admits a PR call, so cassettes are circular as confirmation;
+  own-species curated precursors are a self-hit for class C; tandem receptors may
+  be merged into one locus. They never change a call, tier, label, confidence or count.'
+receptor_arrays: []
+families_attempted:
+- Ascomycota:PM
+detected: []
+not_detected:
+- family: Ascomycota:PM
+  reason: best cluster carried 1 modelled gene(s), below the 2 required to report
+    a locus; only 1 of its genes could be modelled
+  best_fraction_found: 1.0
+  genes_found:
+  - matMc
+  - matPi
+  genes_missing:
+  - matMi
+  genes_not_searchable: []

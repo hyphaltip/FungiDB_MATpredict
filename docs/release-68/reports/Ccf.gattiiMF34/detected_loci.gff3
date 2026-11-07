@@ -1,0 +1,13 @@
+##gff-version 3
+##sequence-region CM018868 59680 262446
+CM018868	MATPredict	MAT_locus	59680	262446	.	.	.	ID=Basidiomycota_MAT_0;family=Basidiomycota:MAT;confidence=high;idiomorph=alpha;fragmented=false;core_start=146033;core_end=262446;beyond_core_bp=86353;supported_start=146033;supported_end=262446;beyond_supported_bp=86353;reference_records=40410_jec20_MAT_a,40410_jec21_MAT_alpha
+CM018868	MATPredict	gene	146033	147380	.	+	.	ID=Basidiomycota_MAT_0.gene0;Parent=Basidiomycota_MAT_0;Name=FAO1;role=flanking_conserved;present=true;identity=85.2;reference_record=40410_jec20_MAT_a;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CM018868	MATPredict	gene	147892	148082	.	-	.	ID=Basidiomycota_MAT_0.gene1;Parent=Basidiomycota_MAT_0;Name=SXI2;role=core_MAT;present=true;identity=70.97;reference_record=40410_jec20_MAT_a;method=exonerate_refine;status=polished_single;coverage=9.0
+CM018868	MATPredict	gene	148521	151835	.	+	.	ID=Basidiomycota_MAT_0.gene2;Parent=Basidiomycota_MAT_0;Name=SXI1;role=core_MAT;present=true;identity=71.7;reference_record=40410_jec21_MAT_alpha;method=diamond_proteome;status=not_polish_candidate;coverage=99.3
+CM018868	MATPredict	gene	224262	228685	.	+	.	ID=Basidiomycota_MAT_0.gene3;Parent=Basidiomycota_MAT_0;Name=STE3;role=core_MAT;present=true;identity=92.6;reference_record=40410_jec21_MAT_alpha;method=diamond_proteome;status=not_polish_candidate;coverage=14.2
+CM018868	MATPredict	gene	229842	229955	.	-	.	ID=Basidiomycota_MAT_0.gene4;Parent=Basidiomycota_MAT_0;Name=MFalpha;role=core_MAT;present=true;identity=94.74;reference_record=40410_jec21_MAT_alpha;method=exonerate_refine;status=polished_agree;coverage=100.0
+CM018868	MATPredict	gene	248437	254192	.	-	.	ID=Basidiomycota_MAT_0.gene5;Parent=Basidiomycota_MAT_0;Name=RPL39;role=core_MAT;present=true;identity=98.0;reference_record=40410_jec20_MAT_a;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CM018868	MATPredict	gene	260700	262446	.	+	.	ID=Basidiomycota_MAT_0.gene6;Parent=Basidiomycota_MAT_0;Name=PAN6;role=flanking_conserved;present=true;identity=91.5;reference_record=40410_jec20_MAT_a;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CM018868	MATPredict	gene	59680	262446	.	.	.	ID=Basidiomycota_MAT_0.gene8;Parent=Basidiomycota_MAT_0;Name=MFa;present=false;not_searchable=true
+CM018868	MATPredict	gene	59680	262446	.	.	.	ID=Basidiomycota_MAT_0.gene9;Parent=Basidiomycota_MAT_0;Name=NOG2;present=false;not_searchable=true
+CM018868	MATPredict	gene	59680	262446	.	.	.	ID=Basidiomycota_MAT_0.gene10;Parent=Basidiomycota_MAT_0;Name=UAP1;present=false;not_searchable=true

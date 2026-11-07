@@ -1,0 +1,9 @@
+##gff-version 3
+##sequence-region KN847044.1 1019161 1040533
+KN847044.1	MATPredict	MAT_locus	1019161	1040533	.	.	.	ID=Ascomycota_MAT_0;family=Ascomycota:MAT;confidence=medium;idiomorph=MAT1-2;fragmented=false;core_start=1025402;core_end=1025710;beyond_core_bp=21064;supported_start=1025207;supported_end=1026106;beyond_supported_bp=20473;reference_records=199306_silveira_MAT_MAT1-2,230073_uamh-1363_MAT_MAT1-1
+KN847044.1	MATPredict	gene	1025402	1025710	.	-	.	ID=Ascomycota_MAT_0.gene0;Parent=Ascomycota_MAT_0;Name=MAT1-2-1;role=core_MAT;present=true;identity=54.37;reference_record=199306_silveira_MAT_MAT1-2;method=exonerate_refine;status=polished_disagree;coverage=30.5;alt_method=miniprot_refine;alt_contig=KN847044.1;alt_start=1025402;alt_end=1026076;alt_identity=39.519999999999996
+KN847044.1	MATPredict	gene	1025450	1025674	.	-	.	ID=Ascomycota_MAT_0.gene1;Parent=Ascomycota_MAT_0;Name=MAT1-1-3;role=core_MAT;present=true;identity=33.33;reference_record=230073_uamh-1363_MAT_MAT1-1;method=exonerate_refine;status=polished_single;coverage=41.7
+KN847044.1	MATPredict	gene	1019161	1040533	.	.	.	ID=Ascomycota_MAT_0.gene2;Parent=Ascomycota_MAT_0;Name=MAT1-1-1;present=false
+KN847044.1	MATPredict	gene	1019161	1040533	.	.	.	ID=Ascomycota_MAT_0.gene3;Parent=Ascomycota_MAT_0;Name=APN2;present=false
+KN847044.1	MATPredict	gene	1019161	1040533	.	.	.	ID=Ascomycota_MAT_0.gene4;Parent=Ascomycota_MAT_0;Name=SLA2;present=false
+KN847044.1	MATPredict	gene	1019161	1040533	.	.	.	ID=Ascomycota_MAT_0.gene5;Parent=Ascomycota_MAT_0;Name=COX13;present=false

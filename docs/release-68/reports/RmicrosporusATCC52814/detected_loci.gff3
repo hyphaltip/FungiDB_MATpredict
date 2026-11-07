@@ -1,0 +1,8 @@
+##gff-version 3
+##sequence-region KV922032 10201 19021
+KV922032	MATPredict	MAT_locus	10201	19021	.	.	.	ID=Mucoromycota_MAT_0;family=Mucoromycota:MAT;confidence=high;idiomorph=Minus;fragmented=false;core_start=10201;core_end=18916;beyond_core_bp=105;supported_start=10201;supported_end=18916;beyond_supported_bp=105;reference_records=3108396_ai-2023a_MAT_Plus,86630_cbs357-93_MAT_Minus
+KV922032	MATPredict	gene	10201	11754	.	+	.	ID=Mucoromycota_MAT_0.gene0;Parent=Mucoromycota_MAT_0;Name=glrA;role=flanking_variable;present=true;identity=98.3;reference_record=86630_cbs357-93_MAT_Minus;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+KV922032	MATPredict	gene	14493	18370	.	-	.	ID=Mucoromycota_MAT_0.gene1;Parent=Mucoromycota_MAT_0;Name=rnhA;role=flanking_conserved;present=true;identity=92.9;reference_record=86630_cbs357-93_MAT_Minus;method=diamond_proteome;status=not_polish_candidate;coverage=93.3
+KV922032	MATPredict	gene	18434	18880	.	-	.	ID=Mucoromycota_MAT_0.gene2;Parent=Mucoromycota_MAT_0;Name=sexM;role=core_MAT;present=true;identity=93.2;reference_record=86630_cbs357-93_MAT_Minus;method=diamond_proteome;status=not_polish_candidate;coverage=79.5
+KV922032	MATPredict	gene	10201	19021	.	.	.	ID=Mucoromycota_MAT_0.gene4;Parent=Mucoromycota_MAT_0;Name=tptA;present=false
+KV922032	MATPredict	gene	10201	19021	.	.	.	ID=Mucoromycota_MAT_0.gene5;Parent=Mucoromycota_MAT_0;Name=algA;present=false

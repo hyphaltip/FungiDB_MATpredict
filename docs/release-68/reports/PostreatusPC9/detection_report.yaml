@@ -1,0 +1,1132 @@
+run:
+  sample: PostreatusPC9
+  organism: null
+  taxid: null
+  phylum: null
+  matpredict_version: 0.8.1
+  code:
+    git_describe: v0.8.1
+    dirty: false
+    commit: 3a62e6302b8e7633490237829e8febafef77e432
+    source_version: 0.8.1
+  database:
+    root: /bigdata/stajichlab/jstajich/projects/FungiDB_MATpredict/tools/MATPredict/db
+    content_sha256: 86f18d232e4fe95d19f5e26c1e6cfc758f36c8d235204ef790b01e19832510cc
+    records: 185
+  taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+  genome:
+    file: PostreatusPC9.genome.fasta
+    sha256: db58cd61ff0696fa8e10ab844082aa15d5c8e8f867a796a9b0f7f0691248fe1c
+    contigs: 17
+    length_bp: 34970470
+    n50: 3500734
+  proteins: PostreatusPC9.proteins.fasta
+  parameters:
+    phylum: Basidiomycota
+    phylum_guess:
+      requested: auto
+      status: ok
+      usable: true
+      reason: null
+      phylum: Basidiomycota
+      phylum_taxid: 5204
+      deepest_rank: genus
+      routing_taxid: 104366
+      routing_taxid_rank: family
+      flags: []
+      gmg_version: gmg 0.3.2 (66055154a)
+      index: bfd-reps-2026.10.5-s20000.gmgi
+      index_sha256: 0f319567f1cab17643e1daf7ffdc0e3b312bd43913e351568108d67a4a19702c
+      index_spec: bfd-reps-2026.10.5-s20000.gmgi
+      note: GmG called phylum Basidiomycota
+      action: routed
+      weak_call_accepted: false
+      genetic_code: 1
+      genetic_code_from: family taxid 104366
+      routed_by: family taxid 104366 (lineage)
+    exhaustive: false
+    genetic_code: 1
+    exclude_records: null
+    annotation: null
+    min_hits: 2
+    min_identity: null
+    require_core_role: true
+    max_polished_clusters_per_family: 6
+    polish_strong_identity: 50.0
+    polish_core_pair: true
+    preset: null
+    partial_core_policy: 'off'
+    homothallic_policy: 'off'
+    confidence_cap_policy: 'off'
+    cross_family_policy: 'off'
+    fallback_after_withheld_policy: 'off'
+    strong_single_gene_policy: 'off'
+    scoped_roster_policy: 'off'
+    scoped_roster: null
+    supported_min_bitscore: 33.0
+  started: '2026-11-07T01:57:03Z'
+  wall_seconds: 77
+routing_mode: lineage
+routing_error: null
+fallback_search: null
+not_searched_reason: null
+genetic_code: 1
+genetic_code_error: null
+taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+suppressed_unpolished: 31
+suppressed_flank_carried: 0
+suppressed_mat_gene_gate: 0
+suppressed_paralog_class: 0
+suppressed_loci:
+- family: Basidiomycota:Balpha
+  contig: JACETU010000001
+  start: 422711
+  end: 423941
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - bar3
+  core_span:
+    start: 422711
+    end: 423941
+    beyond_core_bp: 0
+  supported_span:
+    start: 422711
+    end: 423941
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Balpha
+  contig: JACETU010000001
+  start: 875340
+  end: 875438
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bap3-3
+  core_span:
+    start: 875340
+    end: 875438
+    beyond_core_bp: 0
+  supported_span:
+    start: 875340
+    end: 875438
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000001
+  start: 2525326
+  end: 2525433
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 2525326
+    end: 2525433
+    beyond_core_bp: 0
+  supported_span:
+    start: 2525326
+    end: 2525433
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000001
+  start: 2812518
+  end: 2818927
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 2812518
+    end: 2812652
+    beyond_core_bp: 6275
+  supported_span:
+    start: 2812518
+    end: 2812652
+    min_bitscore: 33.0
+    beyond_supported_bp: 6275
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000001
+  start: 3595501
+  end: 3595827
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 3595501
+    end: 3595827
+    beyond_core_bp: 0
+  supported_span:
+    start: 3595501
+    end: 3595827
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000002
+  start: 2012543
+  end: 2032113
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 2031901
+    end: 2032113
+    beyond_core_bp: 19358
+  supported_span:
+    start: 2031901
+    end: 2032113
+    min_bitscore: 33.0
+    beyond_supported_bp: 19358
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000002
+  start: 3562558
+  end: 3562668
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 3562558
+    end: 3562668
+    beyond_core_bp: 0
+  supported_span:
+    start: 3562558
+    end: 3562668
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000002
+  start: 3976993
+  end: 3977121
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 3976993
+    end: 3977121
+    beyond_core_bp: 0
+  supported_span:
+    start: 3976993
+    end: 3977121
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: JACETU010000002
+  start: 4063822
+  end: 4066083
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_B43
+  - fungal_mating_type_pheromone
+  core_span:
+    start: 4063822
+    end: 4066083
+    beyond_core_bp: 0
+  supported_span:
+    start: 4063822
+    end: 4066083
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000005
+  start: 1436871
+  end: 1438208
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - HD2
+  core_span:
+    start: 1436871
+    end: 1438208
+    beyond_core_bp: 0
+  supported_span:
+    start: 1436871
+    end: 1438208
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Balpha
+  contig: JACETU010000005
+  start: 1667745
+  end: 1670166
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - bar3
+  core_span:
+    start: 1667745
+    end: 1670166
+    beyond_core_bp: 0
+  supported_span:
+    start: 1667745
+    end: 1670166
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Balpha
+  contig: JACETU010000005
+  start: 1951170
+  end: 1951268
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bap3-3
+  core_span:
+    start: 1951170
+    end: 1951268
+    beyond_core_bp: 0
+  supported_span:
+    start: 1951170
+    end: 1951268
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000008
+  start: 1445198
+  end: 1445359
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 1445198
+    end: 1445359
+    beyond_core_bp: 0
+  supported_span:
+    start: 1445198
+    end: 1445359
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000008
+  start: 2327408
+  end: 2336181
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 2327408
+    end: 2327518
+    beyond_core_bp: 8663
+  supported_span:
+    start: 2327408
+    end: 2327518
+    min_bitscore: 33.0
+    beyond_supported_bp: 8663
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Aalpha
+  contig: JACETU010000009
+  start: 388806
+  end: 388958
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - Z
+  core_span:
+    start: 388806
+    end: 388958
+    beyond_core_bp: 0
+  supported_span:
+    start: 388806
+    end: 388958
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Balpha
+  contig: JACETU010000009
+  start: 1843780
+  end: 1871343
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - bar3
+  - bap3-1
+  - bap3-3
+  core_span:
+    start: 1861614
+    end: 1864863
+    beyond_core_bp: 24314
+  supported_span:
+    start: 1843780
+    end: 1871343
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: JACETU010000009
+  start: 1843780
+  end: 1871343
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - pheromone_receptor
+  - fungal_mating_type_pheromone
+  core_span:
+    start: 1846916
+    end: 1864863
+    beyond_core_bp: 9616
+  supported_span:
+    start: 1843780
+    end: 1871343
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Bbeta
+  contig: JACETU010000009
+  start: 1843780
+  end: 1871343
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - bbr2
+  core_span:
+    start: 1863648
+    end: 1864863
+    beyond_core_bp: 26348
+  supported_span:
+    start: 1843780
+    end: 1871343
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Balpha
+  contig: JACETU010000009
+  start: 1901420
+  end: 1906347
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - bar3
+  core_span:
+    start: 1901420
+    end: 1902927
+    beyond_core_bp: 3420
+  supported_span:
+    start: 1901420
+    end: 1906347
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000007
+  start: 137356
+  end: 157824
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 157594
+    end: 157824
+    beyond_core_bp: 20238
+  supported_span:
+    start: 157594
+    end: 157824
+    min_bitscore: 33.0
+    beyond_supported_bp: 20238
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000007
+  start: 371606
+  end: 371815
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 371606
+    end: 371815
+    beyond_core_bp: 0
+  supported_span:
+    start: 371606
+    end: 371815
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000007
+  start: 604471
+  end: 624166
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 604471
+    end: 604584
+    beyond_core_bp: 19582
+  supported_span:
+    start: 604471
+    end: 604584
+    min_bitscore: 33.0
+    beyond_supported_bp: 19582
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000007
+  start: 1634045
+  end: 1635306
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 1634045
+    end: 1634185
+    beyond_core_bp: 1121
+  supported_span:
+    start: 1634045
+    end: 1634185
+    min_bitscore: 33.0
+    beyond_supported_bp: 1121
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000007
+  start: 2495872
+  end: 2496030
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 2495872
+    end: 2496030
+    beyond_core_bp: 0
+  supported_span:
+    start: 2495872
+    end: 2496030
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000007
+  start: 3228215
+  end: 3228304
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 3228215
+    end: 3228304
+    beyond_core_bp: 0
+  supported_span:
+    start: 3228215
+    end: 3228304
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000003
+  start: 1415914
+  end: 1416084
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 1415914
+    end: 1416084
+    beyond_core_bp: 0
+  supported_span:
+    start: 1415914
+    end: 1416084
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Balpha
+  contig: JACETU010000003
+  start: 2635811
+  end: 2635906
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bap3-3
+  core_span:
+    start: 2635811
+    end: 2635906
+    beyond_core_bp: 0
+  supported_span:
+    start: 2635811
+    end: 2635906
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000003
+  start: 2867839
+  end: 2868027
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 2867839
+    end: 2868027
+    beyond_core_bp: 0
+  supported_span:
+    start: 2867839
+    end: 2868027
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000006
+  start: 1217064
+  end: 1217291
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 1217064
+    end: 1217291
+    beyond_core_bp: 0
+  supported_span:
+    start: 1217064
+    end: 1217291
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000004
+  start: 1580589
+  end: 1589116
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 1588859
+    end: 1589116
+    beyond_core_bp: 8270
+  supported_span:
+    start: 1588859
+    end: 1589116
+    min_bitscore: 33.0
+    beyond_supported_bp: 8270
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: JACETU010000004
+  start: 2526240
+  end: 2526467
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 2526240
+    end: 2526467
+    beyond_core_bp: 0
+  supported_span:
+    start: 2526240
+    end: 2526467
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: JACETU010000001
+  start: 422711
+  end: 423941
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - pheromone_receptor
+  core_span:
+    start: 422711
+    end: 423941
+    beyond_core_bp: 0
+  supported_span:
+    start: 422711
+    end: 423941
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.25
+  floor: 0.5
+  best_identity: 40.6
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: JACETU010000005
+  start: 1667745
+  end: 1670166
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - pheromone_receptor
+  core_span:
+    start: 1667745
+    end: 1670166
+    beyond_core_bp: 0
+  supported_span:
+    start: 1667745
+    end: 1670166
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.25
+  floor: 0.5
+  best_identity: 53.4
+  idiomorph_classifier: null
+- family: Basidiomycota:Bbeta
+  contig: JACETU010000005
+  start: 1667745
+  end: 1670166
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - bbr2
+  core_span:
+    start: 1667745
+    end: 1670166
+    beyond_core_bp: 0
+  supported_span:
+    start: 1667745
+    end: 1670166
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.125
+  floor: 0.5
+  best_identity: 49.5
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: JACETU010000008
+  start: 657161
+  end: 657718
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - pheromone_receptor
+  core_span:
+    start: 657161
+    end: 657718
+    beyond_core_bp: 0
+  supported_span:
+    start: 657161
+    end: 657718
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.25
+  floor: 0.5
+  best_identity: 46.1
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: JACETU010000009
+  start: 1901420
+  end: 1906347
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - pheromone_receptor
+  core_span:
+    start: 1901420
+    end: 1902927
+    beyond_core_bp: 3420
+  supported_span:
+    start: 1901420
+    end: 1906347
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.25
+  floor: 0.5
+  best_identity: 60.2
+  idiomorph_classifier: null
+- family: Basidiomycota:Bbeta
+  contig: JACETU010000009
+  start: 1901420
+  end: 1906347
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - bbr2
+  core_span:
+    start: 1901420
+    end: 1902927
+    beyond_core_bp: 3420
+  supported_span:
+    start: 1901420
+    end: 1906347
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.125
+  floor: 0.5
+  best_identity: 50.2
+  idiomorph_classifier: null
+assembly_gap_at_locus: []
+zygosity: null
+two_idiomorphs: []
+receptor_arrays_note: 'Receptor arrays occur for both mating and non-mating STE3-like
+  receptors (the study found arrays holding paralogs beside the mating receptors in
+  Coprinopsis cinerea and Schizophyllum commune), so array membership does not establish
+  that a locus is a mating receptor. receptor_array_support is a flag on the evidence
+  behind an array; it never changes a call, its confidence or its verification label.
+  receptor_cassette_* fields describe pheromone-precursor cassette structure (2 or
+  more strict-CAAX ORFs within 5 kb of a receptor locus; class C when that many of
+  those ORFs also carry tblastn precursor homology). They are descriptive only: the
+  CAAX scan is also what admits a PR call, so cassettes are circular as confirmation;
+  own-species curated precursors are a self-hit for class C; tandem receptors may
+  be merged into one locus. They never change a call, tier, label, confidence or count.'
+receptor_arrays:
+- receptor_array_id: Basidiomycota:PR:JACETU010000001:422711-423941
+  family: Basidiomycota:PR
+  contig: JACETU010000001
+  start: 422711
+  end: 423941
+  receptor_array_size: 1
+  receptor_array_members:
+  - 422711-423941:+
+  strict_caax_orfs: 0
+  precursor_homology_hits: 0
+  receptor_array_support: unsupported
+  receptor_array_support_reasons:
+  - single_locus
+  - no_precursor_homology
+  - strict_caax_orfs=0(<2)
+  receptor_cassette_loci: 0
+  receptor_cassette_class: none
+  receptor_cassette_members: []
+  receptor_cassette_max_caax_orfs: 0
+  calls: 0
+- receptor_array_id: Basidiomycota:PR:JACETU010000005:1667745-1670166
+  family: Basidiomycota:PR
+  contig: JACETU010000005
+  start: 1667745
+  end: 1670166
+  receptor_array_size: 1
+  receptor_array_members:
+  - 1667745-1670166:+
+  strict_caax_orfs: 0
+  precursor_homology_hits: 0
+  receptor_array_support: unsupported
+  receptor_array_support_reasons:
+  - single_locus
+  - no_precursor_homology
+  - strict_caax_orfs=0(<2)
+  receptor_cassette_loci: 0
+  receptor_cassette_class: none
+  receptor_cassette_members: []
+  receptor_cassette_max_caax_orfs: 0
+  calls: 0
+- receptor_array_id: Basidiomycota:PR:JACETU010000009:1843780-1906347
+  family: Basidiomycota:PR
+  contig: JACETU010000009
+  start: 1843780
+  end: 1906347
+  receptor_array_size: 6
+  receptor_array_members:
+  - 1843780-1845920:-
+  - 1863648-1864863:-
+  - 1865361-1867214:+
+  - 1869687-1871343:-
+  - 1901420-1902927:-
+  - 1904296-1906347:-
+  strict_caax_orfs: 0
+  precursor_homology_hits: 2
+  receptor_array_support: supported
+  receptor_array_support_reasons:
+  - array_size>=2
+  - precursor_homology
+  receptor_cassette_loci: 0
+  receptor_cassette_class: none
+  receptor_cassette_members: []
+  receptor_cassette_max_caax_orfs: 0
+  calls: 0
+families_attempted:
+- Basidiomycota:HD
+- Basidiomycota:PR
+- Basidiomycota:Aalpha
+- Basidiomycota:Abeta
+- Basidiomycota:Balpha
+- Basidiomycota:Bbeta
+detected:
+- family: Basidiomycota:Aalpha
+  contig: JACETU010000002
+  start: 1659924
+  end: 1668958
+  core_span:
+    start: 1659924
+    end: 1668958
+    beyond_core_bp: 0
+  supported_span:
+    start: 1659924
+    end: 1668958
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  confidence: high
+  resolution_flags:
+  - partial_core
+  resolution_flag_genes:
+    partial_core:
+    - HD1
+    - HD2
+    - Y
+    - Z
+  idiomorph: undetermined
+  idiomorph_class: null
+  idiomorph_candidates: []
+  detection_pass: strict
+  locus_class: idiomorph_gene_only
+  idiomorph_unmodelled: false
+  verification: null
+  merged_from:
+  - family: Basidiomycota:Aalpha
+    idiomorph: undetermined
+    confidence: high
+    start: 1659924
+    end: 1668958
+    genes_found:
+    - Y
+    - Z
+  - family: Basidiomycota:HD
+    idiomorph: undetermined
+    confidence: high
+    start: 1659924
+    end: 1668958
+    genes_found:
+    - HD1
+    - HD2
+    - MIP1
+    - beta_fg
+  subloci:
+  - sublocus: Aalpha
+    generic: false
+    idiomorph: undetermined
+    contig: JACETU010000002
+    start: 1659924
+    end: 1668958
+    genes:
+    - Y
+    - Z
+    genes_missing: []
+    completeness: complete
+  - sublocus: HD
+    generic: true
+    idiomorph: undetermined
+    contig: JACETU010000002
+    start: 1659924
+    end: 1668958
+    genes:
+    - HD1
+    - HD2
+    - MIP1
+    - beta_fg
+    genes_missing: []
+    completeness: complete
+  polished_genes: 4
+  distinct_intervals: 4
+  span_exceeds_plausible_bound: false
+  idiomorph_margin: null
+  idiomorph_classifier: null
+  idiomorph_resolutions: []
+  ambiguous_with:
+  - Basidiomycota:HD
+  genes_found:
+  - Y
+  - Z
+  - HD1
+  - HD2
+  - MIP1
+  - beta_fg
+  genes_missing: []
+  genes_not_searchable: []
+  fragmented: false
+  reference_records:
+  - 5334_h4-8_Aalpha_4
+  - 192523_h97_HD_A1
+  - 5346_a43-b43-okayama-7_HD_A43
+  - 90004_unknown_HD_A1
+  segments:
+  - contig: JACETU010000002
+    start: 1659924
+    end: 1668958
+    contig_edge_distance: 1659923
+  gene_evidence:
+  - gene: Z
+    role: core_MAT
+    contig: JACETU010000002
+    start: 1664802
+    end: 1665233
+    strand: '-'
+    identity: 31.69
+    coverage: 15.5
+    reference_record: 5334_h4-8_Aalpha_4
+    method: exonerate_refine
+    status: polished_single
+    alternate_model: null
+    exons:
+    - start: 1664802
+      end: 1665233
+    evalue: 9.15e-19
+    bitscore: 92.4
+  - gene: Y
+    role: core_MAT
+    contig: JACETU010000002
+    start: 1665392
+    end: 1667448
+    strand: +
+    identity: 29.8
+    coverage: 18.3
+    reference_record: 5334_h4-8_Aalpha_4
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 5.01e-16
+    bitscore: 73.2
+  - gene: MIP1
+    role: flanking_conserved
+    contig: JACETU010000002
+    start: 1659924
+    end: 1662451
+    strand: +
+    identity: 76.2
+    coverage: 100.0
+    reference_record: 90004_unknown_HD_A1
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 0.0
+    bitscore: 1052.0
+  - gene: HD1
+    role: core_MAT
+    contig: JACETU010000002
+    start: 1663035
+    end: 1665227
+    strand: '-'
+    identity: 39.8
+    coverage: 37.8
+    reference_record: 90004_unknown_HD_A1
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 1.46e-47
+    bitscore: 170.0
+  - gene: HD2
+    role: core_MAT
+    contig: JACETU010000002
+    start: 1665392
+    end: 1667448
+    strand: +
+    identity: 58.2
+    coverage: 9.1
+    reference_record: 5346_a43-b43-okayama-7_HD_A43
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 1.44e-27
+    bitscore: 110.0
+  - gene: beta_fg
+    role: flanking_conserved
+    contig: JACETU010000002
+    start: 1667872
+    end: 1668958
+    strand: '-'
+    identity: 61.8
+    coverage: 78.6
+    reference_record: 192523_h97_HD_A1
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 4.92e-67
+    bitscore: 200.0
+not_detected:
+- family: Basidiomycota:PR
+  reason: best cluster carried 1 modelled gene(s), below the 2 required to report
+    a locus; only 1 of its genes could be modelled
+  best_fraction_found: 0.5
+  genes_found:
+  - pheromone_receptor
+  - fungal_mating_type_pheromone
+  genes_missing:
+  - pheromone_B43
+  - pheromone_B44
+  genes_not_searchable: []
+- family: Basidiomycota:Abeta
+  reason: no reference protein for this family is in the search set (none curated,
+    or all withheld)
+  best_fraction_found: 0.0
+  genes_found: []
+  genes_missing:
+  - Y
+  - Z
+  genes_not_searchable: []
+- family: Basidiomycota:Balpha
+  reason: best cluster carried 1 modelled gene(s), below the 2 required to report
+    a locus; only 1 of its genes could be modelled
+  best_fraction_found: 1.0
+  genes_found:
+  - bar3
+  genes_missing:
+  - bap3-3
+  genes_not_searchable:
+  - bap3-1
+- family: Basidiomycota:Bbeta
+  reason: best cluster carried 1 modelled gene(s), below the 2 required to report
+    a locus; only 1 of its genes could be modelled
+  best_fraction_found: 0.25
+  genes_found:
+  - bbr2
+  genes_missing:
+  - bbp2-1
+  - bbp2-2
+  - bbp2-5
+  - bbp2-6
+  - bbp2-8
+  - bbp2_a
+  - bbp2_b
+  genes_not_searchable: []

@@ -1,0 +1,11 @@
+##gff-version 3
+##sequence-region CP022325.1 183859 286720
+CP022325.1	MATPredict	MAT_locus	183859	286720	.	.	.	ID=Basidiomycota_MAT_0;family=Basidiomycota:MAT;confidence=high;idiomorph=alpha;fragmented=false;core_start=183859;core_end=286720;beyond_core_bp=0;supported_start=183859;supported_end=286720;beyond_supported_bp=0;reference_records=40410_jec20_MAT_a,40410_jec21_MAT_alpha
+CP022325.1	MATPredict	gene	183859	185218	.	+	.	ID=Basidiomycota_MAT_0.gene0;Parent=Basidiomycota_MAT_0;Name=FAO1;role=flanking_conserved;present=true;identity=94.4;reference_record=40410_jec20_MAT_a;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CP022325.1	MATPredict	gene	185988	187349	.	+	.	ID=Basidiomycota_MAT_0.gene1;Parent=Basidiomycota_MAT_0;Name=SXI1;role=core_MAT;present=true;identity=80.7;reference_record=40410_jec21_MAT_alpha;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CP022325.1	MATPredict	gene	208374	209695	.	-	.	ID=Basidiomycota_MAT_0.gene2;Parent=Basidiomycota_MAT_0;Name=STE3;role=core_MAT;present=true;identity=94.5;reference_record=40410_jec21_MAT_alpha;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CP022325.1	MATPredict	gene	222931	223047	.	+	.	ID=Basidiomycota_MAT_0.gene3;Parent=Basidiomycota_MAT_0;Name=MFalpha;role=core_MAT;present=true;identity=86.8;reference_record=40410_jec21_MAT_alpha;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CP022325.1	MATPredict	gene	270550	271048	.	+	.	ID=Basidiomycota_MAT_0.gene4;Parent=Basidiomycota_MAT_0;Name=RPL39;role=core_MAT;present=true;identity=100.0;reference_record=40410_jec20_MAT_a;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CP022325.1	MATPredict	gene	284943	286720	.	+	.	ID=Basidiomycota_MAT_0.gene5;Parent=Basidiomycota_MAT_0;Name=PAN6;role=flanking_conserved;present=true;identity=92.0;reference_record=40410_jec20_MAT_a;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CP022325.1	MATPredict	gene	183859	286720	.	.	.	ID=Basidiomycota_MAT_0.gene7;Parent=Basidiomycota_MAT_0;Name=NOG2;present=false;not_searchable=true
+CP022325.1	MATPredict	gene	183859	286720	.	.	.	ID=Basidiomycota_MAT_0.gene8;Parent=Basidiomycota_MAT_0;Name=UAP1;present=false;not_searchable=true

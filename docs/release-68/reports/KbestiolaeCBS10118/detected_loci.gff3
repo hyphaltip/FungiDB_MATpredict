@@ -1,0 +1,10 @@
+##gff-version 3
+##sequence-region KI894020 1933744 1992737
+KI894020	MATPredict	MAT_locus	1933744	1992737	.	.	.	ID=Basidiomycota_MAT_0;family=Basidiomycota:MAT;confidence=high;idiomorph=alpha;fragmented=false;core_start=1933744;core_end=1992737;beyond_core_bp=0;supported_start=1933744;supported_end=1992737;beyond_supported_bp=0;reference_records=40410_jec20_MAT_a,40410_jec21_MAT_alpha
+KI894020	MATPredict	gene	1933744	1933993	.	+	.	ID=Basidiomycota_MAT_0.gene0;Parent=Basidiomycota_MAT_0;Name=RPL39;role=core_MAT;present=true;identity=90.2;reference_record=40410_jec20_MAT_a;method=exonerate_refine;status=polished_agree;coverage=100.0
+KI894020	MATPredict	gene	1951779	1952710	.	-	.	ID=Basidiomycota_MAT_0.gene1;Parent=Basidiomycota_MAT_0;Name=STE3;role=core_MAT;present=true;identity=54.2;reference_record=40410_jec21_MAT_alpha;method=diamond_proteome;status=not_polish_candidate;coverage=71.3
+KI894020	MATPredict	gene	1961844	1961960	.	-	.	ID=Basidiomycota_MAT_0.gene2;Parent=Basidiomycota_MAT_0;Name=MFalpha;role=core_MAT;present=true;identity=60.53;reference_record=40410_jec21_MAT_alpha;method=exonerate_refine;status=polished_single;coverage=100.0
+KI894020	MATPredict	gene	1991126	1992737	.	-	.	ID=Basidiomycota_MAT_0.gene3;Parent=Basidiomycota_MAT_0;Name=PAN6;role=flanking_conserved;present=true;identity=63.7;reference_record=40410_jec20_MAT_a;method=diamond_proteome;status=not_polish_candidate;coverage=95.6
+KI894020	MATPredict	gene	1933744	1992737	.	.	.	ID=Basidiomycota_MAT_0.gene5;Parent=Basidiomycota_MAT_0;Name=FAO1;present=false
+KI894020	MATPredict	gene	1933744	1992737	.	.	.	ID=Basidiomycota_MAT_0.gene6;Parent=Basidiomycota_MAT_0;Name=NOG2;present=false;not_searchable=true
+KI894020	MATPredict	gene	1933744	1992737	.	.	.	ID=Basidiomycota_MAT_0.gene7;Parent=Basidiomycota_MAT_0;Name=UAP1;present=false;not_searchable=true

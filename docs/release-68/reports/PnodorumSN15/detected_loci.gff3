@@ -1,0 +1,8 @@
+##gff-version 3
+##sequence-region CP069023 1879443 1902705
+CP069023	MATPredict	MAT_locus	1879443	1902705	.	.	.	ID=Ascomycota_MAT_0;family=Ascomycota:MAT;confidence=high;idiomorph=MAT1-1;fragmented=false;core_start=1879443;core_end=1902705;beyond_core_bp=0;supported_start=1879443;supported_end=1902705;beyond_supported_bp=0;reference_records=13684_sn435pl98_MAT_MAT1-1,199306_rmscc1040_MAT_MAT1-1,27337_tv103_MAT_MAT1-2,2903220_liq80xsp_MAT_combined,5158_cbs114723_MAT_unswitched
+CP069023	MATPredict	gene	1879443	1880532	.	+	.	ID=Ascomycota_MAT_0.gene0;Parent=Ascomycota_MAT_0;Name=MAT1-1-1;role=core_MAT;present=true;identity=100.0;reference_record=13684_sn435pl98_MAT_MAT1-1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CP069023	MATPredict	gene	1883819	1885776	.	-	.	ID=Ascomycota_MAT_0.gene1;Parent=Ascomycota_MAT_0;Name=APN2;role=flanking_conserved;present=true;identity=88.6;reference_record=2903220_liq80xsp_MAT_combined;method=diamond_proteome;status=not_polish_candidate;coverage=36.7
+CP069023	MATPredict	gene	1886092	1886702	.	+	.	ID=Ascomycota_MAT_0.gene2;Parent=Ascomycota_MAT_0;Name=COX13;role=flanking_conserved;present=true;identity=51.6;reference_record=5158_cbs114723_MAT_unswitched;method=diamond_proteome;status=not_polish_candidate;coverage=70.2
+CP069023	MATPredict	gene	1902598	1902705	.	-	.	ID=Ascomycota_MAT_0.gene3;Parent=Ascomycota_MAT_0;Name=MAT1-1-4;role=core_MAT;present=true;identity=39.474;reference_record=199306_rmscc1040_MAT_MAT1-1;method=tblastn_genome;status=unpolished;coverage=15.0
+CP069023	MATPredict	gene	1879443	1902705	.	.	.	ID=Ascomycota_MAT_0.gene5;Parent=Ascomycota_MAT_0;Name=SLA2;present=false

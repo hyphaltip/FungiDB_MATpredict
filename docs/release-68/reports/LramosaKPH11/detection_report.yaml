@@ -1,0 +1,928 @@
+run:
+  sample: LramosaKPH11
+  organism: null
+  taxid: null
+  phylum: null
+  matpredict_version: 0.8.1
+  code:
+    git_describe: v0.8.1
+    dirty: false
+    commit: 3a62e6302b8e7633490237829e8febafef77e432
+    source_version: 0.8.1
+  database:
+    root: /bigdata/stajichlab/jstajich/projects/FungiDB_MATpredict/tools/MATPredict/db
+    content_sha256: 86f18d232e4fe95d19f5e26c1e6cfc758f36c8d235204ef790b01e19832510cc
+    records: 185
+  taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+  genome:
+    file: LramosaKPH11.genome.fasta
+    sha256: 348e9756c888a3481018a59fb3cdaec9d0ab24cc0e0f5f08a5ac9b2b2373447c
+    contigs: 10
+    length_bp: 31885420
+    n50: 3350511
+  proteins: null
+  parameters:
+    phylum: Mucoromycota
+    phylum_guess:
+      requested: auto
+      status: ok
+      usable: true
+      reason: null
+      phylum: Mucoromycota
+      phylum_taxid: 1913637
+      deepest_rank: species
+      routing_taxid: 499202
+      routing_taxid_rank: family
+      flags: []
+      gmg_version: gmg 0.3.2 (66055154a)
+      index: bfd-reps-2026.10.5-s20000.gmgi
+      index_sha256: 0f319567f1cab17643e1daf7ffdc0e3b312bd43913e351568108d67a4a19702c
+      index_spec: bfd-reps-2026.10.5-s20000.gmgi
+      note: GmG called phylum Mucoromycota
+      action: routed
+      weak_call_accepted: false
+      genetic_code: 1
+      genetic_code_from: family taxid 499202
+      routed_by: family taxid 499202 (lineage)
+    exhaustive: false
+    genetic_code: 1
+    exclude_records: null
+    annotation: null
+    min_hits: 2
+    min_identity: null
+    require_core_role: true
+    max_polished_clusters_per_family: 6
+    polish_strong_identity: 50.0
+    polish_core_pair: true
+    preset: null
+    partial_core_policy: 'off'
+    homothallic_policy: 'off'
+    confidence_cap_policy: 'off'
+    cross_family_policy: 'off'
+    fallback_after_withheld_policy: 'off'
+    strong_single_gene_policy: 'off'
+    scoped_roster_policy: 'off'
+    scoped_roster: null
+    supported_min_bitscore: 33.0
+  started: '2026-11-07T02:09:02Z'
+  wall_seconds: 56
+routing_mode: lineage
+routing_error: null
+fallback_search: null
+not_searched_reason: null
+genetic_code: 1
+genetic_code_error: null
+taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+suppressed_unpolished: 19
+suppressed_flank_carried: 0
+suppressed_mat_gene_gate: 0
+suppressed_paralog_class: 0
+suppressed_loci:
+- family: Mucoromycota:MAT
+  contig: CP031825
+  start: 1525061
+  end: 1603796
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - tptA
+  - sexP
+  - sexM
+  - algA
+  core_span:
+    start: 1525061
+    end: 1603781
+    beyond_core_bp: 15
+  supported_span:
+    start: 1525061
+    end: 1603793
+    min_bitscore: 33.0
+    beyond_supported_bp: 3
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 52.7
+      Plus: 45.9
+    margin: 6.7
+    classifier_input: model
+    min_margin: 25.0
+    proteins_scored: 1
+    genes_scored:
+    - sexM
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 72.3
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031823
+  start: 1318483
+  end: 1362706
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexP
+  - rnhA
+  - algA
+  core_span:
+    start: 1318483
+    end: 1362706
+    beyond_core_bp: 0
+  supported_span:
+    start: 1318483
+    end: 1362706
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 0.0
+      Plus: 0.0
+    margin: 0.0
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 1
+    genes_scored:
+    - sexP
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 0.0
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031827
+  start: 1753145
+  end: 1790468
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexP
+  - sexM
+  - rnhA
+  core_span:
+    start: 1753447
+    end: 1790465
+    beyond_core_bp: 305
+  supported_span:
+    start: 1753447
+    end: 1790468
+    min_bitscore: 33.0
+    beyond_supported_bp: 302
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 30.2
+      Plus: 44.2
+    margin: 13.9
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 13
+    genes_scored:
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 23.7
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031824
+  start: 3479334
+  end: 3489594
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexM
+  - btbA
+  core_span:
+    start: 3479334
+    end: 3489594
+    beyond_core_bp: 0
+  supported_span:
+    start: 3479334
+    end: 3489594
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 0.0
+      Plus: 0.0
+    margin: 0.0
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 1
+    genes_scored:
+    - sexM
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 0.0
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031831
+  start: 477021
+  end: 510379
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexP
+  - glrA
+  core_span:
+    start: 477021
+    end: 510379
+    beyond_core_bp: 0
+  supported_span:
+    start: 477021
+    end: 510379
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 0.2
+      Plus: 0.0
+    margin: 0.2
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 1
+    genes_scored:
+    - sexP
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 0.0
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031831
+  start: 1661846
+  end: 1683206
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexM
+  - glrA
+  core_span:
+    start: 1662101
+    end: 1683206
+    beyond_core_bp: 255
+  supported_span:
+    start: 1662101
+    end: 1683206
+    min_bitscore: 33.0
+    beyond_supported_bp: 255
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 0.0
+      Plus: 0.0
+    margin: 0.0
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 1
+    genes_scored:
+    - sexM
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 0.0
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031831
+  start: 2225845
+  end: 2276414
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexP
+  - sexM
+  core_span:
+    start: 2275022
+    end: 2275761
+    beyond_core_bp: 49830
+  supported_span:
+    start: 2275022
+    end: 2276414
+    min_bitscore: 33.0
+    beyond_supported_bp: 49177
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 38.6
+      Plus: 35.8
+    margin: 2.8
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 30
+    genes_scored:
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 26.8
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031825
+  start: 241120
+  end: 263589
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexM
+  - rnhA
+  core_span:
+    start: 241120
+    end: 263589
+    beyond_core_bp: 0
+  supported_span:
+    start: 241120
+    end: 263589
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 1.3
+      Plus: 0.0
+    margin: 1.3
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 1
+    genes_scored:
+    - sexM
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 0.0
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031825
+  start: 2664867
+  end: 2671368
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexP
+  - glrA
+  core_span:
+    start: 2664867
+    end: 2671329
+    beyond_core_bp: 39
+  supported_span:
+    start: 2664867
+    end: 2671368
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 20.6
+      Plus: 26.5
+    margin: 5.9
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 2
+    genes_scored:
+    - sexP
+    - sexP
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 8.8
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031828
+  start: 538478
+  end: 579550
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexM
+  - rnhA
+  core_span:
+    start: 538523
+    end: 579550
+    beyond_core_bp: 45
+  supported_span:
+    start: 538478
+    end: 579550
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 65.5
+      Plus: 49.5
+    margin: 16.0
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 16
+    genes_scored:
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 88.4
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031823
+  start: 514662
+  end: 550993
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexM
+  - btbA
+  core_span:
+    start: 522641
+    end: 550993
+    beyond_core_bp: 7979
+  supported_span:
+    start: 522641
+    end: 550993
+    min_bitscore: 33.0
+    beyond_supported_bp: 7979
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 1.6
+      Plus: 0.9
+    margin: 0.7
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 2
+    genes_scored:
+    - sexM
+    - sexM
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 0.0
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031823
+  start: 1493274
+  end: 1523841
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexP
+  - algA
+  core_span:
+    start: 1493274
+    end: 1523841
+    beyond_core_bp: 0
+  supported_span:
+    start: 1493274
+    end: 1523841
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 0.0
+      Plus: 2.3
+    margin: 2.3
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 1
+    genes_scored:
+    - sexP
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 0.0
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031823
+  start: 3759307
+  end: 3781109
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - sexM
+  - algA
+  core_span:
+    start: 3759307
+    end: 3781109
+    beyond_core_bp: 0
+  supported_span:
+    start: 3759307
+    end: 3781109
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 0.0
+      Plus: 0.0
+    margin: 0.0
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 1
+    genes_scored:
+    - sexM
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 0.0
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031823
+  start: 5747168
+  end: 5778600
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - sexM
+  - rnhA
+  core_span:
+    start: 5747168
+    end: 5778600
+    beyond_core_bp: 0
+  supported_span:
+    start: 5747168
+    end: 5778600
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 38.5
+      Plus: 14.5
+    margin: 24.0
+    classifier_input: model
+    min_margin: 25.0
+    proteins_scored: 1
+    genes_scored:
+    - sexM
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 25.1
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031827
+  start: 146010
+  end: 171041
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexM
+  - glrA
+  core_span:
+    start: 146010
+    end: 171041
+    beyond_core_bp: 0
+  supported_span:
+    start: 146010
+    end: 171041
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 0.0
+      Plus: 0.0
+    margin: 0.0
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 1
+    genes_scored:
+    - sexM
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 0.0
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031827
+  start: 337893
+  end: 366127
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexP
+  - rnhA
+  core_span:
+    start: 337893
+    end: 364614
+    beyond_core_bp: 1513
+  supported_span:
+    start: 337893
+    end: 365656
+    min_bitscore: 33.0
+    beyond_supported_bp: 471
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 1.9
+      Plus: 0.0
+    margin: 1.9
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 1
+    genes_scored:
+    - sexP
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 1.7
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031827
+  start: 2063589
+  end: 2087239
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexM
+  - rnhA
+  core_span:
+    start: 2063589
+    end: 2087239
+    beyond_core_bp: 0
+  supported_span:
+    start: 2063589
+    end: 2087239
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 0.0
+      Plus: 0.0
+    margin: 0.0
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 1
+    genes_scored:
+    - sexM
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 0.0
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031829
+  start: 1154800
+  end: 1167443
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexM
+  - rnhA
+  core_span:
+    start: 1154800
+    end: 1167443
+    beyond_core_bp: 0
+  supported_span:
+    start: 1154800
+    end: 1167443
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 0.2
+      Plus: 0.3
+    margin: 0.1
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 1
+    genes_scored:
+    - sexM
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 0.0
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031826
+  start: 2077259
+  end: 2077818
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - sexP
+  - sexM
+  core_span:
+    start: 2077274
+    end: 2077806
+    beyond_core_bp: 27
+  supported_span:
+    start: 2077274
+    end: 2077818
+    min_bitscore: 33.0
+    beyond_supported_bp: 15
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 58.2
+      Plus: 44.8
+    margin: 13.4
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 14
+    genes_scored:
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexM
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    - sexP
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 102.4
+    paralog_class: P1
+- family: Mucoromycota:MAT
+  contig: CP031823
+  start: 3759307
+  end: 3781109
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - sexM
+  - algA
+  core_span:
+    start: 3759307
+    end: 3781109
+    beyond_core_bp: 0
+  supported_span:
+    start: 3759307
+    end: 3781109
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.4
+  floor: 0.5
+  best_identity: 60.0
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 0.0
+      Plus: 0.0
+    margin: 0.0
+    classifier_input: hsp_fragment
+    min_margin: 25.0
+    proteins_scored: 1
+    genes_scored:
+    - sexM
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 0.0
+    paralog_class: null
+- family: Mucoromycota:MAT
+  contig: CP031823
+  start: 5747168
+  end: 5778600
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - sexM
+  - rnhA
+  core_span:
+    start: 5747168
+    end: 5778600
+    beyond_core_bp: 0
+  supported_span:
+    start: 5747168
+    end: 5778600
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.4
+  floor: 0.5
+  best_identity: 40.909
+  idiomorph_classifier:
+    method: hmm
+    idiomorph: undetermined
+    scores:
+      Minus: 38.5
+      Plus: 14.5
+    margin: 24.0
+    classifier_input: model
+    min_margin: 25.0
+    proteins_scored: 1
+    genes_scored:
+    - sexM
+    manifest_sha256: 5cc80bc13f2255f8b9de0e18782c343cde2395343bdb17cc332de7cb9ecbd475
+    paralog_scores:
+      P1: 25.1
+    paralog_class: null
+assembly_gap_at_locus: []
+zygosity: null
+two_idiomorphs: []
+receptor_arrays_note: 'Receptor arrays occur for both mating and non-mating STE3-like
+  receptors (the study found arrays holding paralogs beside the mating receptors in
+  Coprinopsis cinerea and Schizophyllum commune), so array membership does not establish
+  that a locus is a mating receptor. receptor_array_support is a flag on the evidence
+  behind an array; it never changes a call, its confidence or its verification label.
+  receptor_cassette_* fields describe pheromone-precursor cassette structure (2 or
+  more strict-CAAX ORFs within 5 kb of a receptor locus; class C when that many of
+  those ORFs also carry tblastn precursor homology). They are descriptive only: the
+  CAAX scan is also what admits a PR call, so cassettes are circular as confirmation;
+  own-species curated precursors are a self-hit for class C; tandem receptors may
+  be merged into one locus. They never change a call, tier, label, confidence or count.'
+receptor_arrays: []
+families_attempted:
+- Mucoromycota:MAT
+detected: []
+not_detected:
+- family: Mucoromycota:MAT
+  reason: best cluster carried 1 modelled gene(s), below the 2 required to report
+    a locus; only 1 of its genes could be modelled
+  best_fraction_found: 0.6666666666666666
+  genes_found:
+  - tptA
+  - sexP
+  - sexM
+  - algA
+  genes_missing:
+  - rnhA
+  - glrA
+  genes_not_searchable: []

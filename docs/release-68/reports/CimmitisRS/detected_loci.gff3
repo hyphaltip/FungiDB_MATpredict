@@ -1,0 +1,9 @@
+##gff-version 3
+##sequence-region GG704911 7370949 7383205
+GG704911	MATPredict	MAT_locus	7370949	7383205	.	.	.	ID=Ascomycota_MAT_0;family=Ascomycota:MAT;confidence=high;idiomorph=MAT1-2;fragmented=false;core_start=7370949;core_end=7383205;beyond_core_bp=0;supported_start=7370949;supported_end=7383205;beyond_supported_bp=0;reference_records=230073_uamh-1363_MAT_MAT1-1,5501_rs_MAT_MAT1-2,746128_af293_MAT_MAT1-2
+GG704911	MATPredict	gene	7370949	7374880	.	+	.	ID=Ascomycota_MAT_0.gene0;Parent=Ascomycota_MAT_0;Name=SLA2;role=flanking_conserved;present=true;identity=100.0;reference_record=5501_rs_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+GG704911	MATPredict	gene	7376659	7377555	.	-	.	ID=Ascomycota_MAT_0.gene1;Parent=Ascomycota_MAT_0;Name=CIMG_00407;role=core_MAT;present=true;identity=100.0;reference_record=5501_rs_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+GG704911	MATPredict	gene	7376795	7376917	.	-	.	ID=Ascomycota_MAT_0.gene2;Parent=Ascomycota_MAT_0;Name=MAT1-2-4;role=core_MAT;present=true;identity=34.146;reference_record=746128_af293_MAT_MAT1-2;method=tblastn_genome;status=unpolished;coverage=16.0
+GG704911	MATPredict	gene	7378000	7379129	.	+	.	ID=Ascomycota_MAT_0.gene3;Parent=Ascomycota_MAT_0;Name=MAT1-2-1;role=core_MAT;present=true;identity=100.0;reference_record=5501_rs_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+GG704911	MATPredict	gene	7379861	7381917	.	-	.	ID=Ascomycota_MAT_0.gene4;Parent=Ascomycota_MAT_0;Name=APN2;role=flanking_conserved;present=true;identity=100.0;reference_record=5501_rs_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+GG704911	MATPredict	gene	7382537	7383205	.	+	.	ID=Ascomycota_MAT_0.gene5;Parent=Ascomycota_MAT_0;Name=COX13;role=flanking_conserved;present=true;identity=100.0;reference_record=5501_rs_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=100.0

@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="MATPredict 0.8.1"><title>PkudriavzeviiCBS5147 – MATPredict report</title><style>:root{
+  --bg:#ffffff; --surface:#ffffff; --surface-2:#f4f5f7; --ink:#1b1f24; --ink-2:#424a54; --muted:#5f6873;
+  --line:#dde1e6; --line-2:#c4cad1; --accent:#1f5f99;
+  --core:#b8471a; --flank:#2a6fb0; --other:#6b7480;
+  --high:#1d7a46; --high-bg:#e3f3ea; --medium:#7a4f00; --medium-bg:#fbf0d9; --low:#4f5864; --low-bg:#eceef1;
+  --warn:#8a4b00; --warn-bg:#fff6e5; --info-bg:#eef4fa;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#111418; --surface:#171b20; --surface-2:#1e232a; --ink:#e6e9ed; --ink-2:#c3c9d0; --muted:#9aa3ad;
+  --line:#2c333b; --line-2:#3a434d; --accent:#7fb6ea;
+  --core:#f08a4b; --flank:#5ea3e6; --other:#9aa3ad;
+  --high:#6fd39b; --high-bg:#173527; --medium:#f0c060; --medium-bg:#3a2e12; --low:#b4bcc5; --low-bg:#262c33;
+  --warn:#f0b866; --warn-bg:#33270f; --info-bg:#172634;} }
+:root[data-theme="dark"]{
+  --bg:#111418; --surface:#171b20; --surface-2:#1e232a; --ink:#e6e9ed; --ink-2:#c3c9d0; --muted:#9aa3ad;
+  --line:#2c333b; --line-2:#3a434d; --accent:#7fb6ea;
+  --core:#f08a4b; --flank:#5ea3e6; --other:#9aa3ad;
+  --high:#6fd39b; --high-bg:#173527; --medium:#f0c060; --medium-bg:#3a2e12; --low:#b4bcc5; --low-bg:#262c33;
+  --warn:#f0b866; --warn-bg:#33270f; --info-bg:#172634;}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--sans);font-variant-numeric:tabular-nums}
+.masthead,main,.foot{max-width:1040px;margin:0 auto;padding:0 16px}
+.mast-inner{padding:28px 0 10px;border-bottom:1px solid var(--line)}
+.brand{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h1{font-size:28px;line-height:1.2;margin:6px 0 2px;overflow-wrap:anywhere}
+.subtitle{margin:0;color:var(--ink-2);font-size:16px}
+.mast-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.meta{margin:8px 0 2px;color:var(--muted);font-size:13px}
+.print-btn{font:inherit;font-size:13px;padding:5px 12px;border:1px solid var(--line-2);border-radius:6px;
+  background:var(--surface);color:var(--ink);cursor:pointer}
+.print-btn:hover{border-color:var(--accent);color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h2{font-size:20px;margin:0 0 12px}
+h3{font-size:18px;margin:0}
+h4{font-size:13px;margin:20px 0 8px;color:var(--ink-2);text-transform:uppercase;letter-spacing:.05em}
+h5{font-size:13px;margin:0 0 6px;color:var(--ink-2)}
+p{max-width:75ch}
+code{font-family:var(--mono);font-size:.92em}
+.section-h{margin:28px 0 12px}
+.count{display:inline-block;min-width:1.6em;padding:0 6px;border-radius:10px;background:var(--surface-2);
+  color:var(--ink-2);font-size:13px;text-align:center;vertical-align:middle}
+.result{margin:20px 0 8px;padding:20px;border:1px solid var(--line);border-left:4px solid var(--accent);
+  border-radius:8px;background:var(--surface)}
+.verdict{font-size:24px;font-weight:700;margin:0 0 8px;line-height:1.25}
+.verdict.none{color:var(--ink-2)}
+.verdict.review{color:var(--warn)}
+.lead-label{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 10px}
+.chip{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border:1px solid var(--line-2);border-radius:8px;
+  text-decoration:none;color:var(--ink);background:var(--surface-2)}
+.chip:hover{border-color:var(--accent)}
+.chip-id{font-size:26px;font-weight:700;line-height:1.1;white-space:nowrap}
+.chip-fam{color:var(--ink-2);font-size:14px;white-space:nowrap}
+.small-chips .chip{padding:4px 10px}
+.small-chips .chip-id{font-size:16px}
+.sentences{margin:6px 0 0;padding-left:20px}
+.sentences li{margin:3px 0}
+.badge{display:inline-block;padding:1px 9px;border-radius:999px;font-size:12px;font-weight:600;
+  border:1px solid currentColor;white-space:nowrap}
+.conf-high{color:var(--high);background:var(--high-bg)}
+.conf-medium{color:var(--medium);background:var(--medium-bg)}
+.conf-low,.conf-none{color:var(--low);background:var(--low-bg)}
+.flags{list-style:none;padding:0;margin:12px 0}
+.flags li{padding:8px 12px;border-radius:6px;margin:6px 0;font-size:14px}
+.flags li.warn{background:var(--warn-bg);color:var(--ink);border-left:3px solid var(--warn)}
+.flags li.warn::before{content:"Check: ";font-weight:700;color:var(--warn)}
+.flags li.info{background:var(--info-bg);border-left:3px solid var(--accent)}
+.card{margin:16px 0;padding:20px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.card-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.idiomorph{font-weight:700;margin-right:6px}
+.fam{font-weight:500;color:var(--ink-2)}
+.muted{color:var(--muted);font-weight:400}
+.fig{margin:0 0 4px}
+.fig-scroll{overflow-x:auto}
+.locus-fig{width:100%;height:auto;display:block}
+figcaption{font-size:12px;color:var(--muted);margin-top:2px}
+.scroll-hint{display:none}
+.locus-fig .axis,.locus-fig .tick{stroke:var(--line-2)}
+.locus-fig .tick-label,.locus-fig .end-label{fill:var(--muted)}
+.locus-fig .contig-end{stroke:var(--ink)}
+.locus-fig .bracket{stroke:var(--ink-2)} .locus-fig .bracket-label{fill:var(--ink-2)}
+.locus-fig .intron{stroke:var(--ink-2)}
+.locus-fig .r-core{--c:var(--core)} .locus-fig .r-flank,.locus-fig .r-var{--c:var(--flank)} .locus-fig .r-other{--c:var(--other)}
+.locus-fig .exon{stroke:var(--c);fill:var(--c)}
+.locus-fig .r-var:not(.s-hit) .exon{fill:var(--surface)}
+.locus-fig .s-disagree .exon{stroke:var(--ink)}
+.locus-fig .gene-label{fill:var(--ink)} .locus-fig .s-hit .gene-label{fill:var(--ink-2)}
+.locus-fig .alt{fill:var(--ink-2)}
+.legend{list-style:none;display:flex;flex-wrap:wrap;gap:6px 18px;padding:0;margin:8px 0 4px;font-size:12px;color:var(--ink-2)}
+.legend li{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.swatch{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:-1px;margin-right:6px;flex:none}
+.legend .swatch{margin-right:0}
+.r-core{background:var(--core)} .r-flank{background:var(--flank)} .r-other{background:var(--other)}
+.swatch.r-var{background:var(--surface);border:2px solid var(--flank)}
+.key{display:inline-block;width:22px;height:11px;border-radius:2px;flex:none}
+.key-model{background:var(--surface);border:1.5px solid var(--ink-2)}
+.key-disagree{background:var(--other);border:1.5px dashed var(--ink)}
+.key-alt{height:3px;background:var(--ink-2)}
+.key-hit{border:1.5px dotted var(--ink-2);background:var(--line)}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin:14px 0}
+.facts>div{flex:1 1 200px;min-width:0}
+.facts>.wide-fact{flex-basis:100%}
+dt{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+dd{margin:2px 0 0;overflow-wrap:anywhere}
+.region{user-select:all;background:var(--surface-2);padding:1px 5px;border-radius:4px;white-space:nowrap;
+  display:inline-block;max-width:100%;overflow-x:auto;vertical-align:bottom}
+.evidence{display:flex;flex-wrap:wrap;gap:16px 40px;margin:12px 0;padding:12px 14px;background:var(--surface-2);border-radius:6px}
+.evidence>div{min-width:0}
+.evidence .wide{flex-basis:100%}
+.evidence .muted{color:var(--ink-2)}
+.scores{list-style:none;padding:0;margin:0;display:flex;gap:16px;flex-wrap:wrap}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:6px 10px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--surface-2);font-weight:600;color:var(--ink-2);white-space:nowrap;font-size:12px}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
+tbody th{font-weight:600;white-space:nowrap}
+.num{text-align:right;white-space:nowrap} .nowrap{white-space:nowrap}
+.mono{font-family:var(--mono);font-size:.92em}
+.small{font-size:12px} .break{word-break:break-all}
+.sub{display:block;font-size:11px;color:var(--muted);font-weight:400;font-style:normal;white-space:normal}
+.num .sub{text-align:right}
+.strand{color:var(--muted);font-family:var(--sans)}
+td.rec{min-width:18ch;overflow-wrap:anywhere}
+.status{font-weight:600;white-space:nowrap}
+.st-polished_disagree,.warn-text{color:var(--warn)}
+.st-unpolished,.st-not_polish_candidate{color:var(--muted);font-style:italic}
+tr.missing th,tr.missing td,tr.ignored th,tr.ignored td{color:var(--muted)}
+tr.missing td{font-style:italic}
+details summary{cursor:pointer;color:var(--accent);margin:8px 0;font-weight:500}
+.print-only{display:none}
+.glossary{display:flex;flex-wrap:wrap;gap:12px 28px;margin:0}
+.glossary>div{flex:1 1 280px}
+.glossary dt{text-transform:none;letter-spacing:0;font-size:14px;font-weight:600;color:var(--ink)}
+.glossary dd{color:var(--ink-2);font-size:14px}
+.plain{padding-left:20px;color:var(--ink-2);font-size:14px}
+.foot{color:var(--muted);font-size:12px;padding-top:12px;padding-bottom:32px}
+a{color:var(--accent)}
+@media (max-width:600px){
+  body{font-size:14px}
+  h1{font-size:22px}
+  .card,.result{padding:14px}
+  .chip-id{font-size:22px}
+  .locus-fig{min-width:960px}
+  .scroll-hint{display:inline}
+}
+@page{margin:16mm 14mm 18mm;
+  @top-left{content:"PkudriavzeviiCBS5147";font:8pt sans-serif;color:#5f6873}
+  @top-center{content:string(locus, start);font:8pt sans-serif;color:#5f6873}
+  @top-right{content:"MATPredict mating-type report";font:8pt sans-serif;color:#5f6873}
+  @bottom-right{content:"Page " counter(page) " of " counter(pages);font:8pt sans-serif;color:#5f6873}}
+@media print{
+  :root,:root[data-theme="dark"]{
+  --bg:#ffffff; --surface:#ffffff; --surface-2:#f4f5f7; --ink:#1b1f24; --ink-2:#424a54; --muted:#5f6873;
+  --line:#dde1e6; --line-2:#c4cad1; --accent:#1f5f99;
+  --core:#b8471a; --flank:#2a6fb0; --other:#6b7480;
+  --high:#1d7a46; --high-bg:#e3f3ea; --medium:#7a4f00; --medium-bg:#fbf0d9; --low:#4f5864; --low-bg:#eceef1;
+  --warn:#8a4b00; --warn-bg:#fff6e5; --info-bg:#eef4fa;}
+  body{font-size:9.5pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .masthead,main{max-width:none;padding:0}
+  .mast-inner{padding-top:0}
+  .print-btn,.foot,.scroll-hint,details summary{display:none}
+  .print-only{display:block}
+  .locus-fig{min-width:0}
+  .region{white-space:normal;overflow:visible;overflow-wrap:anywhere;display:inline}
+  .card,.result{padding:10px 12px;margin:8px 0}
+  .card-head h3{string-set:locus content()}
+  #search h2,#withheld h2,#provenance h2,#glossary h2,.section-h,#result-h{string-set:locus ""}
+  .locus-top,.facts>div,.glossary>div,.legend,.flags li,tr,.chips,.result,.scores{break-inside:avoid}
+  h2,h3,h4,.card-head{break-after:avoid}
+  .table-wrap{overflow:visible;border:0}
+  table{font-size:8pt}
+  table .small,table .mono,table .sub{font-size:inherit}
+  table .sub{font-size:7pt}
+  th,td{padding:3px 5px}
+  /* A table must not run past its card on paper: let headers, numbers and record names wrap. */
+  thead th,tbody th,.num,.status{white-space:normal}
+  th,td{overflow-wrap:anywhere}
+  td.rec{min-width:0}
+  thead{display:table-header-group}
+  .glossary-card{break-inside:avoid}
+  .glossary>div{flex-basis:30%}
+  .glossary dt,.glossary dd,.plain{font-size:8pt}
+  a{color:inherit;text-decoration:none}
+}
+</style></head><body>
+<header class="masthead"><div class="mast-inner">
+  <div class="mast-top"><div class="brand">MATPredict · mating-type report</div>
+  <button type="button" class="print-btn" data-print>Save as PDF</button></div>
+  <h1>PkudriavzeviiCBS5147</h1>
+  <p class="subtitle">Ascomycota</p>
+  <div class="meta">Run by MATPredict 0.8.1 <span class="muted small mono">(v0.8.1, 3a62e6302b)</span> · database <span class="mono">86f18d232e4f</span> · local NCBI taxonomy snapshot 2026-10-01 · rendered 2026-11-07 01:47 UTC by MATPredict 0.8.1</div>
+</div></header>
+<main>
+  
+<section class="result" aria-labelledby="result-h">
+  <h2 id="result-h">Result</h2>
+  <p class="lead-label">Mating type</p><div class="chips"><a class="chip" href="#locus-0"><span class="chip-id">MATa</span><span class="badge conf-medium">medium confidence</span></a></div><ul class='sentences'><li><b>MATa</b>: locus, medium confidence, 3.5 kb on <span class='mono'>CP028532</span>. Gene order: <span class="nowrap">sla2</span> · <b><span class="nowrap">MATA1</span></b>.</li></ul>
+  
+</section>
+  <h2 class="section-h">Called loci <span class="count">1</span></h2>
+  
+<section class="card locus" id="locus-0" aria-labelledby="locus-0-h">
+  <div class="locus-top">
+  <header class="card-head">
+    <h3 id="locus-0-h"><span class="idiomorph">MATa</span>
+      <span class="fam">MATsc family <span class="muted">· Ascomycota</span></span></h3>
+    <span class="badge conf-medium">medium confidence</span>
+  </header>
+  <figure class="fig"><div class="fig-scroll"><svg class="locus-fig" data-core-x="811" viewBox="0 0 960 150" role="img" aria-labelledby="fig0-0-t fig0-0-d" preserveAspectRatio="xMinYMin meet"><title id="fig0-0-t">Gene order of the MATa locus on CP028532</title><desc id="fig0-0-d">MATa locus: genes from left to right on CP028532, 302,754 to 306,262: sla2 (conserved flank, plus strand); MATALPHA2 (core MAT gene, minus strand); MATA1 (core MAT gene, minus strand).</desc><line class="axis" x1="28.0" y1="22" x2="932.0" y2="22" stroke="#9aa3ad" stroke-width="1.5"/><line class="tick" x1="148.2" y1="18" x2="148.2" y2="26" stroke="#9aa3ad"/><text class="tick-label" x="148.2" y="14" text-anchor="middle" fill="#5f6873" font-size="11" font-family="Helvetica, Arial, sans-serif">303 kb</text><line class="tick" x1="368.2" y1="18" x2="368.2" y2="26" stroke="#9aa3ad"/><text class="tick-label" x="368.2" y="14" text-anchor="middle" fill="#5f6873" font-size="11" font-family="Helvetica, Arial, sans-serif">304 kb</text><line class="tick" x1="588.3" y1="18" x2="588.3" y2="26" stroke="#9aa3ad"/><text class="tick-label" x="588.3" y="14" text-anchor="middle" fill="#5f6873" font-size="11" font-family="Helvetica, Arial, sans-serif">305 kb</text><line class="tick" x1="808.3" y1="18" x2="808.3" y2="26" stroke="#9aa3ad"/><text class="tick-label" x="808.3" y="14" text-anchor="middle" fill="#5f6873" font-size="11" font-family="Helvetica, Arial, sans-serif">306 kb</text><text class="end-label" x="28.0" y="36" text-anchor="start" fill="#5f6873" font-size="11" font-family="Helvetica, Arial, sans-serif">← 302.5 kb more to contig end</text><path class="bracket" d="M94.0,44 V48 H866.0 V44" fill="none" stroke="#4a525c" stroke-width="1"/><text class="bracket-label" x="480.0" y="45" text-anchor="middle" fill="#4a525c" font-size="10" font-family="Helvetica, Arial, sans-serif">called locus</text><g class="gene r-flank s-disagree"><title>sla2: conserved flank, 302,754–303,047 (+), identity 57.14%, the two modelling tools disagree</title><line class="intron" x1="94.0" y1="77.0" x2="158.5" y2="77.0" stroke="#4a525c" stroke-width="1"/><polygon class="exon" points="94.0,70.0 150.5,70.0 158.5,77.0 150.5,84.0 94.0,84.0" fill="#2a6fb0" stroke="#1b1f24" stroke-width="1.5" stroke-dasharray="4 2"/><text class="gene-label" x="126.3" y="66.0" text-anchor="middle" font-size="12" font-family="Helvetica, Arial, sans-serif" fill="#1b1f24" font-weight="600">sla2</text><rect class="alt" x="93.4" y="87.0" width="320.8" height="3" fill="#4a525c" opacity="0.75"/><rect class="alt" x="496.3" y="87.0" width="55.2" height="3" fill="#4a525c" opacity="0.75"/><rect class="alt" x="731.3" y="87.0" width="54.4" height="3" fill="#4a525c" opacity="0.75"/></g><g class="gene r-core s-hit"><title>MATALPHA2: core MAT gene, 306,011–306,106 (-), identity 35.294%, search hit only</title><line class="intron" x1="810.7" y1="129.0" x2="831.7" y2="129.0" stroke="#4a525c" stroke-width="1"/><polygon class="exon" points="810.7,129.0 817.0,120.0 831.7,120.0 831.7,138.0 817.0,138.0" fill="#5f6873" fill-opacity="0.2" stroke="#5f6873" stroke-width="1" stroke-dasharray="2 2"/><text class="gene-label" x="821.2" y="116.0" text-anchor="middle" font-size="12" font-family="Helvetica, Arial, sans-serif" fill="#5f6873" font-weight="400">MATALPHA2 (lost to MATA1)</text></g><g class="gene r-core s-disagree"><title>MATA1: core MAT gene, 306,011–306,151 (-), identity 51.06%, the two modelling tools disagree</title><line class="intron" x1="810.7" y1="77.0" x2="841.6" y2="77.0" stroke="#4a525c" stroke-width="1"/><polygon class="exon" points="810.7,77.0 818.7,68.0 841.6,68.0 841.6,86.0 818.7,86.0" fill="#b8471a" stroke="#1b1f24" stroke-width="1.5" stroke-dasharray="4 2"/><text class="gene-label" x="826.2" y="64.0" text-anchor="middle" font-size="12" font-family="Helvetica, Arial, sans-serif" fill="#1b1f24" font-weight="700">MATA1</text><rect class="alt" x="808.8" y="89.0" width="130.5" height="3" fill="#4a525c" opacity="0.75"/></g></svg></div><figcaption>Gene order on <span class="mono">CP028532</span>.<span class="scroll-hint"> Scroll sideways to see the whole figure.</span></figcaption></figure>
+  <ul class="legend" aria-label="Figure legend"><li><span class="swatch r-core" aria-hidden="true"></span>core MAT gene</li><li><span class="swatch r-flank" aria-hidden="true"></span>conserved flank</li><li><span class="key key-disagree" aria-hidden="true"></span>tools disagree</li><li><span class="key key-alt" aria-hidden="true"></span>alternate model</li><li><span class="key key-hit" aria-hidden="true"></span>search hit only</li></ul>
+  <ul class="flags"><li class="info">The same genes also match: Ascomycota:MTL.</li><li class="info">MATALPHA2 is a weak hit to the other idiomorph&#x27;s gene and was not counted against the call.</li></ul>
+  <dl class="facts"><div><dt>Location</dt><dd><span class="mono">CP028532:<wbr>302,754–306,262</span> · 3.5 kb</dd></div><div><dt>Cross-lineage class</dt><dd>MAT1-2</dd></div><div><dt>Own genes</dt><dd><span class="mono">CP028532:<wbr>302,754–306,151</span> · 3.4 kb · <span class="warn-text">the span runs 111 bp beyond these genes</span></dd></div><div><dt>Supported span</dt><dd><span class="mono">CP028532:<wbr>302,754–306,151</span> · 3.4 kb · <span class="warn-text">111 bp of the reported span rests only on hits below 33 bits</span></dd></div><div><dt>Locus</dt><dd>Provisional: the call only tied the admission bar, or came from the relaxed pass.</dd></div><div><dt>Genes modelled</dt><dd>2 of 3 gene hits</dd></div><div><dt>Nearest contig end</dt><dd>302.8 kb</dd></div><div><dt>Region (samtools)</dt><dd><code class="region">CP028532:302754-306262</code></dd></div></dl>
+  </div>
+  <div class="evidence"><div><h5>Idiomorph scores</h5><ul class="scores"><li><b>MATa</b> <span class="num">56.6</span></li></ul><p class="small">Margin over the set-aside <span class="nowrap">MATALPHA2</span> hit: <b class="num">25.2</b> identity points (the narrowest overlap resolution below).</p><p class="small muted">Score: bitscore of the best core-gene hit for each idiomorph.</p></div><div class="wide"><h5>Overlapping hits resolved</h5><p class="small">Where genes of two idiomorphs hit the same place, the stronger hit was kept.</p><div class="table-wrap"><table class="compact"><thead><tr><th>kept</th><th class="num">identity %</th><th>set aside</th><th class="num">identity %</th><th class="num">overlap %</th><th>basis</th></tr></thead><tbody><tr><td class="nowrap">MATA1</td><td class="num">60.5</td><td class="nowrap">MATALPHA2</td><td class="num">35.3</td><td class="num">100.0</td><td>higher identity</td></tr></tbody></table></div></div></div>
+  
+  <h4>Gene evidence</h4>
+  <div class="table-wrap"><table class="genes">
+    <thead><tr><th scope="col">Gene</th><th scope="col">Role</th><th scope="col">Model</th>
+    <th scope="col" class="num">Identity %</th><th scope="col" class="num">E-value</th>
+    <th scope="col" class="num">Position (strand)</th><th scope="col" class="num">Exons</th>
+    <th scope="col">Reference record</th></tr></thead>
+    <tbody><tr><th scope="row"><span class="swatch r-flank" aria-hidden="true"></span>sla2</th><td class="nowrap">conserved flank</td><td><span class="status st-polished_disagree">models differ</span><span class="sub">exonerate</span><span class="sub">miniprot: 302,751–305,897, 34.8%</span></td><td class="num">57.1<span class="sub">cov 14.6%</span></td><td class="num">3.8e-80<span class="sub nowrap">277 bits</span></td><td class="mono num">302,754–303,047 <span class="strand">+</span></td><td class="num">1</td><td class="mono small rec">28985_<wbr>nrrl-y-1140_<wbr>MATsc_<wbr>MATa</td></tr><tr class="ignored"><th scope="row"><span class="swatch r-core" aria-hidden="true"></span>MATALPHA2</th><td class="nowrap">core MAT<span class="sub">other idiomorph, not counted</span><span class="sub">lost to MATA1, not counted</span></td><td><span class="status st-not_polish_candidate">hit only</span><span class="sub">tblastn</span></td><td class="num">35.3<span class="sub">cov 15.0%</span></td><td class="num">1.0e+00<span class="sub nowrap">27 bits</span></td><td class="mono num">306,011–306,106 <span class="strand">-</span></td><td class="num">–</td><td class="mono small rec">28985_<wbr>nrrl-y-1140_<wbr>MATsc_<wbr>HMLalpha</td></tr><tr><th scope="row"><span class="swatch r-core" aria-hidden="true"></span>MATA1</th><td class="nowrap">core MAT</td><td><span class="status st-polished_disagree">models differ</span><span class="sub">exonerate</span><span class="sub">miniprot: 306,002–306,595, 27.6%</span></td><td class="num">51.1<span class="sub">cov 37.3%</span></td><td class="num">1.8e-10<span class="sub nowrap">57 bits</span></td><td class="mono num">306,011–306,151 <span class="strand">-</span></td><td class="num">1</td><td class="mono small rec">4932_<wbr>s288c_<wbr>MATsc_<wbr>HMRa</td></tr><tr class="missing"><th scope="row">MATA2</th><td colspan="7">expected, not found</td></tr><tr class="missing"><th scope="row">cha1</th><td colspan="7">not searchable: no reference protein in the database</td></tr></tbody>
+  </table></div>
+</section>
+  
+<section class="card" id="search" aria-labelledby="search-h">
+  <h2 id="search-h">What was searched</h2>
+  <dl class="facts">
+    <div class="wide-fact"><dt>Routing</dt><dd><b>Whole phylum.</b> No curated family covers this lineage, so every family of the genome&#x27;s phylum was searched. Family labels are less reliable here.</dd></div>
+    <div><dt>Families searched</dt><dd>Ascomycota:MATsc, Ascomycota:MTL</dd></div>
+    <div><dt>Genetic code</dt><dd>1</dd></div>
+    <div><dt>Taxonomy</dt><dd>local NCBI taxonomy snapshot 2026-10-01</dd></div>
+  </dl>
+  <h4>Families searched but not called</h4><div class="table-wrap"><table class="compact"><thead><tr>
+  <th>family</th><th>reason</th><th class="num">best % of genes found</th><th>genes found</th></tr></thead>
+  <tbody><tr><td>Ascomycota:MTL</td><td>best cluster carried 0 modelled gene(s), below the 2 required to report a locus; none of its genes could be modelled</td><td class='num'>100.0</td><td>MTLalpha1</td></tr></tbody></table></div>
+  
+</section>
+  
+  
+<section class="card" id="withheld" aria-labelledby="withheld-h">
+  <h2 id="withheld-h">Withheld candidate loci <span class="count">69</span></h2>
+  <p>Places with some MAT-gene evidence that did not pass a quality gate. Most genomes have several. They are listed so
+  a known locus can be checked against them, not because they are likely calls.</p>
+  <p class="small">Reasons: fewer than 2 genes could be modelled (69).</p>
+  <details><summary>Show the 69 withheld loci</summary>
+  <h4 class="print-only">Withheld loci (69)</h4>
+  <div class="table-wrap"><table class="compact"><thead><tr><th>family</th><th>location</th><th>idiomorph</th>
+  <th>genes</th><th class="num">modelled</th><th>reason</th></tr></thead><tbody><tr><td>MTL</td><td><span class="mono">CP028532:<wbr>66,198–66,365</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028532:<wbr>124,783–125,061</span></td><td>MATa</td><td>MATA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028532:<wbr>225,656–225,835</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028532:<wbr>302,754–306,262</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028532:<wbr>438,467–451,570</span></td><td>A</td><td>MTLA2, MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028532:<wbr>747,428–772,218</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028532:<wbr>955,216–955,329</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028532:<wbr>1,012,192–1,012,317</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028532:<wbr>1,071,747–1,071,836</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028532:<wbr>1,253,073–1,256,734</span></td><td>MATa</td><td>MATA1, sla2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028532:<wbr>1,422,780–1,422,911</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028532:<wbr>1,453,511–1,453,600</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028532:<wbr>1,576,952–1,591,499</span></td><td>MATa</td><td>MATA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028532:<wbr>1,754,873–1,754,992</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028532:<wbr>1,879,470–1,888,149</span></td><td>alpha</td><td>MTLalpha1, OBP1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028532:<wbr>1,983,286–1,983,396</span></td><td>MATa</td><td>MATA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028532:<wbr>2,084,953–2,090,809</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028532:<wbr>2,314,502–2,314,663</span></td><td>undetermined</td><td>MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028532:<wbr>2,499,815–2,514,137</span></td><td>MATa</td><td>MATA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028532:<wbr>2,499,815–2,514,137</span></td><td>A</td><td>MTLA1, PAP1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028531:<wbr>76,600–116,914</span></td><td>MATa</td><td>MATALPHA1, MATA1, MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028531:<wbr>76,600–116,914</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028531:<wbr>194,395–213,347</span></td><td>alpha</td><td>MTLalpha1, PAP1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028531:<wbr>194,395–213,347</span></td><td>undetermined</td><td>MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028531:<wbr>271,230–271,358</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028531:<wbr>391,498–417,296</span></td><td>MATalpha</td><td>MATALPHA1, sla2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028531:<wbr>951,083–965,316</span></td><td>undetermined</td><td>MATALPHA2, MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028531:<wbr>1,060,855–1,078,067</span></td><td>undetermined</td><td>MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028531:<wbr>1,432,852–1,449,760</span></td><td>alpha</td><td>MTLalpha1, OBP1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028531:<wbr>1,675,712–1,675,801</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028531:<wbr>1,914,349–1,939,738</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028531:<wbr>1,966,152–1,966,388</span></td><td>MATa</td><td>MATA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028531:<wbr>1,966,152–1,966,388</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028531:<wbr>2,256,558–2,256,728</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028531:<wbr>2,308,695–2,308,811</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028531:<wbr>2,405,510–2,405,626</span></td><td>undetermined</td><td>MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028531:<wbr>2,580,327–2,580,566</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028531:<wbr>2,618,406–2,618,702</span></td><td>MATa</td><td>MATA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028533:<wbr>208,730–228,242</span></td><td>MATalpha</td><td>MATALPHA1, MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028533:<wbr>307,894–349,008</span></td><td>A</td><td>MTLA1, PIK1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028533:<wbr>397,638–397,772</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028533:<wbr>593,446–593,559</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028533:<wbr>787,776–789,667</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028533:<wbr>885,333–888,273</span></td><td>A</td><td>MTLA1, PAP1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028533:<wbr>993,334–993,522</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028533:<wbr>1,020,317–1,023,871</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028533:<wbr>1,248,457–1,249,170</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028533:<wbr>1,248,457–1,249,170</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028533:<wbr>1,408,642–1,408,806</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028533:<wbr>1,527,854–1,527,964</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028533:<wbr>1,604,244–1,604,384</span></td><td>undetermined</td><td>MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028533:<wbr>1,699,909–1,715,811</span></td><td>MATa</td><td>MATA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028533:<wbr>1,699,909–1,715,811</span></td><td>A</td><td>MTLA1, OBP1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028533:<wbr>2,419,779–2,430,906</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028534:<wbr>151,955–152,065</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028534:<wbr>197,347–199,027</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028534:<wbr>457,733–457,825</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028534:<wbr>760,672–771,384</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028534:<wbr>854,478–854,663</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028534:<wbr>919,138–926,824</span></td><td>MATalpha</td><td>MATALPHA1, MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028534:<wbr>953,984–954,073</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028534:<wbr>998,157–1,010,683</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028534:<wbr>1,272,729–1,293,170</span></td><td>MATalpha</td><td>MATALPHA1, MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">CP028534:<wbr>1,353,124–1,353,222</span></td><td>undetermined</td><td>MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028535:<wbr>223,741–223,842</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028535:<wbr>525,463–525,567</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028535:<wbr>571,304–571,522</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028535:<wbr>890,229–896,323</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">CP028535:<wbr>1,201,089–1,201,178</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr></tbody></table></div>
+  </details>
+</section>
+  
+<section class="card" id="provenance" aria-labelledby="prov-h">
+  <h2 id="prov-h">Provenance</h2>
+  <dl class="facts"><div><dt>Genome file</dt><dd>PkudriavzeviiCBS5147.genome.fasta</dd></div><div><dt>Assembly</dt><dd>5 contigs · 10.8 Mb · N50 2.7 Mb</dd></div><div><dt>Genome SHA-256</dt><dd><span class="mono small break">1ccf43b6f775770dd80cbca66032f3704a8e446b6638bc9b2f0a66a43ed97b3e</span></dd></div><div><dt>MATPredict</dt><dd>0.8.1 <span class="muted small mono">(v0.8.1, 3a62e6302b)</span></dd></div><div><dt>Database</dt><dd><span class="mono small">86f18d232e4fe95d</span> · 185 records</dd></div><div><dt>Taxonomy</dt><dd>local NCBI taxonomy snapshot 2026-10-01</dd></div><div><dt>Parameters</dt><dd><span class="nowrap">phylum=Ascomycota</span>, <wbr><span class="nowrap">phylum_<wbr>guess={&#x27;requested&#x27;: &#x27;auto&#x27;, &#x27;status&#x27;: &#x27;ok&#x27;, &#x27;usable&#x27;: True, &#x27;reason&#x27;: None, &#x27;phylum&#x27;: &#x27;Ascomycota&#x27;, &#x27;phylum_taxid&#x27;: 4890, &#x27;deepest_rank&#x27;: &#x27;species&#x27;, &#x27;routing_taxid&#x27;: 1156497, &#x27;routing_taxid_rank&#x27;: &#x27;family&#x27;, &#x27;flags&#x27;: [], &#x27;gmg_version&#x27;: &#x27;gmg 0.3.2 (66055154a)&#x27;, &#x27;index&#x27;: &#x27;bfd-reps-2026.10.5-s20000.gmgi&#x27;, &#x27;index_sha256&#x27;: &#x27;0f319567f1cab17643e1daf7ffdc0e3b312bd43913e351568108d67a4a19702c&#x27;, &#x27;index_spec&#x27;: &#x27;bfd-reps-2026.10.5-s20000.gmgi&#x27;, &#x27;note&#x27;: &#x27;GmG called phylum Ascomycota&#x27;, &#x27;action&#x27;: &#x27;routed&#x27;, &#x27;weak_call_accepted&#x27;: False, &#x27;genetic_code&#x27;: 1, &#x27;genetic_code_from&#x27;: &#x27;family taxid 1156497&#x27;, &#x27;routed_by&#x27;: &#x27;family taxid 1156497 (phylum_fallback)&#x27;}</span>, <wbr><span class="nowrap">genetic_<wbr>code=1</span>, <wbr><span class="nowrap">min_<wbr>hits=2</span>, <wbr><span class="nowrap">require_<wbr>core_<wbr>role=True</span>, <wbr><span class="nowrap">max_<wbr>polished_<wbr>clusters_<wbr>per_<wbr>family=6</span>, <wbr><span class="nowrap">polish_<wbr>strong_<wbr>identity=50.0</span>, <wbr><span class="nowrap">polish_<wbr>core_<wbr>pair=True</span>, <wbr><span class="nowrap">partial_<wbr>core_<wbr>policy=off</span>, <wbr><span class="nowrap">homothallic_<wbr>policy=off</span>, <wbr><span class="nowrap">confidence_<wbr>cap_<wbr>policy=off</span>, <wbr><span class="nowrap">cross_<wbr>family_<wbr>policy=off</span>, <wbr><span class="nowrap">fallback_<wbr>after_<wbr>withheld_<wbr>policy=off</span>, <wbr><span class="nowrap">strong_<wbr>single_<wbr>gene_<wbr>policy=off</span>, <wbr><span class="nowrap">scoped_<wbr>roster_<wbr>policy=off</span>, <wbr><span class="nowrap">supported_<wbr>min_<wbr>bitscore=33.0</span></dd></div><div><dt>Run started</dt><dd>2026-11-07T01:47:21Z</dd></div><div><dt>Run time</dt><dd>17 s</dd></div><div><dt>Files</dt><dd>detection_report.yaml, detected_loci.gff3</dd></div></dl>
+  <p class="small">Cite MATPredict as given in CITATION.cff at github.com/stajichlab/MATPredict. The reference records
+  named in the gene tables are curated database entries; each record's metadata cites its source publication.</p>
+</section>
+  
+<section class="card glossary-card" id="glossary" aria-labelledby="glossary-h">
+  <h2 id="glossary-h">How to read this report</h2>
+  <dl class="glossary"><div><dt>Idiomorph</dt><dd>The form of the mating-type locus a strain carries (for example MAT1-1 or MAT1-2, Plus or Minus). Basidiomycota HD and PR alleles are named after the reference they match.</dd></div><div><dt>High confidence</dt><dd>Every expected core MAT gene was found and modelled, with a conserved flanking gene where the family has one, on one contig.</dd></div><div><dt>Medium confidence</dt><dd>The core genes were found, but a gene could not be modelled, no conserved flank was found, or the locus is split (one step down).</dd></div><div><dt>Low confidence</dt><dd>A single isolated gene hit, or no core MAT gene.</dd></div><div><dt>Model status</dt><dd>Gene model: the reference protein was aligned to the genome to build the gene (exonerate, miniprot). Models differ: the two tools disagree on the structure; the alternate model is shown. Hit only: a search hit with no model, weaker evidence.</dd></div><div><dt>Identity</dt><dd>Percent amino-acid identity between the gene (or hit) and the closest reference protein.</dd></div><div><dt>Reference record</dt><dd>The curated database record whose protein matched best. Each record's metadata cites the publication or deposit it comes from.</dd></div></dl>
+  <h4>Limits</h4>
+  <ul class="plain">
+    <li>MATPredict reads an assembly; it is not a mating assay. Two idiomorphs in one assembly can come from a
+    homothallic species, a mixed culture or a merged diploid assembly.</li>
+    <li>Fragmented assemblies can split a locus or lose its flanking genes; an uncalled genome is weak evidence of absence.</li>
+    <li>Lineages with no curated record are searched with the whole phylum's references; family labels there are less reliable.</li>
+  </ul>
+</section>
+</main>
+<footer class="foot">PkudriavzeviiCBS5147 · MATPredict mating-type report</footer><script>
+(function(){
+  var b=document.querySelector('[data-print]');
+  document.querySelectorAll('.fig-scroll').forEach(function(box){
+    var svg=box.querySelector('svg'); var cx=svg&&parseFloat(svg.getAttribute('data-core-x'));
+    if(box.scrollWidth>box.clientWidth&&cx){box.scrollLeft=Math.max(0,cx*svg.clientWidth/960-40);}
+  });
+  if(b){b.addEventListener('click',function(){window.print();});}
+  var opened=[];
+  window.addEventListener('beforeprint',function(){
+    document.querySelectorAll('details:not([open])').forEach(function(d){d.open=true;opened.push(d);});
+  });
+  window.addEventListener('afterprint',function(){opened.forEach(function(d){d.open=false;});opened=[];});
+})();
+</script></body></html>

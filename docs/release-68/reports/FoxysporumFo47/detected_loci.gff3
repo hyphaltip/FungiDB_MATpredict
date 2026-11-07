@@ -1,0 +1,9 @@
+##gff-version 3
+##sequence-region JH717900.1 789716 805026
+JH717900.1	MATPredict	MAT_locus	789716	805026	.	.	.	ID=Ascomycota_MAT_0;family=Ascomycota:MAT;confidence=high;idiomorph=MAT1-2;fragmented=false;core_start=789716;core_end=805026;beyond_core_bp=0;supported_start=789716;supported_end=805026;beyond_supported_bp=0;reference_records=107463_unknown-1_MAT_MAT1-2,230073_uamh-1363_MAT_MAT1-1,2903220_liq80xsp_MAT_combined,5180_44ba1_MAT_combined,578113_sxlc146_MAT_MAT1-2,61372_suf959_MAT_MAT1-2
+JH717900.1	MATPredict	gene	789716	789847	.	-	.	ID=Ascomycota_MAT_0.gene0;Parent=Ascomycota_MAT_0;Name=MAT1-1-5;role=core_MAT;present=true;identity=37.5;reference_record=5180_44ba1_MAT_combined;method=tblastn_genome;status=unpolished;coverage=13.0
+JH717900.1	MATPredict	gene	792873	796441	.	+	.	ID=Ascomycota_MAT_0.gene1;Parent=Ascomycota_MAT_0;Name=SLA2;role=flanking_conserved;present=true;identity=81.6;reference_record=107463_unknown-1_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+JH717900.1	MATPredict	gene	800187	800961	.	+	.	ID=Ascomycota_MAT_0.gene2;Parent=Ascomycota_MAT_0;Name=MAT1-2-1;role=core_MAT;present=true;identity=99.2;reference_record=61372_suf959_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+JH717900.1	MATPredict	gene	801512	803744	.	-	.	ID=Ascomycota_MAT_0.gene3;Parent=Ascomycota_MAT_0;Name=APN2;role=flanking_conserved;present=true;identity=86.4;reference_record=2903220_liq80xsp_MAT_combined;method=diamond_proteome;status=not_polish_candidate;coverage=36.7
+JH717900.1	MATPredict	gene	804265	805026	.	+	.	ID=Ascomycota_MAT_0.gene4;Parent=Ascomycota_MAT_0;Name=COX13;role=flanking_conserved;present=true;identity=69.8;reference_record=578113_sxlc146_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=89.2
+JH717900.1	MATPredict	gene	789716	805026	.	.	.	ID=Ascomycota_MAT_0.gene6;Parent=Ascomycota_MAT_0;Name=MAT1-1-1;present=false

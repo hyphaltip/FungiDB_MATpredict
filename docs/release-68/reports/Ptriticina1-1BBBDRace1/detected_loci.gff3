@@ -1,0 +1,5 @@
+##gff-version 3
+##sequence-region ADAS02000068.1 214012 217852
+ADAS02000068.1	MATPredict	MAT_locus	214012	217852	.	.	.	ID=Basidiomycota_rustHD_0;family=Basidiomycota:rustHD;confidence=high;idiomorph=undetermined;fragmented=false;core_start=214012;core_end=217852;beyond_core_bp=0;supported_start=214012;supported_end=217852;beyond_supported_bp=0;reference_records=630390_1-1-bbbd-race-1_rustHD_b2
+ADAS02000068.1	MATPredict	gene	214012	215954	.	-	.	ID=Basidiomycota_rustHD_0.gene0;Parent=Basidiomycota_rustHD_0;Name=bW;role=core_MAT;present=true;identity=100.0;reference_record=630390_1-1-bbbd-race-1_rustHD_b2;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+ADAS02000068.1	MATPredict	gene	216575	217852	.	+	.	ID=Basidiomycota_rustHD_0.gene1;Parent=Basidiomycota_rustHD_0;Name=bE;role=core_MAT;present=true;identity=100.0;reference_record=630390_1-1-bbbd-race-1_rustHD_b2;method=diamond_proteome;status=not_polish_candidate;coverage=100.0

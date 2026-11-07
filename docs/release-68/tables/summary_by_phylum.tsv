@@ -1,3 +1,5 @@
 phylum	genomes	searched	called	recovery	called_high_confidence	not_searched	failed	skipped	no_report	not_run	both_idiomorphs	homothallic_candidate	idiomorph_loci
-(none)	1	1	1	1.00	1	0	0	0	0	0	0	1	MAT1-1:1
-ALL	1	1	1	1.00	1	0	0	0	0	0	0	1	MAT1-1:1
+(none)	317	276	255	0.92	194	41	0	0	0	0	10	38	MAT1-2:94;MAT1-1:88;alpha:28;undetermined:28;MATalpha:14;A:12;MATa:5;Minus:4;P:4;M:3;a:2;Plus:2
+Ascomycota	10	10	3	0.30	0	0	0	0	0	0	0	0	MATa:3
+Basidiomycota	4	4	3	0.75	2	0	0	0	0	0	0	0	undetermined:7
+ALL	331	290	261	0.90	196	41	0	0	0	0	10	38	MAT1-2:94;MAT1-1:88;undetermined:35;alpha:28;MATalpha:14;A:12;MATa:8;Minus:4;P:4;M:3;a:2;Plus:2

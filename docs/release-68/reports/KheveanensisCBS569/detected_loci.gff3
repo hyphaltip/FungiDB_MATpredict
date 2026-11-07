@@ -1,0 +1,10 @@
+##gff-version 3
+##sequence-region KV700203 24629 92088
+KV700203	MATPredict	MAT_locus	24629	92088	.	.	.	ID=Basidiomycota_MAT_0;family=Basidiomycota:MAT;confidence=high;idiomorph=alpha;fragmented=false;core_start=24629;core_end=92088;beyond_core_bp=0;supported_start=24629;supported_end=92088;beyond_supported_bp=0;reference_records=40410_jec20_MAT_a,40410_jec21_MAT_alpha
+KV700203	MATPredict	gene	24629	25189	.	+	.	ID=Basidiomycota_MAT_0.gene0;Parent=Basidiomycota_MAT_0;Name=RPL39;role=core_MAT;present=true;identity=90.0;reference_record=40410_jec20_MAT_a;method=exonerate_refine;status=polished_disagree;coverage=100.0;alt_method=miniprot_refine;alt_contig=KV700203;alt_start=24629;alt_end=25192;alt_identity=74.14
+KV700203	MATPredict	gene	45608	46326	.	-	.	ID=Basidiomycota_MAT_0.gene1;Parent=Basidiomycota_MAT_0;Name=STE3;role=core_MAT;present=true;identity=48.7;reference_record=40410_jec21_MAT_alpha;method=diamond_proteome;status=not_polish_candidate;coverage=50.5
+KV700203	MATPredict	gene	56345	56461	.	+	.	ID=Basidiomycota_MAT_0.gene2;Parent=Basidiomycota_MAT_0;Name=MFalpha;role=core_MAT;present=true;identity=71.05;reference_record=40410_jec21_MAT_alpha;method=exonerate_refine;status=polished_agree;coverage=100.0
+KV700203	MATPredict	gene	90036	92088	.	-	.	ID=Basidiomycota_MAT_0.gene3;Parent=Basidiomycota_MAT_0;Name=PAN6;role=flanking_conserved;present=true;identity=66.5;reference_record=40410_jec20_MAT_a;method=diamond_proteome;status=not_polish_candidate;coverage=88.6
+KV700203	MATPredict	gene	24629	92088	.	.	.	ID=Basidiomycota_MAT_0.gene5;Parent=Basidiomycota_MAT_0;Name=FAO1;present=false
+KV700203	MATPredict	gene	24629	92088	.	.	.	ID=Basidiomycota_MAT_0.gene6;Parent=Basidiomycota_MAT_0;Name=NOG2;present=false;not_searchable=true
+KV700203	MATPredict	gene	24629	92088	.	.	.	ID=Basidiomycota_MAT_0.gene7;Parent=Basidiomycota_MAT_0;Name=UAP1;present=false;not_searchable=true

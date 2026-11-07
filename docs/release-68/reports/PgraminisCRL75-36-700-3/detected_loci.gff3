@@ -1,0 +1,5 @@
+##gff-version 3
+##sequence-region DS178274 405328 409148
+DS178274	MATPredict	MAT_locus	405328	409148	.	.	.	ID=Basidiomycota_rustHD_0;family=Basidiomycota:rustHD;confidence=high;idiomorph=undetermined;fragmented=false;core_start=405328;core_end=409148;beyond_core_bp=0;supported_start=405328;supported_end=409148;beyond_supported_bp=0;reference_records=418459_crl-75-36-700-3_rustHD_b1
+DS178274	MATPredict	gene	405328	406672	.	-	.	ID=Basidiomycota_rustHD_0.gene0;Parent=Basidiomycota_rustHD_0;Name=bE;role=core_MAT;present=true;identity=100.0;reference_record=418459_crl-75-36-700-3_rustHD_b1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+DS178274	MATPredict	gene	407218	409148	.	+	.	ID=Basidiomycota_rustHD_0.gene1;Parent=Basidiomycota_rustHD_0;Name=bW;role=core_MAT;present=true;identity=100.0;reference_record=418459_crl-75-36-700-3_rustHD_b1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0

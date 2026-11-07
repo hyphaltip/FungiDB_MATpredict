@@ -1,0 +1,7 @@
+##gff-version 3
+##sequence-region JAJJXM010000056 335693 348245
+JAJJXM010000056	MATPredict	MAT_locus	335693	348245	.	.	.	ID=Ascomycota_MATtub_0;family=Ascomycota:MATtub;confidence=medium;idiomorph=MAT1-2;fragmented=false;core_start=335693;core_end=348245;beyond_core_bp=0;supported_start=335693;supported_end=348245;beyond_supported_bp=0;reference_records=1174673_ypl6-1_MATtub_MAT1-2,55307_ysh1-8_MATtub_MAT1-2
+JAJJXM010000056	MATPredict	gene	335693	336672	.	-	.	ID=Ascomycota_MATtub_0.gene0;Parent=Ascomycota_MATtub_0;Name=MAT1-2-1;role=core_MAT;present=true;identity=45.3;reference_record=55307_ysh1-8_MATtub_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=53.4
+JAJJXM010000056	MATPredict	gene	346192	348245	.	-	.	ID=Ascomycota_MATtub_0.gene1;Parent=Ascomycota_MATtub_0;Name=APN2;role=flanking_conserved;present=true;identity=68.8;reference_record=1174673_ypl6-1_MATtub_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=89.2
+JAJJXM010000056	MATPredict	gene	335693	348245	.	.	.	ID=Ascomycota_MATtub_0.gene2;Parent=Ascomycota_MATtub_0;Name=Rsm22-like;present=false
+JAJJXM010000056	MATPredict	gene	335693	348245	.	.	.	ID=Ascomycota_MATtub_0.gene3;Parent=Ascomycota_MATtub_0;Name=unnamed_flanking_ORF;present=false

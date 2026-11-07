@@ -1,0 +1,10 @@
+##gff-version 3
+##sequence-region KI669474 1507734 1609942
+KI669474	MATPredict	MAT_locus	1507734	1609942	.	.	.	ID=Basidiomycota_MAT_0;family=Basidiomycota:MAT;confidence=high;idiomorph=alpha;fragmented=false;core_start=1507734;core_end=1609942;beyond_core_bp=0;supported_start=1507734;supported_end=1609942;beyond_supported_bp=0;reference_records=40410_jec20_MAT_a,40410_jec21_MAT_alpha
+KI669474	MATPredict	gene	1507734	1508118	.	+	.	ID=Basidiomycota_MAT_0.gene0;Parent=Basidiomycota_MAT_0;Name=RPL39;role=core_MAT;present=true;identity=93.88;reference_record=40410_jec20_MAT_a;method=exonerate_refine;status=polished_disagree;coverage=98.0;alt_method=miniprot_refine;alt_contig=KI669474;alt_start=1507734;alt_end=1508121;alt_identity=88.0
+KI669474	MATPredict	gene	1526084	1526956	.	-	.	ID=Basidiomycota_MAT_0.gene1;Parent=Basidiomycota_MAT_0;Name=STE3;role=core_MAT;present=true;identity=56.4;reference_record=40410_jec21_MAT_alpha;method=diamond_proteome;status=not_polish_candidate;coverage=67.1
+KI669474	MATPredict	gene	1536203	1536319	.	-	.	ID=Basidiomycota_MAT_0.gene2;Parent=Basidiomycota_MAT_0;Name=MFalpha;role=core_MAT;present=true;identity=63.16;reference_record=40410_jec21_MAT_alpha;method=exonerate_refine;status=polished_single;coverage=100.0
+KI669474	MATPredict	gene	1565452	1567077	.	-	.	ID=Basidiomycota_MAT_0.gene3;Parent=Basidiomycota_MAT_0;Name=PAN6;role=flanking_conserved;present=true;identity=60.7;reference_record=40410_jec20_MAT_a;method=diamond_proteome;status=not_polish_candidate;coverage=95.6
+KI669474	MATPredict	gene	1608388	1609942	.	+	.	ID=Basidiomycota_MAT_0.gene4;Parent=Basidiomycota_MAT_0;Name=FAO1;role=flanking_conserved;present=true;identity=28.9;reference_record=40410_jec21_MAT_alpha;method=diamond_proteome;status=not_polish_candidate;coverage=91.4
+KI669474	MATPredict	gene	1507734	1609942	.	.	.	ID=Basidiomycota_MAT_0.gene6;Parent=Basidiomycota_MAT_0;Name=NOG2;present=false;not_searchable=true
+KI669474	MATPredict	gene	1507734	1609942	.	.	.	ID=Basidiomycota_MAT_0.gene7;Parent=Basidiomycota_MAT_0;Name=UAP1;present=false;not_searchable=true

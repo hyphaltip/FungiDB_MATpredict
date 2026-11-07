@@ -1,0 +1,10 @@
+##gff-version 3
+##sequence-region AWGL01000003 585506 725701
+AWGL01000003	MATPredict	MAT_locus	585506	725701	.	.	.	ID=Basidiomycota_MAT_0;family=Basidiomycota:MAT;confidence=medium;idiomorph=alpha;fragmented=false;core_start=585506;core_end=725701;beyond_core_bp=0;supported_start=585506;supported_end=725701;beyond_supported_bp=0;reference_records=40410_jec20_MAT_a,40410_jec21_MAT_alpha
+AWGL01000003	MATPredict	gene	585506	586660	.	+	.	ID=Basidiomycota_MAT_0.gene0;Parent=Basidiomycota_MAT_0;Name=STE3;role=core_MAT;present=true;identity=58.2;reference_record=40410_jec20_MAT_a;method=diamond_proteome;status=not_polish_candidate;coverage=91.2
+AWGL01000003	MATPredict	gene	667815	668089	.	+	.	ID=Basidiomycota_MAT_0.gene1;Parent=Basidiomycota_MAT_0;Name=RPL39;role=core_MAT;present=true;identity=95.92;reference_record=40410_jec20_MAT_a;method=exonerate_refine;status=polished_disagree;coverage=98.0;alt_method=miniprot_refine;alt_contig=AWGL01000003;alt_start=667815;alt_end=668092;alt_identity=86.27
+AWGL01000003	MATPredict	gene	725606	725701	.	-	.	ID=Basidiomycota_MAT_0.gene2;Parent=Basidiomycota_MAT_0;Name=MFalpha;role=core_MAT;present=true;identity=47.368;reference_record=40410_jec21_MAT_alpha;method=tblastn_genome;status=unpolished;coverage=100.0
+AWGL01000003	MATPredict	gene	585506	725701	.	.	.	ID=Basidiomycota_MAT_0.gene3;Parent=Basidiomycota_MAT_0;Name=FAO1;present=false
+AWGL01000003	MATPredict	gene	585506	725701	.	.	.	ID=Basidiomycota_MAT_0.gene4;Parent=Basidiomycota_MAT_0;Name=PAN6;present=false
+AWGL01000003	MATPredict	gene	585506	725701	.	.	.	ID=Basidiomycota_MAT_0.gene5;Parent=Basidiomycota_MAT_0;Name=NOG2;present=false;not_searchable=true
+AWGL01000003	MATPredict	gene	585506	725701	.	.	.	ID=Basidiomycota_MAT_0.gene6;Parent=Basidiomycota_MAT_0;Name=UAP1;present=false;not_searchable=true

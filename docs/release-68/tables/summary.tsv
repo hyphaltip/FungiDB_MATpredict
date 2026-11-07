@@ -1,2 +1,332 @@
 sample	status	n_loci	idiomorphs	n_MAT_genes_called	n_annotated	n_unannotated	n_absent	n_genes_in_locus_span
+AaculeatusATCC16872	ok	1	MAT1-2	6	6	0	0	9
+AalternataSRC1lrK2f	ok	1	MAT1-1	3	3	0	1	4
+AapisARSEF7405	ok	1	MAT1-2	5	5	0	1	4
+AastaciAPO3	ok	0		0	0	0	0	0
+AbrasiliensisCBS101740	ok	1	MAT1-2	6	6	0	0	15
+AcampestrisIBT28561	ok	1	MAT1-1	6	6	0	0	6
+Acandida2VRR	ok	0		0	0	0	0	0
+AcarbonariusITEM5010	ok	1	MAT1-2	5	5	0	1	4
+AclavatusNRRL1	ok	1	MAT1-1	5	5	0	0	5
+AcristatusGZAAS20.1005	ok	1	MAT1-2	5	5	0	0	5
+AellipticusCBS707.79	ok	1	MAT1-2	5	5	0	1	4
+AeucalypticolaCBS122712	ok	1	MAT1-2	6	6	0	0	9
+AeuteichesMF1	ok	0		0	0	0	0	0
+AfijiensisCBS313.89	ok	1	MAT1-2	7	7	0	1	16
+AfischeriNRRL181	ok	2	MAT1-1;MAT1-2	9	9	0	2	8
+AflagransCBSH-5679	ok	0		0	0	0	0	0
+AflavusNRRL3357	ok	1	MAT1-1	5	5	0	0	4
+AflavusNRRL3357_2020	ok	1	MAT1-1	5	5	0	0	4
 AfumigatusA1163	ok	1	MAT1-1	5	5	0	0	5
+AfumigatusAf293	ok	1	MAT1-2	6	6	0	0	5
+AglaucusCBS516.65	ok	2	MAT1-1;MAT1-2	7	7	0	7	6
+AheteromorphusCBS117.55	ok	1	MAT1-2	6	6	0	0	12
+AhomomorphusCBS101889	ok	1	MAT1-1	5	5	0	0	9
+AibericusCBS121593	ok	1	MAT1-2	6	6	0	0	14
+AinvadansNJM9701	ok	0		0	0	0	0	0
+AlaibachiiNc14	ok	0		0	0	0	0	0
+AlentulusIFM54703	ok	1	MAT1-2	6	4	2	0	4
+AluchuensisCBS106.47	ok	1	MAT1-1	4	4	0	0	8
+AluchuensisIFO4308	ok	1	MAT1-2	6	6	0	0	9
+AmacrogynusATCC38327	ok	0		0	0	0	0	0
+AmnigerUAMH3544	missing FungiDB-68_AmnigerUAMH3544.gff.gz	0		0	0	0	0	0
+AmontevideenseJCM9937	missing FungiDB-68_AmontevideenseJCM9937.gff.gz	0		0	0	0	0	0
+AmutatusUAMH3576	missing FungiDB-68_AmutatusUAMH3576.gff.gz	0		0	0	0	0	0
+AnidulansFGSCA4	ok	2	MAT1-1;MAT1-2	5	5	0	3	6
+AnigerATCC1015	ok	1	MAT1-1	5	4	1	0	14
+AnigerATCC13496	ok	1	MAT1-1	5	4	1	0	13
+AnigerCBS513-88	ok	1	MAT1-1	5	4	1	0	15
+AnigerLDM3	missing FungiDB-68_AnigerLDM3.gff.gz	0		0	0	0	0	0
+AnigerN402ATCC64974	ok	1	MAT1-1	5	4	1	0	10
+AnovofumigatusIBT16806	ok	1	MAT1-2	6	6	0	0	6
+AochraceoroseusIBT24754	ok	1	MAT1-1	3	2	1	2	3
+AoryzaeRIB40	ok	1	MAT1-1	4	4	0	1	3
+AparasiticusCBS117618	ok	1	MAT1-1	4	4	0	0	5
+AsclerotiicarbonariusCBS121057	ok	1	MAT1-2	6	6	0	0	13
+AsteyniiIBT23096	ok	1	MAT1-2	6	6	0	0	7
+AsydowiiCBS593.65	ok	1	MAT1-2	7	7	0	0	17
+AtanneriNIH1004	ok	1	MAT1-1	5	4	1	0	4
+AterreusNIH2624	ok	1	MAT1-1	6	4	2	0	4
+AthermomutatusHMRAF39	ok	2	MAT1-1;MAT1-2	9	9	0	2	8
+AtubingensisCBS134.48	ok	1	MAT1-1	4	4	0	0	8
+AuvarumCBS121591	ok	1	MAT1-1	5	5	0	0	9
+AvariabilisNCCPF102052	missing FungiDB-68_AvariabilisNCCPF102052.gff.gz	0		0	0	0	0	0
+AversicolorCBS583.65	ok	1	MAT1-2	6	6	0	0	6
+AwentiiDTO134E9	ok	1	MAT1-2	6	6	0	0	5
+BbassianaHN6	missing FungiDB-68_BbassianaHN6.gff.gz	0		0	0	0	0	0
+BceratinophilaUAMH5669	missing FungiDB-68_BceratinophilaUAMH5669.gff.gz	0		0	0	0	0	0
+BcinereaB05-10	ok	1	MAT1-1	6	5	1	0	5
+BdendrobatidisJEL423	ok	0		0	0	0	0	0
+BdermatitidisATCC26199	ok	1	MAT1-2	6	6	0	2	6
+BdermatitidisER-3	ok	1	MAT1-2	7	7	0	1	7
+BgilchristiiSLH14081	ok	1	MAT1-2	6	6	0	2	6
+BgraministriticaleTHUN-12	ok	1	MAT1-1	4	1	3	2	1
+BgraminisTritici96224	ok	1	MAT1-2	2	2	0	2	2
+BhordeiRACE1	ok	1	MAT1-1	2	2	0	2	2
+BlactucaeSF5	ok	0		0	0	0	0	0
+BpercursusEI222	ok	1	MAT1-2	4	4	0	2	3
+BsalamandrivoransBS	ok	0		0	0	0	0	0
+CalbicansSC5314	ok	1	A	5	5	0	0	5
+CalbicansSC5314_B	ok	1	alpha	5	5	0	0	5
+CalbicansWO1	ok	1	alpha	5	5	0	0	5
+Cauris6684	ok	1	A	5	4	1	0	4
+CaurisB11220	ok	1	alpha	4	4	0	0	3
+CaurisB11221	ok	1	alpha	4	4	0	0	4
+CaurisB11243	ok	1	A	5	5	0	0	5
+CaurisB11245	ok	1	A	5	3	2	0	3
+CaurisB8441	ok	1	A	5	4	1	0	4
+CbantianaCBS173.52	ok	0		0	0	0	0	0
+CcarrioniiCBS160.54	ok	0		0	0	0	0	0
+CcarrioniiKSF	ok	0		0	0	0	0	0
+Ccf.gattiiMF34	ok	1	alpha	7	5	2	3	51
+Ccinerea326	ok	0		0	0	0	0	0
+Ccinereaokay7-130	ok	0		0	0	0	0	0
+Cclavatayc1106	ok	0		0	0	0	0	0
+CdepauperatusCBS7841	ok	0		0	0	0	0	0
+CdepauperatusCBS7855	ok	1	alpha	3	1	2	4	41
+CdubliniensisCD36	ok	1	alpha	5	5	0	0	5
+CduobushaemulonisB09383	ok	1	alpha	4	3	1	0	3
+CeuropaeaCBS101466	ok	1	MAT1-1	5	5	0	0	5
+Cfabianii65	ok	0		0	0	0	0	0
+CgattiiCA1873	ok	1	a	5	3	2	3	29
+CgattiiEJB2	ok	1	alpha	2	2	0	4	3
+CgattiiIND107	ok	1	alpha	6	6	0	2	32
+CgattiiNT10	ok	1	alpha	2	2	0	4	3
+CgattiiVGIIR265	ok	1	alpha	7	6	1	3	33
+CgattiiWM276	ok	1	alpha	7	6	1	3	39
+Cgeophilum1.58	ok	1	MAT1-1	5	3	2	1	6
+CglobosumCBS148.51	ok	1	MAT1-1	6	6	0	0	6
+CgraminicolaM1-001	ok	1	MAT1-2	4	4	0	0	4
+ChaemulonisB11899	ok	0		0	0	0	0	0
+ChigginsianumIMI349063	ok	1	MAT1-2	4	4	0	0	5
+CimmitisH538-4	ok	1	MAT1-1	5	5	0	0	6
+CimmitisRMSCC2394	missing FungiDB-68_CimmitisRMSCC2394.gff.gz	0		0	0	0	0	0
+CimmitisRMSCC3703	missing FungiDB-68_CimmitisRMSCC3703.gff.gz	0		0	0	0	0	0
+CimmitisRS	ok	1	MAT1-2	6	6	0	0	5
+CimmitisWA_211	ok	1	MAT1-2	6	6	0	0	6
+CimmundaCBS83496	ok	1	MAT1-2	2	0	2	4	4
+ClusitaniaeATCC42720	ok	1	alpha	4	4	0	0	4
+CmetapsilosisBP57	ok	1	A	4	3	1	0	4
+CmilitarisATCC34164	ok	1	MAT1-2	4	4	0	0	6
+CmilitarisCM01	ok	1	MAT1-1	6	5	1	0	6
+CneoformansB-3501A	ok	1	alpha	6	5	1	2	30
+CneoformansH99	ok	1	alpha	6	6	0	2	42
+CneoformansH992018	missing FungiDB-68_CneoformansH992018.gff.gz	0		0	0	0	0	0
+CneoformansJEC21	ok	1	alpha	6	6	0	2	33
+CneoformansKN99	ok	1	alpha	6	6	0	2	33
+CneoformansVNII	ok	1	alpha	6	4	2	2	35
+CneoformansXL280	missing FungiDB-68_CneoformansXL280.gff.gz	0		0	0	0	0	0
+CparapsilosisCDC317	ok	1	A	5	5	0	0	5
+CposadasiiC735deltSOWgp	ok	1	MAT1-2	6	5	1	0	5
+CposadasiiCPA0001	missing FungiDB-68_CposadasiiCPA0001.gff.gz	0		0	0	0	0	0
+CposadasiiCPA0020	missing FungiDB-68_CposadasiiCPA0020.gff.gz	0		0	0	0	0	0
+CposadasiiCPA0066	missing FungiDB-68_CposadasiiCPA0066.gff.gz	0		0	0	0	0	0
+CposadasiiRMSCC1037	missing FungiDB-68_CposadasiiRMSCC1037.gff.gz	0		0	0	0	0	0
+CposadasiiRMSCC1038	missing FungiDB-68_CposadasiiRMSCC1038.gff.gz	0		0	0	0	0	0
+CposadasiiRMSCC2133	missing FungiDB-68_CposadasiiRMSCC2133.gff.gz	0		0	0	0	0	0
+CposadasiiRMSCC3488	ok	1	MAT1-1	5	5	0	0	6
+CposadasiiRMSCC3700	missing FungiDB-68_CposadasiiRMSCC3700.gff.gz	0		0	0	0	0	0
+CposadasiiSilveira	ok	1	MAT1-2	6	6	0	0	6
+CposadasiiSilveira2022	ok	1	MAT1-2	6	6	0	0	5
+CpsammophilaCBS110553	ok	0		0	0	0	0	0
+CpseudohaemuloniiB12108	ok	1	A	5	4	1	0	4
+Cpurpurea20.1	ok	1	MAT1-1	6	4	2	0	4
+CqueenslandicumCBS280.77	missing FungiDB-68_CqueenslandicumCBS280.77.gff.gz	0		0	0	0	0	0
+CspCBS132003	ok	1	MAT1-2	4	4	0	0	4
+CtropicalisMYA3404	ok	2	A;alpha	10	9	1	0	9
+CtropicalisMYA3404-2020	ok	1	alpha	5	5	0	0	5
+CyegresiiCBS114405	ok	1	MAT1-2	2	2	0	2	8
+DfabryiCBS789	ok	1	alpha	3	1	2	0	1
+DhanseniiCBS767	ok	1	A	3	3	0	0	3
+DrugosaCBS613	ok	1	A	4	4	0	1	4
+EafricanusCBS136260	ok	1	MAT1-1	3	3	0	2	4
+EaquamarinaCBS119918	ok	1	MAT1-2	3	3	0	1	3
+EcrescensUAMH3008	ok	1	MAT1-2	7	7	0	1	8
+EdermatitidisNIHUT8656	ok	1	MAT1-2	3	3	0	1	6
+EfestucaeFl1	missing FungiDB-68_EfestucaeFl1.gff.gz	0		0	0	0	0	0
+EglyceriaeE277	missing FungiDB-68_EglyceriaeE277.gff.gz	0		0	0	0	0	0
+EmesophilaCBS40295	ok	1	MAT1-1	2	2	0	2	3
+EoligospermaCBS72588	ok	0		0	0	0	0	0
+Eorientalis5z489	missing FungiDB-68_Eorientalis5z489.gff.gz	0		0	0	0	0	0
+EpasteurianusEp9510	ok	1	MAT1-1	6	6	0	1	7
+EspiniferaCBS89968	ok	0		0	0	0	0	0
+FcircinatumNRRL25331	ok	1	MAT1-1	6	6	0	0	6
+FfujikuroiIMI58289	ok	1	MAT1-2	4	4	0	0	5
+Fgraminearum233423	missing FungiDB-68_Fgraminearum233423.gff.gz	0		0	0	0	0	0
+FgraminearumPH-1	ok	1	MAT1-1	7	7	0	0	9
+FmangiferaeMRC7560	ok	1	MAT1-2	4	4	0	0	5
+FmultimorphosaCBS102226	ok	0		0	0	0	0	0
+FodoratissimumNRRL54006	ok	1	MAT1-1	6	6	0	0	7
+Fodoratissimumrace4	contig_names_differ:KB726998	1	MAT1-1	4	0	4	3	0
+Foxysporum26406	ok	1	MAT1-2	5	5	0	1	9
+Foxysporum4287	ok	1	MAT1-1	7	7	0	0	10
+FoxysporumFo47	ok	1	MAT1-2	5	5	0	1	9
+FoxysporumFo5176	ok	1	MAT1-1	7	7	0	0	9
+FoxysporumNRRL32931	ok	1	MAT1-1	7	7	0	0	9
+Foxysporumrace1	ok	1	MAT1-2	5	5	0	1	9
+FpedrosoiCBS271-37	ok	0		0	0	0	0	0
+FproliferatumET1	ok	1	MAT1-2	4	4	0	0	5
+FproliferatumNRRL62905	ok	1	MAT1-2	4	4	0	0	5
+FsolaniFSSC5MPISDFRAT0091	ok	1	MAT1-1	6	6	0	0	8
+Fvanettenii77134	ok	1	MAT1-1	6	6	0	0	8
+Fverticillioides7600	ok	1	MAT1-1	6	6	0	0	11
+GirregulareDAOMBR486	ok	0		0	0	0	0	0
+GiwayamaeDAOMBR242034	ok	0		0	0	0	0	0
+GtriticiR3-111a-1	ok	1	MAT1-2	4	4	0	0	7
+GultimumBR650	ok	0		0	0	0	0	0
+GultimumDAOMBR144	ok	0		0	0	0	0	0
+HarabidopsidisEmoy2	ok	0		0	0	0	0	0
+HcapsulatumG184AR	ok	1	MAT1-2	8	7	1	0	11
+HcapsulatumG186AR	ok	1	MAT1-2	8	7	1	0	11
+HcapsulatumG217B	ok	1	MAT1-1	5	5	0	0	6
+HcapsulatumH143	ok	1	MAT1-1	5	5	0	0	6
+HcapsulatumH88	ok	1	MAT1-2	8	8	0	0	12
+HcapsulatumNAm1	ok	1	MAT1-1	5	5	0	0	7
+HcapsulatumWU24	ok	1	MAT1-1	5	5	0	0	6
+HguilliermondiiUTAD222	ok	0		0	0	0	0	0
+HuvarumAWRI3580	ok	0		0	0	0	0	0
+HvastatrixRaceXXXIII	contig_names_differ:PHNK01001394,PHNK01003389	2	undetermined	4	0	4	0	0
+HwerneckiiEXF-2000	ok	0		0	0	0	0	0
+KbestiolaeCBS10118	ok	1	alpha	4	2	2	3	18
+KdejecticolaCBS10117	ok	1	alpha	4	2	2	3	18
+KheveanensisCBS569	ok	1	alpha	4	2	2	3	19
+KlactisNRRLY-1140	ok	3	MATa;MATalpha	9	9	0	3	9
+KmangroviensisCBS8507	ok	1	alpha	5	3	2	2	33
+KmarxianusDMKU3-1042	ok	3	MATa;MATalpha	9	9	0	3	9
+LcorymbiferaJMRCFSU9682	ok	0		0	0	0	0	0
+LelongisporusNRRLYB-4239	ok	0		0	0	0	0	0
+LprolificansJHH5317	ok	1	MAT1-1	4	4	0	0	4
+LramosaKPH11	missing FungiDB-68_LramosaKPH11.gff.gz	0		0	0	0	0	0
+LtigrinusALCF2SS1-7	ok	2	undetermined	8	8	0	1	26
+ManisopliaeARSEF549	ok	1	MAT1-1	6	6	0	0	10
+McanisCBS113480	ok	1	MAT1-1	7	7	0	1	6
+Mcircinelloides1006PhL	ok	1	Plus	5	5	0	0	6
+MfructicolaCPMC6	ok	1	MAT1-2	6	5	1	0	5
+MglobosaCBS7966	ok	0		0	0	0	0	0
+MguilliermondiiATCC6260	ok	1	A	4	3	1	1	3
+Mlarici-populina98AG31	ok	1	undetermined	2	2	0	0	2
+MlusitanicusCBS277-49	ok	1	Minus	5	5	0	0	11
+Mmycetomatismm55	ok	1	MAT1-2	4	4	0	0	5
+MpachydermatisCBS1879	ok	2	undetermined	4	3	1	1	4
+MphaseolinaMS6	ok	1	MAT1-1	3	3	0	1	4
+MpoaeATCC64411	ok	1	MAT1-1	5	5	0	1	5
+MrestrictaCBS7877	ok	2	undetermined	4	3	1	1	4
+MrestrictaKCTC27527	ok	2	undetermined	4	3	1	1	4
+MsympodialisATCC42132	ok	2	undetermined	4	3	1	1	4
+NalbidaJCM2334	missing FungiDB-68_NalbidaJCM2334.gff.gz	0		0	0	0	0	0
+NalbidaNRRLY1402	missing FungiDB-68_NalbidaNRRLY1402.gff.gz	0		0	0	0	0	0
+NcrassaOR74A	ok	1	MAT1-1	6	6	0	0	8
+NdiscretaFGSC8579	ok	1	MAT1-1	6	6	0	0	8
+NglabratusBG2	ok	1	MATalpha	3	3	0	3	3
+NglabratusBG3993	ok	1	MATalpha	3	3	0	3	3
+NglabratusCBS138	ok	2	MATalpha	6	6	0	6	8
+NglabratusCBS1382020	ok	2	MATalpha	6	6	0	6	6
+NglabratusDSY562	ok	1	MATalpha	3	3	0	3	3
+NgypseaCBS118893	ok	1	MAT1-1	7	7	0	1	6
+NtetraspermaFGSC2508	ok	1	MAT1-1	6	6	0	0	7
+OpiceaeUAMH11346	ok	1	MAT1-2	5	5	0	0	9
+PanserinaSmat	ok	1	MAT1-2	4	4	0	0	4
+PaphanidermatumDAOMBR444	ok	0		0	0	0	0	0
+PaphanisDRCT72020	ok	0		0	0	0	0	0
+ParrhenomanesATCC12531	ok	0		0	0	0	0	0
+PattinorumCBS131958	ok	1	MAT1-2	4	4	0	0	4
+PblakesleeanusNRRL1555	ok	1	Minus	4	4	0	1	4
+PbrasiliensisPb03	ok	1	MAT1-2	7	7	0	1	7
+PbrasiliensisPb18	ok	1	MAT1-2	7	6	1	1	6
+Pcactorum10300	ok	0		0	0	0	0	0
+PcanisCanA	ok	1	P	2	2	0	2	3
+PcapsiciLT1534	ok	0		0	0	0	0	0
+PcariniiB80	ok	1	M	2	2	0	2	4
+PchrysosporiumRP-78	ok	1	undetermined	4	4	0	0	6
+PcinnamomiGKB4	ok	0		0	0	0	0	0
+PcomataTmat	ok	1	MAT1-2	4	4	0	0	4
+Pdestructans20631-21	ok	1	MAT1-1	6	5	1	0	5
+PdigitatumPd1	ok	1	MAT1-1	4	4	0	0	4
+PeffusaR13	ok	0		0	0	0	0	0
+Pexpansumd1	ok	1	MAT1-1	4	4	0	0	4
+PfijiensisCIRAD86	ok	1	MAT1-1	4	4	0	2	15
+PgraminisCRL75-36-700-3	ok	1	undetermined	2	2	0	0	2
+PinfestansT30-4	ok	0		0	0	0	0	0
+PinsidiosumPi-s	ok	0		0	0	0	0	0
+PjiroveciiRU7	ok	1	M	3	2	1	1	4
+PjiroveciiSE8	ok	1	M	3	1	2	1	4
+PkudriavzeviiCBS5147	missing FungiDB-68_PkudriavzeviiCBS5147.gff.gz	0		0	0	0	0	0
+PkudriavzeviiCBS573	ok	1	MATa	2	2	0	2	2
+PlingamJN3	ok	1	MAT1-2	4	4	0	2	14
+PlutziiPb01	ok	1	MAT1-1	5	5	0	0	6
+PmacacaeP2C	ok	1	P	3	3	0	1	4
+PmurinaB123	ok	1	P	2	2	0	2	4
+PnodorumSN15	ok	1	MAT1-1	4	4	0	1	12
+PomphalodesCBS100304	ok	1	MAT1-2	2	2	0	2	5
+PoryctolagiCS1	ok	0		0	0	0	0	0
+Poryzae70-15	ok	1	MAT1-2	3	3	0	1	7
+PoryzaeBR32	ok	1	MAT1-2	3	3	0	1	9
+PostreatusPC15	ok	1	undetermined	6	6	0	0	6
+PostreatusPC9	ok	1	undetermined	6	6	0	0	4
+Ppalmivorasbr112.9	ok	0		0	0	0	0	0
+PparasiticaINRA-310	ok	0		0	0	0	0	0
+PpennisetigenaBr36	ok	1	MAT1-1	4	4	0	1	7
+PplurivoraAV1007	missing FungiDB-68_PplurivoraAV1007.gff.gz	0		0	0	0	0	0
+Pramorum14567	ok	0		0	0	0	0	0
+PramorumPr-102	ok	0		0	0	0	0	0
+PrubensWisconsin54-1255	ok	1	MAT1-1	5	5	0	0	6
+PsojaeP6497	ok	0		0	0	0	0	0
+PsorghiRO10H11247	ok	1	undetermined	2	2	0	0	4
+Pstriiformis93-210	ok	2	undetermined	4	4	0	0	4
+Pstriiformis93TX-2	ok	0		0	0	0	0	0
+Ptriticina1-1BBBDRace1	ok	1	undetermined	2	2	0	0	2
+PvariotiiCBS101075	ok	1	MAT1-1	5	5	0	0	6
+PvexansDAOMBR484	ok	0		0	0	0	0	0
+Pwakefieldiae2A	ok	1	P	2	2	0	2	3
+PzonataCBS506.65	ok	1	MAT1-2	6	6	0	0	5
+RdelemarRA99-880	ok	1	Plus	4	3	1	2	22
+RirregularisA1DAOM664342	ok	0		0	0	0	0	0
+RirregularisC2	ok	0		0	0	0	0	0
+RirregularisDAOM181602	ok	0		0	0	0	0	0
+RlauricolaRL4	ok	1	MAT1-2	5	5	0	0	9
+RmackenzieiCBS650.93	ok	1	MAT1-1	3	3	0	1	3
+RmelleaRicmel1	ok	5	undetermined	12	9	3	9	49
+RmicrosporusATCC52814	ok	1	Minus	3	3	0	2	4
+SapiospermumIHEM14462	ok	1	MAT1-1	4	4	0	1	9
+Sbrasiliensis5110	ok	1	MAT1-2	2	2	0	2	4
+ScerevisiaeS288C	ok	3	MATa;MATalpha	10	9	1	5	8
+SchartarumIBT40293	ok	1	MAT1-2	4	4	0	0	5
+ScommuneH4-8	ok	3	undetermined	23	23	0	1	44
+SdiclinaVS20	ok	0		0	0	0	0	0
+SendobioticumMB42	ok	0		0	0	0	0	0
+SjaponicusyFS275	ok	0		0	0	0	0	0
+SludwigiiUTAD17	ok	1	MATa	3	1	2	1	1
+Smacrosporak-hell	ok	1	MAT1-1	7	7	0	0	7
+SoctosporusyFS286	ok	0		0	0	0	0	0
+SparadoxusCBS432	ok	3	MATalpha	9	9	0	6	6
+SparasiticaCBS223-65	ok	0		0	0	0	0	0
+Spombe972h	ok	0		0	0	0	0	0
+SpunctatusDAOMBR117	ok	0		0	0	0	0	0
+SreilianumSRZ2	ok	2	undetermined	5	5	0	0	11
+Sschenckii1099-18	ok	1	MAT1-1	7	6	1	0	11
+Ssclerotiorum1980UF-70	ok	1	MAT1-2	7	7	0	0	7
+TasahiiCBS2479	ok	1	undetermined	3	1	2	2	2
+TatrovirideJCM9410	missing FungiDB-68_TatrovirideJCM9410.gff.gz	0		0	0	0	0	0
+TciferriiCBS4856	ok	0		0	0	0	0	0
+TdeformansPYCC5710	ok	0		0	0	0	0	0
+TequinumCBS127.97	ok	1	MAT1-2	7	7	0	1	6
+TmarneffeiATCC18224	ok	1	MAT1-2	7	7	0	0	8
+TmarneffeiTM4	missing FungiDB-68_TmarneffeiTM4.gff.gz	0		0	0	0	0	0
+TmentagrophytesTIMM2789	ok	1	MAT1-2	7	7	0	1	6
+TmesentericaDSM1558	ok	1	a	4	4	0	3	42
+TreeseiQM6a	ok	1	MAT1-2	5	5	0	0	5
+TreeseiQM6a2017	ok	1	MAT1-2	5	5	0	0	5
+TrubrumCBS118892	ok	1	MAT1-1	7	7	0	1	6
+TstipitatusATCC10500	ok	2	MAT1-1;MAT1-2	8	8	0	2	8
+TthermophilusATCC42464	ok	1	MAT1-1	6	6	0	0	6
+TtonsuransCBS112818	ok	1	MAT1-1	7	7	0	1	6
+TvirensGv29-8	ok	1	MAT1-2	4	4	0	0	5
+Umaydis521	ok	2	undetermined	5	5	0	0	6
+Ureesii1704	ok	1	MAT1-1	4	4	0	1	4
+VdahliaeJR2	ok	1	MAT1-2	4	4	0	1	11
+VgallopavaCBS43764	ok	1	MAT1-2	5	4	1	2	13
+XarbusculaCBS124340	ok	1	MAT1-2	4	4	0	0	5
+YlipolyticaCLIB122	ok	0		0	0	0	0	0
+YlipolyticaCLIB89W29	ok	0		0	0	0	0	0
+ZtriticiIPO323	ok	1	MAT1-1	2	2	0	2	3
+ZtriticiST99CH3D1	ok	1	MAT1-2	2	2	0	2	2

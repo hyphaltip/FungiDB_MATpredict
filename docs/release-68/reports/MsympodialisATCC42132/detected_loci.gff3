@@ -1,0 +1,9 @@
+##gff-version 3
+##sequence-region LT671821 721646 868166
+LT671821	MATPredict	MAT_locus	721646	724665	.	.	.	ID=Basidiomycota_bLocus_0;family=Basidiomycota:bLocus;confidence=high;idiomorph=undetermined;fragmented=false;core_start=721646;core_end=724665;beyond_core_bp=0;supported_start=721646;supported_end=724665;beyond_supported_bp=0;reference_records=76777_atcc-42132_bLocus_b1
+LT671821	MATPredict	gene	721646	723292	.	-	.	ID=Basidiomycota_bLocus_0.gene0;Parent=Basidiomycota_bLocus_0;Name=bW;role=core_MAT;present=true;identity=96.0;reference_record=76777_atcc-42132_bLocus_b1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+LT671821	MATPredict	gene	723796	724665	.	+	.	ID=Basidiomycota_bLocus_0.gene1;Parent=Basidiomycota_bLocus_0;Name=bE;role=core_MAT;present=true;identity=100.0;reference_record=76777_atcc-42132_bLocus_b1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+LT671821	MATPredict	MAT_locus	866423	868166	.	.	.	ID=Basidiomycota_aLocus_1;family=Basidiomycota:aLocus;confidence=high;idiomorph=undetermined;fragmented=false;core_start=866423;core_end=868166;beyond_core_bp=0;supported_start=866423;supported_end=868166;beyond_supported_bp=0;reference_records=5270_521_aLocus_a1,76777_unspecified-a1_aLocus_a1
+LT671821	MATPredict	gene	866423	866572	.	-	.	ID=Basidiomycota_aLocus_1.gene0;Parent=Basidiomycota_aLocus_1;Name=mfa1;role=core_MAT;present=true;identity=100.0;reference_record=76777_unspecified-a1_aLocus_a1;method=exonerate_refine;status=polished_agree;coverage=100.0
+LT671821	MATPredict	gene	866952	868166	.	+	.	ID=Basidiomycota_aLocus_1.gene1;Parent=Basidiomycota_aLocus_1;Name=pra1;role=core_MAT;present=true;identity=33.2;reference_record=5270_521_aLocus_a1;method=diamond_proteome;status=not_polish_candidate;coverage=82.6
+LT671821	MATPredict	gene	866423	868166	.	.	.	ID=Basidiomycota_aLocus_1.gene2;Parent=Basidiomycota_aLocus_1;Name=rba1;present=false

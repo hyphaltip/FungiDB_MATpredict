@@ -1,0 +1,10 @@
+##gff-version 3
+##sequence-region FQ311430 1664849 1672806
+##sequence-region FQ311442 760387 769855
+FQ311430	MATPredict	MAT_locus	1664849	1672806	.	.	.	ID=Basidiomycota_bLocus_0;family=Basidiomycota:bLocus;confidence=high;idiomorph=undetermined;fragmented=false;core_start=1664849;core_end=1668708;beyond_core_bp=4098;supported_start=1664849;supported_end=1672806;beyond_supported_bp=0;reference_records=72559_srs1-h2-8_bLocus_b1
+FQ311430	MATPredict	gene	1664849	1667008	.	-	.	ID=Basidiomycota_bLocus_0.gene0;Parent=Basidiomycota_bLocus_0;Name=bW;role=core_MAT;present=true;identity=79.2;reference_record=72559_srs1-h2-8_bLocus_b1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+FQ311430	MATPredict	gene	1667242	1668708	.	+	.	ID=Basidiomycota_bLocus_0.gene1;Parent=Basidiomycota_bLocus_0;Name=bE;role=core_MAT;present=true;identity=81.8;reference_record=72559_srs1-h2-8_bLocus_b1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+FQ311442	MATPredict	MAT_locus	760387	769855	.	.	.	ID=Basidiomycota_aLocus_1;family=Basidiomycota:aLocus;confidence=high;idiomorph=undetermined;fragmented=false;core_start=760387;core_end=768589;beyond_core_bp=1266;supported_start=760387;supported_end=769855;beyond_supported_bp=0;reference_records=49012_cbs-131463_aLocus_a1,5270_521_aLocus_a1
+FQ311442	MATPredict	gene	760387	761076	.	+	.	ID=Basidiomycota_aLocus_1.gene0;Parent=Basidiomycota_aLocus_1;Name=rba1;role=flanking_variable;present=true;identity=84.1;reference_record=5270_521_aLocus_a1;method=diamond_proteome;status=not_polish_candidate;coverage=89.9
+FQ311442	MATPredict	gene	764024	764140	.	-	.	ID=Basidiomycota_aLocus_1.gene1;Parent=Basidiomycota_aLocus_1;Name=mfa1;role=core_MAT;present=true;identity=76.9;reference_record=49012_cbs-131463_aLocus_a1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+FQ311442	MATPredict	gene	767380	768589	.	+	.	ID=Basidiomycota_aLocus_1.gene2;Parent=Basidiomycota_aLocus_1;Name=pra1;role=core_MAT;present=true;identity=81.5;reference_record=49012_cbs-131463_aLocus_a1;method=diamond_proteome;status=not_polish_candidate;coverage=98.9

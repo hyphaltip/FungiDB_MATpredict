@@ -1,0 +1,8 @@
+##gff-version 3
+##sequence-region JH977583 542342 548544
+JH977583	MATPredict	MAT_locus	542342	548544	.	.	.	ID=Basidiomycota_PR_0;family=Basidiomycota:PR;confidence=medium;idiomorph=undetermined;fragmented=false;core_start=542342;core_end=548544;beyond_core_bp=0;supported_start=542342;supported_end=548544;beyond_supported_bp=0;ambiguous_with=Basidiomycota:Balpha,Basidiomycota:aLocus;reference_records=5346_a43-b43-okayama-7_PR_B43,caax_scan:CIIV
+JH977583	MATPredict	gene	542342	545244	.	-	.	ID=Basidiomycota_PR_0.gene0;Parent=Basidiomycota_PR_0;Name=pheromone_receptor;role=core_MAT;present=true;identity=30.1;reference_record=5346_a43-b43-okayama-7_PR_B43;method=diamond_proteome;status=not_polish_candidate;coverage=46.5
+JH977583	MATPredict	gene	548449	548532	.	-	.	ID=Basidiomycota_PR_0.gene1;Parent=Basidiomycota_PR_0;Name=caax_precursor;role=core_MAT;present=true;identity=0.0;reference_record=caax_scan:CIIV;method=caax_scan;status=caax_orf
+JH977583	MATPredict	gene	548452	548544	.	-	.	ID=Basidiomycota_PR_0.gene2;Parent=Basidiomycota_PR_0;Name=pheromone_B44;role=core_MAT;present=true;identity=38.71;reference_record=5346_a43-b43-okayama-7_PR_B43;method=tblastn_genome;status=unpolished;coverage=51.0
+JH977583	MATPredict	gene	542342	548544	.	.	.	ID=Basidiomycota_PR_0.gene3;Parent=Basidiomycota_PR_0;Name=pheromone_B43;present=false
+JH977583	MATPredict	gene	542342	548544	.	.	.	ID=Basidiomycota_PR_0.gene4;Parent=Basidiomycota_PR_0;Name=fungal_mating_type_pheromone;present=false

@@ -1,0 +1,7 @@
+##gff-version 3
+##sequence-region KV441469 282551 288669
+KV441469	MATPredict	MAT_locus	282551	288669	.	.	.	ID=Ascomycota_MAT_0;family=Ascomycota:MAT;confidence=high;idiomorph=MAT1-1;fragmented=false;core_start=282551;core_end=288669;beyond_core_bp=0;supported_start=282551;supported_end=288669;beyond_supported_bp=0;reference_records=2903220_liq80xsp_MAT_combined,5022_unknown-1_MAT_MAT1-1,5501_rs_MAT_MAT1-2
+KV441469	MATPredict	gene	282551	283767	.	+	.	ID=Ascomycota_MAT_0.gene0;Parent=Ascomycota_MAT_0;Name=MAT1-1-1;role=core_MAT;present=true;identity=57.5;reference_record=5022_unknown-1_MAT_MAT1-1;method=diamond_proteome;status=not_polish_candidate;coverage=50.2
+KV441469	MATPredict	gene	285775	287729	.	-	.	ID=Ascomycota_MAT_0.gene1;Parent=Ascomycota_MAT_0;Name=APN2;role=flanking_conserved;present=true;identity=86.4;reference_record=2903220_liq80xsp_MAT_combined;method=diamond_proteome;status=not_polish_candidate;coverage=36.7
+KV441469	MATPredict	gene	288032	288669	.	+	.	ID=Ascomycota_MAT_0.gene2;Parent=Ascomycota_MAT_0;Name=COX13;role=flanking_conserved;present=true;identity=51.3;reference_record=5501_rs_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=82.2
+KV441469	MATPredict	gene	282551	288669	.	.	.	ID=Ascomycota_MAT_0.gene3;Parent=Ascomycota_MAT_0;Name=SLA2;present=false

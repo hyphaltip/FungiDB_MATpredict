@@ -1,0 +1,7 @@
+##gff-version 3
+##sequence-region JAEOAQ010000005 857755 865403
+JAEOAQ010000005	MATPredict	MAT_locus	857755	865403	.	.	.	ID=Ascomycota_MTL_0;family=Ascomycota:MTL;confidence=high;idiomorph=A;fragmented=false;core_start=857758;core_end=865403;beyond_core_bp=3;supported_start=857758;supported_end=865403;beyond_supported_bp=3;reference_records=42374_d1558_MTL_alpha,5476_sc5314_MTL_A
+JAEOAQ010000005	MATPredict	gene	858905	860206	.	+	.	ID=Ascomycota_MTL_0.gene0;Parent=Ascomycota_MTL_0;Name=OBP1;role=flanking_variable;present=true;identity=69.0;reference_record=5476_sc5314_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=98.8
+JAEOAQ010000005	MATPredict	gene	860434	863274	.	+	.	ID=Ascomycota_MTL_0.gene1;Parent=Ascomycota_MTL_0;Name=PIK1;role=flanking_variable;present=true;identity=62.8;reference_record=5476_sc5314_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=99.3
+JAEOAQ010000005	MATPredict	gene	864079	864632	.	+	.	ID=Ascomycota_MTL_0.gene2;Parent=Ascomycota_MTL_0;Name=MTLA2;role=core_MAT;present=true;identity=41.2;reference_record=5476_sc5314_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=55.2
+JAEOAQ010000005	MATPredict	gene	864968	865403	.	+	.	ID=Ascomycota_MTL_0.gene3;Parent=Ascomycota_MTL_0;Name=MTLA1;role=core_MAT;present=true;identity=39.02;reference_record=5476_sc5314_MTL_A;method=exonerate_refine;status=polished_single;coverage=58.6

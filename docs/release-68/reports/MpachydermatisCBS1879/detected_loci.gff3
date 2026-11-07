@@ -1,0 +1,10 @@
+##gff-version 3
+##sequence-region LGAV01000001 1018608 1020377
+##sequence-region LGAV01000004 366673 372093
+LGAV01000001	MATPredict	MAT_locus	1018608	1020377	.	.	.	ID=Basidiomycota_aLocus_0;family=Basidiomycota:aLocus;confidence=high;idiomorph=undetermined;fragmented=false;core_start=1018608;core_end=1020377;beyond_core_bp=0;supported_start=1018608;supported_end=1020377;beyond_supported_bp=0;reference_records=394055_cbs-10428_aLocus_a1,76777_unspecified-a1_aLocus_a1
+LGAV01000001	MATPredict	gene	1018608	1018757	.	-	.	ID=Basidiomycota_aLocus_0.gene0;Parent=Basidiomycota_aLocus_0;Name=mfa1;role=core_MAT;present=true;identity=50.0;reference_record=76777_unspecified-a1_aLocus_a1;method=exonerate_refine;status=polished_single;coverage=100.0
+LGAV01000001	MATPredict	gene	1019422	1020377	.	+	.	ID=Basidiomycota_aLocus_0.gene1;Parent=Basidiomycota_aLocus_0;Name=pra1;role=core_MAT;present=true;identity=26.0;reference_record=394055_cbs-10428_aLocus_a1;method=diamond_proteome;status=not_polish_candidate;coverage=60.8
+LGAV01000001	MATPredict	gene	1018608	1020377	.	.	.	ID=Basidiomycota_aLocus_0.gene2;Parent=Basidiomycota_aLocus_0;Name=rba1;present=false
+LGAV01000004	MATPredict	MAT_locus	366673	372093	.	.	.	ID=Basidiomycota_bLocus_1;family=Basidiomycota:bLocus;confidence=high;idiomorph=undetermined;fragmented=false;core_start=366673;core_end=372093;beyond_core_bp=0;supported_start=366673;supported_end=372093;beyond_supported_bp=0;reference_records=327079_sy62_bLocus_b1,349360_cbs-131475_bLocus_b1
+LGAV01000004	MATPredict	gene	366673	369885	.	-	.	ID=Basidiomycota_bLocus_1.gene0;Parent=Basidiomycota_bLocus_1;Name=bW;role=core_MAT;present=true;identity=78.4;reference_record=327079_sy62_bLocus_b1;method=diamond_proteome;status=not_polish_candidate;coverage=8.0
+LGAV01000004	MATPredict	gene	371524	372093	.	+	.	ID=Basidiomycota_bLocus_1.gene1;Parent=Basidiomycota_bLocus_1;Name=bE;role=core_MAT;present=true;identity=44.2;reference_record=349360_cbs-131475_bLocus_b1;method=diamond_proteome;status=not_polish_candidate;coverage=16.4

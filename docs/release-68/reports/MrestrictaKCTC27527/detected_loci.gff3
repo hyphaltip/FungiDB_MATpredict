@@ -1,0 +1,10 @@
+##gff-version 3
+##sequence-region CP030254 430565 434186
+##sequence-region CP030255 606874 608743
+CP030254	MATPredict	MAT_locus	430565	434186	.	.	.	ID=Basidiomycota_bLocus_0;family=Basidiomycota:bLocus;confidence=high;idiomorph=undetermined;fragmented=false;core_start=431215;core_end=434186;beyond_core_bp=650;supported_start=430565;supported_end=434186;beyond_supported_bp=0;reference_records=1882483_mca3645_bLocus_b1,76777_atcc-44340_bLocus_b2
+CP030254	MATPredict	gene	431215	432129	.	-	.	ID=Basidiomycota_bLocus_0.gene0;Parent=Basidiomycota_bLocus_0;Name=bE;role=core_MAT;present=true;identity=45.4;reference_record=76777_atcc-44340_bLocus_b2;method=diamond_proteome;status=not_polish_candidate;coverage=97.6
+CP030254	MATPredict	gene	432606	434186	.	+	.	ID=Basidiomycota_bLocus_0.gene1;Parent=Basidiomycota_bLocus_0;Name=bW;role=core_MAT;present=true;identity=77.1;reference_record=1882483_mca3645_bLocus_b1;method=diamond_proteome;status=not_polish_candidate;coverage=9.0
+CP030255	MATPredict	MAT_locus	606874	608743	.	.	.	ID=Basidiomycota_aLocus_1;family=Basidiomycota:aLocus;confidence=high;idiomorph=undetermined;fragmented=false;core_start=606874;core_end=608743;beyond_core_bp=0;supported_start=606874;supported_end=608743;beyond_supported_bp=0;reference_records=120017_uh112_aLocus_a1,76777_unspecified-a1_aLocus_a1
+CP030255	MATPredict	gene	606874	608069	.	-	.	ID=Basidiomycota_aLocus_1.gene0;Parent=Basidiomycota_aLocus_1;Name=pra1;role=core_MAT;present=true;identity=31.8;reference_record=120017_uh112_aLocus_a1;method=diamond_proteome;status=not_polish_candidate;coverage=81.3
+CP030255	MATPredict	gene	608594	608743	.	+	.	ID=Basidiomycota_aLocus_1.gene1;Parent=Basidiomycota_aLocus_1;Name=mfa1;role=core_MAT;present=true;identity=46.0;reference_record=76777_unspecified-a1_aLocus_a1;method=exonerate_refine;status=polished_single;coverage=100.0
+CP030255	MATPredict	gene	606874	608743	.	.	.	ID=Basidiomycota_aLocus_1.gene2;Parent=Basidiomycota_aLocus_1;Name=rba1;present=false

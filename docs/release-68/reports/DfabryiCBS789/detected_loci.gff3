@@ -1,0 +1,6 @@
+##gff-version 3
+##sequence-region LMYN01000014 86090 89485
+LMYN01000014	MATPredict	MAT_locus	86090	89485	.	.	.	ID=Ascomycota_MTL_0;family=Ascomycota:MTL;confidence=high;idiomorph=alpha;fragmented=false;core_start=86090;core_end=89485;beyond_core_bp=0;supported_start=86090;supported_end=89485;beyond_supported_bp=0;reference_records=4959_cbs767_MTL_A
+LMYN01000014	MATPredict	gene	86090	86910	.	+	.	ID=Ascomycota_MTL_0.gene0;Parent=Ascomycota_MTL_0;Name=MTLA2;role=core_MAT;present=true;identity=88.4;reference_record=4959_cbs767_MTL_A;method=exonerate_refine;status=polished_agree;coverage=99.6
+LMYN01000014	MATPredict	gene	87209	87818	.	+	.	ID=Ascomycota_MTL_0.gene1;Parent=Ascomycota_MTL_0;Name=MTLA1;role=core_MAT;present=true;identity=79.07;reference_record=4959_cbs767_MTL_A;method=exonerate_refine;status=polished_agree;coverage=99.4
+LMYN01000014	MATPredict	gene	88847	89485	.	+	.	ID=Ascomycota_MTL_0.gene2;Parent=Ascomycota_MTL_0;Name=MTLalpha1;role=core_MAT;present=true;identity=83.0;reference_record=4959_cbs767_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
