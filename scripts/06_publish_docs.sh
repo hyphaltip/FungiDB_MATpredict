@@ -16,6 +16,7 @@ for run in "$RUNS_DIR"/*/; do
     cp "$run/report.html" "$DOCS_RELEASE_DIR/reports/$s/index.html"
     cp "$run/detected_loci.gff3" "$DOCS_RELEASE_DIR/reports/$s/" 2>/dev/null || true
     cp "$run/detection_report.yaml" "$DOCS_RELEASE_DIR/reports/$s/" 2>/dev/null || true
+    [ -s "$COMPARE_DIR/annotation/$s.html" ] && cp "$COMPARE_DIR/annotation/$s.html" "$DOCS_RELEASE_DIR/reports/$s/annotation.html"
 done
 for f in "$TABLES_DIR"/*.tsv "$TABLES_DIR"/*.md "$COMPARE_DIR"/*.tsv; do
     [ -s "$f" ] && cp "$f" "$DOCS_RELEASE_DIR/tables/"

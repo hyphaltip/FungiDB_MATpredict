@@ -58,8 +58,8 @@ def results_table(res: Path, docs_rel: Path, prefix: str) -> tuple[list[str], di
                 or (g.get("families_attempted") or "").split(":")[0] or "unknown")
 
     ordered = sorted(samples, key=lambda s: (phylum_of(s), s.lower()))
-    lines = ["| Genome | Phylum (GmG) | MAT idiomorph | Confidence | Genes found | Annotated | Not annotated | Locus | Files |",
-             "| --- | --- | --- | --- | --- | --- | --- | --- | --- |"]
+    lines = ["| Genome | Organism | Phylum (GmG) | MAT idiomorph | Confidence | Genes found | Annotated | Not annotated | Locus | Files |",
+             "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"]
     counts = {"genomes": len(samples), "with_locus": 0, "not_searched": 0, "failed": 0, "unannotated_genes": 0}
     by_phylum = {}
     for s in ordered:
@@ -68,8 +68,10 @@ def results_table(res: Path, docs_rel: Path, prefix: str) -> tuple[list[str], di
         bp["genomes"] += 1
         has_report = (docs_rel / "reports" / s / "index.html").is_file()
         link = f"[{s}]({prefix}reports/{s}/)" if has_report else s
-        files = (f'<span class="links">[GFF3]({prefix}reports/{s}/detected_loci.gff3) [YAML]({prefix}reports/{s}/detection_report.yaml)</span>'
+        ann = f"[annotation]({prefix}reports/{s}/annotation.html) " if (docs_rel / "reports" / s / "annotation.html").is_file() else ""
+        files = (f'<span class="links">{ann}[GFF3]({prefix}reports/{s}/detected_loci.gff3) [YAML]({prefix}reports/{s}/detection_report.yaml)</span>'
                  if has_report else (g.get("status") or "no run"))
+        organism = g.get("organism") or "—"
         if g.get("status") == "failed":
             counts["failed"] += 1
         if L:
@@ -92,7 +94,7 @@ def results_table(res: Path, docs_rel: Path, prefix: str) -> tuple[list[str], di
         n_ann = c.get("n_annotated", "—"); n_un = c.get("n_unannotated", "—")
         if c.get("status", "ok") != "ok" and c:
             n_ann = n_un = f'<span class="mono">{c["status"]}</span>'
-        lines.append(f"| {link} | {ph} | {idio} | {conf} | {found} | {n_ann} | {n_un} | {coords} | {files} |")
+        lines.append(f"| {link} | *{organism}* | {ph} | {idio} | {conf} | {found} | {n_ann} | {n_un} | {coords} | {files} |")
     return lines, counts, by_phylum
 
 
@@ -108,6 +110,8 @@ TABLE_DESC = {
     "locus_genes.tsv": "every FungiDB gene inside a MATPredict locus span",
     "summary.tsv": "comparison counts per genome",
     "summary_by_phylum.tsv": "MATPredict recovery counts by phylum",
+    "sample_sheet.tsv": "sample to organism name, from the FungiDB FASTA headers",
+    "annotation_verdicts.tsv": "per MATPredict gene: annotated, partial or novel against the FungiDB GFF, with the matched gene",
 }
 
 METHOD = ("Each genome is routed to a phylum by [GmG](https://github.com/stajichlab/GmG) "
@@ -129,6 +133,10 @@ def write_release(docs: Path, results: Path, rel: str, versions: str) -> dict:
            stats_strip([("genomes", counts["genomes"]), ("MAT locus called", counts["with_locus"]),
                         ("not searched", counts["not_searched"]), ("failed", counts["failed"]),
                         ("MAT genes not annotated", counts["unannotated_genes"])]), "",
+           "Download all results: [genomes.tsv](tables/genomes.tsv) (one row per genome) · "
+           "[loci.tsv](tables/loci.tsv) (one row per MAT locus) · "
+           "[annotation_verdicts.tsv](tables/annotation_verdicts.tsv) (one row per MAT gene vs the FungiDB GFF) · "
+           "[all tables](#tables)", "",
            "## By phylum", "",
            "| Phylum (GmG call) | Genomes | MAT locus called | Not searched |", "| --- | --- | --- | --- |",
            *[f"| {ph} | {c['genomes']} | {c['called']} | {c['not_searched']} |" for ph, c in phyla], "",
