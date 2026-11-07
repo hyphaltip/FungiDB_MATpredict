@@ -3,7 +3,7 @@ title: FungiDB release 68
 ---
 # FungiDB release 68
 
-Generated 2026-11-06. Software recorded in the run reports: MATPredict v0.8.1 (3a62e6302b), database 86f18d232e: 331 genomes
+Generated 2026-11-06. Software recorded in the run reports: MATPredict v0.8.1 (3a62e6302b), database 86f18d232e: 331 genomes. gmg 0.3.2 (66055154a), index bfd-reps-2026.10.5-s20000.gmgi. local NCBI taxonomy snapshot 2026-10-01
 
 Rows are ordered by GmG phylum, then genome; click a column header to sort, or type in the filter box (for example a phylum name).
 

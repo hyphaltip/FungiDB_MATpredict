@@ -49,7 +49,16 @@ def run_provenance(run_dir: Path) -> dict:
         return {}
     code = run.get("code") or {}
     db = run.get("database") or {}
-    guess = (run.get("phylum_guess") or {})
+    def find(d):
+        if isinstance(d, dict):
+            if isinstance(d.get("phylum_guess"), dict):
+                return d["phylum_guess"]
+            for v in d.values():
+                r = find(v)
+                if r:
+                    return r
+        return None
+    guess = find(run) or {}
     ver = code.get("git_describe") or run.get("matpredict_version") or ""
     if code.get("dirty"):
         ver += " (dirty)"
