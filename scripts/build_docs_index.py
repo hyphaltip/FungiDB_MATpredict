@@ -13,42 +13,91 @@ def read(p: Path):
     return list(csv.DictReader(open(p), delimiter="\t")) if p.is_file() else []
 
 
-def results_table(res: Path, docs_rel: Path, prefix: str) -> tuple[list[str], dict]:
-    """Markdown rows for one release and its summary counts."""
+def phylum_call(run_dir: Path) -> dict:
+    """GmG's phylum call from detection_report.yaml: {phylum, reason, note}. Empty when unavailable."""
+    y = run_dir / "detection_report.yaml"
+    if not y.is_file():
+        return {}
+    try:
+        import yaml
+        doc = yaml.safe_load(open(y))
+    except Exception:
+        return {}
+
+    def find(d):
+        if isinstance(d, dict):
+            if "phylum_guess" in d and isinstance(d["phylum_guess"], dict):
+                return d["phylum_guess"]
+            for v in d.values():
+                r = find(v)
+                if r:
+                    return r
+        return None
+    g = find(doc) or {}
+    return {"phylum": g.get("phylum") or "", "reason": g.get("reason") or "", "note": g.get("note") or ""}
+
+
+def badge(text: str, cls: str) -> str:
+    return f'<span class="badge {cls}">{text}</span>' if text else "—"
+
+
+def results_table(res: Path, docs_rel: Path, prefix: str) -> tuple[list[str], dict, dict]:
+    """Markdown rows for one release (ordered by phylum, then genome), summary counts, and per-phylum counts."""
     genomes = {r["sample"]: r for r in read(res / "tables" / "genomes.tsv")}
     loci = {}
     for r in read(res / "tables" / "loci.tsv"):
         loci.setdefault(r["sample"], []).append(r)
     summary = {r["sample"]: r for r in read(res / "compare" / "summary.tsv")}
     runs = res / "matpredict"
-    samples = sorted(set(genomes) | set(summary) | ({p.name for p in runs.iterdir() if p.is_dir()} if runs.is_dir() else set()))
-    lines = ["| Genome | Report | Phylum | MAT idiomorph | Confidence | Genes found | Annotated in FungiDB | Not annotated | Locus coordinates |",
+    samples = set(genomes) | set(summary) | ({p.name for p in runs.iterdir() if p.is_dir()} if runs.is_dir() else set())
+    calls = {s: phylum_call(runs / s) for s in samples}
+
+    def phylum_of(s):
+        g = genomes.get(s, {})
+        return (calls[s].get("phylum") or g.get("phylum")
+                or (g.get("families_attempted") or "").split(":")[0] or "unknown")
+
+    ordered = sorted(samples, key=lambda s: (phylum_of(s), s.lower()))
+    lines = ["| Genome | Phylum (GmG) | MAT idiomorph | Confidence | Genes found | Annotated | Not annotated | Locus | Files |",
              "| --- | --- | --- | --- | --- | --- | --- | --- | --- |"]
     counts = {"genomes": len(samples), "with_locus": 0, "not_searched": 0, "failed": 0, "unannotated_genes": 0}
-    for s in samples:
-        g = genomes.get(s, {}); c = summary.get(s, {}); L = loci.get(s, [])
+    by_phylum = {}
+    for s in ordered:
+        g = genomes.get(s, {}); c = summary.get(s, {}); L = loci.get(s, []); ph = phylum_of(s)
+        bp = by_phylum.setdefault(ph, {"genomes": 0, "called": 0, "not_searched": 0})
+        bp["genomes"] += 1
         has_report = (docs_rel / "reports" / s / "index.html").is_file()
         link = f"[{s}]({prefix}reports/{s}/)" if has_report else s
-        rep = (f"[HTML]({prefix}reports/{s}/) · [GFF3]({prefix}reports/{s}/detected_loci.gff3) · [YAML]({prefix}reports/{s}/detection_report.yaml)"
-               if has_report else (g.get("status") or "no run"))
+        files = (f'<span class="links">[GFF3]({prefix}reports/{s}/detected_loci.gff3) [YAML]({prefix}reports/{s}/detection_report.yaml)</span>'
+                 if has_report else (g.get("status") or "no run"))
         if g.get("status") == "failed":
             counts["failed"] += 1
         if L:
-            counts["with_locus"] += 1
+            counts["with_locus"] += 1; bp["called"] += 1
         if g.get("not_searched_reason"):
-            counts["not_searched"] += 1
+            counts["not_searched"] += 1; bp["not_searched"] += 1
         try:
             counts["unannotated_genes"] += int(c.get("n_unannotated") or 0)
         except ValueError:
             pass
-        phylum = g.get("phylum") or (g.get("families_attempted") or "").split(":")[0] or "—"
-        coords = "<br>".join(f"{l['contig']}:{l['start']}-{l['end']}" for l in L) or "—"
-        conf = "<br>".join(l["confidence"] for l in L) or "—"
-        idio = g.get("idiomorphs") or g.get("not_searched_reason") or "—"
+        coords = "<br>".join(f'<span class="mono">{l["contig"]}:{l["start"]}-{l["end"]}</span>' for l in L) or "—"
+        conf = "<br>".join(badge(l["confidence"], "conf-" + (l["confidence"] or "none")) for l in L) or "—"
+        if L:
+            idio = "<br>".join(f"**{l['idiomorph'] or 'undetermined'}**" for l in L)
+        elif g.get("not_searched_reason"):
+            idio = badge("not searched", "warn") + f' <span class="mono">{g["not_searched_reason"]}</span>'
+        else:
+            idio = "none called"
         found = "<br>".join(l["genes_found"].replace(";", ", ") for l in L) or "—"
-        lines.append(f"| {link} | {rep} | {phylum} | {idio} | {conf} | {found} | "
-                     f"{c.get('n_annotated', '—')} | {c.get('n_unannotated', '—')} | {coords} |")
-    return lines, counts
+        n_ann = c.get("n_annotated", "—"); n_un = c.get("n_unannotated", "—")
+        if c.get("status", "ok") != "ok" and c:
+            n_ann = n_un = f'<span class="mono">{c["status"]}</span>'
+        lines.append(f"| {link} | {ph} | {idio} | {conf} | {found} | {n_ann} | {n_un} | {coords} | {files} |")
+    return lines, counts, by_phylum
+
+
+def stats_strip(items: list[tuple[str, str]]) -> str:
+    return '<div class="stats">' + "".join(f'<div class="stat"><b>{v}</b><span>{k}</span></div>' for k, v in items) + "</div>"
 
 
 TABLE_DESC = {
@@ -71,12 +120,19 @@ METHOD = ("Each genome is routed to a phylum by [GmG](https://github.com/stajich
 def write_release(docs: Path, results: Path, rel: str, versions: str) -> dict:
     docs_rel = docs / f"release-{rel}"
     res = results / f"release-{rel}"
-    rows, counts = results_table(res, docs_rel, "")
-    out = [f"# FungiDB release {rel}", "",
-           f"[All releases](../) · Generated {datetime.date.today()} with {versions}, FungiDB release {rel}.", "",
-           f"{counts['genomes']} genomes run, {counts['with_locus']} with a MAT locus called, "
-           f"{counts['not_searched']} not searched, {counts['failed']} failed.", "",
-           "## Results", "", "Click a genome for MATPredict's full report.", "", *rows, "",
+    rows, counts, by_phylum = results_table(res, docs_rel, "")
+    phyla = sorted(by_phylum.items(), key=lambda kv: -kv[1]["genomes"])
+    out = ["---", f"title: FungiDB release {rel}", "---",
+           f"# FungiDB release {rel}", "",
+           f"Generated {datetime.date.today()} with {versions}. Rows are ordered by GmG phylum, then genome; "
+           "click a column header to sort, or type in the filter box (for example a phylum name).", "",
+           stats_strip([("genomes", counts["genomes"]), ("MAT locus called", counts["with_locus"]),
+                        ("not searched", counts["not_searched"]), ("failed", counts["failed"]),
+                        ("MAT genes not annotated", counts["unannotated_genes"])]), "",
+           "## By phylum", "",
+           "| Phylum (GmG call) | Genomes | MAT locus called | Not searched |", "| --- | --- | --- | --- |",
+           *[f"| {ph} | {c['genomes']} | {c['called']} | {c['not_searched']} |" for ph, c in phyla], "",
+           "## Genomes", "", *rows, "",
            "## Tables", "", "| File | Contents |", "| --- | --- |"]
     for p in sorted((docs_rel / "tables").glob("*.tsv")):
         out.append(f"| [{p.name}](tables/{p.name}) | {TABLE_DESC.get(p.name, '')} |")
@@ -87,11 +143,10 @@ def write_release(docs: Path, results: Path, rel: str, versions: str) -> dict:
 
 
 def write_top(docs: Path, results: Path, releases: list[str], versions: str, counts_by_rel: dict):
-    out = ["# FungiDB MATpredict", "",
+    out = ["---", "title: Releases", "---", "# Releases", "",
            "[MATPredict](https://github.com/stajichlab/MATPredict) mating-type (MAT) locus calls on FungiDB "
            "genomes, compared with the FungiDB gene annotation. Results are kept per FungiDB release; "
-           f"release {releases[0]} is the primary set.", "",
-           f"Generated {datetime.date.today()} with {versions}.", "",
+           f"release {releases[0]} is the primary set. Generated {datetime.date.today()} with {versions}.", "",
            "## Releases", "",
            "| Release | Genomes run | MAT locus called | Not searched | Failed | MAT genes without annotation |",
            "| --- | --- | --- | --- | --- | --- |"]

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<style>
+:root{
+  --bg:#ffffff; --surface:#ffffff; --surface-2:#f4f5f7; --ink:#1b1f24; --ink-2:#424a54; --muted:#5f6873;
+  --line:#dde1e6; --line-2:#c4cad1; --accent:#1f5f99;
+  --high:#1d7a46; --high-bg:#e3f3ea; --medium:#7a4f00; --medium-bg:#fbf0d9; --low:#4f5864; --low-bg:#eceef1;
+  --warn:#8a4b00; --warn-bg:#fff6e5;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#111418; --surface:#171b20; --surface-2:#1e232a; --ink:#e6e9ed; --ink-2:#c3c9d0; --muted:#9aa3ad;
+  --line:#2c333b; --line-2:#3a434d; --accent:#7fb6ea;
+  --high:#6fd39b; --high-bg:#173527; --medium:#f0c060; --medium-bg:#3a2e12; --low:#b4bcc5; --low-bg:#262c33;
+  --warn:#f0b866; --warn-bg:#33270f;} }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:13px/1.45 var(--sans);font-variant-numeric:tabular-nums}
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+.top{position:sticky;top:0;z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+.top-inner{max-width:1600px;margin:0 auto;padding:6px 16px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:14px;color:var(--ink);letter-spacing:.01em}
+.brand small{font-weight:500;color:var(--muted);margin-left:8px}
+.nav{display:flex;gap:14px;font-size:12.5px}
+.nav a{color:var(--ink-2)} .nav a.current{color:var(--accent);font-weight:600}
+.top-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.top-tools input{font:inherit;font-size:12.5px;padding:4px 8px;border:1px solid var(--line-2);border-radius:6px;background:var(--bg);color:var(--ink);width:220px}
+.top-tools .n{font-size:12px;color:var(--muted);white-space:nowrap}
+main{max-width:1600px;margin:0 auto;padding:10px 16px 40px}
+h1{font-size:18px;margin:6px 0 4px} h2{font-size:14px;margin:18px 0 6px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2)}
+p{margin:4px 0 8px;max-width:110ch;color:var(--ink-2)}
+code{font-family:var(--mono);font-size:.92em;background:var(--surface-2);padding:0 4px;border-radius:3px}
+.stats{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 4px}
+.stat{padding:6px 12px;border:1px solid var(--line);border-radius:6px;background:var(--surface-2);min-width:110px}
+.stat b{display:block;font-size:18px;line-height:1.1} .stat span{font-size:11.5px;color:var(--muted)}
+table{border-collapse:collapse;width:100%;font-size:12.5px;margin:4px 0 10px;background:var(--surface)}
+th,td{padding:4px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+thead th{position:sticky;top:38px;background:var(--surface-2);color:var(--ink-2);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;cursor:pointer;white-space:nowrap;border-bottom:1px solid var(--line-2);z-index:2}
+thead th.sorted-asc::after{content:" ▲";font-size:9px} thead th.sorted-desc::after{content:" ▼";font-size:9px}
+tbody tr:hover{background:var(--surface-2)}
+td:first-child{font-weight:600;white-space:nowrap}
+.badge{display:inline-block;padding:0 7px;border-radius:999px;font-size:11px;font-weight:600;border:1px solid currentColor;white-space:nowrap;line-height:1.5}
+.conf-high{color:var(--high);background:var(--high-bg)} .conf-medium{color:var(--medium);background:var(--medium-bg)}
+.conf-low,.conf-none{color:var(--low);background:var(--low-bg)} .warn{color:var(--warn);background:var(--warn-bg)}
+.mono{font-family:var(--mono);font-size:11.5px;color:var(--ink-2)}
+.links a{margin-right:6px}
+.foot{max-width:1600px;margin:0 auto;padding:10px 16px;color:var(--muted);font-size:11.5px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="top"><div class="top-inner">
+  <a class="brand" href="{{ site.baseurl }}/">FungiDB MATpredict<small>MAT locus calls vs FungiDB annotation</small></a>
+  <nav class="nav">
+    <a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="current"{% endif %}>Releases</a>
+    {% for rel in site.data.releases %}<a href="{{ site.baseurl }}/release-{{ rel }}/" {% if page.url contains rel %}class="current"{% endif %}>release {{ rel }}</a>{% endfor %}
+    <a href="https://github.com/hyphaltip/FungiDB_MATpredict">Code</a>
+  </nav>
+  <div class="top-tools"><input id="q" type="search" placeholder="Filter rows (genome, idiomorph, gene…)" aria-label="Filter table rows"><span class="n" id="n"></span></div>
+</div></div>
+<main>{{ content }}</main>
+<div class="foot">Built with <a href="https://github.com/stajichlab/MATPredict">MATPredict</a> and <a href="https://github.com/stajichlab/GmG">GmG</a>. Scripts in the <a href="https://github.com/hyphaltip/FungiDB_MATpredict">repository</a>. GPLv3.</div>
+<script>
+(function(){
+  var q=document.getElementById('q'), n=document.getElementById('n');
+  var tables=[].slice.call(document.querySelectorAll('main table'));
+  var big=tables.filter(function(t){return t.tBodies[0]&&t.tBodies[0].rows.length>3;});
+  function count(){ if(!big.length){n.textContent='';return;} var s=0,v=0; big.forEach(function(t){[].forEach.call(t.tBodies[0].rows,function(r){s++; if(r.style.display!=='none')v++;});}); n.textContent=v===s?s+' rows':v+' of '+s+' rows'; }
+  if(q){ q.addEventListener('input',function(){ var f=q.value.toLowerCase(); big.forEach(function(t){[].forEach.call(t.tBodies[0].rows,function(r){ r.style.display=(!f||r.textContent.toLowerCase().indexOf(f)>=0)?'':'none';});}); count(); }); }
+  tables.forEach(function(t){ [].forEach.call(t.tHead?t.tHead.rows[0].cells:[],function(th,i){ th.addEventListener('click',function(){
+    var asc=!th.classList.contains('sorted-asc'); [].forEach.call(t.tHead.rows[0].cells,function(c){c.classList.remove('sorted-asc','sorted-desc');});
+    th.classList.add(asc?'sorted-asc':'sorted-desc');
+    var rows=[].slice.call(t.tBodies[0].rows); var num=rows.every(function(r){var v=r.cells[i]?r.cells[i].textContent.trim():'';return v===''||v==='—'||!isNaN(parseFloat(v));});
+    rows.sort(function(a,b){var x=a.cells[i]?a.cells[i].textContent.trim():'',y=b.cells[i]?b.cells[i].textContent.trim():''; if(num){x=parseFloat(x)||-Infinity;y=parseFloat(y)||-Infinity;return asc?x-y:y-x;} return asc?x.localeCompare(y):y.localeCompare(x);});
+    rows.forEach(function(r){t.tBodies[0].appendChild(r);});
+  });}); });
+  count();
+})();
+</script>
+</body></html>

@@ -1,4 +1,9 @@
 title: FungiDB MATpredict
 description: MATPredict mating-type locus calls on FungiDB genomes, compared with the FungiDB annotation
-theme: jekyll-theme-cayman
-show_downloads: false
+# No remote theme: docs/_layouts/default.html holds the whole page shell.
+markdown: kramdown
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+exclude: ["*/reports/*/*.yaml", "*/reports/*/*.gff3"]
+include: ["*/reports/*/*.yaml", "*/reports/*/*.gff3"]
