@@ -1,0 +1,9 @@
+##gff-version 3
+##sequence-region LGTZ01000063 22359 31845
+LGTZ01000063	MATPredict	MAT_locus	22359	31845	.	.	.	ID=Ascomycota_MAT_0;family=Ascomycota:MAT;confidence=medium;idiomorph=MAT1-2;fragmented=false;core_start=22359;core_end=31845;beyond_core_bp=0;supported_start=22359;supported_end=31845;beyond_supported_bp=0;reference_records=107463_unknown-1_MAT_MAT1-2,162425_fgsc-a4_MAT_combined,230073_uamh-1363_MAT_MAT1-1,5501_rs_MAT_MAT1-2,746128_af293_MAT_MAT1-2
+LGTZ01000063	MATPredict	gene	22359	26320	.	+	.	ID=Ascomycota_MAT_0.gene0;Parent=Ascomycota_MAT_0;Name=SLA2;role=flanking_conserved;present=true;identity=89.6;reference_record=107463_unknown-1_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=82.2
+LGTZ01000063	MATPredict	gene	29259	29878	.	-	.	ID=Ascomycota_MAT_0.gene1;Parent=Ascomycota_MAT_0;Name=CIMG_00407;role=core_MAT;present=true;identity=41.25;reference_record=5501_rs_MAT_MAT1-2;method=exonerate_refine;status=polished_single;coverage=62.4
+LGTZ01000063	MATPredict	gene	29382	29537	.	-	.	ID=Ascomycota_MAT_0.gene2;Parent=Ascomycota_MAT_0;Name=MAT1-2-4;role=core_MAT;present=true;identity=44.231;reference_record=746128_af293_MAT_MAT1-2;method=tblastn_genome;status=unpolished;coverage=21.0
+LGTZ01000063	MATPredict	gene	30703	31845	.	+	.	ID=Ascomycota_MAT_0.gene3;Parent=Ascomycota_MAT_0;Name=MAT1-2-1;role=core_MAT;present=true;identity=52.1;reference_record=162425_fgsc-a4_MAT_combined;method=diamond_proteome;status=not_polish_candidate;coverage=64.5
+LGTZ01000063	MATPredict	gene	22359	31845	.	.	.	ID=Ascomycota_MAT_0.gene5;Parent=Ascomycota_MAT_0;Name=APN2;present=false
+LGTZ01000063	MATPredict	gene	22359	31845	.	.	.	ID=Ascomycota_MAT_0.gene6;Parent=Ascomycota_MAT_0;Name=COX13;present=false

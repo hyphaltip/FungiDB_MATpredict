@@ -1,0 +1,7 @@
+##gff-version 3
+##sequence-region UNSH01000074 2094686 2099420
+UNSH01000074	MATPredict	MAT_locus	2094686	2099420	.	.	.	ID=Ascomycota_MAT_0;family=Ascomycota:MAT;confidence=medium;idiomorph=MAT1-1;fragmented=false;core_start=2094686;core_end=2099420;beyond_core_bp=0;supported_start=2094686;supported_end=2099420;beyond_supported_bp=0;reference_records=107463_unknown-1_MAT_MAT1-2,40559_sas56_MAT_MAT1-1
+UNSH01000074	MATPredict	gene	2094686	2098049	.	+	.	ID=Ascomycota_MAT_0.gene0;Parent=Ascomycota_MAT_0;Name=SLA2;role=flanking_conserved;present=true;identity=81.6;reference_record=107463_unknown-1_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=99.3
+UNSH01000074	MATPredict	gene	2098595	2099420	.	+	.	ID=Ascomycota_MAT_0.gene1;Parent=Ascomycota_MAT_0;Name=MAT1-1-1;role=core_MAT;present=true;identity=41.3;reference_record=40559_sas56_MAT_MAT1-1;method=diamond_proteome;status=not_polish_candidate;coverage=39.9
+UNSH01000074	MATPredict	gene	2094686	2099420	.	.	.	ID=Ascomycota_MAT_0.gene2;Parent=Ascomycota_MAT_0;Name=APN2;present=false
+UNSH01000074	MATPredict	gene	2094686	2099420	.	.	.	ID=Ascomycota_MAT_0.gene3;Parent=Ascomycota_MAT_0;Name=COX13;present=false

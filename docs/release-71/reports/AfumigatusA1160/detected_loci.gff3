@@ -1,0 +1,8 @@
+##gff-version 3
+##sequence-region CM044374.1 2522086 2535345
+CM044374.1	MATPredict	MAT_locus	2522086	2535345	.	.	.	ID=Ascomycota_MAT_0;family=Ascomycota:MAT;confidence=high;idiomorph=MAT1-1;fragmented=false;core_start=2522086;core_end=2535345;beyond_core_bp=0;supported_start=2522086;supported_end=2535345;beyond_supported_bp=0;reference_records=746128_a1163_MAT_MAT1-1,746128_af293_MAT_MAT1-2
+CM044374.1	MATPredict	gene	2522086	2522826	.	-	.	ID=Ascomycota_MAT_0.gene0;Parent=Ascomycota_MAT_0;Name=COX13;role=flanking_conserved;present=true;identity=100.0;reference_record=746128_a1163_MAT_MAT1-1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CM044374.1	MATPredict	gene	2523187	2525375	.	+	.	ID=Ascomycota_MAT_0.gene1;Parent=Ascomycota_MAT_0;Name=APN2;role=flanking_conserved;present=true;identity=100.0;reference_record=746128_a1163_MAT_MAT1-1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CM044374.1	MATPredict	gene	2526287	2527324	.	-	.	ID=Ascomycota_MAT_0.gene2;Parent=Ascomycota_MAT_0;Name=MAT1-2-1;role=core_MAT;present=true;identity=85.2;reference_record=746128_af293_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=41.9
+CM044374.1	MATPredict	gene	2527441	2528598	.	+	.	ID=Ascomycota_MAT_0.gene3;Parent=Ascomycota_MAT_0;Name=MAT1-1-1;role=core_MAT;present=true;identity=100.0;reference_record=746128_a1163_MAT_MAT1-1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CM044374.1	MATPredict	gene	2531075	2535345	.	-	.	ID=Ascomycota_MAT_0.gene4;Parent=Ascomycota_MAT_0;Name=SLA2;role=flanking_conserved;present=true;identity=100.0;reference_record=746128_a1163_MAT_MAT1-1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0

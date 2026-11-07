@@ -1,0 +1,765 @@
+run:
+  sample: KlactisNRRLY-1140
+  organism: null
+  taxid: null
+  phylum: null
+  matpredict_version: 0.8.1
+  code:
+    git_describe: v0.8.1
+    dirty: false
+    commit: 3a62e6302b8e7633490237829e8febafef77e432
+    source_version: 0.8.1
+  database:
+    root: /bigdata/stajichlab/jstajich/projects/FungiDB_MATpredict/tools/MATPredict/db
+    content_sha256: 86f18d232e4fe95d19f5e26c1e6cfc758f36c8d235204ef790b01e19832510cc
+    records: 185
+  taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+  genome:
+    file: KlactisNRRLY-1140.genome.fasta
+    sha256: 6388de0d9426be3a352f9c01933408bd8eb49664b89b62d633f7e381fac162ff
+    contigs: 6
+    length_bp: 10689156
+    n50: 1753957
+  proteins: KlactisNRRLY-1140.proteins.fasta
+  parameters:
+    phylum: Ascomycota
+    phylum_guess:
+      requested: auto
+      status: ok
+      usable: true
+      reason: null
+      phylum: Ascomycota
+      phylum_taxid: 4890
+      deepest_rank: species
+      routing_taxid: 4893
+      routing_taxid_rank: family
+      flags: []
+      gmg_version: gmg 0.3.2 (66055154a)
+      index: bfd-reps-2026.10.5-s20000.gmgi
+      index_sha256: 0f319567f1cab17643e1daf7ffdc0e3b312bd43913e351568108d67a4a19702c
+      index_spec: bfd-reps-2026.10.5-s20000.gmgi
+      note: GmG called phylum Ascomycota
+      action: routed
+      weak_call_accepted: false
+      genetic_code: 1
+      genetic_code_from: family taxid 4893
+      routed_by: family taxid 4893 (direct)
+    exhaustive: false
+    genetic_code: 1
+    exclude_records: null
+    annotation: null
+    min_hits: 2
+    min_identity: null
+    require_core_role: true
+    max_polished_clusters_per_family: 6
+    polish_strong_identity: 50.0
+    polish_core_pair: true
+    preset: null
+    partial_core_policy: 'off'
+    homothallic_policy: 'off'
+    confidence_cap_policy: 'off'
+    cross_family_policy: 'off'
+    fallback_after_withheld_policy: 'off'
+    strong_single_gene_policy: 'off'
+    scoped_roster_policy: 'off'
+    scoped_roster: null
+    supported_min_bitscore: 33.0
+  started: '2026-11-07T02:45:05Z'
+  wall_seconds: 13
+routing_mode: direct
+routing_error: null
+fallback_search: null
+not_searched_reason: null
+genetic_code: 1
+genetic_code_error: null
+taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+suppressed_unpolished: 18
+suppressed_flank_carried: 0
+suppressed_mat_gene_gate: 0
+suppressed_paralog_class: 0
+suppressed_loci:
+- family: Ascomycota:MATsc
+  contig: CR382122
+  start: 125621
+  end: 125800
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 125621
+    end: 125800
+    beyond_core_bp: 0
+  supported_span:
+    start: 125621
+    end: 125800
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382122
+  start: 913642
+  end: 913797
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 913666
+    end: 913794
+    beyond_core_bp: 27
+  supported_span:
+    start: 913642
+    end: 913797
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382122
+  start: 1233930
+  end: 1234019
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 1233930
+    end: 1234019
+    beyond_core_bp: 0
+  supported_span:
+    start: 1233930
+    end: 1234019
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382126
+  start: 157779
+  end: 157934
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 157779
+    end: 157934
+    beyond_core_bp: 0
+  supported_span:
+    start: 157779
+    end: 157934
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382126
+  start: 281244
+  end: 281390
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 281244
+    end: 281390
+    beyond_core_bp: 0
+  supported_span:
+    start: 281244
+    end: 281390
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382126
+  start: 469379
+  end: 469576
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 469379
+    end: 469576
+    beyond_core_bp: 0
+  supported_span:
+    start: 469379
+    end: 469576
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382126
+  start: 1783344
+  end: 1783490
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 1783344
+    end: 1783490
+    beyond_core_bp: 0
+  supported_span:
+    start: 1783344
+    end: 1783490
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382126
+  start: 2080264
+  end: 2080458
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 2080264
+    end: 2080458
+    beyond_core_bp: 0
+  supported_span:
+    start: 2080264
+    end: 2080458
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382125
+  start: 24438
+  end: 24530
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 24438
+    end: 24530
+    beyond_core_bp: 0
+  supported_span:
+    start: 24438
+    end: 24530
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382125
+  start: 477038
+  end: 477307
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 477038
+    end: 477307
+    beyond_core_bp: 0
+  supported_span:
+    start: 477038
+    end: 477307
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382125
+  start: 664952
+  end: 665122
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 664952
+    end: 665122
+    beyond_core_bp: 0
+  supported_span:
+    start: 664952
+    end: 665122
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382125
+  start: 695802
+  end: 695957
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 695802
+    end: 695957
+    beyond_core_bp: 0
+  supported_span:
+    start: 695802
+    end: 695957
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382125
+  start: 1443177
+  end: 1443368
+  idiomorph: MATa
+  polished_genes: 0
+  genes_found:
+  - MATA1
+  core_span:
+    start: 1443177
+    end: 1443368
+    beyond_core_bp: 0
+  supported_span:
+    start: 1443177
+    end: 1443368
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382125
+  start: 1562792
+  end: 1563220
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 1562792
+    end: 1563220
+    beyond_core_bp: 0
+  supported_span:
+    start: 1562792
+    end: 1563220
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382124
+  start: 849849
+  end: 850010
+  idiomorph: MATa
+  polished_genes: 0
+  genes_found:
+  - MATA1
+  core_span:
+    start: 849849
+    end: 850010
+    beyond_core_bp: 0
+  supported_span:
+    start: 849849
+    end: 850010
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382124
+  start: 1065373
+  end: 1065522
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 1065373
+    end: 1065522
+    beyond_core_bp: 0
+  supported_span:
+    start: 1065373
+    end: 1065522
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382121
+  start: 522010
+  end: 522294
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 522010
+    end: 522294
+    beyond_core_bp: 0
+  supported_span:
+    start: 522010
+    end: 522294
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CR382121
+  start: 656890
+  end: 657165
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 656890
+    end: 657165
+    beyond_core_bp: 0
+  supported_span:
+    start: 656890
+    end: 657165
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+assembly_gap_at_locus: []
+zygosity: null
+two_idiomorphs: []
+receptor_arrays_note: 'Receptor arrays occur for both mating and non-mating STE3-like
+  receptors (the study found arrays holding paralogs beside the mating receptors in
+  Coprinopsis cinerea and Schizophyllum commune), so array membership does not establish
+  that a locus is a mating receptor. receptor_array_support is a flag on the evidence
+  behind an array; it never changes a call, its confidence or its verification label.
+  receptor_cassette_* fields describe pheromone-precursor cassette structure (2 or
+  more strict-CAAX ORFs within 5 kb of a receptor locus; class C when that many of
+  those ORFs also carry tblastn precursor homology). They are descriptive only: the
+  CAAX scan is also what admits a PR call, so cassettes are circular as confirmation;
+  own-species curated precursors are a self-hit for class C; tandem receptors may
+  be merged into one locus. They never change a call, tier, label, confidence or count.'
+receptor_arrays: []
+families_attempted:
+- Ascomycota:MATsc
+detected:
+- family: Ascomycota:MATsc
+  contig: CR382122
+  start: 1278225
+  end: 1280936
+  core_span:
+    start: 1278225
+    end: 1280936
+    beyond_core_bp: 0
+  supported_span:
+    start: 1278225
+    end: 1280936
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  confidence: high
+  resolution_flags: []
+  resolution_flag_genes: {}
+  idiomorph: MATa
+  idiomorph_class: MAT1-2
+  idiomorph_candidates:
+  - idiomorph: MATa
+    score: 456.0
+  detection_pass: strict
+  locus_class: mat_locus
+  idiomorph_unmodelled: false
+  verification: null
+  merged_from: []
+  subloci: []
+  polished_genes: 3
+  distinct_intervals: 3
+  span_exceeds_plausible_bound: false
+  idiomorph_margin: null
+  idiomorph_classifier: null
+  idiomorph_resolutions: []
+  ambiguous_with: []
+  genes_found:
+  - MATA1
+  - MATA2
+  - sla2
+  genes_missing: []
+  genes_not_searchable:
+  - cha1
+  fragmented: false
+  reference_records:
+  - 28985_nrrl-y-1140_MATsc_MATa
+  segments:
+  - contig: CR382122
+    start: 1278225
+    end: 1280936
+    contig_edge_distance: 39898
+  gene_evidence:
+  - gene: sla2
+    role: flanking_conserved
+    contig: CR382122
+    start: 1278225
+    end: 1278557
+    strand: +
+    identity: 100.0
+    coverage: 16.4
+    reference_record: 28985_nrrl-y-1140_MATsc_MATa
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 1.25e-69
+    bitscore: 210.0
+  - gene: MATA1
+    role: core_MAT
+    contig: CR382122
+    start: 1278622
+    end: 1279308
+    strand: '-'
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 28985_nrrl-y-1140_MATsc_MATa
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 1.76e-169
+    bitscore: 456.0
+  - gene: MATA2
+    role: core_MAT
+    contig: CR382122
+    start: 1280163
+    end: 1280936
+    strand: +
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 28985_nrrl-y-1140_MATsc_MATa
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 2.52e-156
+    bitscore: 425.0
+- family: Ascomycota:MATsc
+  contig: CR382123
+  start: 23718
+  end: 25803
+  core_span:
+    start: 23718
+    end: 25803
+    beyond_core_bp: 0
+  supported_span:
+    start: 23718
+    end: 25803
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  confidence: high
+  resolution_flags: []
+  resolution_flag_genes: {}
+  idiomorph: MATalpha
+  idiomorph_class: MAT1-1
+  idiomorph_candidates:
+  - idiomorph: MATalpha
+    score: 514.0
+  detection_pass: strict
+  locus_class: mat_locus
+  idiomorph_unmodelled: false
+  verification: null
+  merged_from: []
+  subloci: []
+  polished_genes: 3
+  distinct_intervals: 3
+  span_exceeds_plausible_bound: false
+  idiomorph_margin: 64.6
+  idiomorph_classifier: null
+  confidence_ignored_genes:
+  - MATA2
+  idiomorph_resolutions:
+  - contig: CR382123
+    winner: MATALPHA2
+    loser: MATA2
+    winner_identity: 100.0
+    loser_identity: 35.4
+    overlap_fraction: 1.0
+    winner_coverage: 100.0
+    loser_coverage: 79.8
+    basis: first_pass_identity
+    winner_model_score: null
+    winner_hmm_score: null
+    loser_hmm_score: null
+    loser_model_score: null
+    winner_span:
+    - 25132
+    - 25803
+    loser_span:
+    - 25132
+    - 25803
+  ambiguous_with: []
+  genes_found:
+  - MATALPHA1
+  - MATALPHA2
+  - sla2
+  genes_missing: []
+  genes_not_searchable:
+  - cha1
+  fragmented: false
+  reference_records:
+  - 28985_nrrl-y-1140_MATsc_HMLalpha
+  - 28985_nrrl-y-1140_MATsc_MATa
+  - 4932_s288c_MATsc_HMRa
+  segments:
+  - contig: CR382123
+    start: 23718
+    end: 25803
+    contig_edge_distance: 23717
+  gene_evidence:
+  - gene: sla2
+    role: flanking_conserved
+    contig: CR382123
+    start: 23718
+    end: 24050
+    strand: +
+    identity: 100.0
+    coverage: 16.4
+    reference_record: 28985_nrrl-y-1140_MATsc_MATa
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 1.25e-69
+    bitscore: 210.0
+  - gene: MATALPHA1
+    role: core_MAT
+    contig: CR382123
+    start: 24124
+    end: 24909
+    strand: '-'
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 28985_nrrl-y-1140_MATsc_HMLalpha
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 2.13e-191
+    bitscore: 514.0
+  - gene: MATA2
+    role: core_MAT
+    contig: CR382123
+    start: 25132
+    end: 25803
+    strand: +
+    identity: 35.4
+    coverage: 79.8
+    reference_record: 4932_s288c_MATsc_HMRa
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    lost_to: MATALPHA2
+    exons: null
+    evalue: 9.35e-21
+    bitscore: 74.3
+  - gene: MATALPHA2
+    role: core_MAT
+    contig: CR382123
+    start: 25132
+    end: 25803
+    strand: +
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 28985_nrrl-y-1140_MATsc_HMLalpha
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 2.3e-158
+    bitscore: 427.0
+- family: Ascomycota:MATsc
+  contig: CR382123
+  start: 277789
+  end: 282183
+  core_span:
+    start: 277789
+    end: 282183
+    beyond_core_bp: 0
+  supported_span:
+    start: 277789
+    end: 282183
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  confidence: high
+  resolution_flags: []
+  resolution_flag_genes: {}
+  idiomorph: MATa
+  idiomorph_class: MAT1-2
+  idiomorph_candidates:
+  - idiomorph: MATa
+    score: 456.0
+  detection_pass: strict
+  locus_class: mat_locus
+  idiomorph_unmodelled: false
+  verification: null
+  merged_from: []
+  subloci: []
+  polished_genes: 3
+  distinct_intervals: 3
+  span_exceeds_plausible_bound: false
+  idiomorph_margin: null
+  idiomorph_classifier: null
+  idiomorph_resolutions: []
+  ambiguous_with: []
+  genes_found:
+  - MATA1
+  - MATA2
+  - sla2
+  genes_missing: []
+  genes_not_searchable:
+  - cha1
+  fragmented: false
+  reference_records:
+  - 28985_nrrl-y-1140_MATsc_MATa
+  segments:
+  - contig: CR382123
+    start: 277789
+    end: 282183
+    contig_edge_distance: 277788
+  gene_evidence:
+  - gene: sla2
+    role: flanking_conserved
+    contig: CR382123
+    start: 277789
+    end: 279804
+    strand: +
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 28985_nrrl-y-1140_MATsc_MATa
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 0.0
+    bitscore: 1206.0
+  - gene: MATA1
+    role: core_MAT
+    contig: CR382123
+    start: 279869
+    end: 280555
+    strand: '-'
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 28985_nrrl-y-1140_MATsc_MATa
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 1.76e-169
+    bitscore: 456.0
+  - gene: MATA2
+    role: core_MAT
+    contig: CR382123
+    start: 281410
+    end: 282183
+    strand: +
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 28985_nrrl-y-1140_MATsc_MATa
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 2.52e-156
+    bitscore: 425.0
+not_detected: []

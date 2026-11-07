@@ -1,0 +1,284 @@
+run:
+  sample: MpoaeATCC64411
+  organism: null
+  taxid: null
+  phylum: null
+  matpredict_version: 0.8.1
+  code:
+    git_describe: v0.8.1
+    dirty: false
+    commit: 3a62e6302b8e7633490237829e8febafef77e432
+    source_version: 0.8.1
+  database:
+    root: /bigdata/stajichlab/jstajich/projects/FungiDB_MATpredict/tools/MATPredict/db
+    content_sha256: 86f18d232e4fe95d19f5e26c1e6cfc758f36c8d235204ef790b01e19832510cc
+    records: 185
+  taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+  genome:
+    file: MpoaeATCC64411.genome.fasta
+    sha256: 1ceecbfe337de756f106928e08cf7f3f3f4cddad4e2700888bd8d3d21b2a57dc
+    contigs: 206
+    length_bp: 39641827
+    n50: 3426601
+  proteins: MpoaeATCC64411.proteins.fasta
+  parameters:
+    phylum: Ascomycota
+    phylum_guess:
+      requested: auto
+      status: ok
+      usable: true
+      reason: null
+      phylum: Ascomycota
+      phylum_taxid: 4890
+      deepest_rank: species
+      routing_taxid: 81093
+      routing_taxid_rank: family
+      flags:
+      - high_N
+      - identical_to_reference
+      gmg_version: gmg 0.3.2 (66055154a)
+      index: bfd-reps-2026.10.5-s20000.gmgi
+      index_sha256: 0f319567f1cab17643e1daf7ffdc0e3b312bd43913e351568108d67a4a19702c
+      index_spec: bfd-reps-2026.10.5-s20000.gmgi
+      note: GmG called phylum Ascomycota
+      action: routed
+      weak_call_accepted: false
+      genetic_code: 1
+      genetic_code_from: family taxid 81093
+      routed_by: family taxid 81093 (lineage)
+    exhaustive: false
+    genetic_code: 1
+    exclude_records: null
+    annotation: null
+    min_hits: 2
+    min_identity: null
+    require_core_role: true
+    max_polished_clusters_per_family: 6
+    polish_strong_identity: 50.0
+    polish_core_pair: true
+    preset: null
+    partial_core_policy: 'off'
+    homothallic_policy: 'off'
+    confidence_cap_policy: 'off'
+    cross_family_policy: 'off'
+    fallback_after_withheld_policy: 'off'
+    strong_single_gene_policy: 'off'
+    scoped_roster_policy: 'off'
+    scoped_roster: 'off: BGL1,GAP1 not searched'
+    supported_min_bitscore: 33.0
+  started: '2026-11-07T02:35:21Z'
+  wall_seconds: 68
+routing_mode: lineage
+routing_error: null
+fallback_search: null
+not_searched_reason: null
+genetic_code: 1
+genetic_code_error: null
+taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+suppressed_unpolished: 0
+suppressed_flank_carried: 0
+suppressed_mat_gene_gate: 0
+suppressed_paralog_class: 0
+suppressed_loci:
+- family: Ascomycota:MAT
+  contig: GL876973
+  start: 512641
+  end: 513914
+  idiomorph: MAT1-2
+  polished_genes: 1
+  genes_found:
+  - MAT1-2-1
+  core_span:
+    start: 512641
+    end: 513914
+    beyond_core_bp: 0
+  supported_span:
+    start: 512641
+    end: 513914
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.25
+  floor: 0.5
+  best_identity: 46.8
+  idiomorph_classifier: null
+- family: Ascomycota:MAT
+  contig: GL877104
+  start: 62
+  end: 2008
+  idiomorph: MAT1-1
+  polished_genes: 1
+  genes_found:
+  - COX13
+  - MAT1-1-3
+  core_span:
+    start: 62
+    end: 2008
+    beyond_core_bp: 0
+  supported_span:
+    start: 62
+    end: 2008
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.25
+  floor: 0.5
+  best_identity: 69.2
+  idiomorph_classifier: null
+assembly_gap_at_locus: []
+zygosity: null
+two_idiomorphs: []
+receptor_arrays_note: 'Receptor arrays occur for both mating and non-mating STE3-like
+  receptors (the study found arrays holding paralogs beside the mating receptors in
+  Coprinopsis cinerea and Schizophyllum commune), so array membership does not establish
+  that a locus is a mating receptor. receptor_array_support is a flag on the evidence
+  behind an array; it never changes a call, its confidence or its verification label.
+  receptor_cassette_* fields describe pheromone-precursor cassette structure (2 or
+  more strict-CAAX ORFs within 5 kb of a receptor locus; class C when that many of
+  those ORFs also carry tblastn precursor homology). They are descriptive only: the
+  CAAX scan is also what admits a PR call, so cassettes are circular as confirmation;
+  own-species curated precursors are a self-hit for class C; tandem receptors may
+  be merged into one locus. They never change a call, tier, label, confidence or count.'
+receptor_arrays: []
+families_attempted:
+- Ascomycota:MAT
+detected:
+- family: Ascomycota:MAT
+  contig: GL876978
+  start: 193941
+  end: 207113
+  core_span:
+    start: 193941
+    end: 207113
+    beyond_core_bp: 0
+  supported_span:
+    start: 193941
+    end: 207113
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  confidence: medium
+  resolution_flags:
+  - partial_core
+  resolution_flag_genes:
+    partial_core:
+    - MAT1-1-1
+    - MAT1-1-2
+    - MAT1-2-1
+  idiomorph: MAT1-1
+  idiomorph_class: MAT1-1
+  idiomorph_candidates:
+  - idiomorph: MAT1-1
+    score: 100.0
+  - idiomorph: MAT1-2
+    score: 29.3
+  detection_pass: strict
+  locus_class: mat_locus
+  idiomorph_unmodelled: false
+  verification: null
+  merged_from: []
+  subloci: []
+  polished_genes: 3
+  distinct_intervals: 5
+  span_exceeds_plausible_bound: false
+  idiomorph_margin: 70.7
+  idiomorph_classifier: null
+  idiomorph_resolutions: []
+  ambiguous_with: []
+  genes_found:
+  - MAT1-1-1
+  - MAT1-2-1
+  - APN2
+  - SLA2
+  - MAT1-1-2
+  genes_missing:
+  - COX13
+  genes_not_searchable: []
+  fragmented: false
+  reference_records:
+  - 107463_unknown-1_MAT_MAT1-2
+  - 1301501_voucher-215_MAT_MAT1-1
+  - 13684_sn436ga98_MAT_MAT1-2
+  - 230073_uamh-1363_MAT_MAT1-1
+  - 2903220_liq80xsp_MAT_combined
+  segments:
+  - contig: GL876978
+    start: 193941
+    end: 207113
+    contig_edge_distance: 193940
+  gene_evidence:
+  - gene: SLA2
+    role: flanking_conserved
+    contig: GL876978
+    start: 193941
+    end: 197034
+    strand: +
+    identity: 97.6
+    coverage: 27.6
+    reference_record: 107463_unknown-1_MAT_MAT1-2
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 0.0
+    bitscore: 1240.0
+  - gene: MAT1-1-1
+    role: core_MAT
+    contig: GL876978
+    start: 199155
+    end: 200049
+    strand: +
+    identity: 40.0
+    coverage: 26.6
+    reference_record: 1301501_voucher-215_MAT_MAT1-1
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 2.54e-27
+    bitscore: 100.0
+  - gene: MAT1-1-2
+    role: core_MAT
+    contig: GL876978
+    start: 201111
+    end: 201281
+    strand: '-'
+    identity: 35.593
+    coverage: 17.0
+    reference_record: 230073_uamh-1363_MAT_MAT1-1
+    method: tblastn_genome
+    status: unpolished
+    alternate_model: null
+    exons: null
+    evalue: 0.002
+    bitscore: 40.0
+  - gene: MAT1-2-1
+    role: core_MAT
+    contig: GL876978
+    start: 202737
+    end: 202850
+    strand: +
+    identity: 34.211
+    coverage: 11.0
+    reference_record: 13684_sn436ga98_MAT_MAT1-2
+    method: tblastn_genome
+    status: unpolished
+    alternate_model: null
+    exons: null
+    evalue: 6.1
+    bitscore: 29.3
+  - gene: APN2
+    role: flanking_conserved
+    contig: GL876978
+    start: 204710
+    end: 207113
+    strand: '-'
+    identity: 84.1
+    coverage: 36.7
+    reference_record: 2903220_liq80xsp_MAT_combined
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 8.94e-222
+    bitscore: 628.0
+not_detected: []

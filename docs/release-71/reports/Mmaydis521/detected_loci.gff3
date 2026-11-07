@@ -1,0 +1,10 @@
+##gff-version 3
+##sequence-region CM003140 1688370 1693905
+##sequence-region CM003144 1023522 1028134
+CM003140	MATPredict	MAT_locus	1688370	1693905	.	.	.	ID=Basidiomycota_bLocus_0;family=Basidiomycota:bLocus;confidence=high;idiomorph=undetermined;fragmented=false;core_start=1690004;core_end=1693905;beyond_core_bp=1634;supported_start=1688370;supported_end=1693905;beyond_supported_bp=0;reference_records=5270_521_bLocus_b1
+CM003140	MATPredict	gene	1690004	1691499	.	-	.	ID=Basidiomycota_bLocus_0.gene0;Parent=Basidiomycota_bLocus_0;Name=bE;role=core_MAT;present=true;identity=100.0;reference_record=5270_521_bLocus_b1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CM003140	MATPredict	gene	1691754	1693905	.	+	.	ID=Basidiomycota_bLocus_0.gene1;Parent=Basidiomycota_bLocus_0;Name=bW;role=core_MAT;present=true;identity=100.0;reference_record=5270_521_bLocus_b1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CM003144	MATPredict	MAT_locus	1023522	1028134	.	.	.	ID=Basidiomycota_aLocus_1;family=Basidiomycota:aLocus;confidence=high;idiomorph=undetermined;fragmented=false;core_start=1023522;core_end=1028134;beyond_core_bp=0;supported_start=1023522;supported_end=1028134;beyond_supported_bp=0;reference_records=5270_521_aLocus_a1
+CM003144	MATPredict	gene	1023522	1023644	.	-	.	ID=Basidiomycota_aLocus_1.gene0;Parent=Basidiomycota_aLocus_1;Name=mfa1;role=core_MAT;present=true;identity=100.0;reference_record=5270_521_aLocus_a1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CM003144	MATPredict	gene	1025469	1026779	.	-	.	ID=Basidiomycota_aLocus_1.gene1;Parent=Basidiomycota_aLocus_1;Name=pra1;role=core_MAT;present=true;identity=100.0;reference_record=5270_521_aLocus_a1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CM003144	MATPredict	gene	1027492	1028134	.	-	.	ID=Basidiomycota_aLocus_1.gene2;Parent=Basidiomycota_aLocus_1;Name=rba1;role=flanking_variable;present=true;identity=100.0;reference_record=5270_521_aLocus_a1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0

@@ -9,7 +9,7 @@ title: Releases
 
 | Release | Genomes run | MAT locus called | Not searched | Failed | MAT genes without annotation |
 | --- | --- | --- | --- | --- | --- |
-| release 71 | not run yet | | | | |
+| [release 71](release-71/) (primary) | 313 | 274 | 8 | 0 | 83 |
 | [release 68](release-68/) | 331 | 261 | 41 | 0 | 83 |
 
 ## Changes between releases

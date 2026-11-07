@@ -1,0 +1,6196 @@
+run:
+  sample: NalbidaNRRLY1402
+  organism: null
+  taxid: null
+  phylum: Basidiomycota
+  matpredict_version: 0.8.1
+  code:
+    git_describe: v0.8.1
+    dirty: false
+    commit: 3a62e6302b8e7633490237829e8febafef77e432
+    source_version: 0.8.1
+  database:
+    root: /bigdata/stajichlab/jstajich/projects/FungiDB_MATpredict/tools/MATPredict/db
+    content_sha256: 86f18d232e4fe95d19f5e26c1e6cfc758f36c8d235204ef790b01e19832510cc
+    records: 185
+  taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+  genome:
+    file: NalbidaNRRLY1402.genome.fasta
+    sha256: c45c4d8a3618bc64509d13fec41190516c32a3e244bc71031450289e5cb795f2
+    contigs: 834
+    length_bp: 24807186
+    n50: 114383
+  proteins: null
+  parameters:
+    phylum: Basidiomycota
+    phylum_guess:
+      requested: auto
+      status: ok
+      usable: true
+      reason: null
+      phylum: Basidiomycota
+      phylum_taxid: 5204
+      deepest_rank: species
+      routing_taxid: 5408
+      routing_taxid_rank: family
+      flags: []
+      gmg_version: gmg 0.3.2 (66055154a)
+      index: bfd-reps-2026.10.5-s20000.gmgi
+      index_sha256: 0f319567f1cab17643e1daf7ffdc0e3b312bd43913e351568108d67a4a19702c
+      index_spec: bfd-reps-2026.10.5-s20000.gmgi
+      note: GmG called phylum Basidiomycota
+      action: routed
+      weak_call_accepted: false
+      genetic_code: 1
+      genetic_code_from: family taxid 5408
+      routed_by: family taxid 5408 (phylum_fallback)
+    exhaustive: false
+    genetic_code: 1
+    exclude_records: null
+    annotation: null
+    min_hits: 2
+    min_identity: null
+    require_core_role: true
+    max_polished_clusters_per_family: 6
+    polish_strong_identity: 50.0
+    polish_core_pair: true
+    preset: null
+    partial_core_policy: 'off'
+    homothallic_policy: 'off'
+    confidence_cap_policy: 'off'
+    cross_family_policy: 'off'
+    fallback_after_withheld_policy: 'off'
+    strong_single_gene_policy: 'off'
+    scoped_roster_policy: 'off'
+    scoped_roster: null
+    supported_min_bitscore: 33.0
+  started: '2026-11-07T02:37:34Z'
+  wall_seconds: 62
+routing_mode: phylum_fallback
+routing_error: null
+fallback_search: null
+not_searched_reason: null
+genetic_code: 1
+genetic_code_error: null
+taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+suppressed_unpolished: 306
+suppressed_flank_carried: 0
+suppressed_mat_gene_gate: 0
+suppressed_paralog_class: 0
+suppressed_loci:
+- family: Basidiomycota:HD
+  contig: LKPZ01000191.1
+  start: 2425
+  end: 25423
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 19891
+    end: 20016
+    beyond_core_bp: 22873
+  supported_span:
+    start: 19891
+    end: 20016
+    min_bitscore: 33.0
+    beyond_supported_bp: 22873
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Aalpha
+  contig: LKPZ01000191.1
+  start: 2425
+  end: 25423
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - Y
+  core_span:
+    start: 19894
+    end: 20040
+    beyond_core_bp: 22852
+  supported_span:
+    start: 19894
+    end: 20040
+    min_bitscore: 33.0
+    beyond_supported_bp: 22852
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000191.1
+  start: 2425
+  end: 25423
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 25283
+    end: 25423
+    beyond_core_bp: 22858
+  supported_span:
+    start: 25283
+    end: 25423
+    min_bitscore: 33.0
+    beyond_supported_bp: 22858
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000191.1
+  start: 2425
+  end: 25423
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 19891
+    end: 20004
+    beyond_core_bp: 22885
+  supported_span:
+    start: 19891
+    end: 20037
+    min_bitscore: 33.0
+    beyond_supported_bp: 22852
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000191.1
+  start: 2425
+  end: 25423
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  core_span:
+    start: 2974
+    end: 3102
+    beyond_core_bp: 22870
+  supported_span:
+    start: 2974
+    end: 3102
+    min_bitscore: 33.0
+    beyond_supported_bp: 22870
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:MAT
+  contig: LKPZ01000191.1
+  start: 2425
+  end: 25423
+  idiomorph: a
+  polished_genes: 0
+  genes_found:
+  - SXI2
+  core_span:
+    start: 19891
+    end: 20022
+    beyond_core_bp: 22867
+  supported_span:
+    start: 19891
+    end: 20022
+    min_bitscore: 33.0
+    beyond_supported_bp: 22867
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000271.1
+  start: 4549
+  end: 15584
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  - HD2
+  core_span:
+    start: 7757
+    end: 9441
+    beyond_core_bp: 9351
+  supported_span:
+    start: 7757
+    end: 9555
+    min_bitscore: 33.0
+    beyond_supported_bp: 9237
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Aalpha
+  contig: LKPZ01000271.1
+  start: 4549
+  end: 15584
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - Y
+  - Z
+  core_span:
+    start: 9292
+    end: 9471
+    beyond_core_bp: 10856
+  supported_span:
+    start: 7655
+    end: 9471
+    min_bitscore: 33.0
+    beyond_supported_bp: 9219
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000271.1
+  start: 4549
+  end: 15584
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 15441
+    end: 15584
+    beyond_core_bp: 10892
+  supported_span:
+    start: 15441
+    end: 15584
+    min_bitscore: 33.0
+    beyond_supported_bp: 10892
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:MAT
+  contig: LKPZ01000271.1
+  start: 4549
+  end: 15584
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - SXI1
+  core_span:
+    start: 9283
+    end: 9594
+    beyond_core_bp: 10724
+  supported_span:
+    start: 9283
+    end: 9594
+    min_bitscore: 33.0
+    beyond_supported_bp: 10724
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000162.1
+  start: 14434
+  end: 14535
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 14434
+    end: 14535
+    beyond_core_bp: 0
+  supported_span:
+    start: 14434
+    end: 14535
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000140.1
+  start: 13631
+  end: 13780
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 13631
+    end: 13780
+    beyond_core_bp: 0
+  supported_span:
+    start: 13631
+    end: 13780
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000064.1
+  start: 5010
+  end: 5393
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 5010
+    end: 5393
+    beyond_core_bp: 0
+  supported_span:
+    start: 5010
+    end: 5393
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000064.1
+  start: 61312
+  end: 61494
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 61312
+    end: 61494
+    beyond_core_bp: 0
+  supported_span:
+    start: 61312
+    end: 61494
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000064.1
+  start: 93433
+  end: 106077
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 105958
+    end: 106077
+    beyond_core_bp: 12525
+  supported_span:
+    start: 105958
+    end: 106077
+    min_bitscore: 33.0
+    beyond_supported_bp: 12525
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000064.1
+  start: 93433
+  end: 106077
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 105945
+    end: 106067
+    beyond_core_bp: 12522
+  supported_span:
+    start: 105945
+    end: 106067
+    min_bitscore: 33.0
+    beyond_supported_bp: 12522
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000064.1
+  start: 93433
+  end: 106077
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  core_span:
+    start: 93433
+    end: 93558
+    beyond_core_bp: 12519
+  supported_span:
+    start: 93433
+    end: 93558
+    min_bitscore: 33.0
+    beyond_supported_bp: 12519
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000001.1
+  start: 66276
+  end: 87740
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 66276
+    end: 66503
+    beyond_core_bp: 21237
+  supported_span:
+    start: 66276
+    end: 66503
+    min_bitscore: 33.0
+    beyond_supported_bp: 21237
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000001.1
+  start: 179916
+  end: 218955
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  - bW
+  core_span:
+    start: 195967
+    end: 199489
+    beyond_core_bp: 35517
+  supported_span:
+    start: 195967
+    end: 199489
+    min_bitscore: 33.0
+    beyond_supported_bp: 35517
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000001.1
+  start: 179916
+  end: 218955
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 179916
+    end: 180008
+    beyond_core_bp: 38947
+  supported_span:
+    start: 179916
+    end: 180008
+    min_bitscore: 33.0
+    beyond_supported_bp: 38947
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000001.1
+  start: 179916
+  end: 218955
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 204146
+    end: 204322
+    beyond_core_bp: 38863
+  supported_span:
+    start: 204146
+    end: 204322
+    min_bitscore: 33.0
+    beyond_supported_bp: 38863
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Bbeta
+  contig: LKPZ01000001.1
+  start: 179916
+  end: 218955
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bbp2-1
+  core_span:
+    start: 218848
+    end: 218955
+    beyond_core_bp: 38932
+  supported_span:
+    start: 218848
+    end: 218955
+    min_bitscore: 33.0
+    beyond_supported_bp: 38932
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000001.1
+  start: 409361
+  end: 409579
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 409361
+    end: 409498
+    beyond_core_bp: 81
+  supported_span:
+    start: 409361
+    end: 409498
+    min_bitscore: 33.0
+    beyond_supported_bp: 81
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000001.1
+  start: 440785
+  end: 443460
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 443356
+    end: 443460
+    beyond_core_bp: 2571
+  supported_span:
+    start: 443356
+    end: 443460
+    min_bitscore: 33.0
+    beyond_supported_bp: 2571
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000001.1
+  start: 440785
+  end: 443460
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 440785
+    end: 441096
+    beyond_core_bp: 2364
+  supported_span:
+    start: 440785
+    end: 441096
+    min_bitscore: 33.0
+    beyond_supported_bp: 2364
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000029.1
+  start: 30705
+  end: 60797
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 60615
+    end: 60797
+    beyond_core_bp: 29910
+  supported_span:
+    start: 60615
+    end: 60797
+    min_bitscore: 33.0
+    beyond_supported_bp: 29910
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000029.1
+  start: 134847
+  end: 135041
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 134847
+    end: 135041
+    beyond_core_bp: 0
+  supported_span:
+    start: 134847
+    end: 135041
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000070.1
+  start: 18721
+  end: 44644
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 18721
+    end: 18897
+    beyond_core_bp: 25747
+  supported_span:
+    start: 18721
+    end: 18897
+    min_bitscore: 33.0
+    beyond_supported_bp: 25747
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000035.1
+  start: 71997
+  end: 72263
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 71997
+    end: 72263
+    beyond_core_bp: 0
+  supported_span:
+    start: 71997
+    end: 72263
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000047.1
+  start: 142363
+  end: 147442
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 147242
+    end: 147442
+    beyond_core_bp: 4879
+  supported_span:
+    start: 147242
+    end: 147442
+    min_bitscore: 33.0
+    beyond_supported_bp: 4879
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000038.1
+  start: 28211
+  end: 61517
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 28211
+    end: 28306
+    beyond_core_bp: 33211
+  supported_span:
+    start: 28211
+    end: 28306
+    min_bitscore: 33.0
+    beyond_supported_bp: 33211
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000038.1
+  start: 28211
+  end: 61517
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 61347
+    end: 61517
+    beyond_core_bp: 33136
+  supported_span:
+    start: 61347
+    end: 61517
+    min_bitscore: 33.0
+    beyond_supported_bp: 33136
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000038.1
+  start: 28211
+  end: 61517
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MIP1
+  core_span:
+    start: 52520
+    end: 52909
+    beyond_core_bp: 32917
+  supported_span:
+    start: 52520
+    end: 52909
+    min_bitscore: 33.0
+    beyond_supported_bp: 32917
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000038.1
+  start: 88639
+  end: 116843
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  - bW
+  core_span:
+    start: 94390
+    end: 116843
+    beyond_core_bp: 5751
+  supported_span:
+    start: 94390
+    end: 116843
+    min_bitscore: 33.0
+    beyond_supported_bp: 5751
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000038.1
+  start: 152310
+  end: 159392
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 159183
+    end: 159392
+    beyond_core_bp: 6873
+  supported_span:
+    start: 159183
+    end: 159392
+    min_bitscore: 33.0
+    beyond_supported_bp: 6873
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000026.1
+  start: 33083
+  end: 45503
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 45327
+    end: 45503
+    beyond_core_bp: 12244
+  supported_span:
+    start: 45327
+    end: 45503
+    min_bitscore: 33.0
+    beyond_supported_bp: 12244
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000026.1
+  start: 171772
+  end: 171897
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 171772
+    end: 171897
+    beyond_core_bp: 0
+  supported_span:
+    start: 171772
+    end: 171897
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000218.1
+  start: 18289
+  end: 22449
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 22276
+    end: 22449
+    beyond_core_bp: 3987
+  supported_span:
+    start: 22276
+    end: 22449
+    min_bitscore: 33.0
+    beyond_supported_bp: 3987
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000060.1
+  start: 43760
+  end: 91449
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  - MIP1
+  core_span:
+    start: 43760
+    end: 56380
+    beyond_core_bp: 35069
+  supported_span:
+    start: 43760
+    end: 56380
+    min_bitscore: 33.0
+    beyond_supported_bp: 35069
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000060.1
+  start: 43760
+  end: 91449
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 89060
+    end: 89167
+    beyond_core_bp: 47582
+  supported_span:
+    start: 89060
+    end: 89167
+    min_bitscore: 33.0
+    beyond_supported_bp: 47582
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000060.1
+  start: 43760
+  end: 91449
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - fungal_mating_type_pheromone
+  core_span:
+    start: 47973
+    end: 48068
+    beyond_core_bp: 47594
+  supported_span:
+    start: 47973
+    end: 48068
+    min_bitscore: 33.0
+    beyond_supported_bp: 47594
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000010.1
+  start: 12105
+  end: 12482
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 12105
+    end: 12482
+    beyond_core_bp: 0
+  supported_span:
+    start: 12105
+    end: 12482
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000010.1
+  start: 65559
+  end: 141834
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  - fungal_mating_type_pheromone
+  core_span:
+    start: 111487
+    end: 141834
+    beyond_core_bp: 45928
+  supported_span:
+    start: 111487
+    end: 141834
+    min_bitscore: 33.0
+    beyond_supported_bp: 45928
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000010.1
+  start: 65559
+  end: 141834
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 89128
+    end: 89262
+    beyond_core_bp: 76141
+  supported_span:
+    start: 89128
+    end: 89262
+    min_bitscore: 33.0
+    beyond_supported_bp: 76141
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Bbeta
+  contig: LKPZ01000010.1
+  start: 65559
+  end: 141834
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bbp2-2
+  core_span:
+    start: 83541
+    end: 83639
+    beyond_core_bp: 76177
+  supported_span:
+    start: 83541
+    end: 83639
+    min_bitscore: 33.0
+    beyond_supported_bp: 76177
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000010.1
+  start: 65559
+  end: 141834
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MIP1
+  core_span:
+    start: 65562
+    end: 65651
+    beyond_core_bp: 76186
+  supported_span:
+    start: 65562
+    end: 65651
+    min_bitscore: 33.0
+    beyond_supported_bp: 76186
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Aalpha
+  contig: LKPZ01000012.1
+  start: 53076
+  end: 53282
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - Z
+  core_span:
+    start: 53076
+    end: 53282
+    beyond_core_bp: 0
+  supported_span:
+    start: 53076
+    end: 53282
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000012.1
+  start: 79126
+  end: 98590
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  - bW
+  core_span:
+    start: 79126
+    end: 92894
+    beyond_core_bp: 5696
+  supported_span:
+    start: 79126
+    end: 92894
+    min_bitscore: 33.0
+    beyond_supported_bp: 5696
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000012.1
+  start: 127591
+  end: 127725
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 127591
+    end: 127725
+    beyond_core_bp: 0
+  supported_span:
+    start: 127591
+    end: 127725
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000012.1
+  start: 183089
+  end: 183196
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 183089
+    end: 183196
+    beyond_core_bp: 0
+  supported_span:
+    start: 183089
+    end: 183196
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000083.1
+  start: 22853
+  end: 22999
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 22853
+    end: 22999
+    beyond_core_bp: 0
+  supported_span:
+    start: 22853
+    end: 22999
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000083.1
+  start: 59238
+  end: 88267
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  - HD2
+  core_span:
+    start: 59238
+    end: 81230
+    beyond_core_bp: 7037
+  supported_span:
+    start: 59238
+    end: 81230
+    min_bitscore: 33.0
+    beyond_supported_bp: 7037
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Aalpha
+  contig: LKPZ01000083.1
+  start: 59238
+  end: 88267
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - Z
+  core_span:
+    start: 88019
+    end: 88267
+    beyond_core_bp: 28781
+  supported_span:
+    start: 88019
+    end: 88267
+    min_bitscore: 33.0
+    beyond_supported_bp: 28781
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000021.1
+  start: 20637
+  end: 35816
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 20637
+    end: 20753
+    beyond_core_bp: 15063
+  supported_span:
+    start: 20637
+    end: 20753
+    min_bitscore: 33.0
+    beyond_supported_bp: 15063
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000021.1
+  start: 86544
+  end: 89807
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 86544
+    end: 86735
+    beyond_core_bp: 3072
+  supported_span:
+    start: 86544
+    end: 86735
+    min_bitscore: 33.0
+    beyond_supported_bp: 3072
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Aalpha
+  contig: LKPZ01000021.1
+  start: 188139
+  end: 198494
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - Z
+  core_span:
+    start: 196354
+    end: 196500
+    beyond_core_bp: 10209
+  supported_span:
+    start: 196354
+    end: 196500
+    min_bitscore: 33.0
+    beyond_supported_bp: 10209
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000109.1
+  start: 3151
+  end: 3744
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 3151
+    end: 3744
+    beyond_core_bp: 0
+  supported_span:
+    start: 3151
+    end: 3744
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Aalpha
+  contig: LKPZ01000109.1
+  start: 52910
+  end: 53104
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - Z
+  core_span:
+    start: 52910
+    end: 53104
+    beyond_core_bp: 0
+  supported_span:
+    start: 52910
+    end: 53104
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000022.1
+  start: 3287
+  end: 3511
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 3287
+    end: 3511
+    beyond_core_bp: 0
+  supported_span:
+    start: 3287
+    end: 3511
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000022.1
+  start: 72850
+  end: 127547
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  - bW
+  core_span:
+    start: 72850
+    end: 81815
+    beyond_core_bp: 45732
+  supported_span:
+    start: 72850
+    end: 81815
+    min_bitscore: 33.0
+    beyond_supported_bp: 45732
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Aalpha
+  contig: LKPZ01000022.1
+  start: 72850
+  end: 127547
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - Z
+  core_span:
+    start: 106116
+    end: 106349
+    beyond_core_bp: 54464
+  supported_span:
+    start: 106116
+    end: 106349
+    min_bitscore: 33.0
+    beyond_supported_bp: 54464
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000022.1
+  start: 72850
+  end: 127547
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - fungal_mating_type_pheromone
+  core_span:
+    start: 127455
+    end: 127547
+    beyond_core_bp: 54605
+  supported_span:
+    start: 127455
+    end: 127547
+    min_bitscore: 33.0
+    beyond_supported_bp: 54605
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000022.1
+  start: 174852
+  end: 175220
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 174852
+    end: 175220
+    beyond_core_bp: 0
+  supported_span:
+    start: 174852
+    end: 175220
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Aalpha
+  contig: LKPZ01000015.1
+  start: 16910
+  end: 17023
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - Y
+  core_span:
+    start: 16910
+    end: 17023
+    beyond_core_bp: 0
+  supported_span:
+    start: 16910
+    end: 17023
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000015.1
+  start: 137336
+  end: 155521
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 155102
+    end: 155521
+    beyond_core_bp: 17766
+  supported_span:
+    start: 155102
+    end: 155521
+    min_bitscore: 33.0
+    beyond_supported_bp: 17766
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000015.1
+  start: 194594
+  end: 204430
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  - bW
+  core_span:
+    start: 194627
+    end: 204241
+    beyond_core_bp: 222
+  supported_span:
+    start: 194627
+    end: 204430
+    min_bitscore: 33.0
+    beyond_supported_bp: 33
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000015.1
+  start: 194594
+  end: 204430
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 204104
+    end: 204241
+    beyond_core_bp: 9699
+  supported_span:
+    start: 204104
+    end: 204241
+    min_bitscore: 33.0
+    beyond_supported_bp: 9699
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Aalpha
+  contig: LKPZ01000015.1
+  start: 194594
+  end: 204430
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - Y
+  core_span:
+    start: 204065
+    end: 204268
+    beyond_core_bp: 9633
+  supported_span:
+    start: 204065
+    end: 204268
+    min_bitscore: 33.0
+    beyond_supported_bp: 9633
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Aalpha
+  contig: LKPZ01000044.1
+  start: 21428
+  end: 49867
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - Y
+  core_span:
+    start: 28916
+    end: 29122
+    beyond_core_bp: 28233
+  supported_span:
+    start: 28916
+    end: 29122
+    min_bitscore: 33.0
+    beyond_supported_bp: 28233
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000044.1
+  start: 21428
+  end: 49867
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 36123
+    end: 36620
+    beyond_core_bp: 27942
+  supported_span:
+    start: 36123
+    end: 36620
+    min_bitscore: 33.0
+    beyond_supported_bp: 27942
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000044.1
+  start: 21428
+  end: 49867
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - fungal_mating_type_pheromone
+  core_span:
+    start: 21428
+    end: 21520
+    beyond_core_bp: 28347
+  supported_span:
+    start: 21428
+    end: 21520
+    min_bitscore: 33.0
+    beyond_supported_bp: 28347
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:MAT
+  contig: LKPZ01000044.1
+  start: 21428
+  end: 49867
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - RPL39
+  core_span:
+    start: 49766
+    end: 49867
+    beyond_core_bp: 28338
+  supported_span:
+    start: 49766
+    end: 49867
+    min_bitscore: 33.0
+    beyond_supported_bp: 28338
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Aalpha
+  contig: LKPZ01000226.1
+  start: 24176
+  end: 24307
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - Y
+  core_span:
+    start: 24176
+    end: 24307
+    beyond_core_bp: 0
+  supported_span:
+    start: 24176
+    end: 24307
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000004.1
+  start: 68544
+  end: 87102
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 68544
+    end: 69038
+    beyond_core_bp: 18064
+  supported_span:
+    start: 68544
+    end: 69038
+    min_bitscore: 33.0
+    beyond_supported_bp: 18064
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Aalpha
+  contig: LKPZ01000004.1
+  start: 120516
+  end: 139198
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - Y
+  core_span:
+    start: 120516
+    end: 120674
+    beyond_core_bp: 18524
+  supported_span:
+    start: 120516
+    end: 120674
+    min_bitscore: 33.0
+    beyond_supported_bp: 18524
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000004.1
+  start: 252785
+  end: 273942
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 252785
+    end: 252976
+    beyond_core_bp: 20966
+  supported_span:
+    start: 252785
+    end: 252976
+    min_bitscore: 33.0
+    beyond_supported_bp: 20966
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000004.1
+  start: 252785
+  end: 273942
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 261261
+    end: 261425
+    beyond_core_bp: 20993
+  supported_span:
+    start: 261261
+    end: 261425
+    min_bitscore: 33.0
+    beyond_supported_bp: 20993
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000004.1
+  start: 252785
+  end: 273942
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  core_span:
+    start: 265525
+    end: 265863
+    beyond_core_bp: 20819
+  supported_span:
+    start: 265525
+    end: 265863
+    min_bitscore: 33.0
+    beyond_supported_bp: 20819
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Bbeta
+  contig: LKPZ01000004.1
+  start: 252785
+  end: 273942
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bbp2-2
+  core_span:
+    start: 273853
+    end: 273942
+    beyond_core_bp: 21068
+  supported_span:
+    start: 273853
+    end: 273942
+    min_bitscore: 33.0
+    beyond_supported_bp: 21068
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Balpha
+  contig: LKPZ01000201.1
+  start: 4824
+  end: 24297
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bap3-3
+  core_span:
+    start: 24038
+    end: 24148
+    beyond_core_bp: 19363
+  supported_span:
+    start: 24038
+    end: 24148
+    min_bitscore: 33.0
+    beyond_supported_bp: 19363
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000201.1
+  start: 4824
+  end: 24297
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 24151
+    end: 24297
+    beyond_core_bp: 19327
+  supported_span:
+    start: 24151
+    end: 24297
+    min_bitscore: 33.0
+    beyond_supported_bp: 19327
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000201.1
+  start: 4824
+  end: 24297
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MIP1
+  core_span:
+    start: 4824
+    end: 5006
+    beyond_core_bp: 19291
+  supported_span:
+    start: 4824
+    end: 5006
+    min_bitscore: 33.0
+    beyond_supported_bp: 19291
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Balpha
+  contig: LKPZ01000119.1
+  start: 31703
+  end: 46360
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bap3-3
+  core_span:
+    start: 46253
+    end: 46360
+    beyond_core_bp: 14550
+  supported_span:
+    start: 46253
+    end: 46360
+    min_bitscore: 33.0
+    beyond_supported_bp: 14550
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000119.1
+  start: 31703
+  end: 46360
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 45992
+    end: 46099
+    beyond_core_bp: 14550
+  supported_span:
+    start: 45992
+    end: 46099
+    min_bitscore: 33.0
+    beyond_supported_bp: 14550
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Bbeta
+  contig: LKPZ01000119.1
+  start: 31703
+  end: 46360
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bbp2-2
+  core_span:
+    start: 31703
+    end: 31828
+    beyond_core_bp: 14532
+  supported_span:
+    start: 31703
+    end: 31828
+    min_bitscore: 33.0
+    beyond_supported_bp: 14532
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000111.1
+  start: 14253
+  end: 38418
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 38224
+    end: 38418
+    beyond_core_bp: 23971
+  supported_span:
+    start: 38224
+    end: 38418
+    min_bitscore: 33.0
+    beyond_supported_bp: 23971
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Balpha
+  contig: LKPZ01000111.1
+  start: 71253
+  end: 71393
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bap3-3
+  core_span:
+    start: 71253
+    end: 71393
+    beyond_core_bp: 0
+  supported_span:
+    start: 71253
+    end: 71393
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000005.1
+  start: 144172
+  end: 159279
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 159169
+    end: 159279
+    beyond_core_bp: 14997
+  supported_span:
+    start: 159169
+    end: 159279
+    min_bitscore: 33.0
+    beyond_supported_bp: 14997
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000005.1
+  start: 189156
+  end: 189446
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 189156
+    end: 189446
+    beyond_core_bp: 0
+  supported_span:
+    start: 189156
+    end: 189446
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000005.1
+  start: 257169
+  end: 275178
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 274810
+    end: 275178
+    beyond_core_bp: 17641
+  supported_span:
+    start: 274810
+    end: 275178
+    min_bitscore: 33.0
+    beyond_supported_bp: 17641
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Balpha
+  contig: LKPZ01000213.1
+  start: 26456
+  end: 27703
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bar3
+  core_span:
+    start: 27476
+    end: 27682
+    beyond_core_bp: 1041
+  supported_span:
+    start: 26627
+    end: 27682
+    min_bitscore: 33.0
+    beyond_supported_bp: 192
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000213.1
+  start: 26456
+  end: 27703
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 27491
+    end: 27673
+    beyond_core_bp: 1065
+  supported_span:
+    start: 26609
+    end: 27685
+    min_bitscore: 33.0
+    beyond_supported_bp: 171
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:MAT
+  contig: LKPZ01000213.1
+  start: 26456
+  end: 27703
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - STE3
+  core_span:
+    start: 27488
+    end: 27694
+    beyond_core_bp: 1041
+  supported_span:
+    start: 26672
+    end: 27694
+    min_bitscore: 33.0
+    beyond_supported_bp: 225
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000213.1
+  start: 26456
+  end: 27703
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  core_span:
+    start: 27494
+    end: 27661
+    beyond_core_bp: 1080
+  supported_span:
+    start: 26456
+    end: 27703
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Bbeta
+  contig: LKPZ01000213.1
+  start: 26456
+  end: 27703
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bbr2
+  core_span:
+    start: 27482
+    end: 27682
+    beyond_core_bp: 1047
+  supported_span:
+    start: 26654
+    end: 27682
+    min_bitscore: 33.0
+    beyond_supported_bp: 219
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000002.1
+  start: 13706
+  end: 13888
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 13706
+    end: 13888
+    beyond_core_bp: 0
+  supported_span:
+    start: 13706
+    end: 13888
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000002.1
+  start: 150126
+  end: 168617
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 168516
+    end: 168617
+    beyond_core_bp: 18390
+  supported_span:
+    start: 168516
+    end: 168617
+    min_bitscore: 33.0
+    beyond_supported_bp: 18390
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Balpha
+  contig: LKPZ01000002.1
+  start: 150126
+  end: 168617
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bar3
+  core_span:
+    start: 150735
+    end: 150851
+    beyond_core_bp: 18375
+  supported_span:
+    start: 150735
+    end: 153603
+    min_bitscore: 33.0
+    beyond_supported_bp: 15623
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000002.1
+  start: 150126
+  end: 168617
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 150708
+    end: 150827
+    beyond_core_bp: 18372
+  supported_span:
+    start: 150705
+    end: 153929
+    min_bitscore: 33.0
+    beyond_supported_bp: 15267
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:MAT
+  contig: LKPZ01000002.1
+  start: 150126
+  end: 168617
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - STE3
+  core_span:
+    start: 150708
+    end: 150842
+    beyond_core_bp: 18357
+  supported_span:
+    start: 150708
+    end: 153884
+    min_bitscore: 33.0
+    beyond_supported_bp: 15315
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000002.1
+  start: 150126
+  end: 168617
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  core_span:
+    start: 150705
+    end: 150848
+    beyond_core_bp: 18348
+  supported_span:
+    start: 150126
+    end: 153968
+    min_bitscore: 33.0
+    beyond_supported_bp: 14649
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Bbeta
+  contig: LKPZ01000002.1
+  start: 150126
+  end: 168617
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bbr2
+  core_span:
+    start: 150541
+    end: 150639
+    beyond_core_bp: 18393
+  supported_span:
+    start: 150317
+    end: 153944
+    min_bitscore: 33.0
+    beyond_supported_bp: 14864
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:MAT
+  contig: LKPZ01000002.1
+  start: 230287
+  end: 288054
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - PAN6
+  - STE3
+  core_span:
+    start: 230287
+    end: 263519
+    beyond_core_bp: 24535
+  supported_span:
+    start: 230287
+    end: 263519
+    min_bitscore: 33.0
+    beyond_supported_bp: 24535
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000002.1
+  start: 230287
+  end: 288054
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 233118
+    end: 233384
+    beyond_core_bp: 57501
+  supported_span:
+    start: 233118
+    end: 233384
+    min_bitscore: 33.0
+    beyond_supported_bp: 57501
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000002.1
+  start: 230287
+  end: 288054
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - fungal_mating_type_pheromone
+  core_span:
+    start: 287896
+    end: 288054
+    beyond_core_bp: 57609
+  supported_span:
+    start: 287896
+    end: 288054
+    min_bitscore: 33.0
+    beyond_supported_bp: 57609
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Balpha
+  contig: LKPZ01000104.1
+  start: 37435
+  end: 61833
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bar3
+  core_span:
+    start: 61654
+    end: 61833
+    beyond_core_bp: 24219
+  supported_span:
+    start: 61654
+    end: 61833
+    min_bitscore: 33.0
+    beyond_supported_bp: 24219
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000104.1
+  start: 37435
+  end: 61833
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 39513
+    end: 39674
+    beyond_core_bp: 24237
+  supported_span:
+    start: 39513
+    end: 39674
+    min_bitscore: 33.0
+    beyond_supported_bp: 24237
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000104.1
+  start: 37435
+  end: 61833
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 37435
+    end: 37557
+    beyond_core_bp: 24276
+  supported_span:
+    start: 37435
+    end: 37557
+    min_bitscore: 33.0
+    beyond_supported_bp: 24276
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000074.1
+  start: 59169
+  end: 102386
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 100391
+    end: 100909
+    beyond_core_bp: 42699
+  supported_span:
+    start: 100391
+    end: 100909
+    min_bitscore: 33.0
+    beyond_supported_bp: 42699
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Balpha
+  contig: LKPZ01000074.1
+  start: 59169
+  end: 102386
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bar3
+  core_span:
+    start: 93660
+    end: 93827
+    beyond_core_bp: 43050
+  supported_span:
+    start: 93660
+    end: 93827
+    min_bitscore: 33.0
+    beyond_supported_bp: 43050
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000074.1
+  start: 59169
+  end: 102386
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 80130
+    end: 80312
+    beyond_core_bp: 43035
+  supported_span:
+    start: 80130
+    end: 80312
+    min_bitscore: 33.0
+    beyond_supported_bp: 43035
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000074.1
+  start: 59169
+  end: 102386
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 102288
+    end: 102386
+    beyond_core_bp: 43119
+  supported_span:
+    start: 102288
+    end: 102386
+    min_bitscore: 33.0
+    beyond_supported_bp: 43119
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Bbeta
+  contig: LKPZ01000074.1
+  start: 59169
+  end: 102386
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bbp2-2
+  core_span:
+    start: 59169
+    end: 59261
+    beyond_core_bp: 43125
+  supported_span:
+    start: 59169
+    end: 59261
+    min_bitscore: 33.0
+    beyond_supported_bp: 43125
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000314.1
+  start: 1875
+  end: 10871
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 10761
+    end: 10871
+    beyond_core_bp: 8886
+  supported_span:
+    start: 10761
+    end: 10871
+    min_bitscore: 33.0
+    beyond_supported_bp: 8886
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000125.1
+  start: 5821
+  end: 6018
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 5821
+    end: 6018
+    beyond_core_bp: 0
+  supported_span:
+    start: 5821
+    end: 6018
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000051.1
+  start: 9784
+  end: 9966
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 9784
+    end: 9966
+    beyond_core_bp: 0
+  supported_span:
+    start: 9784
+    end: 9966
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000129.1
+  start: 25989
+  end: 49340
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 37028
+    end: 37333
+    beyond_core_bp: 23046
+  supported_span:
+    start: 37028
+    end: 37333
+    min_bitscore: 33.0
+    beyond_supported_bp: 23046
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000014.1
+  start: 63173
+  end: 63328
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 63173
+    end: 63328
+    beyond_core_bp: 0
+  supported_span:
+    start: 63173
+    end: 63328
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000041.1
+  start: 34416
+  end: 59078
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 58821
+    end: 59078
+    beyond_core_bp: 24405
+  supported_span:
+    start: 58821
+    end: 59078
+    min_bitscore: 33.0
+    beyond_supported_bp: 24405
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000041.1
+  start: 34416
+  end: 59078
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 38495
+    end: 38716
+    beyond_core_bp: 24441
+  supported_span:
+    start: 38495
+    end: 38716
+    min_bitscore: 33.0
+    beyond_supported_bp: 24441
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000041.1
+  start: 34416
+  end: 59078
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  core_span:
+    start: 34416
+    end: 34742
+    beyond_core_bp: 24336
+  supported_span:
+    start: 34416
+    end: 34742
+    min_bitscore: 33.0
+    beyond_supported_bp: 24336
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000041.1
+  start: 144462
+  end: 153709
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 145485
+    end: 145667
+    beyond_core_bp: 9065
+  supported_span:
+    start: 145485
+    end: 145667
+    min_bitscore: 33.0
+    beyond_supported_bp: 9065
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000050.1
+  start: 86879
+  end: 87031
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 86879
+    end: 87031
+    beyond_core_bp: 0
+  supported_span:
+    start: 86879
+    end: 87031
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000050.1
+  start: 117331
+  end: 118443
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 118336
+    end: 118443
+    beyond_core_bp: 1005
+  supported_span:
+    start: 118336
+    end: 118443
+    min_bitscore: 33.0
+    beyond_supported_bp: 1005
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000072.1
+  start: 5073
+  end: 7174
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 7052
+    end: 7174
+    beyond_core_bp: 1979
+  supported_span:
+    start: 7052
+    end: 7174
+    min_bitscore: 33.0
+    beyond_supported_bp: 1979
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000009.1
+  start: 127843
+  end: 145388
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  - bW
+  core_span:
+    start: 127843
+    end: 145388
+    beyond_core_bp: 0
+  supported_span:
+    start: 127843
+    end: 145388
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000009.1
+  start: 194670
+  end: 194780
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 194670
+    end: 194780
+    beyond_core_bp: 0
+  supported_span:
+    start: 194670
+    end: 194780
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000102.1
+  start: 58547
+  end: 58780
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 58619
+    end: 58780
+    beyond_core_bp: 72
+  supported_span:
+    start: 58547
+    end: 58780
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000091.1
+  start: 39184
+  end: 53939
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 39184
+    end: 39282
+    beyond_core_bp: 14657
+  supported_span:
+    start: 39184
+    end: 39282
+    min_bitscore: 33.0
+    beyond_supported_bp: 14657
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000330.1
+  start: 976
+  end: 10591
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 976
+    end: 1167
+    beyond_core_bp: 9424
+  supported_span:
+    start: 976
+    end: 1167
+    min_bitscore: 33.0
+    beyond_supported_bp: 9424
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000011.1
+  start: 39459
+  end: 39638
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 39459
+    end: 39638
+    beyond_core_bp: 0
+  supported_span:
+    start: 39459
+    end: 39638
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000011.1
+  start: 134488
+  end: 158939
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 134488
+    end: 134724
+    beyond_core_bp: 24215
+  supported_span:
+    start: 134488
+    end: 134724
+    min_bitscore: 33.0
+    beyond_supported_bp: 24215
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000018.1
+  start: 170328
+  end: 206404
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 188999
+    end: 189298
+    beyond_core_bp: 35777
+  supported_span:
+    start: 188999
+    end: 189298
+    min_bitscore: 33.0
+    beyond_supported_bp: 35777
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000018.1
+  start: 170328
+  end: 206404
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 170328
+    end: 170468
+    beyond_core_bp: 35936
+  supported_span:
+    start: 170328
+    end: 170468
+    min_bitscore: 33.0
+    beyond_supported_bp: 35936
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000018.1
+  start: 170328
+  end: 206404
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - mfa1
+  core_span:
+    start: 206309
+    end: 206404
+    beyond_core_bp: 35981
+  supported_span:
+    start: 206309
+    end: 206404
+    min_bitscore: 33.0
+    beyond_supported_bp: 35981
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:Bbeta
+  contig: LKPZ01000018.1
+  start: 170328
+  end: 206404
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bbp2_a
+  core_span:
+    start: 188875
+    end: 188979
+    beyond_core_bp: 35972
+  supported_span:
+    start: 188875
+    end: 188979
+    min_bitscore: 33.0
+    beyond_supported_bp: 35972
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000019.1
+  start: 170980
+  end: 185899
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 176612
+    end: 177004
+    beyond_core_bp: 14527
+  supported_span:
+    start: 176612
+    end: 177004
+    min_bitscore: 33.0
+    beyond_supported_bp: 14527
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000158.1
+  start: 17955
+  end: 31264
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 28338
+    end: 28544
+    beyond_core_bp: 13103
+  supported_span:
+    start: 28338
+    end: 28544
+    min_bitscore: 33.0
+    beyond_supported_bp: 13103
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000081.1
+  start: 13594
+  end: 22780
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 13594
+    end: 13878
+    beyond_core_bp: 8902
+  supported_span:
+    start: 13594
+    end: 13878
+    min_bitscore: 33.0
+    beyond_supported_bp: 8902
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000081.1
+  start: 82366
+  end: 82584
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 82366
+    end: 82584
+    beyond_core_bp: 0
+  supported_span:
+    start: 82366
+    end: 82584
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000076.1
+  start: 90646
+  end: 90744
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 90646
+    end: 90744
+    beyond_core_bp: 0
+  supported_span:
+    start: 90646
+    end: 90744
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000068.1
+  start: 4395
+  end: 29650
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 29531
+    end: 29650
+    beyond_core_bp: 25136
+  supported_span:
+    start: 29531
+    end: 29650
+    min_bitscore: 33.0
+    beyond_supported_bp: 25136
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000090.1
+  start: 11175
+  end: 11309
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 11175
+    end: 11309
+    beyond_core_bp: 0
+  supported_span:
+    start: 11175
+    end: 11309
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000141.1
+  start: 32517
+  end: 35981
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 35835
+    end: 35981
+    beyond_core_bp: 3318
+  supported_span:
+    start: 35835
+    end: 35981
+    min_bitscore: 33.0
+    beyond_supported_bp: 3318
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000700.1
+  start: 169
+  end: 399
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 169
+    end: 399
+    beyond_core_bp: 0
+  supported_span:
+    start: 169
+    end: 399
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000108.1
+  start: 5351
+  end: 39760
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 5351
+    end: 5581
+    beyond_core_bp: 34179
+  supported_span:
+    start: 5351
+    end: 5581
+    min_bitscore: 33.0
+    beyond_supported_bp: 34179
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000108.1
+  start: 5351
+  end: 39760
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 39620
+    end: 39760
+    beyond_core_bp: 34269
+  supported_span:
+    start: 39620
+    end: 39760
+    min_bitscore: 33.0
+    beyond_supported_bp: 34269
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000108.1
+  start: 5351
+  end: 39760
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  core_span:
+    start: 19127
+    end: 19633
+    beyond_core_bp: 33903
+  supported_span:
+    start: 19127
+    end: 19633
+    min_bitscore: 33.0
+    beyond_supported_bp: 33903
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000508.1
+  start: 526
+  end: 756
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 526
+    end: 756
+    beyond_core_bp: 0
+  supported_span:
+    start: 526
+    end: 756
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000661.1
+  start: 323
+  end: 571
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 323
+    end: 571
+    beyond_core_bp: 0
+  supported_span:
+    start: 323
+    end: 571
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000156.1
+  start: 41234
+  end: 41404
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 41234
+    end: 41404
+    beyond_core_bp: 0
+  supported_span:
+    start: 41234
+    end: 41404
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000013.1
+  start: 30251
+  end: 30457
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 30251
+    end: 30457
+    beyond_core_bp: 0
+  supported_span:
+    start: 30251
+    end: 30457
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000013.1
+  start: 69261
+  end: 112706
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 98733
+    end: 99128
+    beyond_core_bp: 43050
+  supported_span:
+    start: 98733
+    end: 99128
+    min_bitscore: 33.0
+    beyond_supported_bp: 43050
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000013.1
+  start: 69261
+  end: 112706
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  - pheromone_B43
+  core_span:
+    start: 69261
+    end: 112706
+    beyond_core_bp: 0
+  supported_span:
+    start: 69261
+    end: 112706
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000013.1
+  start: 69261
+  end: 112706
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - mfa1
+  core_span:
+    start: 98637
+    end: 98735
+    beyond_core_bp: 43347
+  supported_span:
+    start: 98637
+    end: 98735
+    min_bitscore: 33.0
+    beyond_supported_bp: 43347
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000013.1
+  start: 170263
+  end: 194933
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  - bW
+  core_span:
+    start: 170263
+    end: 189592
+    beyond_core_bp: 5341
+  supported_span:
+    start: 170263
+    end: 189592
+    min_bitscore: 33.0
+    beyond_supported_bp: 5341
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000013.1
+  start: 170263
+  end: 194933
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 194805
+    end: 194933
+    beyond_core_bp: 24542
+  supported_span:
+    start: 194805
+    end: 194933
+    min_bitscore: 33.0
+    beyond_supported_bp: 24542
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000143.1
+  start: 47934
+  end: 48164
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 47934
+    end: 48164
+    beyond_core_bp: 0
+  supported_span:
+    start: 47934
+    end: 48164
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000186.1
+  start: 34567
+  end: 34728
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 34567
+    end: 34728
+    beyond_core_bp: 0
+  supported_span:
+    start: 34567
+    end: 34728
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000126.1
+  start: 47565
+  end: 47852
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 47565
+    end: 47852
+    beyond_core_bp: 0
+  supported_span:
+    start: 47565
+    end: 47852
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000006.1
+  start: 63494
+  end: 63736
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 63494
+    end: 63736
+    beyond_core_bp: 0
+  supported_span:
+    start: 63494
+    end: 63736
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000006.1
+  start: 160343
+  end: 160453
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 160343
+    end: 160453
+    beyond_core_bp: 0
+  supported_span:
+    start: 160343
+    end: 160453
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000006.1
+  start: 203965
+  end: 214804
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 203965
+    end: 204159
+    beyond_core_bp: 10645
+  supported_span:
+    start: 203965
+    end: 204159
+    min_bitscore: 33.0
+    beyond_supported_bp: 10645
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000006.1
+  start: 259134
+  end: 266861
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 266688
+    end: 266861
+    beyond_core_bp: 7554
+  supported_span:
+    start: 266688
+    end: 266861
+    min_bitscore: 33.0
+    beyond_supported_bp: 7554
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000042.1
+  start: 6839
+  end: 6934
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 6839
+    end: 6934
+    beyond_core_bp: 0
+  supported_span:
+    start: 6839
+    end: 6934
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000042.1
+  start: 35732
+  end: 35887
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - rba1
+  core_span:
+    start: 35732
+    end: 35887
+    beyond_core_bp: 0
+  supported_span:
+    start: 35732
+    end: 35887
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000042.1
+  start: 74183
+  end: 74686
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 74183
+    end: 74686
+    beyond_core_bp: 0
+  supported_span:
+    start: 74183
+    end: 74686
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000042.1
+  start: 115716
+  end: 115877
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 115716
+    end: 115877
+    beyond_core_bp: 0
+  supported_span:
+    start: 115716
+    end: 115877
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000084.1
+  start: 63
+  end: 822
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_B43
+  - fungal_mating_type_pheromone
+  core_span:
+    start: 63
+    end: 822
+    beyond_core_bp: 0
+  supported_span:
+    start: 63
+    end: 822
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000057.1
+  start: 36395
+  end: 54472
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_B43
+  - pheromone_B44
+  core_span:
+    start: 36395
+    end: 54472
+    beyond_core_bp: 0
+  supported_span:
+    start: 36395
+    end: 54472
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000052.1
+  start: 59469
+  end: 64729
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  - pheromone_B43
+  core_span:
+    start: 59469
+    end: 64729
+    beyond_core_bp: 0
+  supported_span:
+    start: 59469
+    end: 64729
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000052.1
+  start: 109636
+  end: 109779
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 109636
+    end: 109779
+    beyond_core_bp: 0
+  supported_span:
+    start: 109636
+    end: 109779
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000063.1
+  start: 8608
+  end: 46615
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  - HD2
+  core_span:
+    start: 26324
+    end: 46615
+    beyond_core_bp: 17716
+  supported_span:
+    start: 26324
+    end: 46615
+    min_bitscore: 33.0
+    beyond_supported_bp: 17716
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000048.1
+  start: 120071
+  end: 131875
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 131145
+    end: 131360
+    beyond_core_bp: 11589
+  supported_span:
+    start: 131145
+    end: 131360
+    min_bitscore: 33.0
+    beyond_supported_bp: 11589
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000048.1
+  start: 120071
+  end: 131875
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 131759
+    end: 131875
+    beyond_core_bp: 11688
+  supported_span:
+    start: 131759
+    end: 131875
+    min_bitscore: 33.0
+    beyond_supported_bp: 11688
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000093.1
+  start: 13888
+  end: 25462
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 13888
+    end: 13983
+    beyond_core_bp: 11479
+  supported_span:
+    start: 13888
+    end: 13983
+    min_bitscore: 33.0
+    beyond_supported_bp: 11479
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000093.1
+  start: 71756
+  end: 77850
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 77656
+    end: 77850
+    beyond_core_bp: 5900
+  supported_span:
+    start: 77656
+    end: 77850
+    min_bitscore: 33.0
+    beyond_supported_bp: 5900
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000106.1
+  start: 15088
+  end: 25629
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 15088
+    end: 15294
+    beyond_core_bp: 10335
+  supported_span:
+    start: 15088
+    end: 15294
+    min_bitscore: 33.0
+    beyond_supported_bp: 10335
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000146.1
+  start: 2724
+  end: 15995
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 15897
+    end: 15995
+    beyond_core_bp: 13173
+  supported_span:
+    start: 15897
+    end: 15995
+    min_bitscore: 33.0
+    beyond_supported_bp: 13173
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000163.1
+  start: 3511
+  end: 7269
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 7093
+    end: 7269
+    beyond_core_bp: 3582
+  supported_span:
+    start: 7093
+    end: 7269
+    min_bitscore: 33.0
+    beyond_supported_bp: 3582
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000030.1
+  start: 5778
+  end: 27858
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 5778
+    end: 5873
+    beyond_core_bp: 21985
+  supported_span:
+    start: 5778
+    end: 5873
+    min_bitscore: 33.0
+    beyond_supported_bp: 21985
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000030.1
+  start: 113635
+  end: 113949
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 113635
+    end: 113775
+    beyond_core_bp: 174
+  supported_span:
+    start: 113635
+    end: 113775
+    min_bitscore: 33.0
+    beyond_supported_bp: 174
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000088.1
+  start: 64009
+  end: 70776
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 64018
+    end: 64212
+    beyond_core_bp: 6573
+  supported_span:
+    start: 64018
+    end: 64257
+    min_bitscore: 33.0
+    beyond_supported_bp: 6528
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000088.1
+  start: 64009
+  end: 70776
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 70654
+    end: 70776
+    beyond_core_bp: 6645
+  supported_span:
+    start: 70654
+    end: 70776
+    min_bitscore: 33.0
+    beyond_supported_bp: 6645
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000193.1
+  start: 17506
+  end: 33603
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  - fungal_mating_type_pheromone
+  core_span:
+    start: 17506
+    end: 33603
+    beyond_core_bp: 0
+  supported_span:
+    start: 17506
+    end: 33603
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000097.1
+  start: 40811
+  end: 79930
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 58845
+    end: 59072
+    beyond_core_bp: 38892
+  supported_span:
+    start: 58845
+    end: 59072
+    min_bitscore: 33.0
+    beyond_supported_bp: 38892
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000097.1
+  start: 40811
+  end: 79930
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 40811
+    end: 40999
+    beyond_core_bp: 38931
+  supported_span:
+    start: 40811
+    end: 40999
+    min_bitscore: 33.0
+    beyond_supported_bp: 38931
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000097.1
+  start: 40811
+  end: 79930
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  core_span:
+    start: 60058
+    end: 60198
+    beyond_core_bp: 38979
+  supported_span:
+    start: 60058
+    end: 60198
+    min_bitscore: 33.0
+    beyond_supported_bp: 38979
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000003.1
+  start: 16356
+  end: 16505
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 16356
+    end: 16505
+    beyond_core_bp: 0
+  supported_span:
+    start: 16356
+    end: 16505
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000003.1
+  start: 60426
+  end: 68046
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 67903
+    end: 68046
+    beyond_core_bp: 7477
+  supported_span:
+    start: 67903
+    end: 68046
+    min_bitscore: 33.0
+    beyond_supported_bp: 7477
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000003.1
+  start: 60426
+  end: 68046
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 60426
+    end: 60737
+    beyond_core_bp: 7309
+  supported_span:
+    start: 60426
+    end: 60737
+    min_bitscore: 33.0
+    beyond_supported_bp: 7309
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000003.1
+  start: 111399
+  end: 111551
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 111399
+    end: 111551
+    beyond_core_bp: 0
+  supported_span:
+    start: 111399
+    end: 111551
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000003.1
+  start: 150158
+  end: 188371
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  - fungal_mating_type_pheromone
+  core_span:
+    start: 156221
+    end: 188371
+    beyond_core_bp: 6063
+  supported_span:
+    start: 156221
+    end: 188371
+    min_bitscore: 33.0
+    beyond_supported_bp: 6063
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000003.1
+  start: 150158
+  end: 188371
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 150158
+    end: 150274
+    beyond_core_bp: 38097
+  supported_span:
+    start: 150158
+    end: 150274
+    min_bitscore: 33.0
+    beyond_supported_bp: 38097
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000003.1
+  start: 150158
+  end: 188371
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - mfa1
+  core_span:
+    start: 179655
+    end: 179756
+    beyond_core_bp: 38112
+  supported_span:
+    start: 179655
+    end: 179756
+    min_bitscore: 33.0
+    beyond_supported_bp: 38112
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000003.1
+  start: 266485
+  end: 266607
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 266485
+    end: 266607
+    beyond_core_bp: 0
+  supported_span:
+    start: 266485
+    end: 266607
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000003.1
+  start: 298911
+  end: 299078
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 298911
+    end: 299078
+    beyond_core_bp: 0
+  supported_span:
+    start: 298911
+    end: 299078
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000079.1
+  start: 26705
+  end: 26809
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 26705
+    end: 26809
+    beyond_core_bp: 0
+  supported_span:
+    start: 26705
+    end: 26809
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000079.1
+  start: 64451
+  end: 69949
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 69848
+    end: 69949
+    beyond_core_bp: 5397
+  supported_span:
+    start: 69848
+    end: 69949
+    min_bitscore: 33.0
+    beyond_supported_bp: 5397
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000118.1
+  start: 3781
+  end: 3933
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 3781
+    end: 3933
+    beyond_core_bp: 0
+  supported_span:
+    start: 3781
+    end: 3933
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000118.1
+  start: 39656
+  end: 39781
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 39656
+    end: 39781
+    beyond_core_bp: 0
+  supported_span:
+    start: 39656
+    end: 39781
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000100.1
+  start: 29732
+  end: 40838
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 29732
+    end: 29992
+    beyond_core_bp: 10846
+  supported_span:
+    start: 29732
+    end: 29992
+    min_bitscore: 33.0
+    beyond_supported_bp: 10846
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000124.1
+  start: 52895
+  end: 53095
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 52895
+    end: 53095
+    beyond_core_bp: 0
+  supported_span:
+    start: 52895
+    end: 53095
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000310.1
+  start: 399
+  end: 8460
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 8281
+    end: 8460
+    beyond_core_bp: 7882
+  supported_span:
+    start: 8281
+    end: 8460
+    min_bitscore: 33.0
+    beyond_supported_bp: 7882
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000046.1
+  start: 19798
+  end: 19971
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 19798
+    end: 19971
+    beyond_core_bp: 0
+  supported_span:
+    start: 19798
+    end: 19971
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000046.1
+  start: 95677
+  end: 119431
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 118847
+    end: 119431
+    beyond_core_bp: 23170
+  supported_span:
+    start: 118847
+    end: 119431
+    min_bitscore: 33.0
+    beyond_supported_bp: 23170
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000209.1
+  start: 11366
+  end: 11497
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 11366
+    end: 11497
+    beyond_core_bp: 0
+  supported_span:
+    start: 11366
+    end: 11497
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000016.1
+  start: 20181
+  end: 38436
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 20181
+    end: 20507
+    beyond_core_bp: 17929
+  supported_span:
+    start: 20181
+    end: 20507
+    min_bitscore: 33.0
+    beyond_supported_bp: 17929
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000053.1
+  start: 43600
+  end: 43698
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 43600
+    end: 43698
+    beyond_core_bp: 0
+  supported_span:
+    start: 43600
+    end: 43698
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000031.1
+  start: 11551
+  end: 35667
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  - bW
+  core_span:
+    start: 30281
+    end: 32695
+    beyond_core_bp: 21702
+  supported_span:
+    start: 30281
+    end: 32695
+    min_bitscore: 33.0
+    beyond_supported_bp: 21702
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000031.1
+  start: 170229
+  end: 170441
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 170229
+    end: 170441
+    beyond_core_bp: 0
+  supported_span:
+    start: 170229
+    end: 170441
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000390.1
+  start: 3641
+  end: 3826
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 3641
+    end: 3826
+    beyond_core_bp: 0
+  supported_span:
+    start: 3641
+    end: 3826
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000117.1
+  start: 20046
+  end: 20186
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 20046
+    end: 20186
+    beyond_core_bp: 0
+  supported_span:
+    start: 20046
+    end: 20186
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000199.1
+  start: 7338
+  end: 7535
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 7338
+    end: 7535
+    beyond_core_bp: 0
+  supported_span:
+    start: 7338
+    end: 7535
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000214.1
+  start: 24042
+  end: 24161
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 24042
+    end: 24161
+    beyond_core_bp: 0
+  supported_span:
+    start: 24042
+    end: 24161
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000077.1
+  start: 67274
+  end: 86937
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 67274
+    end: 67363
+    beyond_core_bp: 19574
+  supported_span:
+    start: 67274
+    end: 67363
+    min_bitscore: 33.0
+    beyond_supported_bp: 19574
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000242.1
+  start: 19374
+  end: 22176
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 19374
+    end: 19499
+    beyond_core_bp: 2677
+  supported_span:
+    start: 19374
+    end: 19499
+    min_bitscore: 33.0
+    beyond_supported_bp: 2677
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000075.1
+  start: 5619
+  end: 5762
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 5619
+    end: 5762
+    beyond_core_bp: 0
+  supported_span:
+    start: 5619
+    end: 5762
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000075.1
+  start: 49145
+  end: 66661
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  - fungal_mating_type_pheromone
+  core_span:
+    start: 49145
+    end: 66661
+    beyond_core_bp: 0
+  supported_span:
+    start: 49145
+    end: 66661
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000024.1
+  start: 81816
+  end: 102189
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 101890
+    end: 102189
+    beyond_core_bp: 20074
+  supported_span:
+    start: 101890
+    end: 102189
+    min_bitscore: 33.0
+    beyond_supported_bp: 20074
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000027.1
+  start: 35594
+  end: 51423
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 35594
+    end: 35701
+    beyond_core_bp: 15722
+  supported_span:
+    start: 35594
+    end: 35701
+    min_bitscore: 33.0
+    beyond_supported_bp: 15722
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000027.1
+  start: 82875
+  end: 83093
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 82875
+    end: 83093
+    beyond_core_bp: 0
+  supported_span:
+    start: 82875
+    end: 83093
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000153.1
+  start: 25033
+  end: 36771
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 25033
+    end: 25356
+    beyond_core_bp: 11415
+  supported_span:
+    start: 25033
+    end: 25356
+    min_bitscore: 33.0
+    beyond_supported_bp: 11415
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000023.1
+  start: 93815
+  end: 93916
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 93815
+    end: 93916
+    beyond_core_bp: 0
+  supported_span:
+    start: 93815
+    end: 93916
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000023.1
+  start: 124421
+  end: 154737
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 124421
+    end: 124516
+    beyond_core_bp: 30221
+  supported_span:
+    start: 124421
+    end: 124516
+    min_bitscore: 33.0
+    beyond_supported_bp: 30221
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000017.1
+  start: 100083
+  end: 113220
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 113122
+    end: 113220
+    beyond_core_bp: 13039
+  supported_span:
+    start: 113122
+    end: 113220
+    min_bitscore: 33.0
+    beyond_supported_bp: 13039
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000017.1
+  start: 160887
+  end: 166951
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  - bW
+  core_span:
+    start: 160887
+    end: 166951
+    beyond_core_bp: 0
+  supported_span:
+    start: 160887
+    end: 166951
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000071.1
+  start: 100906
+  end: 111832
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 100906
+    end: 101133
+    beyond_core_bp: 10699
+  supported_span:
+    start: 100906
+    end: 101133
+    min_bitscore: 33.0
+    beyond_supported_bp: 10699
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000049.1
+  start: 22248
+  end: 22568
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 22248
+    end: 22568
+    beyond_core_bp: 0
+  supported_span:
+    start: 22248
+    end: 22568
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000049.1
+  start: 125470
+  end: 125589
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 125470
+    end: 125589
+    beyond_core_bp: 0
+  supported_span:
+    start: 125470
+    end: 125589
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000094.1
+  start: 3124
+  end: 19889
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 16804
+    end: 16914
+    beyond_core_bp: 16655
+  supported_span:
+    start: 16804
+    end: 16914
+    min_bitscore: 33.0
+    beyond_supported_bp: 16655
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000094.1
+  start: 3124
+  end: 19889
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 19635
+    end: 19889
+    beyond_core_bp: 16511
+  supported_span:
+    start: 19635
+    end: 19889
+    min_bitscore: 33.0
+    beyond_supported_bp: 16511
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000094.1
+  start: 3124
+  end: 19889
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  core_span:
+    start: 3124
+    end: 3252
+    beyond_core_bp: 16637
+  supported_span:
+    start: 3124
+    end: 3252
+    min_bitscore: 33.0
+    beyond_supported_bp: 16637
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000094.1
+  start: 65612
+  end: 76830
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 76714
+    end: 76830
+    beyond_core_bp: 11102
+  supported_span:
+    start: 76714
+    end: 76830
+    min_bitscore: 33.0
+    beyond_supported_bp: 11102
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000028.1
+  start: 100402
+  end: 102585
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 102496
+    end: 102585
+    beyond_core_bp: 2094
+  supported_span:
+    start: 102496
+    end: 102585
+    min_bitscore: 33.0
+    beyond_supported_bp: 2094
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000374.1
+  start: 553
+  end: 5573
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 553
+    end: 720
+    beyond_core_bp: 4853
+  supported_span:
+    start: 553
+    end: 720
+    min_bitscore: 33.0
+    beyond_supported_bp: 4853
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000200.1
+  start: 4341
+  end: 14948
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 4341
+    end: 4442
+    beyond_core_bp: 10506
+  supported_span:
+    start: 4341
+    end: 4442
+    min_bitscore: 33.0
+    beyond_supported_bp: 10506
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000200.1
+  start: 4341
+  end: 14948
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 5249
+    end: 5341
+    beyond_core_bp: 10515
+  supported_span:
+    start: 5249
+    end: 5341
+    min_bitscore: 33.0
+    beyond_supported_bp: 10515
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000200.1
+  start: 4341
+  end: 14948
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pheromone_receptor
+  core_span:
+    start: 14814
+    end: 14948
+    beyond_core_bp: 10473
+  supported_span:
+    start: 14814
+    end: 14948
+    min_bitscore: 33.0
+    beyond_supported_bp: 10473
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000183.1
+  start: 25443
+  end: 32616
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 25443
+    end: 25535
+    beyond_core_bp: 7081
+  supported_span:
+    start: 25443
+    end: 25535
+    min_bitscore: 33.0
+    beyond_supported_bp: 7081
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000086.1
+  start: 30959
+  end: 31153
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 30959
+    end: 31153
+    beyond_core_bp: 0
+  supported_span:
+    start: 30959
+    end: 31153
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000086.1
+  start: 73916
+  end: 92153
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 92022
+    end: 92153
+    beyond_core_bp: 18106
+  supported_span:
+    start: 92022
+    end: 92153
+    min_bitscore: 33.0
+    beyond_supported_bp: 18106
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000086.1
+  start: 73916
+  end: 92153
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 73916
+    end: 74044
+    beyond_core_bp: 18109
+  supported_span:
+    start: 73916
+    end: 74044
+    min_bitscore: 33.0
+    beyond_supported_bp: 18109
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000175.1
+  start: 3534
+  end: 3941
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 3534
+    end: 3941
+    beyond_core_bp: 0
+  supported_span:
+    start: 3534
+    end: 3941
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000073.1
+  start: 62278
+  end: 86204
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 86100
+    end: 86204
+    beyond_core_bp: 23822
+  supported_span:
+    start: 86100
+    end: 86204
+    min_bitscore: 33.0
+    beyond_supported_bp: 23822
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000073.1
+  start: 62278
+  end: 86204
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 62278
+    end: 62436
+    beyond_core_bp: 23768
+  supported_span:
+    start: 62278
+    end: 62436
+    min_bitscore: 33.0
+    beyond_supported_bp: 23768
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000247.1
+  start: 16657
+  end: 18907
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 18743
+    end: 18907
+    beyond_core_bp: 2086
+  supported_span:
+    start: 18743
+    end: 18907
+    min_bitscore: 33.0
+    beyond_supported_bp: 2086
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000247.1
+  start: 16657
+  end: 18907
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 16657
+    end: 16869
+    beyond_core_bp: 2038
+  supported_span:
+    start: 16657
+    end: 16869
+    min_bitscore: 33.0
+    beyond_supported_bp: 2038
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000415.1
+  start: 4706
+  end: 4849
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 4706
+    end: 4849
+    beyond_core_bp: 0
+  supported_span:
+    start: 4706
+    end: 4849
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000139.1
+  start: 11063
+  end: 11179
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 11063
+    end: 11179
+    beyond_core_bp: 0
+  supported_span:
+    start: 11063
+    end: 11179
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000105.1
+  start: 59369
+  end: 73826
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD1
+  core_span:
+    start: 63959
+    end: 64132
+    beyond_core_bp: 14284
+  supported_span:
+    start: 63959
+    end: 64132
+    min_bitscore: 33.0
+    beyond_supported_bp: 14284
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000105.1
+  start: 59369
+  end: 73826
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 59369
+    end: 59479
+    beyond_core_bp: 14347
+  supported_span:
+    start: 59369
+    end: 59479
+    min_bitscore: 33.0
+    beyond_supported_bp: 14347
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:MAT
+  contig: LKPZ01000105.1
+  start: 59369
+  end: 73826
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MFalpha
+  core_span:
+    start: 73704
+    end: 73826
+    beyond_core_bp: 14335
+  supported_span:
+    start: 73704
+    end: 73826
+    min_bitscore: 33.0
+    beyond_supported_bp: 14335
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:HD
+  contig: LKPZ01000062.1
+  start: 80309
+  end: 83604
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - HD2
+  core_span:
+    start: 80309
+    end: 80482
+    beyond_core_bp: 3122
+  supported_span:
+    start: 80309
+    end: 80482
+    min_bitscore: 33.0
+    beyond_supported_bp: 3122
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000062.1
+  start: 80309
+  end: 83604
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 83362
+    end: 83604
+    beyond_core_bp: 3053
+  supported_span:
+    start: 83362
+    end: 83604
+    min_bitscore: 33.0
+    beyond_supported_bp: 3053
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000166.1
+  start: 3545
+  end: 3673
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 3545
+    end: 3673
+    beyond_core_bp: 0
+  supported_span:
+    start: 3545
+    end: 3673
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000066.1
+  start: 1468
+  end: 7207
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 1468
+    end: 2124
+    beyond_core_bp: 5083
+  supported_span:
+    start: 1468
+    end: 2124
+    min_bitscore: 33.0
+    beyond_supported_bp: 5083
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000066.1
+  start: 66432
+  end: 85070
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 66432
+    end: 66569
+    beyond_core_bp: 18501
+  supported_span:
+    start: 66432
+    end: 66569
+    min_bitscore: 33.0
+    beyond_supported_bp: 18501
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000142.1
+  start: 6805
+  end: 21074
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 6805
+    end: 7122
+    beyond_core_bp: 13952
+  supported_span:
+    start: 6805
+    end: 7122
+    min_bitscore: 33.0
+    beyond_supported_bp: 13952
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000089.1
+  start: 35902
+  end: 54976
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 54854
+    end: 54976
+    beyond_core_bp: 18952
+  supported_span:
+    start: 54854
+    end: 54976
+    min_bitscore: 33.0
+    beyond_supported_bp: 18952
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000085.1
+  start: 77997
+  end: 78152
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 77997
+    end: 78152
+    beyond_core_bp: 0
+  supported_span:
+    start: 77997
+    end: 78152
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000283.1
+  start: 4346
+  end: 4558
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 4346
+    end: 4558
+    beyond_core_bp: 0
+  supported_span:
+    start: 4346
+    end: 4558
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000204.1
+  start: 21381
+  end: 21482
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 21381
+    end: 21482
+    beyond_core_bp: 0
+  supported_span:
+    start: 21381
+    end: 21482
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000096.1
+  start: 73681
+  end: 73776
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 73681
+    end: 73776
+    beyond_core_bp: 0
+  supported_span:
+    start: 73681
+    end: 73776
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000151.1
+  start: 23592
+  end: 23801
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 23592
+    end: 23801
+    beyond_core_bp: 0
+  supported_span:
+    start: 23592
+    end: 23801
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000120.1
+  start: 29931
+  end: 30131
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 29931
+    end: 30131
+    beyond_core_bp: 0
+  supported_span:
+    start: 29931
+    end: 30131
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000188.1
+  start: 9357
+  end: 9569
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 9357
+    end: 9569
+    beyond_core_bp: 0
+  supported_span:
+    start: 9357
+    end: 9569
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000034.1
+  start: 2783
+  end: 3025
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 2783
+    end: 3025
+    beyond_core_bp: 0
+  supported_span:
+    start: 2783
+    end: 3025
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000034.1
+  start: 154863
+  end: 155012
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 154863
+    end: 155012
+    beyond_core_bp: 0
+  supported_span:
+    start: 154863
+    end: 155012
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000116.1
+  start: 63455
+  end: 63664
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 63455
+    end: 63664
+    beyond_core_bp: 0
+  supported_span:
+    start: 63455
+    end: 63664
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000039.1
+  start: 60731
+  end: 60991
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 60731
+    end: 60991
+    beyond_core_bp: 0
+  supported_span:
+    start: 60731
+    end: 60991
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000039.1
+  start: 118372
+  end: 118527
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 118372
+    end: 118527
+    beyond_core_bp: 0
+  supported_span:
+    start: 118372
+    end: 118527
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000007.1
+  start: 6999
+  end: 7244
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 6999
+    end: 7244
+    beyond_core_bp: 0
+  supported_span:
+    start: 6999
+    end: 7244
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000007.1
+  start: 184821
+  end: 184928
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - rba1
+  core_span:
+    start: 184821
+    end: 184928
+    beyond_core_bp: 0
+  supported_span:
+    start: 184821
+    end: 184928
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000007.1
+  start: 218163
+  end: 218375
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 218163
+    end: 218375
+    beyond_core_bp: 0
+  supported_span:
+    start: 218163
+    end: 218375
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000115.1
+  start: 67233
+  end: 67556
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 67239
+    end: 67556
+    beyond_core_bp: 6
+  supported_span:
+    start: 67233
+    end: 67556
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000448.1
+  start: 2951
+  end: 3073
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 2951
+    end: 3073
+    beyond_core_bp: 0
+  supported_span:
+    start: 2951
+    end: 3073
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000122.1
+  start: 47890
+  end: 48180
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 47890
+    end: 48180
+    beyond_core_bp: 0
+  supported_span:
+    start: 47890
+    end: 48180
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000134.1
+  start: 31211
+  end: 38148
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 31211
+    end: 31576
+    beyond_core_bp: 6572
+  supported_span:
+    start: 31211
+    end: 31576
+    min_bitscore: 33.0
+    beyond_supported_bp: 6572
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000134.1
+  start: 31211
+  end: 38148
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 35865
+    end: 35975
+    beyond_core_bp: 6827
+  supported_span:
+    start: 35865
+    end: 35975
+    min_bitscore: 33.0
+    beyond_supported_bp: 6827
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000127.1
+  start: 53740
+  end: 53841
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 53740
+    end: 53841
+    beyond_core_bp: 0
+  supported_span:
+    start: 53740
+    end: 53841
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000254.1
+  start: 7852
+  end: 19209
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 19081
+    end: 19209
+    beyond_core_bp: 11229
+  supported_span:
+    start: 19081
+    end: 19209
+    min_bitscore: 33.0
+    beyond_supported_bp: 11229
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000256.1
+  start: 20308
+  end: 20553
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 20308
+    end: 20553
+    beyond_core_bp: 0
+  supported_span:
+    start: 20308
+    end: 20553
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000565.1
+  start: 311
+  end: 418
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 311
+    end: 418
+    beyond_core_bp: 0
+  supported_span:
+    start: 311
+    end: 418
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000621.1
+  start: 422
+  end: 523
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 422
+    end: 523
+    beyond_core_bp: 0
+  supported_span:
+    start: 422
+    end: 523
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000245.1
+  start: 8132
+  end: 8269
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 8132
+    end: 8269
+    beyond_core_bp: 0
+  supported_span:
+    start: 8132
+    end: 8269
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000187.1
+  start: 23331
+  end: 23606
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 23331
+    end: 23606
+    beyond_core_bp: 0
+  supported_span:
+    start: 23331
+    end: 23606
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000061.1
+  start: 32238
+  end: 55865
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 32238
+    end: 32363
+    beyond_core_bp: 23502
+  supported_span:
+    start: 32238
+    end: 32363
+    min_bitscore: 33.0
+    beyond_supported_bp: 23502
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000165.1
+  start: 22171
+  end: 22383
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 22171
+    end: 22383
+    beyond_core_bp: 0
+  supported_span:
+    start: 22171
+    end: 22383
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000033.1
+  start: 2431
+  end: 2520
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 2431
+    end: 2520
+    beyond_core_bp: 0
+  supported_span:
+    start: 2431
+    end: 2520
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000033.1
+  start: 34757
+  end: 34993
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 34757
+    end: 34993
+    beyond_core_bp: 0
+  supported_span:
+    start: 34757
+    end: 34993
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000123.1
+  start: 13970
+  end: 21738
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 21610
+    end: 21738
+    beyond_core_bp: 7640
+  supported_span:
+    start: 21610
+    end: 21738
+    min_bitscore: 33.0
+    beyond_supported_bp: 7640
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000155.1
+  start: 12049
+  end: 12180
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 12049
+    end: 12180
+    beyond_core_bp: 0
+  supported_span:
+    start: 12049
+    end: 12180
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000196.1
+  start: 29511
+  end: 29708
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 29511
+    end: 29708
+    beyond_core_bp: 0
+  supported_span:
+    start: 29511
+    end: 29708
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000261.1
+  start: 1973
+  end: 2068
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - rba1
+  core_span:
+    start: 1973
+    end: 2068
+    beyond_core_bp: 0
+  supported_span:
+    start: 1973
+    end: 2068
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000327.1
+  start: 6791
+  end: 6985
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - rba1
+  core_span:
+    start: 6791
+    end: 6985
+    beyond_core_bp: 0
+  supported_span:
+    start: 6791
+    end: 6985
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000054.1
+  start: 13690
+  end: 13887
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 13690
+    end: 13887
+    beyond_core_bp: 0
+  supported_span:
+    start: 13690
+    end: 13887
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000433.1
+  start: 367
+  end: 534
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 367
+    end: 534
+    beyond_core_bp: 0
+  supported_span:
+    start: 367
+    end: 534
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000235.1
+  start: 20563
+  end: 20709
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 20563
+    end: 20709
+    beyond_core_bp: 0
+  supported_span:
+    start: 20563
+    end: 20709
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000262.1
+  start: 6453
+  end: 6683
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 6453
+    end: 6683
+    beyond_core_bp: 0
+  supported_span:
+    start: 6453
+    end: 6683
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:aLocus
+  contig: LKPZ01000320.1
+  start: 11131
+  end: 11349
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - pra1
+  core_span:
+    start: 11131
+    end: 11349
+    beyond_core_bp: 0
+  supported_span:
+    start: 11131
+    end: 11349
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000154.1
+  start: 27593
+  end: 27793
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bW
+  core_span:
+    start: 27593
+    end: 27793
+    beyond_core_bp: 0
+  supported_span:
+    start: 27593
+    end: 27793
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000114.1
+  start: 60617
+  end: 60781
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 60617
+    end: 60781
+    beyond_core_bp: 0
+  supported_span:
+    start: 60617
+    end: 60781
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000065.1
+  start: 109941
+  end: 110114
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 109941
+    end: 110114
+    beyond_core_bp: 0
+  supported_span:
+    start: 109941
+    end: 110114
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000055.1
+  start: 34593
+  end: 34739
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 34593
+    end: 34739
+    beyond_core_bp: 0
+  supported_span:
+    start: 34593
+    end: 34739
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000055.1
+  start: 136632
+  end: 136844
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - bE
+  core_span:
+    start: 136632
+    end: 136844
+    beyond_core_bp: 0
+  supported_span:
+    start: 136632
+    end: 136844
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Basidiomycota:PR
+  contig: LKPZ01000124.1
+  start: 12261
+  end: 16092
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - pheromone_receptor
+  - caax_precursor
+  core_span:
+    start: 12261
+    end: 16092
+    beyond_core_bp: 0
+  supported_span:
+    start: 12261
+    end: 16092
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.25
+  floor: 0.5
+  best_identity: 39.394
+  idiomorph_classifier: null
+assembly_gap_at_locus: []
+zygosity: null
+two_idiomorphs: []
+receptor_arrays_note: 'Receptor arrays occur for both mating and non-mating STE3-like
+  receptors (the study found arrays holding paralogs beside the mating receptors in
+  Coprinopsis cinerea and Schizophyllum commune), so array membership does not establish
+  that a locus is a mating receptor. receptor_array_support is a flag on the evidence
+  behind an array; it never changes a call, its confidence or its verification label.
+  receptor_cassette_* fields describe pheromone-precursor cassette structure (2 or
+  more strict-CAAX ORFs within 5 kb of a receptor locus; class C when that many of
+  those ORFs also carry tblastn precursor homology). They are descriptive only: the
+  CAAX scan is also what admits a PR call, so cassettes are circular as confirmation;
+  own-species curated precursors are a self-hit for class C; tandem receptors may
+  be merged into one locus. They never change a call, tier, label, confidence or count.'
+receptor_arrays:
+- receptor_array_id: Basidiomycota:PR:LKPZ01000002.1:150126-153968
+  family: Basidiomycota:PR
+  contig: LKPZ01000002.1
+  start: 150126
+  end: 153968
+  receptor_array_size: 2
+  receptor_array_members:
+  - 150126-150860:-
+  - 153053-153968:-
+  strict_caax_orfs: 0
+  precursor_homology_hits: 0
+  receptor_array_support: supported
+  receptor_array_support_reasons:
+  - array_size>=2
+  receptor_cassette_loci: 0
+  receptor_cassette_class: none
+  receptor_cassette_members: []
+  receptor_cassette_max_caax_orfs: 0
+  calls: 0
+- receptor_array_id: Basidiomycota:PR:LKPZ01000213.1:26456-27703
+  family: Basidiomycota:PR
+  contig: LKPZ01000213.1
+  start: 26456
+  end: 27703
+  receptor_array_size: 1
+  receptor_array_members:
+  - 26456-27703:-
+  strict_caax_orfs: 0
+  precursor_homology_hits: 0
+  receptor_array_support: unsupported
+  receptor_array_support_reasons:
+  - single_locus
+  - no_precursor_homology
+  - strict_caax_orfs=0(<2)
+  receptor_cassette_loci: 0
+  receptor_cassette_class: none
+  receptor_cassette_members: []
+  receptor_cassette_max_caax_orfs: 0
+  calls: 0
+families_attempted:
+- Basidiomycota:HD
+- Basidiomycota:PR
+- Basidiomycota:MAT
+- Basidiomycota:Aalpha
+- Basidiomycota:Abeta
+- Basidiomycota:Balpha
+- Basidiomycota:Bbeta
+- Basidiomycota:aLocus
+- Basidiomycota:bLocus
+detected:
+- family: Basidiomycota:bLocus
+  contig: LKPZ01000271.1
+  start: 4061
+  end: 15584
+  core_span:
+    start: 4061
+    end: 9477
+    beyond_core_bp: 6107
+  supported_span:
+    start: 4061
+    end: 9879
+    min_bitscore: 33.0
+    beyond_supported_bp: 5705
+  confidence: high
+  resolution_flags:
+  - partial_core
+  resolution_flag_genes:
+    partial_core:
+    - bE
+    - bW
+  idiomorph: undetermined
+  idiomorph_class: null
+  idiomorph_candidates: []
+  detection_pass: strict
+  locus_class: idiomorph_gene_only
+  idiomorph_unmodelled: false
+  verification: null
+  merged_from: []
+  subloci: []
+  polished_genes: 2
+  distinct_intervals: 2
+  span_exceeds_plausible_bound: false
+  idiomorph_margin: null
+  idiomorph_classifier: null
+  idiomorph_resolutions: []
+  ambiguous_with:
+  - Basidiomycota:HD
+  - Basidiomycota:Aalpha
+  - Basidiomycota:aLocus
+  genes_found:
+  - bE
+  - bW
+  genes_missing: []
+  genes_not_searchable: []
+  fragmented: false
+  reference_records:
+  - 203535_cbs-10006_bLocus_b1
+  - 76777_atcc-42132_bLocus_b1
+  segments:
+  - contig: LKPZ01000271.1
+    start: 4061
+    end: 15584
+    contig_edge_distance: 2993
+  gene_evidence:
+  - gene: bW
+    role: core_MAT
+    contig: LKPZ01000271.1
+    start: 4061
+    end: 7861
+    strand: '-'
+    identity: 34.52
+    coverage: 25.5
+    reference_record: 203535_cbs-10006_bLocus_b1
+    method: miniprot_refine
+    status: polished_single
+    alternate_model: null
+    exons:
+    - start: 4061
+      end: 4096
+    - start: 6856
+      end: 7074
+    - start: 7574
+      end: 7696
+    - start: 7757
+      end: 7861
+    evalue: 2.96e-06
+    bitscore: 49.7
+  - gene: bE
+    role: core_MAT
+    contig: LKPZ01000271.1
+    start: 9364
+    end: 9477
+    strand: +
+    identity: 52.63
+    coverage: 13.1
+    reference_record: 76777_atcc-42132_bLocus_b1
+    method: exonerate_refine
+    status: polished_disagree
+    alternate_model:
+      contig: LKPZ01000271.1
+      start: 9280
+      end: 9459
+      strand: +
+      exons:
+      - start: 9280
+        end: 9459
+      identity: 33.33
+      method: miniprot_refine
+    exons:
+    - start: 9364
+      end: 9477
+    evalue: 4.32e-13
+    bitscore: 68.9
+not_detected:
+- family: Basidiomycota:HD
+  reason: best cluster carried 0 modelled gene(s), below the 2 required to report
+    a locus; none of its genes could be modelled
+  best_fraction_found: 1.0
+  genes_found:
+  - HD2
+  genes_missing:
+  - HD1
+  genes_not_searchable: []
+- family: Basidiomycota:PR
+  reason: best cluster carried 0 modelled gene(s), below the 2 required to report
+    a locus; none of its genes could be modelled
+  best_fraction_found: 0.5
+  genes_found:
+  - pheromone_receptor
+  genes_missing:
+  - pheromone_B43
+  - pheromone_B44
+  - fungal_mating_type_pheromone
+  genes_not_searchable: []
+- family: Basidiomycota:MAT
+  reason: best cluster carried 0 modelled gene(s), below the 2 required to report
+    a locus; none of its genes could be modelled
+  best_fraction_found: 0.6666666666666666
+  genes_found:
+  - SXI2
+  genes_missing:
+  - FAO1
+  - PAN6
+  - STE3
+  genes_not_searchable:
+  - MFa
+  - MFalpha
+  - RPL39
+- family: Basidiomycota:Aalpha
+  reason: best cluster carried 0 modelled gene(s), below the 2 required to report
+    a locus; none of its genes could be modelled
+  best_fraction_found: 1.0
+  genes_found:
+  - Y
+  genes_missing:
+  - Z
+  genes_not_searchable: []
+- family: Basidiomycota:Abeta
+  reason: no reference protein for this family is in the search set (none curated,
+    or all withheld)
+  best_fraction_found: 0.0
+  genes_found: []
+  genes_missing:
+  - Y
+  - Z
+  genes_not_searchable: []
+- family: Basidiomycota:Balpha
+  reason: best cluster carried 0 modelled gene(s), below the 2 required to report
+    a locus; none of its genes could be modelled
+  best_fraction_found: 0.5
+  genes_found:
+  - bap3-3
+  genes_missing:
+  - bar3
+  genes_not_searchable:
+  - bap3-1
+- family: Basidiomycota:Bbeta
+  reason: best cluster carried 0 modelled gene(s), below the 2 required to report
+    a locus; none of its genes could be modelled
+  best_fraction_found: 0.25
+  genes_found:
+  - bbp2-1
+  genes_missing:
+  - bbr2
+  - bbp2-2
+  - bbp2-5
+  - bbp2-6
+  - bbp2-8
+  - bbp2_a
+  - bbp2_b
+  genes_not_searchable: []
+- family: Basidiomycota:aLocus
+  reason: best cluster carried 0 modelled gene(s), below the 2 required to report
+    a locus; none of its genes could be modelled
+  best_fraction_found: 0.5
+  genes_found:
+  - pra1
+  genes_missing:
+  - rba1
+  genes_not_searchable:
+  - mfa1

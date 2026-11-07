@@ -1,0 +1,5 @@
+##gff-version 3
+##sequence-region GL883124 688203 691501
+GL883124	MATPredict	MAT_locus	688203	691501	.	.	.	ID=Basidiomycota_rustHD_0;family=Basidiomycota:rustHD;confidence=high;idiomorph=undetermined;fragmented=false;core_start=688203;core_end=691501;beyond_core_bp=0;supported_start=688203;supported_end=691501;beyond_supported_bp=0;reference_records=747676_98ag31_rustHD_b1
+GL883124	MATPredict	gene	688203	689635	.	-	.	ID=Basidiomycota_rustHD_0.gene0;Parent=Basidiomycota_rustHD_0;Name=bW;role=core_MAT;present=true;identity=100.0;reference_record=747676_98ag31_rustHD_b1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+GL883124	MATPredict	gene	690174	691501	.	+	.	ID=Basidiomycota_rustHD_0.gene1;Parent=Basidiomycota_rustHD_0;Name=bE;role=core_MAT;present=true;identity=100.0;reference_record=747676_98ag31_rustHD_b1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0

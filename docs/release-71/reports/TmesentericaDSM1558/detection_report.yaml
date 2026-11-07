@@ -1,0 +1,264 @@
+run:
+  sample: TmesentericaDSM1558
+  organism: null
+  taxid: null
+  phylum: null
+  matpredict_version: 0.8.1
+  code:
+    git_describe: v0.8.1
+    dirty: false
+    commit: 3a62e6302b8e7633490237829e8febafef77e432
+    source_version: 0.8.1
+  database:
+    root: /bigdata/stajichlab/jstajich/projects/FungiDB_MATpredict/tools/MATPredict/db
+    content_sha256: 86f18d232e4fe95d19f5e26c1e6cfc758f36c8d235204ef790b01e19832510cc
+    records: 185
+  taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+  genome:
+    file: TmesentericaDSM1558.genome.fasta
+    sha256: 83b337aff53b5cbed6ab91ee9bcb1ec4321b4ccbaa0e8874aca2fae4b3b9f64f
+    contigs: 45
+    length_bp: 28639919
+    n50: 1622698
+  proteins: TmesentericaDSM1558.proteins.fasta
+  parameters:
+    phylum: Basidiomycota
+    phylum_guess:
+      requested: auto
+      status: ok
+      usable: true
+      reason: null
+      phylum: Basidiomycota
+      phylum_taxid: 5204
+      deepest_rank: genus
+      routing_taxid: 5215
+      routing_taxid_rank: family
+      flags: []
+      gmg_version: gmg 0.3.2 (66055154a)
+      index: bfd-reps-2026.10.5-s20000.gmgi
+      index_sha256: 0f319567f1cab17643e1daf7ffdc0e3b312bd43913e351568108d67a4a19702c
+      index_spec: bfd-reps-2026.10.5-s20000.gmgi
+      note: GmG called phylum Basidiomycota
+      action: routed
+      weak_call_accepted: false
+      genetic_code: 1
+      genetic_code_from: family taxid 5215
+      routed_by: family taxid 5215 (lineage)
+    exhaustive: false
+    genetic_code: 1
+    exclude_records: null
+    annotation: null
+    min_hits: 2
+    min_identity: null
+    require_core_role: true
+    max_polished_clusters_per_family: 6
+    polish_strong_identity: 50.0
+    polish_core_pair: true
+    preset: null
+    partial_core_policy: 'off'
+    homothallic_policy: 'off'
+    confidence_cap_policy: 'off'
+    cross_family_policy: 'off'
+    fallback_after_withheld_policy: 'off'
+    strong_single_gene_policy: 'off'
+    scoped_roster_policy: 'off'
+    scoped_roster: null
+    supported_min_bitscore: 33.0
+  started: '2026-11-07T02:57:42Z'
+  wall_seconds: 47
+routing_mode: lineage
+routing_error: null
+fallback_search: null
+not_searched_reason: null
+genetic_code: 1
+genetic_code_error: null
+taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+suppressed_unpolished: 0
+suppressed_flank_carried: 0
+suppressed_mat_gene_gate: 0
+suppressed_paralog_class: 0
+suppressed_loci:
+- family: Basidiomycota:MAT
+  contig: JH711531
+  start: 1149597
+  end: 1151557
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - STE3
+  core_span:
+    start: 1149597
+    end: 1151557
+    beyond_core_bp: 0
+  supported_span:
+    start: 1149597
+    end: 1151557
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.333
+  floor: 0.5
+  best_identity: 31.0
+  idiomorph_classifier: null
+- family: Basidiomycota:MAT
+  contig: JH711540
+  start: 239848
+  end: 241608
+  idiomorph: alpha
+  polished_genes: 1
+  genes_found:
+  - SXI1
+  - SXI2
+  core_span:
+    start: 239848
+    end: 241608
+    beyond_core_bp: 0
+  supported_span:
+    start: 239848
+    end: 241608
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.0
+  floor: 0.5
+  best_identity: 44.9
+  idiomorph_classifier: null
+assembly_gap_at_locus: []
+zygosity: null
+two_idiomorphs: []
+receptor_arrays_note: 'Receptor arrays occur for both mating and non-mating STE3-like
+  receptors (the study found arrays holding paralogs beside the mating receptors in
+  Coprinopsis cinerea and Schizophyllum commune), so array membership does not establish
+  that a locus is a mating receptor. receptor_array_support is a flag on the evidence
+  behind an array; it never changes a call, its confidence or its verification label.
+  receptor_cassette_* fields describe pheromone-precursor cassette structure (2 or
+  more strict-CAAX ORFs within 5 kb of a receptor locus; class C when that many of
+  those ORFs also carry tblastn precursor homology). They are descriptive only: the
+  CAAX scan is also what admits a PR call, so cassettes are circular as confirmation;
+  own-species curated precursors are a self-hit for class C; tandem receptors may
+  be merged into one locus. They never change a call, tier, label, confidence or count.'
+receptor_arrays: []
+families_attempted:
+- Basidiomycota:MAT
+detected:
+- family: Basidiomycota:MAT
+  contig: JH711534
+  start: 586275
+  end: 732277
+  core_span:
+    start: 586275
+    end: 732277
+    beyond_core_bp: 0
+  supported_span:
+    start: 586275
+    end: 732277
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  confidence: high
+  resolution_flags: []
+  resolution_flag_genes: {}
+  idiomorph: a
+  idiomorph_class: null
+  idiomorph_candidates:
+  - idiomorph: a
+    score: 23.1
+  detection_pass: strict
+  locus_class: mat_locus
+  idiomorph_unmodelled: false
+  verification: null
+  merged_from: []
+  subloci: []
+  polished_genes: 3
+  distinct_intervals: 4
+  span_exceeds_plausible_bound: false
+  idiomorph_margin: null
+  idiomorph_classifier: null
+  idiomorph_resolutions: []
+  ambiguous_with: []
+  genes_found:
+  - PAN6
+  - MFa
+  - STE3
+  - RPL39
+  genes_missing:
+  - FAO1
+  genes_not_searchable:
+  - NOG2
+  - UAP1
+  fragmented: false
+  reference_records:
+  - 40410_jec20_MAT_a
+  - 40410_jec21_MAT_alpha
+  segments:
+  - contig: JH711534
+    start: 586275
+    end: 732277
+    contig_edge_distance: 491042
+  gene_evidence:
+  - gene: PAN6
+    role: flanking_conserved
+    contig: JH711534
+    start: 586275
+    end: 588426
+    strand: '-'
+    identity: 59.5
+    coverage: 89.1
+    reference_record: 40410_jec20_MAT_a
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 2.5e-144
+    bitscore: 406.0
+  - gene: MFa
+    role: core_MAT
+    contig: JH711534
+    start: 614935
+    end: 615057
+    strand: +
+    identity: 40.476
+    coverage: 100.0
+    reference_record: 40410_jec20_MAT_a
+    method: tblastn_genome
+    status: unpolished
+    alternate_model: null
+    exons: null
+    evalue: 5.5
+    bitscore: 23.1
+  - gene: STE3
+    role: core_MAT
+    contig: JH711534
+    start: 622978
+    end: 623980
+    strand: +
+    identity: 47.67
+    coverage: 79.7
+    reference_record: 40410_jec21_MAT_alpha
+    method: exonerate_refine
+    status: polished_single
+    alternate_model: null
+    exons:
+    - start: 622978
+      end: 623179
+    - start: 623223
+      end: 623540
+    - start: 623592
+      end: 623980
+    evalue: 2.0e-46
+    bitscore: 170.0
+  - gene: RPL39
+    role: core_MAT
+    contig: JH711534
+    start: 731748
+    end: 732277
+    strand: '-'
+    identity: 84.0
+    coverage: 98.0
+    reference_record: 40410_jec20_MAT_a
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 9.16e-30
+    bitscore: 89.4
+not_detected: []

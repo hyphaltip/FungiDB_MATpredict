@@ -1,0 +1,9 @@
+##gff-version 3
+##sequence-region JAHLQU010000128 40291 44238
+##sequence-region JAHLQU010000142 1466708 1470605
+JAHLQU010000128	MATPredict	MAT_locus	40291	44238	.	.	.	ID=Basidiomycota_rustHD_0;family=Basidiomycota:rustHD;confidence=high;idiomorph=undetermined;fragmented=false;core_start=40291;core_end=44238;beyond_core_bp=0;supported_start=40291;supported_end=44238;beyond_supported_bp=0;reference_records=1165861_pst-78_rustHD_b1
+JAHLQU010000128	MATPredict	gene	40291	41748	.	-	.	ID=Basidiomycota_rustHD_0.gene0;Parent=Basidiomycota_rustHD_0;Name=bE;role=core_MAT;present=true;identity=82.5;reference_record=1165861_pst-78_rustHD_b1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+JAHLQU010000128	MATPredict	gene	42388	44238	.	+	.	ID=Basidiomycota_rustHD_0.gene1;Parent=Basidiomycota_rustHD_0;Name=bW;role=core_MAT;present=true;identity=80.4;reference_record=1165861_pst-78_rustHD_b1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+JAHLQU010000142	MATPredict	MAT_locus	1466708	1470605	.	.	.	ID=Basidiomycota_rustHD_1;family=Basidiomycota:rustHD;confidence=high;idiomorph=undetermined;fragmented=false;core_start=1466708;core_end=1470605;beyond_core_bp=0;supported_start=1466708;supported_end=1470605;beyond_supported_bp=0;reference_records=1165861_pst-78_rustHD_b1
+JAHLQU010000142	MATPredict	gene	1466708	1467501	.	-	.	ID=Basidiomycota_rustHD_1.gene0;Parent=Basidiomycota_rustHD_1;Name=bE;role=core_MAT;present=true;identity=95.4;reference_record=1165861_pst-78_rustHD_b1;method=diamond_proteome;status=not_polish_candidate;coverage=49.1
+JAHLQU010000142	MATPredict	gene	1468606	1470605	.	+	.	ID=Basidiomycota_rustHD_1.gene1;Parent=Basidiomycota_rustHD_1;Name=bW;role=core_MAT;present=true;identity=86.5;reference_record=1165861_pst-78_rustHD_b1;method=diamond_proteome;status=not_polish_candidate;coverage=98.0

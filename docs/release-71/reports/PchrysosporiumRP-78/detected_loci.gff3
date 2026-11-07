@@ -1,0 +1,7 @@
+##gff-version 3
+##sequence-region PchrRP-78_SC013 1063437 1076948
+PchrRP-78_SC013	MATPredict	MAT_locus	1063437	1076948	.	.	.	ID=Basidiomycota_HD_0;family=Basidiomycota:HD;confidence=high;idiomorph=undetermined;fragmented=false;core_start=1063437;core_end=1076948;beyond_core_bp=0;supported_start=1063437;supported_end=1076948;beyond_supported_bp=0;reference_records=192523_h97_HD_A1,2822231_sb25_HD_A1
+PchrRP-78_SC013	MATPredict	gene	1063437	1064779	.	+	.	ID=Basidiomycota_HD_0.gene0;Parent=Basidiomycota_HD_0;Name=beta_fg;role=flanking_conserved;present=true;identity=56.7;reference_record=192523_h97_HD_A1;method=diamond_proteome;status=not_polish_candidate;coverage=76.4
+PchrRP-78_SC013	MATPredict	gene	1070153	1072196	.	-	.	ID=Basidiomycota_HD_0.gene1;Parent=Basidiomycota_HD_0;Name=HD1;role=core_MAT;present=true;identity=40.9;reference_record=2822231_sb25_HD_A1;method=diamond_proteome;status=not_polish_candidate;coverage=48.5
+PchrRP-78_SC013	MATPredict	gene	1072398	1074098	.	+	.	ID=Basidiomycota_HD_0.gene2;Parent=Basidiomycota_HD_0;Name=HD2;role=core_MAT;present=true;identity=37.4;reference_record=2822231_sb25_HD_A1;method=diamond_proteome;status=not_polish_candidate;coverage=66.4
+PchrRP-78_SC013	MATPredict	gene	1074457	1076948	.	-	.	ID=Basidiomycota_HD_0.gene3;Parent=Basidiomycota_HD_0;Name=MIP1;role=flanking_conserved;present=true;identity=84.6;reference_record=2822231_sb25_HD_A1;method=diamond_proteome;status=not_polish_candidate;coverage=98.4

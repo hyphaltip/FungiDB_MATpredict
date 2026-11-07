@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="MATPredict 0.8.1"><title>TciferriiCBS4856 – MATPredict report</title><style>:root{
+  --bg:#ffffff; --surface:#ffffff; --surface-2:#f4f5f7; --ink:#1b1f24; --ink-2:#424a54; --muted:#5f6873;
+  --line:#dde1e6; --line-2:#c4cad1; --accent:#1f5f99;
+  --core:#b8471a; --flank:#2a6fb0; --other:#6b7480;
+  --high:#1d7a46; --high-bg:#e3f3ea; --medium:#7a4f00; --medium-bg:#fbf0d9; --low:#4f5864; --low-bg:#eceef1;
+  --warn:#8a4b00; --warn-bg:#fff6e5; --info-bg:#eef4fa;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#111418; --surface:#171b20; --surface-2:#1e232a; --ink:#e6e9ed; --ink-2:#c3c9d0; --muted:#9aa3ad;
+  --line:#2c333b; --line-2:#3a434d; --accent:#7fb6ea;
+  --core:#f08a4b; --flank:#5ea3e6; --other:#9aa3ad;
+  --high:#6fd39b; --high-bg:#173527; --medium:#f0c060; --medium-bg:#3a2e12; --low:#b4bcc5; --low-bg:#262c33;
+  --warn:#f0b866; --warn-bg:#33270f; --info-bg:#172634;} }
+:root[data-theme="dark"]{
+  --bg:#111418; --surface:#171b20; --surface-2:#1e232a; --ink:#e6e9ed; --ink-2:#c3c9d0; --muted:#9aa3ad;
+  --line:#2c333b; --line-2:#3a434d; --accent:#7fb6ea;
+  --core:#f08a4b; --flank:#5ea3e6; --other:#9aa3ad;
+  --high:#6fd39b; --high-bg:#173527; --medium:#f0c060; --medium-bg:#3a2e12; --low:#b4bcc5; --low-bg:#262c33;
+  --warn:#f0b866; --warn-bg:#33270f; --info-bg:#172634;}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--sans);font-variant-numeric:tabular-nums}
+.masthead,main,.foot{max-width:1040px;margin:0 auto;padding:0 16px}
+.mast-inner{padding:28px 0 10px;border-bottom:1px solid var(--line)}
+.brand{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h1{font-size:28px;line-height:1.2;margin:6px 0 2px;overflow-wrap:anywhere}
+.subtitle{margin:0;color:var(--ink-2);font-size:16px}
+.mast-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.meta{margin:8px 0 2px;color:var(--muted);font-size:13px}
+.print-btn{font:inherit;font-size:13px;padding:5px 12px;border:1px solid var(--line-2);border-radius:6px;
+  background:var(--surface);color:var(--ink);cursor:pointer}
+.print-btn:hover{border-color:var(--accent);color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h2{font-size:20px;margin:0 0 12px}
+h3{font-size:18px;margin:0}
+h4{font-size:13px;margin:20px 0 8px;color:var(--ink-2);text-transform:uppercase;letter-spacing:.05em}
+h5{font-size:13px;margin:0 0 6px;color:var(--ink-2)}
+p{max-width:75ch}
+code{font-family:var(--mono);font-size:.92em}
+.section-h{margin:28px 0 12px}
+.count{display:inline-block;min-width:1.6em;padding:0 6px;border-radius:10px;background:var(--surface-2);
+  color:var(--ink-2);font-size:13px;text-align:center;vertical-align:middle}
+.result{margin:20px 0 8px;padding:20px;border:1px solid var(--line);border-left:4px solid var(--accent);
+  border-radius:8px;background:var(--surface)}
+.verdict{font-size:24px;font-weight:700;margin:0 0 8px;line-height:1.25}
+.verdict.none{color:var(--ink-2)}
+.verdict.review{color:var(--warn)}
+.lead-label{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 10px}
+.chip{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border:1px solid var(--line-2);border-radius:8px;
+  text-decoration:none;color:var(--ink);background:var(--surface-2)}
+.chip:hover{border-color:var(--accent)}
+.chip-id{font-size:26px;font-weight:700;line-height:1.1;white-space:nowrap}
+.chip-fam{color:var(--ink-2);font-size:14px;white-space:nowrap}
+.small-chips .chip{padding:4px 10px}
+.small-chips .chip-id{font-size:16px}
+.sentences{margin:6px 0 0;padding-left:20px}
+.sentences li{margin:3px 0}
+.badge{display:inline-block;padding:1px 9px;border-radius:999px;font-size:12px;font-weight:600;
+  border:1px solid currentColor;white-space:nowrap}
+.conf-high{color:var(--high);background:var(--high-bg)}
+.conf-medium{color:var(--medium);background:var(--medium-bg)}
+.conf-low,.conf-none{color:var(--low);background:var(--low-bg)}
+.flags{list-style:none;padding:0;margin:12px 0}
+.flags li{padding:8px 12px;border-radius:6px;margin:6px 0;font-size:14px}
+.flags li.warn{background:var(--warn-bg);color:var(--ink);border-left:3px solid var(--warn)}
+.flags li.warn::before{content:"Check: ";font-weight:700;color:var(--warn)}
+.flags li.info{background:var(--info-bg);border-left:3px solid var(--accent)}
+.card{margin:16px 0;padding:20px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.card-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.idiomorph{font-weight:700;margin-right:6px}
+.fam{font-weight:500;color:var(--ink-2)}
+.muted{color:var(--muted);font-weight:400}
+.fig{margin:0 0 4px}
+.fig-scroll{overflow-x:auto}
+.locus-fig{width:100%;height:auto;display:block}
+figcaption{font-size:12px;color:var(--muted);margin-top:2px}
+.scroll-hint{display:none}
+.locus-fig .axis,.locus-fig .tick{stroke:var(--line-2)}
+.locus-fig .tick-label,.locus-fig .end-label{fill:var(--muted)}
+.locus-fig .contig-end{stroke:var(--ink)}
+.locus-fig .bracket{stroke:var(--ink-2)} .locus-fig .bracket-label{fill:var(--ink-2)}
+.locus-fig .intron{stroke:var(--ink-2)}
+.locus-fig .r-core{--c:var(--core)} .locus-fig .r-flank,.locus-fig .r-var{--c:var(--flank)} .locus-fig .r-other{--c:var(--other)}
+.locus-fig .exon{stroke:var(--c);fill:var(--c)}
+.locus-fig .r-var:not(.s-hit) .exon{fill:var(--surface)}
+.locus-fig .s-disagree .exon{stroke:var(--ink)}
+.locus-fig .gene-label{fill:var(--ink)} .locus-fig .s-hit .gene-label{fill:var(--ink-2)}
+.locus-fig .alt{fill:var(--ink-2)}
+.legend{list-style:none;display:flex;flex-wrap:wrap;gap:6px 18px;padding:0;margin:8px 0 4px;font-size:12px;color:var(--ink-2)}
+.legend li{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.swatch{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:-1px;margin-right:6px;flex:none}
+.legend .swatch{margin-right:0}
+.r-core{background:var(--core)} .r-flank{background:var(--flank)} .r-other{background:var(--other)}
+.swatch.r-var{background:var(--surface);border:2px solid var(--flank)}
+.key{display:inline-block;width:22px;height:11px;border-radius:2px;flex:none}
+.key-model{background:var(--surface);border:1.5px solid var(--ink-2)}
+.key-disagree{background:var(--other);border:1.5px dashed var(--ink)}
+.key-alt{height:3px;background:var(--ink-2)}
+.key-hit{border:1.5px dotted var(--ink-2);background:var(--line)}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin:14px 0}
+.facts>div{flex:1 1 200px;min-width:0}
+.facts>.wide-fact{flex-basis:100%}
+dt{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+dd{margin:2px 0 0;overflow-wrap:anywhere}
+.region{user-select:all;background:var(--surface-2);padding:1px 5px;border-radius:4px;white-space:nowrap;
+  display:inline-block;max-width:100%;overflow-x:auto;vertical-align:bottom}
+.evidence{display:flex;flex-wrap:wrap;gap:16px 40px;margin:12px 0;padding:12px 14px;background:var(--surface-2);border-radius:6px}
+.evidence>div{min-width:0}
+.evidence .wide{flex-basis:100%}
+.evidence .muted{color:var(--ink-2)}
+.scores{list-style:none;padding:0;margin:0;display:flex;gap:16px;flex-wrap:wrap}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:6px 10px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--surface-2);font-weight:600;color:var(--ink-2);white-space:nowrap;font-size:12px}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
+tbody th{font-weight:600;white-space:nowrap}
+.num{text-align:right;white-space:nowrap} .nowrap{white-space:nowrap}
+.mono{font-family:var(--mono);font-size:.92em}
+.small{font-size:12px} .break{word-break:break-all}
+.sub{display:block;font-size:11px;color:var(--muted);font-weight:400;font-style:normal;white-space:normal}
+.num .sub{text-align:right}
+.strand{color:var(--muted);font-family:var(--sans)}
+td.rec{min-width:18ch;overflow-wrap:anywhere}
+.status{font-weight:600;white-space:nowrap}
+.st-polished_disagree,.warn-text{color:var(--warn)}
+.st-unpolished,.st-not_polish_candidate{color:var(--muted);font-style:italic}
+tr.missing th,tr.missing td,tr.ignored th,tr.ignored td{color:var(--muted)}
+tr.missing td{font-style:italic}
+details summary{cursor:pointer;color:var(--accent);margin:8px 0;font-weight:500}
+.print-only{display:none}
+.glossary{display:flex;flex-wrap:wrap;gap:12px 28px;margin:0}
+.glossary>div{flex:1 1 280px}
+.glossary dt{text-transform:none;letter-spacing:0;font-size:14px;font-weight:600;color:var(--ink)}
+.glossary dd{color:var(--ink-2);font-size:14px}
+.plain{padding-left:20px;color:var(--ink-2);font-size:14px}
+.foot{color:var(--muted);font-size:12px;padding-top:12px;padding-bottom:32px}
+a{color:var(--accent)}
+@media (max-width:600px){
+  body{font-size:14px}
+  h1{font-size:22px}
+  .card,.result{padding:14px}
+  .chip-id{font-size:22px}
+  .locus-fig{min-width:960px}
+  .scroll-hint{display:inline}
+}
+@page{margin:16mm 14mm 18mm;
+  @top-left{content:"TciferriiCBS4856";font:8pt sans-serif;color:#5f6873}
+  @top-center{content:string(locus, start);font:8pt sans-serif;color:#5f6873}
+  @top-right{content:"MATPredict mating-type report";font:8pt sans-serif;color:#5f6873}
+  @bottom-right{content:"Page " counter(page) " of " counter(pages);font:8pt sans-serif;color:#5f6873}}
+@media print{
+  :root,:root[data-theme="dark"]{
+  --bg:#ffffff; --surface:#ffffff; --surface-2:#f4f5f7; --ink:#1b1f24; --ink-2:#424a54; --muted:#5f6873;
+  --line:#dde1e6; --line-2:#c4cad1; --accent:#1f5f99;
+  --core:#b8471a; --flank:#2a6fb0; --other:#6b7480;
+  --high:#1d7a46; --high-bg:#e3f3ea; --medium:#7a4f00; --medium-bg:#fbf0d9; --low:#4f5864; --low-bg:#eceef1;
+  --warn:#8a4b00; --warn-bg:#fff6e5; --info-bg:#eef4fa;}
+  body{font-size:9.5pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .masthead,main{max-width:none;padding:0}
+  .mast-inner{padding-top:0}
+  .print-btn,.foot,.scroll-hint,details summary{display:none}
+  .print-only{display:block}
+  .locus-fig{min-width:0}
+  .region{white-space:normal;overflow:visible;overflow-wrap:anywhere;display:inline}
+  .card,.result{padding:10px 12px;margin:8px 0}
+  .card-head h3{string-set:locus content()}
+  #search h2,#withheld h2,#provenance h2,#glossary h2,.section-h,#result-h{string-set:locus ""}
+  .locus-top,.facts>div,.glossary>div,.legend,.flags li,tr,.chips,.result,.scores{break-inside:avoid}
+  h2,h3,h4,.card-head{break-after:avoid}
+  .table-wrap{overflow:visible;border:0}
+  table{font-size:8pt}
+  table .small,table .mono,table .sub{font-size:inherit}
+  table .sub{font-size:7pt}
+  th,td{padding:3px 5px}
+  /* A table must not run past its card on paper: let headers, numbers and record names wrap. */
+  thead th,tbody th,.num,.status{white-space:normal}
+  th,td{overflow-wrap:anywhere}
+  td.rec{min-width:0}
+  thead{display:table-header-group}
+  .glossary-card{break-inside:avoid}
+  .glossary>div{flex-basis:30%}
+  .glossary dt,.glossary dd,.plain{font-size:8pt}
+  a{color:inherit;text-decoration:none}
+}
+.fdb a{word-break:break-all}
+</style></head><body>
+<header class="masthead"><div class="mast-inner">
+  <div class="mast-top"><div class="brand">MATPredict · mating-type report</div>
+  <button type="button" class="print-btn" data-print>Save as PDF</button></div>
+  <h1>TciferriiCBS4856</h1><p class="meta"><a href="annotation.html">MAT locus above the FungiDB annotation (gene by gene)</a></p>
+  <p class="subtitle">Ascomycota</p>
+  <div class="meta">Run by MATPredict 0.8.1 <span class="muted small mono">(v0.8.1, 3a62e6302b)</span> · database <span class="mono">86f18d232e4f</span> · local NCBI taxonomy snapshot 2026-10-01 · rendered 2026-11-07 02:52 UTC by MATPredict 0.8.1</div>
+</div></header>
+<main>
+  
+<section class="result" aria-labelledby="result-h">
+  <h2 id="result-h">Result</h2>
+  <p class="verdict none">No MAT locus called</p><p>No family reached the evidence bar. That is weak evidence that the locus is absent: a fragmented assembly, or a lineage far from every reference, often explains it.</p><p><b>Next:</b> check the withheld candidate loci below against a known locus, or type the strain from its reads.</p>
+  
+</section>
+  
+  
+  
+<section class="card" id="search" aria-labelledby="search-h">
+  <h2 id="search-h">What was searched</h2>
+  <dl class="facts">
+    <div class="wide-fact"><dt>Routing</dt><dd><b>Whole phylum.</b> No curated family covers this lineage, so every family of the genome&#x27;s phylum was searched. Family labels are less reliable here.</dd></div>
+    <div><dt>Families searched</dt><dd>Ascomycota:MATsc, Ascomycota:MTL</dd></div>
+    <div><dt>Genetic code</dt><dd>1</dd></div>
+    <div><dt>Taxonomy</dt><dd>local NCBI taxonomy snapshot 2026-10-01</dd></div>
+  </dl>
+  <h4>Families searched but not called</h4><div class="table-wrap"><table class="compact"><thead><tr>
+  <th>family</th><th>reason</th><th class="num">best % of genes found</th><th>genes found</th></tr></thead>
+  <tbody><tr><td>Ascomycota:MATsc</td><td>best cluster carried 1 modelled gene(s), below the 2 required to report a locus; only 1 of its genes could be modelled</td><td class='num'>50.0</td><td>MATALPHA1, sla2</td></tr><tr><td>Ascomycota:MTL</td><td>best cluster carried 1 modelled gene(s), below the 2 required to report a locus; only 1 of its genes could be modelled</td><td class='num'>100.0</td><td>MTLA1</td></tr></tbody></table></div>
+  
+</section>
+  
+  
+<section class="card" id="withheld" aria-labelledby="withheld-h">
+  <h2 id="withheld-h">Withheld candidate loci <span class="count">111</span></h2>
+  <p>Places with some MAT-gene evidence that did not pass a quality gate. Most genomes have several. They are listed so
+  a known locus can be checked against them, not because they are likely calls.</p>
+  <p class="small">Reasons: fewer than 2 genes could be modelled (106); too few of the family&#x27;s genes found (5).</p>
+  <details><summary>Show the 111 withheld loci</summary>
+  <h4 class="print-only">Withheld loci (111)</h4>
+  <div class="table-wrap"><table class="compact"><thead><tr><th>family</th><th>location</th><th>idiomorph</th>
+  <th>genes</th><th class="num">modelled</th><th>reason</th></tr></thead><tbody><tr><td>MATsc</td><td><span class="mono">SWFS01000011:<wbr>77,342–77,554</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000040:<wbr>117–272</span></td><td>MATa</td><td>MATA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000040:<wbr>117–272</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000040:<wbr>33,184–37,438</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000040:<wbr>33,184–37,438</span></td><td>MATalpha</td><td>MATALPHA1, sla2</td><td class='num'>1</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000432:<wbr>36,532–38,106</span></td><td>undetermined</td><td>MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000432:<wbr>36,532–38,106</span></td><td>A</td><td>MTLA1</td><td class='num'>1</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000077:<wbr>120,779–120,943</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000331:<wbr>29,971–30,147</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000331:<wbr>81,667–81,879</span></td><td>undetermined</td><td>MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000331:<wbr>81,667–81,879</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000227:<wbr>24,795–24,938</span></td><td>undetermined</td><td>MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000533:<wbr>7,288–11,743</span></td><td>A</td><td>MTLA1, MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000533:<wbr>7,288–11,743</span></td><td>MATa</td><td>MATA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000032:<wbr>9,536–25,074</span></td><td>MATa</td><td>MATA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000032:<wbr>9,536–25,074</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000189:<wbr>60,343–60,480</span></td><td>MATa</td><td>MATA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000431:<wbr>123,843–124,004</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000369:<wbr>28,499–28,657</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000264:<wbr>3,546–3,707</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000264:<wbr>50,327–50,485</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000129:<wbr>25,993–26,184</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000141:<wbr>6,326–6,418</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000014:<wbr>4,494–4,649</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000527:<wbr>2,739–2,834</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000527:<wbr>42,027–42,197</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000439:<wbr>67,923–68,024</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000531:<wbr>9,375–9,467</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000285:<wbr>17,386–17,484</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000376:<wbr>13,220–25,235</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000376:<wbr>13,220–25,235</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000376:<wbr>139,147–139,377</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000442:<wbr>25,275–25,619</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000583:<wbr>5,590–5,679</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000418:<wbr>33,116–33,346</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000259:<wbr>47,427–47,591</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000295:<wbr>11,956–12,057</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000151:<wbr>16,094–16,228</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000151:<wbr>68,157–68,315</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000160:<wbr>34,641–34,757</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000220:<wbr>35,157–35,252</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000170:<wbr>12,797–12,892</span></td><td>undetermined</td><td>MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000345:<wbr>104,481–104,624</span></td><td>undetermined</td><td>MATALPHA2, MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000081:<wbr>8,745–21,345</span></td><td>undetermined</td><td>MATA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000081:<wbr>8,745–21,345</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000301:<wbr>2,713–2,877</span></td><td>MATa</td><td>MATA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000066:<wbr>7,605–7,712</span></td><td>MATa</td><td>MATA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000066:<wbr>146,693–146,812</span></td><td>MATa</td><td>MATA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000385:<wbr>1,247–1,354</span></td><td>MATa</td><td>MATA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000342:<wbr>5,178–5,273</span></td><td>undetermined</td><td>MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000408:<wbr>40,160–57,439</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000408:<wbr>40,160–57,439</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000161:<wbr>4,626–4,808</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000396:<wbr>38,327–38,467</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000078:<wbr>28,555–28,656</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000547:<wbr>44,572–44,769</span></td><td>undetermined</td><td>MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000435:<wbr>6,573–6,689</span></td><td>undetermined</td><td>MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000156:<wbr>3,836–4,081</span></td><td>undetermined</td><td>MATALPHA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000156:<wbr>39,978–40,151</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000484:<wbr>24,491–24,673</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000050:<wbr>63,572–63,694</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000192:<wbr>44,789–44,905</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000433:<wbr>57,656–57,808</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000097:<wbr>60,451–60,591</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MATsc</td><td><span class="mono">SWFS01000097:<wbr>189,794–190,018</span></td><td>MATalpha</td><td>MATALPHA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000112:<wbr>48,751–48,960</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000109:<wbr>23,932–24,051</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000463:<wbr>12,906–13,040</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000168:<wbr>6,661–6,771</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000168:<wbr>33,922–34,074</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000201:<wbr>21,098–21,214</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000163:<wbr>70,955–71,113</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000538:<wbr>7,080–7,223</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000412:<wbr>580–771</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000420:<wbr>74,931–75,176</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000346:<wbr>27,851–28,012</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000182:<wbr>38,568–38,837</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000289:<wbr>12,843–12,959</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000155:<wbr>10,850–10,939</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000505:<wbr>16,634–18,483</span></td><td>alpha</td><td>MTLalpha1, MTLalpha2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000137:<wbr>29,739–29,945</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000378:<wbr>4,428–4,598</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000157:<wbr>80,446–80,577</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000306:<wbr>15,727–15,840</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000410:<wbr>4,544–4,654</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000122:<wbr>46,525–46,635</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000082:<wbr>63,110–63,223</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000354:<wbr>8,613–8,873</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000236:<wbr>49,283–49,375</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000043:<wbr>10,035–10,217</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000123:<wbr>121,349–121,468</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000391:<wbr>2,301–2,630</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000515:<wbr>2,330–25,766</span></td><td>A</td><td>MTLA2, MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000349:<wbr>43,160–43,267</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000138:<wbr>101–229</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000101:<wbr>11,423–11,524</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000575:<wbr>35,104–35,253</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000321:<wbr>7,617–7,730</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000399:<wbr>3,591–3,785</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000562:<wbr>13,810–13,926</span></td><td>A</td><td>MTLA2</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000221:<wbr>18,932–19,024</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000046:<wbr>360–581</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000093:<wbr>152,884–153,120</span></td><td>alpha</td><td>MTLalpha1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000576:<wbr>13,076–13,288</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000215:<wbr>664–846</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000179:<wbr>38,182–38,316</span></td><td>A</td><td>MTLA1</td><td class='num'>0</td><td>fewer than 2 genes could be modelled</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000011:<wbr>40,619–46,654</span></td><td>undetermined</td><td>PIK1</td><td class='num'>1</td><td>too few of the family&#x27;s genes found</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000027:<wbr>5,004–6,539</span></td><td>undetermined</td><td>PAP1</td><td class='num'>1</td><td>too few of the family&#x27;s genes found</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000088:<wbr>149–1,441</span></td><td>undetermined</td><td>OBP1</td><td class='num'>1</td><td>too few of the family&#x27;s genes found</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000317:<wbr>76,769–77,977</span></td><td>undetermined</td><td>OBP1</td><td class='num'>1</td><td>too few of the family&#x27;s genes found</td></tr><tr><td>MTL</td><td><span class="mono">SWFS01000379:<wbr>587–3,460</span></td><td>undetermined</td><td>PIK1</td><td class='num'>1</td><td>too few of the family&#x27;s genes found</td></tr></tbody></table></div>
+  </details>
+</section>
+  
+<section class="card" id="provenance" aria-labelledby="prov-h">
+  <h2 id="prov-h">Provenance</h2>
+  <dl class="facts"><div><dt>Genome file</dt><dd>TciferriiCBS4856.genome.fasta</dd></div><div><dt>Assembly</dt><dd>583 contigs · 20.5 Mb · N50 69.0 kb</dd></div><div><dt>Genome SHA-256</dt><dd><span class="mono small break">295b71f14d1659493babf671475f6b99eeb10e1d1b0421d63d53c2a2d038df65</span></dd></div><div><dt>MATPredict</dt><dd>0.8.1 <span class="muted small mono">(v0.8.1, 3a62e6302b)</span></dd></div><div><dt>Database</dt><dd><span class="mono small">86f18d232e4fe95d</span> · 185 records</dd></div><div><dt>Taxonomy</dt><dd>local NCBI taxonomy snapshot 2026-10-01</dd></div><div><dt>Parameters</dt><dd><span class="nowrap">phylum=Ascomycota</span>, <wbr><span class="nowrap">phylum_<wbr>guess={&#x27;requested&#x27;: &#x27;auto&#x27;, &#x27;status&#x27;: &#x27;ok&#x27;, &#x27;usable&#x27;: True, &#x27;reason&#x27;: None, &#x27;phylum&#x27;: &#x27;Ascomycota&#x27;, &#x27;phylum_taxid&#x27;: 4890, &#x27;deepest_rank&#x27;: &#x27;species&#x27;, &#x27;routing_taxid&#x27;: 410830, &#x27;routing_taxid_rank&#x27;: &#x27;family&#x27;, &#x27;flags&#x27;: [&#x27;identical_to_reference&#x27;], &#x27;gmg_version&#x27;: &#x27;gmg 0.3.2 (66055154a)&#x27;, &#x27;index&#x27;: &#x27;bfd-reps-2026.10.5-s20000.gmgi&#x27;, &#x27;index_sha256&#x27;: &#x27;0f319567f1cab17643e1daf7ffdc0e3b312bd43913e351568108d67a4a19702c&#x27;, &#x27;index_spec&#x27;: &#x27;bfd-reps-2026.10.5-s20000.gmgi&#x27;, &#x27;note&#x27;: &#x27;GmG called phylum Ascomycota&#x27;, &#x27;action&#x27;: &#x27;routed&#x27;, &#x27;weak_call_accepted&#x27;: False, &#x27;genetic_code&#x27;: 1, &#x27;genetic_code_from&#x27;: &#x27;family taxid 410830&#x27;, &#x27;routed_by&#x27;: &#x27;family taxid 410830 (phylum_fallback)&#x27;}</span>, <wbr><span class="nowrap">genetic_<wbr>code=1</span>, <wbr><span class="nowrap">min_<wbr>hits=2</span>, <wbr><span class="nowrap">require_<wbr>core_<wbr>role=True</span>, <wbr><span class="nowrap">max_<wbr>polished_<wbr>clusters_<wbr>per_<wbr>family=6</span>, <wbr><span class="nowrap">polish_<wbr>strong_<wbr>identity=50.0</span>, <wbr><span class="nowrap">polish_<wbr>core_<wbr>pair=True</span>, <wbr><span class="nowrap">partial_<wbr>core_<wbr>policy=off</span>, <wbr><span class="nowrap">homothallic_<wbr>policy=off</span>, <wbr><span class="nowrap">confidence_<wbr>cap_<wbr>policy=off</span>, <wbr><span class="nowrap">cross_<wbr>family_<wbr>policy=off</span>, <wbr><span class="nowrap">fallback_<wbr>after_<wbr>withheld_<wbr>policy=off</span>, <wbr><span class="nowrap">strong_<wbr>single_<wbr>gene_<wbr>policy=off</span>, <wbr><span class="nowrap">scoped_<wbr>roster_<wbr>policy=off</span>, <wbr><span class="nowrap">supported_<wbr>min_<wbr>bitscore=33.0</span></dd></div><div><dt>Run started</dt><dd>2026-11-07T02:51:53Z</dd></div><div><dt>Run time</dt><dd>38 s</dd></div><div><dt>Files</dt><dd>detection_report.yaml, detected_loci.gff3</dd></div></dl>
+  <p class="small">Cite MATPredict as given in CITATION.cff at github.com/stajichlab/MATPredict. The reference records
+  named in the gene tables are curated database entries; each record's metadata cites its source publication.</p>
+</section>
+  
+<section class="card glossary-card" id="glossary" aria-labelledby="glossary-h">
+  <h2 id="glossary-h">How to read this report</h2>
+  <dl class="glossary"><div><dt>Idiomorph</dt><dd>The form of the mating-type locus a strain carries (for example MAT1-1 or MAT1-2, Plus or Minus). Basidiomycota HD and PR alleles are named after the reference they match.</dd></div></dl>
+  <h4>Limits</h4>
+  <ul class="plain">
+    <li>MATPredict reads an assembly; it is not a mating assay. Two idiomorphs in one assembly can come from a
+    homothallic species, a mixed culture or a merged diploid assembly.</li>
+    <li>Fragmented assemblies can split a locus or lose its flanking genes; an uncalled genome is weak evidence of absence.</li>
+    <li>Lineages with no curated record are searched with the whole phylum's references; family labels there are less reliable.</li>
+  </ul>
+</section>
+</main>
+<footer class="foot">TciferriiCBS4856 · MATPredict mating-type report</footer><script>
+(function(){
+  var b=document.querySelector('[data-print]');
+  document.querySelectorAll('.fig-scroll').forEach(function(box){
+    var svg=box.querySelector('svg'); var cx=svg&&parseFloat(svg.getAttribute('data-core-x'));
+    if(box.scrollWidth>box.clientWidth&&cx){box.scrollLeft=Math.max(0,cx*svg.clientWidth/960-40);}
+  });
+  if(b){b.addEventListener('click',function(){window.print();});}
+  var opened=[];
+  window.addEventListener('beforeprint',function(){
+    document.querySelectorAll('details:not([open])').forEach(function(d){d.open=true;opened.push(d);});
+  });
+  window.addEventListener('afterprint',function(){opened.forEach(function(d){d.open=false;});opened=[];});
+})();
+</script></body></html>

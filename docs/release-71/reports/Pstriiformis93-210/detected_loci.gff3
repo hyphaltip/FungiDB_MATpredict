@@ -1,0 +1,9 @@
+##gff-version 3
+##sequence-region PKSL01000053 77397 81261
+##sequence-region PKSL01000113 20528 24466
+PKSL01000053	MATPredict	MAT_locus	77397	81261	.	.	.	ID=Basidiomycota_rustHD_0;family=Basidiomycota:rustHD;confidence=high;idiomorph=undetermined;fragmented=false;core_start=77397;core_end=81261;beyond_core_bp=0;supported_start=77397;supported_end=81261;beyond_supported_bp=0;reference_records=1165861_pst-78_rustHD_b1
+PKSL01000053	MATPredict	gene	77397	79584	.	-	.	ID=Basidiomycota_rustHD_0.gene0;Parent=Basidiomycota_rustHD_0;Name=bW;role=core_MAT;present=true;identity=66.4;reference_record=1165861_pst-78_rustHD_b1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+PKSL01000053	MATPredict	gene	79845	81261	.	+	.	ID=Basidiomycota_rustHD_0.gene1;Parent=Basidiomycota_rustHD_0;Name=bE;role=core_MAT;present=true;identity=72.5;reference_record=1165861_pst-78_rustHD_b1;method=diamond_proteome;status=not_polish_candidate;coverage=99.3
+PKSL01000113	MATPredict	MAT_locus	20528	24466	.	.	.	ID=Basidiomycota_rustHD_1;family=Basidiomycota:rustHD;confidence=high;idiomorph=undetermined;fragmented=false;core_start=20528;core_end=24466;beyond_core_bp=0;supported_start=20528;supported_end=24466;beyond_supported_bp=0;reference_records=1165861_pst-78_rustHD_b1
+PKSL01000113	MATPredict	gene	20528	21971	.	-	.	ID=Basidiomycota_rustHD_1.gene0;Parent=Basidiomycota_rustHD_1;Name=bE;role=core_MAT;present=true;identity=75.6;reference_record=1165861_pst-78_rustHD_b1;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+PKSL01000113	MATPredict	gene	22589	24466	.	+	.	ID=Basidiomycota_rustHD_1.gene1;Parent=Basidiomycota_rustHD_1;Name=bW;role=core_MAT;present=true;identity=85.7;reference_record=1165861_pst-78_rustHD_b1;method=diamond_proteome;status=not_polish_candidate;coverage=98.8

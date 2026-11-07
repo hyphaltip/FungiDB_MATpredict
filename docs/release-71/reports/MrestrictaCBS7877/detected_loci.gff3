@@ -1,0 +1,10 @@
+##gff-version 3
+##sequence-region CP033152 360779 364421
+##sequence-region CP033151 606067 607706
+CP033152	MATPredict	MAT_locus	360779	364421	.	.	.	ID=Basidiomycota_bLocus_0;family=Basidiomycota:bLocus;confidence=high;idiomorph=undetermined;fragmented=false;core_start=360779;core_end=363765;beyond_core_bp=656;supported_start=360779;supported_end=364421;beyond_supported_bp=0;reference_records=1882483_mca3645_bLocus_b1,76777_atcc-42132_bLocus_b1
+CP033152	MATPredict	gene	360779	362362	.	-	.	ID=Basidiomycota_bLocus_0.gene0;Parent=Basidiomycota_bLocus_0;Name=bW;role=core_MAT;present=true;identity=75.0;reference_record=1882483_mca3645_bLocus_b1;method=diamond_proteome;status=not_polish_candidate;coverage=9.0
+CP033152	MATPredict	gene	362854	363765	.	+	.	ID=Basidiomycota_bLocus_0.gene1;Parent=Basidiomycota_bLocus_0;Name=bE;role=core_MAT;present=true;identity=45.6;reference_record=76777_atcc-42132_bLocus_b1;method=diamond_proteome;status=not_polish_candidate;coverage=97.6
+CP033151	MATPredict	MAT_locus	606067	607706	.	.	.	ID=Basidiomycota_aLocus_1;family=Basidiomycota:aLocus;confidence=high;idiomorph=undetermined;fragmented=false;core_start=606334;core_end=607706;beyond_core_bp=267;supported_start=606067;supported_end=607706;beyond_supported_bp=0;reference_records=203535_cbs-10006_aLocus_a1,76777_unspecified-a1_aLocus_a1
+CP033151	MATPredict	gene	606334	607021	.	-	.	ID=Basidiomycota_aLocus_1.gene0;Parent=Basidiomycota_aLocus_1;Name=pra1;role=core_MAT;present=true;identity=24.07;reference_record=203535_cbs-10006_aLocus_a1;method=exonerate_refine;status=polished_disagree;coverage=57.1;alt_method=miniprot_refine;alt_contig=CP033151;alt_start=606112;alt_end=607030;alt_identity=23.76
+CP033151	MATPredict	gene	607557	607706	.	+	.	ID=Basidiomycota_aLocus_1.gene1;Parent=Basidiomycota_aLocus_1;Name=mfa1;role=core_MAT;present=true;identity=46.0;reference_record=76777_unspecified-a1_aLocus_a1;method=exonerate_refine;status=polished_single;coverage=100.0
+CP033151	MATPredict	gene	606067	607706	.	.	.	ID=Basidiomycota_aLocus_1.gene2;Parent=Basidiomycota_aLocus_1;Name=rba1;present=false

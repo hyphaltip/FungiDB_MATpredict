@@ -1,0 +1,32 @@
+##gff-version 3
+##sequence-region ML170157 65039 71749
+##sequence-region ML170158 826019 838481
+##sequence-region ML170160 441810 480733
+##sequence-region ML170166 471767 492287
+##sequence-region ML170195 29092 76120
+ML170157	MATPredict	MAT_locus	65039	71749	.	.	.	ID=Basidiomycota_HD_0;family=Basidiomycota:HD;confidence=high;idiomorph=undetermined;fragmented=false;core_start=65039;core_end=71749;beyond_core_bp=0;supported_start=65039;supported_end=71749;beyond_supported_bp=0;ambiguous_with=Basidiomycota:Aalpha,Basidiomycota:bLocus;reference_records=192523_h97_HD_A1,5346_a43-b43-okayama-7_HD_A43,984962_um274_HD_A1
+ML170157	MATPredict	gene	65039	67551	.	+	.	ID=Basidiomycota_HD_0.gene0;Parent=Basidiomycota_HD_0;Name=MIP1;role=flanking_conserved;present=true;identity=72.7;reference_record=984962_um274_HD_A1;method=diamond_proteome;status=not_polish_candidate;coverage=99.5
+ML170157	MATPredict	gene	67711	69936	.	-	.	ID=Basidiomycota_HD_0.gene1;Parent=Basidiomycota_HD_0;Name=HD1;role=core_MAT;present=true;identity=35.4;reference_record=192523_h97_HD_A1;method=diamond_proteome;status=not_polish_candidate;coverage=20.6
+ML170157	MATPredict	gene	70098	71749	.	+	.	ID=Basidiomycota_HD_0.gene2;Parent=Basidiomycota_HD_0;Name=HD2;role=core_MAT;present=true;identity=28.9;reference_record=5346_a43-b43-okayama-7_HD_A43;method=diamond_proteome;status=not_polish_candidate;coverage=12.3
+ML170158	MATPredict	MAT_locus	826019	838481	.	.	.	ID=Basidiomycota_HD_1;family=Basidiomycota:HD;confidence=high;idiomorph=undetermined;fragmented=false;core_start=826019;core_end=838481;beyond_core_bp=0;supported_start=826019;supported_end=838481;beyond_supported_bp=0;ambiguous_with=Basidiomycota:Aalpha,Basidiomycota:bLocus;reference_records=192523_h97_HD_A1,2822231_sb25_HD_A1,5346_a43-b43-okayama-7_HD_A43
+ML170158	MATPredict	gene	826019	828339	.	-	.	ID=Basidiomycota_HD_1.gene0;Parent=Basidiomycota_HD_1;Name=HD2;role=core_MAT;present=true;identity=33.14;reference_record=5346_a43-b43-okayama-7_HD_A43;method=exonerate_refine;status=polished_single;coverage=17.2
+ML170158	MATPredict	gene	826558	828870	.	-	.	ID=Basidiomycota_HD_1.gene1;Parent=Basidiomycota_HD_1;Name=HD1;role=core_MAT;present=true;identity=20.9;reference_record=2822231_sb25_HD_A1;method=diamond_proteome;status=not_polish_candidate;coverage=34.7
+ML170158	MATPredict	gene	835714	838481	.	-	.	ID=Basidiomycota_HD_1.gene2;Parent=Basidiomycota_HD_1;Name=beta_fg;role=flanking_conserved;present=true;identity=42.5;reference_record=192523_h97_HD_A1;method=diamond_proteome;status=not_polish_candidate;coverage=97.3
+ML170160	MATPredict	MAT_locus	441810	480733	.	.	.	ID=Basidiomycota_PR_2;family=Basidiomycota:PR;confidence=medium;idiomorph=undetermined;fragmented=false;core_start=465840;core_end=468418;beyond_core_bp=36345;supported_start=441810;supported_end=471607;beyond_supported_bp=9126;ambiguous_with=Basidiomycota:Balpha,Basidiomycota:aLocus;reference_records=5627_9006-11_PR_B1,caax_scan:CVVA
+ML170160	MATPredict	gene	465840	465971	.	+	.	ID=Basidiomycota_PR_2.gene0;Parent=Basidiomycota_PR_2;Name=caax_precursor;role=core_MAT;present=true;identity=0.0;reference_record=caax_scan:CVVA;method=caax_scan;status=caax_orf
+ML170160	MATPredict	gene	467182	468418	.	+	.	ID=Basidiomycota_PR_2.gene1;Parent=Basidiomycota_PR_2;Name=pheromone_receptor;role=core_MAT;present=true;identity=60.5;reference_record=5627_9006-11_PR_B1;method=diamond_proteome;status=not_polish_candidate;coverage=95.1
+ML170160	MATPredict	gene	441810	480733	.	.	.	ID=Basidiomycota_PR_2.gene2;Parent=Basidiomycota_PR_2;Name=pheromone_B43;present=false
+ML170160	MATPredict	gene	441810	480733	.	.	.	ID=Basidiomycota_PR_2.gene3;Parent=Basidiomycota_PR_2;Name=pheromone_B44;present=false
+ML170160	MATPredict	gene	441810	480733	.	.	.	ID=Basidiomycota_PR_2.gene4;Parent=Basidiomycota_PR_2;Name=fungal_mating_type_pheromone;present=false
+ML170166	MATPredict	MAT_locus	471767	492287	.	.	.	ID=Basidiomycota_PR_3;family=Basidiomycota:PR;confidence=medium;idiomorph=undetermined;fragmented=false;core_start=471767;core_end=475961;beyond_core_bp=16326;supported_start=471767;supported_end=475961;beyond_supported_bp=16326;ambiguous_with=Basidiomycota:HD,Basidiomycota:Balpha,Basidiomycota:aLocus;reference_records=5627_9006-11_PR_B1,caax_scan:CVIA
+ML170166	MATPredict	gene	471767	471982	.	-	.	ID=Basidiomycota_PR_3.gene0;Parent=Basidiomycota_PR_3;Name=caax_precursor;role=core_MAT;present=true;identity=0.0;reference_record=caax_scan:CVIA;method=caax_scan;status=caax_orf
+ML170166	MATPredict	gene	474425	475961	.	-	.	ID=Basidiomycota_PR_3.gene1;Parent=Basidiomycota_PR_3;Name=pheromone_receptor;role=core_MAT;present=true;identity=50.6;reference_record=5627_9006-11_PR_B1;method=diamond_proteome;status=not_polish_candidate;coverage=97.3
+ML170166	MATPredict	gene	471767	492287	.	.	.	ID=Basidiomycota_PR_3.gene2;Parent=Basidiomycota_PR_3;Name=pheromone_B43;present=false
+ML170166	MATPredict	gene	471767	492287	.	.	.	ID=Basidiomycota_PR_3.gene3;Parent=Basidiomycota_PR_3;Name=pheromone_B44;present=false
+ML170166	MATPredict	gene	471767	492287	.	.	.	ID=Basidiomycota_PR_3.gene4;Parent=Basidiomycota_PR_3;Name=fungal_mating_type_pheromone;present=false
+ML170195	MATPredict	MAT_locus	29092	76120	.	.	.	ID=Basidiomycota_PR_4;family=Basidiomycota:PR;confidence=medium;idiomorph=undetermined;fragmented=false;core_start=29092;core_end=61933;beyond_core_bp=14187;supported_start=29092;supported_end=76120;beyond_supported_bp=0;ambiguous_with=Basidiomycota:Balpha,Basidiomycota:aLocus,Basidiomycota:bLocus;reference_records=5627_9006-11_PR_B1,caax_scan:CIIA
+ML170195	MATPredict	gene	29092	29202	.	-	.	ID=Basidiomycota_PR_4.gene0;Parent=Basidiomycota_PR_4;Name=caax_precursor;role=core_MAT;present=true;identity=0.0;reference_record=caax_scan:CIIA;method=caax_scan;status=caax_orf
+ML170195	MATPredict	gene	60816	61933	.	-	.	ID=Basidiomycota_PR_4.gene1;Parent=Basidiomycota_PR_4;Name=pheromone_receptor;role=core_MAT;present=true;identity=53.7;reference_record=5627_9006-11_PR_B1;method=diamond_proteome;status=not_polish_candidate;coverage=95.6
+ML170195	MATPredict	gene	29092	76120	.	.	.	ID=Basidiomycota_PR_4.gene2;Parent=Basidiomycota_PR_4;Name=pheromone_B43;present=false
+ML170195	MATPredict	gene	29092	76120	.	.	.	ID=Basidiomycota_PR_4.gene3;Parent=Basidiomycota_PR_4;Name=pheromone_B44;present=false
+ML170195	MATPredict	gene	29092	76120	.	.	.	ID=Basidiomycota_PR_4.gene4;Parent=Basidiomycota_PR_4;Name=fungal_mating_type_pheromone;present=false

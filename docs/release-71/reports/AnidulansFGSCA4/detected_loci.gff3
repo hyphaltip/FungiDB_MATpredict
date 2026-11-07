@@ -1,0 +1,13 @@
+##gff-version 3
+##sequence-region ChrIII_A_nidulans_FGSC_A4 1140942 1149995
+##sequence-region ChrVI_A_nidulans_FGSC_A4 2903571 2910117
+ChrIII_A_nidulans_FGSC_A4	MATPredict	MAT_locus	1140942	1149995	.	.	.	ID=Ascomycota_MAT_0;family=Ascomycota:MAT;confidence=high;idiomorph=MAT1-2;fragmented=false;core_start=1140942;core_end=1149995;beyond_core_bp=0;supported_start=1140942;supported_end=1149995;beyond_supported_bp=0;reference_records=162425_fgsc-a4_MAT_combined,230073_uamh-1363_MAT_MAT1-1
+ChrIII_A_nidulans_FGSC_A4	MATPredict	gene	1140942	1141641	.	-	.	ID=Ascomycota_MAT_0.gene0;Parent=Ascomycota_MAT_0;Name=COX13;role=flanking_conserved;present=true;identity=100.0;reference_record=162425_fgsc-a4_MAT_combined;method=diamond_proteome;status=not_polish_candidate;coverage=87.3
+ChrIII_A_nidulans_FGSC_A4	MATPredict	gene	1141955	1144058	.	+	.	ID=Ascomycota_MAT_0.gene1;Parent=Ascomycota_MAT_0;Name=APN2;role=flanking_conserved;present=true;identity=100.0;reference_record=162425_fgsc-a4_MAT_combined;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+ChrIII_A_nidulans_FGSC_A4	MATPredict	gene	1148940	1149995	.	-	.	ID=Ascomycota_MAT_0.gene2;Parent=Ascomycota_MAT_0;Name=MAT1-2-1;role=core_MAT;present=true;identity=100.0;reference_record=162425_fgsc-a4_MAT_combined;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+ChrIII_A_nidulans_FGSC_A4	MATPredict	gene	1140942	1149995	.	.	.	ID=Ascomycota_MAT_0.gene4;Parent=Ascomycota_MAT_0;Name=SLA2;present=false
+ChrVI_A_nidulans_FGSC_A4	MATPredict	MAT_locus	2903571	2910117	.	.	.	ID=Ascomycota_MAT_1;family=Ascomycota:MAT;confidence=medium;idiomorph=MAT1-1;fragmented=false;core_start=2903571;core_end=2910117;beyond_core_bp=0;supported_start=2903571;supported_end=2910117;beyond_supported_bp=0;reference_records=162425_fgsc-a4_MAT_combined
+ChrVI_A_nidulans_FGSC_A4	MATPredict	gene	2903571	2907134	.	+	.	ID=Ascomycota_MAT_1.gene0;Parent=Ascomycota_MAT_1;Name=SLA2;role=flanking_conserved;present=true;identity=100.0;reference_record=162425_fgsc-a4_MAT_combined;method=diamond_proteome;status=not_polish_candidate;coverage=94.5
+ChrVI_A_nidulans_FGSC_A4	MATPredict	gene	2908976	2910117	.	-	.	ID=Ascomycota_MAT_1.gene1;Parent=Ascomycota_MAT_1;Name=MAT1-1-1;role=core_MAT;present=true;identity=100.0;reference_record=162425_fgsc-a4_MAT_combined;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+ChrVI_A_nidulans_FGSC_A4	MATPredict	gene	2903571	2910117	.	.	.	ID=Ascomycota_MAT_1.gene2;Parent=Ascomycota_MAT_1;Name=APN2;present=false
+ChrVI_A_nidulans_FGSC_A4	MATPredict	gene	2903571	2910117	.	.	.	ID=Ascomycota_MAT_1.gene3;Parent=Ascomycota_MAT_1;Name=COX13;present=false

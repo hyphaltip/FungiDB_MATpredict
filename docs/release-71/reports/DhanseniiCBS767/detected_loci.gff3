@@ -1,0 +1,6 @@
+##gff-version 3
+##sequence-region CR382137 1587954 1591344
+CR382137	MATPredict	MAT_locus	1587954	1591344	.	.	.	ID=Ascomycota_MTL_0;family=Ascomycota:MTL;confidence=high;idiomorph=A;fragmented=false;core_start=1587954;core_end=1591344;beyond_core_bp=0;supported_start=1587954;supported_end=1591344;beyond_supported_bp=0;reference_records=4959_cbs767_MTL_A
+CR382137	MATPredict	gene	1587954	1588592	.	-	.	ID=Ascomycota_MTL_0.gene0;Parent=Ascomycota_MTL_0;Name=MTLalpha1;role=core_MAT;present=true;identity=100.0;reference_record=4959_cbs767_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CR382137	MATPredict	gene	1589597	1590216	.	-	.	ID=Ascomycota_MTL_0.gene1;Parent=Ascomycota_MTL_0;Name=MTLA1;role=core_MAT;present=true;identity=100.0;reference_record=4959_cbs767_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CR382137	MATPredict	gene	1590508	1591344	.	-	.	ID=Ascomycota_MTL_0.gene2;Parent=Ascomycota_MTL_0;Name=MTLA2;role=core_MAT;present=true;identity=100.0;reference_record=4959_cbs767_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=100.0

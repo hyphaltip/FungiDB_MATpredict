@@ -1,0 +1,1589 @@
+run:
+  sample: PkudriavzeviiCBS573
+  organism: null
+  taxid: null
+  phylum: Ascomycota
+  matpredict_version: 0.8.1
+  code:
+    git_describe: v0.8.1
+    dirty: false
+    commit: 3a62e6302b8e7633490237829e8febafef77e432
+    source_version: 0.8.1
+  database:
+    root: /bigdata/stajichlab/jstajich/projects/FungiDB_MATpredict/tools/MATPredict/db
+    content_sha256: 86f18d232e4fe95d19f5e26c1e6cfc758f36c8d235204ef790b01e19832510cc
+    records: 185
+  taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+  genome:
+    file: PkudriavzeviiCBS573.genome.fasta
+    sha256: 8a200fdb6d86dd69093bd58a98fcd90dfa9d47a9c5ccc29041b230d3b1cc6990
+    contigs: 6
+    length_bp: 10863895
+    n50: 2745854
+  proteins: PkudriavzeviiCBS573.proteins.fasta
+  parameters:
+    phylum: Ascomycota
+    phylum_guess:
+      requested: auto
+      status: ok
+      usable: true
+      reason: null
+      phylum: Ascomycota
+      phylum_taxid: 4890
+      deepest_rank: species
+      routing_taxid: 1156497
+      routing_taxid_rank: family
+      flags: []
+      gmg_version: gmg 0.3.2 (66055154a)
+      index: bfd-reps-2026.10.5-s20000.gmgi
+      index_sha256: 0f319567f1cab17643e1daf7ffdc0e3b312bd43913e351568108d67a4a19702c
+      index_spec: bfd-reps-2026.10.5-s20000.gmgi
+      note: GmG called phylum Ascomycota
+      action: routed
+      weak_call_accepted: false
+      genetic_code: 1
+      genetic_code_from: family taxid 1156497
+      routed_by: family taxid 1156497 (phylum_fallback)
+    exhaustive: false
+    genetic_code: 1
+    exclude_records: null
+    annotation: null
+    min_hits: 2
+    min_identity: null
+    require_core_role: true
+    max_polished_clusters_per_family: 6
+    polish_strong_identity: 50.0
+    polish_core_pair: true
+    preset: null
+    partial_core_policy: 'off'
+    homothallic_policy: 'off'
+    confidence_cap_policy: 'off'
+    cross_family_policy: 'off'
+    fallback_after_withheld_policy: 'off'
+    strong_single_gene_policy: 'off'
+    scoped_roster_policy: 'off'
+    scoped_roster: null
+    supported_min_bitscore: 33.0
+  started: '2026-11-07T02:48:48Z'
+  wall_seconds: 27
+routing_mode: phylum_fallback
+routing_error: null
+fallback_search: null
+not_searched_reason: null
+genetic_code: 1
+genetic_code_error: null
+taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+suppressed_unpolished: 65
+suppressed_flank_carried: 0
+suppressed_mat_gene_gate: 0
+suppressed_paralog_class: 0
+suppressed_loci:
+- family: Ascomycota:MATsc
+  contig: CP028773
+  start: 84990
+  end: 125366
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  - MATALPHA2
+  - MATA2
+  core_span:
+    start: 94955
+    end: 125366
+    beyond_core_bp: 9965
+  supported_span:
+    start: 94955
+    end: 125366
+    min_bitscore: 33.0
+    beyond_supported_bp: 9965
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028773
+  start: 84990
+  end: 125366
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 110018
+    end: 110209
+    beyond_core_bp: 40185
+  supported_span:
+    start: 110018
+    end: 110209
+    min_bitscore: 33.0
+    beyond_supported_bp: 40185
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028773
+  start: 203106
+  end: 206261
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 203106
+    end: 203273
+    beyond_core_bp: 2988
+  supported_span:
+    start: 203106
+    end: 203273
+    min_bitscore: 33.0
+    beyond_supported_bp: 2988
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028773
+  start: 203106
+  end: 206261
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 206172
+    end: 206261
+    beyond_core_bp: 3066
+  supported_span:
+    start: 206172
+    end: 206261
+    min_bitscore: 33.0
+    beyond_supported_bp: 3066
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028773
+  start: 279901
+  end: 280029
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 279901
+    end: 280029
+    beyond_core_bp: 0
+  supported_span:
+    start: 279901
+    end: 280029
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028773
+  start: 420752
+  end: 420844
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 420752
+    end: 420844
+    beyond_core_bp: 0
+  supported_span:
+    start: 420752
+    end: 420844
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028773
+  start: 953661
+  end: 967928
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  - MATA2
+  core_span:
+    start: 953661
+    end: 967928
+    beyond_core_bp: 0
+  supported_span:
+    start: 953661
+    end: 967928
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028773
+  start: 1063719
+  end: 1063808
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 1063719
+    end: 1063808
+    beyond_core_bp: 0
+  supported_span:
+    start: 1063719
+    end: 1063808
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028773
+  start: 1451456
+  end: 1451596
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 1451456
+    end: 1451596
+    beyond_core_bp: 0
+  supported_span:
+    start: 1451456
+    end: 1451596
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028773
+  start: 1489569
+  end: 1489685
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 1489569
+    end: 1489685
+    beyond_core_bp: 0
+  supported_span:
+    start: 1489569
+    end: 1489685
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028773
+  start: 1673220
+  end: 1673309
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 1673220
+    end: 1673309
+    beyond_core_bp: 0
+  supported_span:
+    start: 1673220
+    end: 1673309
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028773
+  start: 1757788
+  end: 1757880
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 1757788
+    end: 1757880
+    beyond_core_bp: 0
+  supported_span:
+    start: 1757788
+    end: 1757880
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028773
+  start: 1911842
+  end: 1937211
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 1937119
+    end: 1937211
+    beyond_core_bp: 25277
+  supported_span:
+    start: 1937119
+    end: 1937211
+    min_bitscore: 33.0
+    beyond_supported_bp: 25277
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028773
+  start: 1963634
+  end: 1963870
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 1963745
+    end: 1963843
+    beyond_core_bp: 138
+  supported_span:
+    start: 1963634
+    end: 1963870
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028773
+  start: 2254386
+  end: 2254556
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 2254386
+    end: 2254556
+    beyond_core_bp: 0
+  supported_span:
+    start: 2254386
+    end: 2254556
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028773
+  start: 2306522
+  end: 2306638
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 2306522
+    end: 2306638
+    beyond_core_bp: 0
+  supported_span:
+    start: 2306522
+    end: 2306638
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028773
+  start: 2403331
+  end: 2403447
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 2403331
+    end: 2403447
+    beyond_core_bp: 0
+  supported_span:
+    start: 2403331
+    end: 2403447
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028773
+  start: 2578242
+  end: 2578481
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 2578242
+    end: 2578481
+    beyond_core_bp: 0
+  supported_span:
+    start: 2578242
+    end: 2578481
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028774
+  start: 66227
+  end: 66394
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 66227
+    end: 66394
+    beyond_core_bp: 0
+  supported_span:
+    start: 66227
+    end: 66394
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028774
+  start: 193343
+  end: 230301
+  idiomorph: A
+  polished_genes: 1
+  genes_found:
+  - MTLA2
+  - MTLalpha1
+  - PIK1
+  core_span:
+    start: 193343
+    end: 230301
+    beyond_core_bp: 0
+  supported_span:
+    start: 193343
+    end: 230301
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028774
+  start: 307183
+  end: 311300
+  idiomorph: A
+  polished_genes: 1
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 310491
+    end: 311300
+    beyond_core_bp: 3308
+  supported_span:
+    start: 310491
+    end: 311300
+    min_bitscore: 33.0
+    beyond_supported_bp: 3308
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028774
+  start: 440500
+  end: 453604
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  - MTLalpha1
+  core_span:
+    start: 440500
+    end: 453604
+    beyond_core_bp: 0
+  supported_span:
+    start: 440500
+    end: 453604
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028774
+  start: 756579
+  end: 756914
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 756579
+    end: 756914
+    beyond_core_bp: 0
+  supported_span:
+    start: 756579
+    end: 756914
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028774
+  start: 964500
+  end: 964613
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 964500
+    end: 964613
+    beyond_core_bp: 0
+  supported_span:
+    start: 964500
+    end: 964613
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028774
+  start: 1021467
+  end: 1021592
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 1021467
+    end: 1021592
+    beyond_core_bp: 0
+  supported_span:
+    start: 1021467
+    end: 1021592
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028774
+  start: 1432113
+  end: 1432244
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 1432113
+    end: 1432244
+    beyond_core_bp: 0
+  supported_span:
+    start: 1432113
+    end: 1432244
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028774
+  start: 1766173
+  end: 1766292
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 1766173
+    end: 1766292
+    beyond_core_bp: 0
+  supported_span:
+    start: 1766173
+    end: 1766292
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028774
+  start: 1899269
+  end: 1899430
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 1899269
+    end: 1899430
+    beyond_core_bp: 0
+  supported_span:
+    start: 1899269
+    end: 1899430
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028774
+  start: 2096347
+  end: 2104342
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 2096347
+    end: 2096583
+    beyond_core_bp: 7759
+  supported_span:
+    start: 2096347
+    end: 2096583
+    min_bitscore: 33.0
+    beyond_supported_bp: 7759
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028774
+  start: 2326639
+  end: 2326800
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 2326639
+    end: 2326800
+    beyond_core_bp: 0
+  supported_span:
+    start: 2326639
+    end: 2326800
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028774
+  start: 2525717
+  end: 2525908
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 2525717
+    end: 2525908
+    beyond_core_bp: 0
+  supported_span:
+    start: 2525717
+    end: 2525908
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028774
+  start: 2723559
+  end: 2723657
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 2723559
+    end: 2723657
+    beyond_core_bp: 0
+  supported_span:
+    start: 2723559
+    end: 2723657
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028776
+  start: 104762
+  end: 104863
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 104762
+    end: 104863
+    beyond_core_bp: 0
+  supported_span:
+    start: 104762
+    end: 104863
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028776
+  start: 157190
+  end: 157300
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 157190
+    end: 157300
+    beyond_core_bp: 0
+  supported_span:
+    start: 157190
+    end: 157300
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028776
+  start: 199504
+  end: 199629
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATA2
+  core_span:
+    start: 199504
+    end: 199629
+    beyond_core_bp: 0
+  supported_span:
+    start: 199504
+    end: 199629
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028776
+  start: 445180
+  end: 445272
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 445180
+    end: 445272
+    beyond_core_bp: 0
+  supported_span:
+    start: 445180
+    end: 445272
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028776
+  start: 758463
+  end: 758567
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 758463
+    end: 758567
+    beyond_core_bp: 0
+  supported_span:
+    start: 758463
+    end: 758567
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028776
+  start: 852336
+  end: 852521
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 852336
+    end: 852521
+    beyond_core_bp: 0
+  supported_span:
+    start: 852336
+    end: 852521
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028776
+  start: 919778
+  end: 927452
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  - MATALPHA2
+  core_span:
+    start: 919778
+    end: 927452
+    beyond_core_bp: 0
+  supported_span:
+    start: 919778
+    end: 927452
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028776
+  start: 954616
+  end: 954705
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 954616
+    end: 954705
+    beyond_core_bp: 0
+  supported_span:
+    start: 954616
+    end: 954705
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028776
+  start: 1011215
+  end: 1011307
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 1011215
+    end: 1011307
+    beyond_core_bp: 0
+  supported_span:
+    start: 1011215
+    end: 1011307
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028776
+  start: 1198541
+  end: 1207211
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 1207098
+    end: 1207211
+    beyond_core_bp: 8557
+  supported_span:
+    start: 1207098
+    end: 1207211
+    min_bitscore: 33.0
+    beyond_supported_bp: 8557
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028776
+  start: 1273291
+  end: 1293727
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  - MATALPHA2
+  core_span:
+    start: 1273291
+    end: 1293727
+    beyond_core_bp: 0
+  supported_span:
+    start: 1273291
+    end: 1293727
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028776
+  start: 1353676
+  end: 1353774
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 1353676
+    end: 1353774
+    beyond_core_bp: 0
+  supported_span:
+    start: 1353676
+    end: 1353774
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028775
+  start: 208759
+  end: 228258
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  - MATA2
+  core_span:
+    start: 208759
+    end: 228258
+    beyond_core_bp: 0
+  supported_span:
+    start: 208759
+    end: 228258
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028775
+  start: 329875
+  end: 349022
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 329875
+    end: 330000
+    beyond_core_bp: 19022
+  supported_span:
+    start: 329875
+    end: 330000
+    min_bitscore: 33.0
+    beyond_supported_bp: 19022
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028775
+  start: 397652
+  end: 397786
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 397652
+    end: 397786
+    beyond_core_bp: 0
+  supported_span:
+    start: 397652
+    end: 397786
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028775
+  start: 593480
+  end: 593593
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 593480
+    end: 593593
+    beyond_core_bp: 0
+  supported_span:
+    start: 593480
+    end: 593593
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028775
+  start: 789560
+  end: 789688
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 789560
+    end: 789688
+    beyond_core_bp: 0
+  supported_span:
+    start: 789560
+    end: 789688
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028775
+  start: 885261
+  end: 885461
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 885261
+    end: 885461
+    beyond_core_bp: 0
+  supported_span:
+    start: 885261
+    end: 885461
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028775
+  start: 993275
+  end: 993463
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 993275
+    end: 993463
+    beyond_core_bp: 0
+  supported_span:
+    start: 993275
+    end: 993463
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028775
+  start: 1023506
+  end: 1023814
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 1023506
+    end: 1023814
+    beyond_core_bp: 0
+  supported_span:
+    start: 1023506
+    end: 1023814
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028775
+  start: 1248392
+  end: 1249105
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATA2
+  core_span:
+    start: 1248887
+    end: 1249105
+    beyond_core_bp: 495
+  supported_span:
+    start: 1248887
+    end: 1249105
+    min_bitscore: 33.0
+    beyond_supported_bp: 495
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028775
+  start: 1248392
+  end: 1249105
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 1248392
+    end: 1248550
+    beyond_core_bp: 555
+  supported_span:
+    start: 1248392
+    end: 1248550
+    min_bitscore: 33.0
+    beyond_supported_bp: 555
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028775
+  start: 1408597
+  end: 1408761
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 1408597
+    end: 1408761
+    beyond_core_bp: 0
+  supported_span:
+    start: 1408597
+    end: 1408761
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028775
+  start: 1527799
+  end: 1527909
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 1527799
+    end: 1527909
+    beyond_core_bp: 0
+  supported_span:
+    start: 1527799
+    end: 1527909
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028775
+  start: 1604145
+  end: 1604285
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 1604145
+    end: 1604285
+    beyond_core_bp: 0
+  supported_span:
+    start: 1604145
+    end: 1604285
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028775
+  start: 1699865
+  end: 1700011
+  idiomorph: undetermined
+  polished_genes: 0
+  genes_found:
+  - MATALPHA2
+  core_span:
+    start: 1699898
+    end: 1700005
+    beyond_core_bp: 39
+  supported_span:
+    start: 1699898
+    end: 1700005
+    min_bitscore: 33.0
+    beyond_supported_bp: 39
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028775
+  start: 1699865
+  end: 1700011
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 1699892
+    end: 1699981
+    beyond_core_bp: 57
+  supported_span:
+    start: 1699892
+    end: 1699981
+    min_bitscore: 33.0
+    beyond_supported_bp: 57
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MATsc
+  contig: CP028775
+  start: 2419701
+  end: 2419829
+  idiomorph: MATalpha
+  polished_genes: 0
+  genes_found:
+  - MATALPHA1
+  core_span:
+    start: 2419701
+    end: 2419829
+    beyond_core_bp: 0
+  supported_span:
+    start: 2419701
+    end: 2419829
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028777
+  start: 223356
+  end: 223457
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 223356
+    end: 223457
+    beyond_core_bp: 0
+  supported_span:
+    start: 223356
+    end: 223457
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028777
+  start: 571199
+  end: 571405
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 571199
+    end: 571405
+    beyond_core_bp: 0
+  supported_span:
+    start: 571199
+    end: 571405
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028777
+  start: 889889
+  end: 890065
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 889889
+    end: 890065
+    beyond_core_bp: 0
+  supported_span:
+    start: 889889
+    end: 890065
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028777
+  start: 984782
+  end: 984889
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 984782
+    end: 984889
+    beyond_core_bp: 0
+  supported_span:
+    start: 984782
+    end: 984889
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028777
+  start: 1200682
+  end: 1200771
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 1200682
+    end: 1200771
+    beyond_core_bp: 0
+  supported_span:
+    start: 1200682
+    end: 1200771
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028773
+  start: 672272
+  end: 675532
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - PIK1
+  core_span:
+    start: 672272
+    end: 675532
+    beyond_core_bp: 0
+  supported_span:
+    start: 672272
+    end: 675532
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.0
+  floor: 0.5
+  best_identity: 50.8
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028773
+  start: 1911842
+  end: 1937211
+  idiomorph: undetermined
+  polished_genes: 2
+  genes_found:
+  - PAP1
+  - OBP1
+  core_span:
+    start: 1911842
+    end: 1916019
+    beyond_core_bp: 21192
+  supported_span:
+    start: 1911842
+    end: 1916019
+    min_bitscore: 33.0
+    beyond_supported_bp: 21192
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.0
+  floor: 0.5
+  best_identity: 64.3
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028774
+  start: 1050574
+  end: 1053828
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - PIK1
+  core_span:
+    start: 1050574
+    end: 1053828
+    beyond_core_bp: 0
+  supported_span:
+    start: 1050574
+    end: 1053828
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.0
+  floor: 0.5
+  best_identity: 31.2
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028774
+  start: 2096347
+  end: 2104342
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - OBP1
+  core_span:
+    start: 2101106
+    end: 2104342
+    beyond_core_bp: 4759
+  supported_span:
+    start: 2101106
+    end: 2104342
+    min_bitscore: 33.0
+    beyond_supported_bp: 4759
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.0
+  floor: 0.5
+  best_identity: 30.2
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: CP028776
+  start: 1320146
+  end: 1325695
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - PIK1
+  core_span:
+    start: 1320146
+    end: 1325695
+    beyond_core_bp: 0
+  supported_span:
+    start: 1320146
+    end: 1325695
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.0
+  floor: 0.5
+  best_identity: 41.8
+  idiomorph_classifier: null
+assembly_gap_at_locus: []
+zygosity: null
+two_idiomorphs: []
+receptor_arrays_note: 'Receptor arrays occur for both mating and non-mating STE3-like
+  receptors (the study found arrays holding paralogs beside the mating receptors in
+  Coprinopsis cinerea and Schizophyllum commune), so array membership does not establish
+  that a locus is a mating receptor. receptor_array_support is a flag on the evidence
+  behind an array; it never changes a call, its confidence or its verification label.
+  receptor_cassette_* fields describe pheromone-precursor cassette structure (2 or
+  more strict-CAAX ORFs within 5 kb of a receptor locus; class C when that many of
+  those ORFs also carry tblastn precursor homology). They are descriptive only: the
+  CAAX scan is also what admits a PR call, so cassettes are circular as confirmation;
+  own-species curated precursors are a self-hit for class C; tandem receptors may
+  be merged into one locus. They never change a call, tier, label, confidence or count.'
+receptor_arrays: []
+families_attempted:
+- Ascomycota:MATsc
+- Ascomycota:MTL
+detected:
+- family: Ascomycota:MATsc
+  contig: CP028774
+  start: 307183
+  end: 311300
+  core_span:
+    start: 307183
+    end: 311300
+    beyond_core_bp: 0
+  supported_span:
+    start: 307183
+    end: 311300
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  confidence: medium
+  resolution_flags:
+  - partial_core
+  resolution_flag_genes:
+    partial_core:
+    - MATA1
+  idiomorph: MATa
+  idiomorph_class: MAT1-2
+  idiomorph_candidates:
+  - idiomorph: MATa
+    score: 53.9
+  detection_pass: strict
+  locus_class: partial_locus
+  idiomorph_unmodelled: false
+  verification: null
+  merged_from: []
+  subloci: []
+  polished_genes: 2
+  distinct_intervals: 2
+  span_exceeds_plausible_bound: false
+  idiomorph_margin: 22.206000000000003
+  idiomorph_classifier: null
+  confidence_ignored_genes:
+  - MATALPHA2
+  idiomorph_resolutions:
+  - contig: CP028774
+    winner: MATA1
+    loser: MATALPHA2
+    winner_identity: 57.5
+    loser_identity: 35.294
+    overlap_fraction: 1.0
+    winner_coverage: 31.7
+    loser_coverage: 15.0
+    basis: first_pass_identity
+    winner_model_score: null
+    winner_hmm_score: null
+    loser_hmm_score: null
+    loser_model_score: null
+    winner_span:
+    - 310491
+    - 311300
+    loser_span:
+    - 310506
+    - 310766
+  ambiguous_with:
+  - Ascomycota:MTL
+  genes_found:
+  - MATA1
+  - sla2
+  genes_missing:
+  - MATA2
+  genes_not_searchable:
+  - cha1
+  fragmented: false
+  reference_records:
+  - 28985_nrrl-y-1140_MATsc_HMLalpha
+  - 28985_nrrl-y-1140_MATsc_MATa
+  - 4932_s288c_MATsc_HMRa
+  segments:
+  - contig: CP028774
+    start: 307183
+    end: 311300
+    contig_edge_distance: 307182
+  gene_evidence:
+  - gene: sla2
+    role: flanking_conserved
+    contig: CP028774
+    start: 307183
+    end: 310401
+    strand: +
+    identity: 35.1
+    coverage: 79.1
+    reference_record: 28985_nrrl-y-1140_MATsc_MATa
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 1.46e-87
+    bitscore: 288.0
+  - gene: MATA1
+    role: core_MAT
+    contig: CP028774
+    start: 310491
+    end: 311300
+    strand: '-'
+    identity: 57.5
+    coverage: 31.7
+    reference_record: 4932_s288c_MATsc_HMRa
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 1.02e-11
+    bitscore: 53.9
+  - gene: MATALPHA2
+    role: core_MAT
+    contig: CP028774
+    start: 310515
+    end: 310610
+    strand: '-'
+    identity: 35.294
+    coverage: 15.0
+    reference_record: 28985_nrrl-y-1140_MATsc_HMLalpha
+    method: tblastn_genome
+    status: not_polish_candidate
+    alternate_model: null
+    lost_to: MATA1
+    exons: null
+    evalue: 1.1
+    bitscore: 26.9
+not_detected:
+- family: Ascomycota:MTL
+  reason: best cluster carried 1 modelled gene(s), below the 2 required to report
+    a locus; only 1 of its genes could be modelled
+  best_fraction_found: 1.0
+  genes_found:
+  - MTLA2
+  - MTLalpha1
+  - PIK1
+  genes_missing:
+  - MTLA1
+  genes_not_searchable: []

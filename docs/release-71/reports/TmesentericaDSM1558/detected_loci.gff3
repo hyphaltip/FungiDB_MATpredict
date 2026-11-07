@@ -1,0 +1,10 @@
+##gff-version 3
+##sequence-region JH711534 586275 732277
+JH711534	MATPredict	MAT_locus	586275	732277	.	.	.	ID=Basidiomycota_MAT_0;family=Basidiomycota:MAT;confidence=high;idiomorph=a;fragmented=false;core_start=586275;core_end=732277;beyond_core_bp=0;supported_start=586275;supported_end=732277;beyond_supported_bp=0;reference_records=40410_jec20_MAT_a,40410_jec21_MAT_alpha
+JH711534	MATPredict	gene	586275	588426	.	-	.	ID=Basidiomycota_MAT_0.gene0;Parent=Basidiomycota_MAT_0;Name=PAN6;role=flanking_conserved;present=true;identity=59.5;reference_record=40410_jec20_MAT_a;method=diamond_proteome;status=not_polish_candidate;coverage=89.1
+JH711534	MATPredict	gene	614935	615057	.	+	.	ID=Basidiomycota_MAT_0.gene1;Parent=Basidiomycota_MAT_0;Name=MFa;role=core_MAT;present=true;identity=40.476;reference_record=40410_jec20_MAT_a;method=tblastn_genome;status=unpolished;coverage=100.0
+JH711534	MATPredict	gene	622978	623980	.	+	.	ID=Basidiomycota_MAT_0.gene2;Parent=Basidiomycota_MAT_0;Name=STE3;role=core_MAT;present=true;identity=47.67;reference_record=40410_jec21_MAT_alpha;method=exonerate_refine;status=polished_single;coverage=79.7
+JH711534	MATPredict	gene	731748	732277	.	-	.	ID=Basidiomycota_MAT_0.gene3;Parent=Basidiomycota_MAT_0;Name=RPL39;role=core_MAT;present=true;identity=84.0;reference_record=40410_jec20_MAT_a;method=diamond_proteome;status=not_polish_candidate;coverage=98.0
+JH711534	MATPredict	gene	586275	732277	.	.	.	ID=Basidiomycota_MAT_0.gene4;Parent=Basidiomycota_MAT_0;Name=FAO1;present=false
+JH711534	MATPredict	gene	586275	732277	.	.	.	ID=Basidiomycota_MAT_0.gene5;Parent=Basidiomycota_MAT_0;Name=NOG2;present=false;not_searchable=true
+JH711534	MATPredict	gene	586275	732277	.	.	.	ID=Basidiomycota_MAT_0.gene6;Parent=Basidiomycota_MAT_0;Name=UAP1;present=false;not_searchable=true

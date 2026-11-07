@@ -1,0 +1,7 @@
+##gff-version 3
+##sequence-region CP028774 307183 311300
+CP028774	MATPredict	MAT_locus	307183	311300	.	.	.	ID=Ascomycota_MATsc_0;family=Ascomycota:MATsc;confidence=medium;idiomorph=MATa;fragmented=false;core_start=307183;core_end=311300;beyond_core_bp=0;supported_start=307183;supported_end=311300;beyond_supported_bp=0;ambiguous_with=Ascomycota:MTL;reference_records=28985_nrrl-y-1140_MATsc_HMLalpha,28985_nrrl-y-1140_MATsc_MATa,4932_s288c_MATsc_HMRa
+CP028774	MATPredict	gene	307183	310401	.	+	.	ID=Ascomycota_MATsc_0.gene0;Parent=Ascomycota_MATsc_0;Name=sla2;role=flanking_conserved;present=true;identity=35.1;reference_record=28985_nrrl-y-1140_MATsc_MATa;method=diamond_proteome;status=not_polish_candidate;coverage=79.1
+CP028774	MATPredict	gene	310491	311300	.	-	.	ID=Ascomycota_MATsc_0.gene1;Parent=Ascomycota_MATsc_0;Name=MATA1;role=core_MAT;present=true;identity=57.5;reference_record=4932_s288c_MATsc_HMRa;method=diamond_proteome;status=not_polish_candidate;coverage=31.7
+CP028774	MATPredict	gene	307183	311300	.	.	.	ID=Ascomycota_MATsc_0.gene3;Parent=Ascomycota_MATsc_0;Name=MATA2;present=false
+CP028774	MATPredict	gene	307183	311300	.	.	.	ID=Ascomycota_MATsc_0.gene4;Parent=Ascomycota_MATsc_0;Name=cha1;present=false;not_searchable=true

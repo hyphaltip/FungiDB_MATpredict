@@ -1,0 +1,7 @@
+##gff-version 3
+##sequence-region CP054543 71161 81241
+CP054543	MATPredict	MAT_locus	71161	81241	.	.	.	ID=Ascomycota_PM_0;family=Ascomycota:PM;confidence=medium;idiomorph=P;fragmented=false;core_start=71161;core_end=81241;beyond_core_bp=0;supported_start=71161;supported_end=81241;beyond_supported_bp=0;reference_records=4754_b80_PM_combined
+CP054543	MATPredict	gene	71161	71925	.	-	.	ID=Ascomycota_PM_0.gene0;Parent=Ascomycota_PM_0;Name=matPi;role=core_MAT;present=true;identity=91.5;reference_record=4754_b80_PM_combined;method=diamond_proteome;status=not_polish_candidate;coverage=91.7
+CP054543	MATPredict	gene	79975	81241	.	-	.	ID=Ascomycota_PM_0.gene1;Parent=Ascomycota_PM_0;Name=matMc;role=core_MAT;present=true;identity=76.3;reference_record=4754_b80_PM_combined;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+CP054543	MATPredict	gene	71161	81241	.	.	.	ID=Ascomycota_PM_0.gene2;Parent=Ascomycota_PM_0;Name=matMi;present=false
+CP054543	MATPredict	gene	71161	81241	.	.	.	ID=Ascomycota_PM_0.gene3;Parent=Ascomycota_PM_0;Name=matPc;present=false;not_searchable=true

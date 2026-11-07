@@ -1,0 +1,8 @@
+##gff-version 3
+##sequence-region Ca22chr5A_C_albicans_SC5314 393493 402144
+Ca22chr5A_C_albicans_SC5314	MATPredict	MAT_locus	393493	402144	.	.	.	ID=Ascomycota_MTL_0;family=Ascomycota:MTL;confidence=high;idiomorph=A;fragmented=false;core_start=393493;core_end=402144;beyond_core_bp=0;supported_start=393493;supported_end=402144;beyond_supported_bp=0;reference_records=5476_sc5314_MTL_A
+Ca22chr5A_C_albicans_SC5314	MATPredict	gene	393493	394455	.	-	.	ID=Ascomycota_MTL_0.gene0;Parent=Ascomycota_MTL_0;Name=MTLA1;role=core_MAT;present=true;identity=99.5;reference_record=5476_sc5314_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+Ca22chr5A_C_albicans_SC5314	MATPredict	gene	394560	395220	.	-	.	ID=Ascomycota_MTL_0.gene1;Parent=Ascomycota_MTL_0;Name=MTLA2;role=core_MAT;present=true;identity=100.0;reference_record=5476_sc5314_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+Ca22chr5A_C_albicans_SC5314	MATPredict	gene	395335	398205	.	-	.	ID=Ascomycota_MTL_0.gene2;Parent=Ascomycota_MTL_0;Name=PIK1;role=flanking_variable;present=true;identity=100.0;reference_record=5476_sc5314_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+Ca22chr5A_C_albicans_SC5314	MATPredict	gene	398770	400071	.	-	.	ID=Ascomycota_MTL_0.gene3;Parent=Ascomycota_MTL_0;Name=OBP1;role=flanking_variable;present=true;identity=100.0;reference_record=5476_sc5314_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+Ca22chr5A_C_albicans_SC5314	MATPredict	gene	400477	402144	.	+	.	ID=Ascomycota_MTL_0.gene4;Parent=Ascomycota_MTL_0;Name=PAP1;role=flanking_variable;present=true;identity=100.0;reference_record=5476_sc5314_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=100.0

@@ -1,0 +1,11 @@
+##gff-version 3
+##sequence-region KN848897 134584 253284
+KN848897	MATPredict	MAT_locus	134584	253284	.	.	.	ID=Basidiomycota_MAT_0;family=Basidiomycota:MAT;confidence=high;idiomorph=a;fragmented=false;core_start=134584;core_end=253284;beyond_core_bp=0;supported_start=134584;supported_end=253284;beyond_supported_bp=0;reference_records=40410_jec20_MAT_a,40410_jec21_MAT_alpha
+KN848897	MATPredict	gene	134584	137112	.	-	.	ID=Basidiomycota_MAT_0.gene0;Parent=Basidiomycota_MAT_0;Name=SXI2;role=core_MAT;present=true;identity=68.7;reference_record=40410_jec20_MAT_a;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+KN848897	MATPredict	gene	155342	155597	.	+	.	ID=Basidiomycota_MAT_0.gene1;Parent=Basidiomycota_MAT_0;Name=RPL39;role=core_MAT;present=true;identity=100.0;reference_record=40410_jec20_MAT_a;method=exonerate_refine;status=polished_disagree;coverage=98.0;alt_method=miniprot_refine;alt_contig=KN848897;alt_start=155342;alt_end=155600;alt_identity=92.75999999999999
+KN848897	MATPredict	gene	215238	216570	.	-	.	ID=Basidiomycota_MAT_0.gene2;Parent=Basidiomycota_MAT_0;Name=STE3;role=core_MAT;present=true;identity=64.6;reference_record=40410_jec20_MAT_a;method=diamond_proteome;status=not_polish_candidate;coverage=99.7
+KN848897	MATPredict	gene	241431	241553	.	+	.	ID=Basidiomycota_MAT_0.gene3;Parent=Basidiomycota_MAT_0;Name=MFa;role=core_MAT;present=true;identity=95.12;reference_record=40410_jec20_MAT_a;method=exonerate_refine;status=polished_agree;coverage=97.6
+KN848897	MATPredict	gene	251592	253284	.	+	.	ID=Basidiomycota_MAT_0.gene4;Parent=Basidiomycota_MAT_0;Name=PAN6;role=flanking_conserved;present=true;identity=90.5;reference_record=40410_jec20_MAT_a;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+KN848897	MATPredict	gene	134584	253284	.	.	.	ID=Basidiomycota_MAT_0.gene6;Parent=Basidiomycota_MAT_0;Name=FAO1;present=false
+KN848897	MATPredict	gene	134584	253284	.	.	.	ID=Basidiomycota_MAT_0.gene7;Parent=Basidiomycota_MAT_0;Name=NOG2;present=false;not_searchable=true
+KN848897	MATPredict	gene	134584	253284	.	.	.	ID=Basidiomycota_MAT_0.gene8;Parent=Basidiomycota_MAT_0;Name=UAP1;present=false;not_searchable=true

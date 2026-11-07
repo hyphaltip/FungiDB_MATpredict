@@ -1,0 +1,8 @@
+##gff-version 3
+##sequence-region SWFT01000050 289606 299182
+SWFT01000050	MATPredict	MAT_locus	289606	299182	.	.	.	ID=Ascomycota_MTL_0;family=Ascomycota:MTL;confidence=medium;idiomorph=A;fragmented=false;core_start=289624;core_end=299182;beyond_core_bp=18;supported_start=289606;supported_end=299182;beyond_supported_bp=0;reference_records=5476_sc5314_MTL_A,717740_makgeolli_MTL_A
+SWFT01000050	MATPredict	gene	289624	289809	.	-	.	ID=Ascomycota_MTL_0.gene0;Parent=Ascomycota_MTL_0;Name=MTLA2;role=core_MAT;present=true;identity=33.87;reference_record=717740_makgeolli_MTL_A;method=exonerate_refine;status=polished_single;coverage=33.0
+SWFT01000050	MATPredict	gene	290127	292838	.	-	.	ID=Ascomycota_MTL_0.gene1;Parent=Ascomycota_MTL_0;Name=PIK1;role=flanking_variable;present=true;identity=54.8;reference_record=5476_sc5314_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=98.7
+SWFT01000050	MATPredict	gene	293043	294365	.	-	.	ID=Ascomycota_MTL_0.gene2;Parent=Ascomycota_MTL_0;Name=OBP1;role=flanking_variable;present=true;identity=69.2;reference_record=717740_makgeolli_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=99.5
+SWFT01000050	MATPredict	gene	295932	299182	.	+	.	ID=Ascomycota_MTL_0.gene3;Parent=Ascomycota_MTL_0;Name=PAP1;role=flanking_variable;present=true;identity=68.2;reference_record=5476_sc5314_MTL_A;method=diamond_proteome;status=not_polish_candidate;coverage=97.8
+SWFT01000050	MATPredict	gene	289606	299182	.	.	.	ID=Ascomycota_MTL_0.gene4;Parent=Ascomycota_MTL_0;Name=MTLA1;present=false

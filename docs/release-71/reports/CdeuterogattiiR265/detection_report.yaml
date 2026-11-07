@@ -1,0 +1,364 @@
+run:
+  sample: CdeuterogattiiR265
+  organism: null
+  taxid: null
+  phylum: null
+  matpredict_version: 0.8.1
+  code:
+    git_describe: v0.8.1
+    dirty: false
+    commit: 3a62e6302b8e7633490237829e8febafef77e432
+    source_version: 0.8.1
+  database:
+    root: /bigdata/stajichlab/jstajich/projects/FungiDB_MATpredict/tools/MATPredict/db
+    content_sha256: 86f18d232e4fe95d19f5e26c1e6cfc758f36c8d235204ef790b01e19832510cc
+    records: 185
+  taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+  genome:
+    file: CdeuterogattiiR265.genome.fasta
+    sha256: 9772539ed7bf5f01c5e101dd780ae2f8df737a6a5f36935c21da079a12083344
+    contigs: 15
+    length_bp: 17581311
+    n50: 1316417
+  proteins: CdeuterogattiiR265.proteins.fasta
+  parameters:
+    phylum: Basidiomycota
+    phylum_guess:
+      requested: auto
+      status: ok
+      usable: true
+      reason: null
+      phylum: Basidiomycota
+      phylum_taxid: 5204
+      deepest_rank: genus
+      routing_taxid: 1884633
+      routing_taxid_rank: family
+      flags: []
+      gmg_version: gmg 0.3.2 (66055154a)
+      index: bfd-reps-2026.10.5-s20000.gmgi
+      index_sha256: 0f319567f1cab17643e1daf7ffdc0e3b312bd43913e351568108d67a4a19702c
+      index_spec: bfd-reps-2026.10.5-s20000.gmgi
+      note: GmG called phylum Basidiomycota
+      action: routed
+      weak_call_accepted: false
+      genetic_code: 1
+      genetic_code_from: family taxid 1884633
+      routed_by: family taxid 1884633 (lineage)
+    exhaustive: false
+    genetic_code: 1
+    exclude_records: null
+    annotation: null
+    min_hits: 2
+    min_identity: null
+    require_core_role: true
+    max_polished_clusters_per_family: 6
+    polish_strong_identity: 50.0
+    polish_core_pair: true
+    preset: null
+    partial_core_policy: 'off'
+    homothallic_policy: 'off'
+    confidence_cap_policy: 'off'
+    cross_family_policy: 'off'
+    fallback_after_withheld_policy: 'off'
+    strong_single_gene_policy: 'off'
+    scoped_roster_policy: 'off'
+    scoped_roster: null
+    supported_min_bitscore: 33.0
+  started: '2026-11-07T02:16:07Z'
+  wall_seconds: 16
+routing_mode: lineage
+routing_error: null
+fallback_search: null
+not_searched_reason: null
+genetic_code: 1
+genetic_code_error: null
+taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+suppressed_unpolished: 0
+suppressed_flank_carried: 0
+suppressed_mat_gene_gate: 0
+suppressed_paralog_class: 0
+suppressed_loci: []
+assembly_gap_at_locus: []
+zygosity: null
+two_idiomorphs: []
+receptor_arrays_note: 'Receptor arrays occur for both mating and non-mating STE3-like
+  receptors (the study found arrays holding paralogs beside the mating receptors in
+  Coprinopsis cinerea and Schizophyllum commune), so array membership does not establish
+  that a locus is a mating receptor. receptor_array_support is a flag on the evidence
+  behind an array; it never changes a call, its confidence or its verification label.
+  receptor_cassette_* fields describe pheromone-precursor cassette structure (2 or
+  more strict-CAAX ORFs within 5 kb of a receptor locus; class C when that many of
+  those ORFs also carry tblastn precursor homology). They are descriptive only: the
+  CAAX scan is also what admits a PR call, so cassettes are circular as confirmation;
+  own-species curated precursors are a self-hit for class C; tandem receptors may
+  be merged into one locus. They never change a call, tier, label, confidence or count.'
+receptor_arrays: []
+families_attempted:
+- Basidiomycota:MAT
+detected:
+- family: Basidiomycota:MAT
+  contig: CP025767
+  start: 153700
+  end: 262784
+  core_span:
+    start: 153700
+    end: 262784
+    beyond_core_bp: 0
+  supported_span:
+    start: 153700
+    end: 262784
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  confidence: high
+  resolution_flags:
+  - partial_core
+  resolution_flag_genes:
+    partial_core:
+    - SXI2
+  idiomorph: alpha
+  idiomorph_class: null
+  idiomorph_candidates:
+  - idiomorph: alpha
+    score: 556.0
+  - idiomorph: a
+    score: 48.1
+  detection_pass: strict
+  locus_class: mat_locus
+  idiomorph_unmodelled: false
+  verification: null
+  merged_from: []
+  subloci: []
+  polished_genes: 7
+  defective_genes:
+  - SXI2
+  distinct_intervals: 8
+  span_exceeds_plausible_bound: false
+  idiomorph_margin: 507.9
+  idiomorph_classifier: null
+  idiomorph_resolutions:
+  - contig: CP025767
+    winner: MFalpha
+    loser: MFa
+    winner_identity: 94.7
+    loser_identity: 54.762
+    overlap_fraction: 1.0
+    winner_coverage: 100.0
+    loser_coverage: 100.0
+    basis: first_pass_identity
+    winner_model_score: null
+    winner_hmm_score: null
+    loser_hmm_score: null
+    loser_model_score: null
+    winner_span:
+    - 228838
+    - 228954
+    loser_span:
+    - 228841
+    - 228954
+  - contig: CP025767
+    winner: MFalpha
+    loser: MFa
+    winner_identity: 91.7
+    loser_identity: 57.143
+    overlap_fraction: 1.0
+    winner_coverage: 92.1
+    loser_coverage: 83.0
+    basis: first_pass_identity
+    winner_model_score: null
+    winner_hmm_score: null
+    loser_hmm_score: null
+    loser_model_score: null
+    winner_span:
+    - 229713
+    - 229853
+    loser_span:
+    - 229713
+    - 229814
+  - contig: CP025767
+    winner: MFalpha
+    loser: MFa
+    winner_identity: 94.7
+    loser_identity: 54.762
+    overlap_fraction: 1.0
+    winner_coverage: 100.0
+    loser_coverage: 100.0
+    basis: first_pass_identity
+    winner_model_score: null
+    winner_hmm_score: null
+    loser_hmm_score: null
+    loser_model_score: null
+    winner_span:
+    - 239571
+    - 239687
+    loser_span:
+    - 239574
+    - 239687
+  - contig: CP025767
+    winner: MFalpha
+    loser: MFa
+    winner_identity: 94.7
+    loser_identity: 54.762
+    overlap_fraction: 1.0
+    winner_coverage: 100.0
+    loser_coverage: 100.0
+    basis: first_pass_identity
+    winner_model_score: null
+    winner_hmm_score: null
+    loser_hmm_score: null
+    loser_model_score: null
+    winner_span:
+    - 240445
+    - 240561
+    loser_span:
+    - 240445
+    - 240558
+  ambiguous_with: []
+  genes_found:
+  - FAO1
+  - PAN6
+  - MFalpha
+  - STE3
+  - SXI1
+  - SXI2
+  - RPL39
+  genes_missing: []
+  genes_not_searchable:
+  - MFa
+  - NOG2
+  - UAP1
+  fragmented: false
+  reference_records:
+  - 40410_jec20_MAT_a
+  - 40410_jec21_MAT_alpha
+  segments:
+  - contig: CP025767
+    start: 153700
+    end: 262784
+    contig_edge_distance: 153699
+  gene_evidence:
+  - gene: FAO1
+    role: flanking_conserved
+    contig: CP025767
+    start: 153700
+    end: 155047
+    strand: +
+    identity: 87.4
+    coverage: 100.0
+    reference_record: 40410_jec20_MAT_a
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 2.5e-232
+    bitscore: 625.0
+  - gene: SXI2
+    role: core_MAT
+    contig: CP025767
+    start: 155546
+    end: 155727
+    strand: '-'
+    identity: 63.33
+    coverage: 8.6
+    reference_record: 40410_jec20_MAT_a
+    method: exonerate_refine
+    status: polished_single
+    alternate_model: null
+    frameshifts: 2
+    defective: true
+    exons:
+    - start: 155546
+      end: 155727
+    evalue: 1.04e-05
+    bitscore: 48.1
+  - gene: SXI1
+    role: core_MAT
+    contig: CP025767
+    start: 156583
+    end: 157936
+    strand: +
+    identity: 73.5
+    coverage: 99.8
+    reference_record: 40410_jec21_MAT_alpha
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 4.9e-203
+    bitscore: 556.0
+  - gene: STE3
+    role: core_MAT
+    contig: CP025767
+    start: 222873
+    end: 224188
+    strand: +
+    identity: 90.5
+    coverage: 100.0
+    reference_record: 40410_jec21_MAT_alpha
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 2.5e-262
+    bitscore: 704.0
+  - gene: MFalpha
+    role: core_MAT
+    contig: CP025767
+    start: 228838
+    end: 228954
+    strand: '-'
+    identity: 94.7
+    coverage: 100.0
+    reference_record: 40410_jec21_MAT_alpha
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 3.08e-23
+    bitscore: 72.0
+  - gene: MFa
+    role: core_MAT
+    contig: CP025767
+    start: 229713
+    end: 229814
+    strand: +
+    identity: 57.143
+    coverage: 83.0
+    reference_record: 40410_jec20_MAT_a
+    method: tblastn_genome
+    status: not_polish_candidate
+    alternate_model: null
+    lost_to: MFalpha
+    exons: null
+    evalue: 1.84e-06
+    bitscore: 40.8
+  - gene: RPL39
+    role: core_MAT
+    contig: CP025767
+    start: 247460
+    end: 247959
+    strand: '-'
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 40410_jec20_MAT_a
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 2.14e-35
+    bitscore: 103.0
+  - gene: PAN6
+    role: flanking_conserved
+    contig: CP025767
+    start: 261090
+    end: 262784
+    strand: +
+    identity: 89.8
+    coverage: 100.0
+    reference_record: 40410_jec20_MAT_a
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 2.12e-266
+    bitscore: 716.0
+not_detected: []

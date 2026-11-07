@@ -1,0 +1,7 @@
+##gff-version 3
+##sequence-region CP028532 302754 306262
+CP028532	MATPredict	MAT_locus	302754	306262	.	.	.	ID=Ascomycota_MATsc_0;family=Ascomycota:MATsc;confidence=medium;idiomorph=MATa;fragmented=false;core_start=302754;core_end=306151;beyond_core_bp=111;supported_start=302754;supported_end=306151;beyond_supported_bp=111;ambiguous_with=Ascomycota:MTL;reference_records=28985_nrrl-y-1140_MATsc_HMLalpha,28985_nrrl-y-1140_MATsc_MATa,4932_s288c_MATsc_HMRa
+CP028532	MATPredict	gene	302754	303047	.	+	.	ID=Ascomycota_MATsc_0.gene0;Parent=Ascomycota_MATsc_0;Name=sla2;role=flanking_conserved;present=true;identity=57.14;reference_record=28985_nrrl-y-1140_MATsc_MATa;method=exonerate_refine;status=polished_disagree;coverage=14.6;alt_method=miniprot_refine;alt_contig=CP028532;alt_start=302751;alt_end=305897;alt_identity=34.75
+CP028532	MATPredict	gene	306011	306151	.	-	.	ID=Ascomycota_MATsc_0.gene1;Parent=Ascomycota_MATsc_0;Name=MATA1;role=core_MAT;present=true;identity=51.06;reference_record=4932_s288c_MATsc_HMRa;method=exonerate_refine;status=polished_disagree;coverage=37.3;alt_method=miniprot_refine;alt_contig=CP028532;alt_start=306002;alt_end=306595;alt_identity=27.639999999999997
+CP028532	MATPredict	gene	302754	306262	.	.	.	ID=Ascomycota_MATsc_0.gene3;Parent=Ascomycota_MATsc_0;Name=MATA2;present=false
+CP028532	MATPredict	gene	302754	306262	.	.	.	ID=Ascomycota_MATsc_0.gene4;Parent=Ascomycota_MATsc_0;Name=cha1;present=false;not_searchable=true

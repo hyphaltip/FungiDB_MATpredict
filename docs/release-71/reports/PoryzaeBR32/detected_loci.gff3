@@ -1,0 +1,7 @@
+##gff-version 3
+##sequence-region BR32_scaffold00005 659874 676052
+BR32_scaffold00005	MATPredict	MAT_locus	659874	676052	.	.	.	ID=Ascomycota_MAT_0;family=Ascomycota:MAT;confidence=high;idiomorph=MAT1-2;fragmented=false;core_start=660388;core_end=676052;beyond_core_bp=514;supported_start=659874;supported_end=676052;beyond_supported_bp=0;reference_records=27337_vdls-17_MAT_MAT1-2,2903220_liq80xsp_MAT_combined,5127_mo44_MAT_MAT1-1,61372_suf959_MAT_MAT1-2
+BR32_scaffold00005	MATPredict	gene	660388	661130	.	+	.	ID=Ascomycota_MAT_0.gene0;Parent=Ascomycota_MAT_0;Name=COX13;role=flanking_conserved;present=true;identity=81.3;reference_record=27337_vdls-17_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=48.1
+BR32_scaffold00005	MATPredict	gene	670306	672383	.	+	.	ID=Ascomycota_MAT_0.gene1;Parent=Ascomycota_MAT_0;Name=APN2;role=flanking_conserved;present=true;identity=86.4;reference_record=2903220_liq80xsp_MAT_combined;method=diamond_proteome;status=not_polish_candidate;coverage=36.7
+BR32_scaffold00005	MATPredict	gene	674549	676052	.	-	.	ID=Ascomycota_MAT_0.gene2;Parent=Ascomycota_MAT_0;Name=MAT1-2-1;role=core_MAT;present=true;identity=53.8;reference_record=61372_suf959_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=73.8
+BR32_scaffold00005	MATPredict	gene	659874	676052	.	.	.	ID=Ascomycota_MAT_0.gene4;Parent=Ascomycota_MAT_0;Name=SLA2;present=false

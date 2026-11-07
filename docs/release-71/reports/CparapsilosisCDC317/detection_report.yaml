@@ -1,0 +1,938 @@
+run:
+  sample: CparapsilosisCDC317
+  organism: null
+  taxid: null
+  phylum: null
+  matpredict_version: 0.8.1
+  code:
+    git_describe: v0.8.1
+    dirty: false
+    commit: 3a62e6302b8e7633490237829e8febafef77e432
+    source_version: 0.8.1
+  database:
+    root: /bigdata/stajichlab/jstajich/projects/FungiDB_MATpredict/tools/MATPredict/db
+    content_sha256: 86f18d232e4fe95d19f5e26c1e6cfc758f36c8d235204ef790b01e19832510cc
+    records: 185
+  taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+  genome:
+    file: CparapsilosisCDC317.genome.fasta
+    sha256: e6d18299e160deff97adb9184e2047324c63dc08e33fc8f4b903e1f808683d96
+    contigs: 9
+    length_bp: 13030174
+    n50: 2091826
+  proteins: CparapsilosisCDC317.proteins.fasta
+  parameters:
+    phylum: Ascomycota
+    phylum_guess:
+      requested: auto
+      status: ok
+      usable: true
+      reason: null
+      phylum: Ascomycota
+      phylum_taxid: 4890
+      deepest_rank: species
+      routing_taxid: 766764
+      routing_taxid_rank: family
+      flags: []
+      gmg_version: gmg 0.3.2 (66055154a)
+      index: bfd-reps-2026.10.5-s20000.gmgi
+      index_sha256: 0f319567f1cab17643e1daf7ffdc0e3b312bd43913e351568108d67a4a19702c
+      index_spec: bfd-reps-2026.10.5-s20000.gmgi
+      note: GmG called phylum Ascomycota
+      action: routed
+      weak_call_accepted: false
+      genetic_code: 12
+      genetic_code_from: family taxid 766764
+      routed_by: family taxid 766764 (lineage)
+    exhaustive: false
+    genetic_code: 12
+    exclude_records: null
+    annotation: null
+    min_hits: 2
+    min_identity: null
+    require_core_role: true
+    max_polished_clusters_per_family: 6
+    polish_strong_identity: 50.0
+    polish_core_pair: true
+    preset: null
+    partial_core_policy: 'off'
+    homothallic_policy: 'off'
+    confidence_cap_policy: 'off'
+    cross_family_policy: 'off'
+    fallback_after_withheld_policy: 'off'
+    strong_single_gene_policy: 'off'
+    scoped_roster_policy: 'off'
+    scoped_roster: null
+    supported_min_bitscore: 33.0
+  started: '2026-11-07T02:20:43Z'
+  wall_seconds: 22
+routing_mode: lineage
+routing_error: null
+fallback_search: null
+not_searched_reason: null
+genetic_code: 12
+genetic_code_error: null
+taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+suppressed_unpolished: 35
+suppressed_flank_carried: 0
+suppressed_mat_gene_gate: 0
+suppressed_paralog_class: 0
+suppressed_loci:
+- family: Ascomycota:MTL
+  contig: Contig005809_C_parapsilosis_CDC317
+  start: 560652
+  end: 560999
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 560652
+    end: 560999
+    beyond_core_bp: 0
+  supported_span:
+    start: 560652
+    end: 560999
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005809_C_parapsilosis_CDC317
+  start: 1941280
+  end: 1941438
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 1941280
+    end: 1941438
+    beyond_core_bp: 0
+  supported_span:
+    start: 1941280
+    end: 1941438
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005809_C_parapsilosis_CDC317
+  start: 2007905
+  end: 2050024
+  idiomorph: alpha
+  polished_genes: 1
+  genes_found:
+  - MTLA2
+  - MTLalpha1
+  - OBP1
+  core_span:
+    start: 2021942
+    end: 2050024
+    beyond_core_bp: 14037
+  supported_span:
+    start: 2021942
+    end: 2050024
+    min_bitscore: 33.0
+    beyond_supported_bp: 14037
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005809_C_parapsilosis_CDC317
+  start: 2275576
+  end: 2275707
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 2275576
+    end: 2275707
+    beyond_core_bp: 0
+  supported_span:
+    start: 2275576
+    end: 2275707
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005806_C_parapsilosis_CDC317
+  start: 50822
+  end: 51031
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 50894
+    end: 51016
+    beyond_core_bp: 87
+  supported_span:
+    start: 50843
+    end: 51016
+    min_bitscore: 33.0
+    beyond_supported_bp: 36
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005806_C_parapsilosis_CDC317
+  start: 988971
+  end: 989171
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 988971
+    end: 989171
+    beyond_core_bp: 0
+  supported_span:
+    start: 988971
+    end: 989171
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig006110_C_parapsilosis_CDC317
+  start: 123121
+  end: 128229
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  - MTLalpha1
+  core_span:
+    start: 123121
+    end: 128229
+    beyond_core_bp: 0
+  supported_span:
+    start: 123121
+    end: 128229
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig006110_C_parapsilosis_CDC317
+  start: 585723
+  end: 585932
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 585723
+    end: 585932
+    beyond_core_bp: 0
+  supported_span:
+    start: 585723
+    end: 585932
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005569_C_parapsilosis_CDC317
+  start: 389722
+  end: 389829
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 389722
+    end: 389829
+    beyond_core_bp: 0
+  supported_span:
+    start: 389722
+    end: 389829
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005569_C_parapsilosis_CDC317
+  start: 445497
+  end: 445757
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 445497
+    end: 445757
+    beyond_core_bp: 0
+  supported_span:
+    start: 445497
+    end: 445757
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005569_C_parapsilosis_CDC317
+  start: 553355
+  end: 553516
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 553355
+    end: 553516
+    beyond_core_bp: 0
+  supported_span:
+    start: 553355
+    end: 553516
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005569_C_parapsilosis_CDC317
+  start: 613032
+  end: 637266
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 637168
+    end: 637266
+    beyond_core_bp: 24136
+  supported_span:
+    start: 637168
+    end: 637266
+    min_bitscore: 33.0
+    beyond_supported_bp: 24136
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005569_C_parapsilosis_CDC317
+  start: 981759
+  end: 981863
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 981759
+    end: 981863
+    beyond_core_bp: 0
+  supported_span:
+    start: 981759
+    end: 981863
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005569_C_parapsilosis_CDC317
+  start: 1007587
+  end: 1007703
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 1007587
+    end: 1007703
+    beyond_core_bp: 0
+  supported_span:
+    start: 1007587
+    end: 1007703
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005569_C_parapsilosis_CDC317
+  start: 1113238
+  end: 1116306
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  - MTLalpha1
+  core_span:
+    start: 1113238
+    end: 1116306
+    beyond_core_bp: 0
+  supported_span:
+    start: 1113238
+    end: 1116306
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005569_C_parapsilosis_CDC317
+  start: 1785585
+  end: 1785800
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 1785585
+    end: 1785800
+    beyond_core_bp: 0
+  supported_span:
+    start: 1785585
+    end: 1785800
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005807_C_parapsilosis_CDC317
+  start: 197831
+  end: 198016
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 197831
+    end: 198016
+    beyond_core_bp: 0
+  supported_span:
+    start: 197831
+    end: 198016
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005807_C_parapsilosis_CDC317
+  start: 534940
+  end: 535191
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 534940
+    end: 535191
+    beyond_core_bp: 0
+  supported_span:
+    start: 534940
+    end: 535191
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005807_C_parapsilosis_CDC317
+  start: 585477
+  end: 585572
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 585477
+    end: 585572
+    beyond_core_bp: 0
+  supported_span:
+    start: 585477
+    end: 585572
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005807_C_parapsilosis_CDC317
+  start: 769280
+  end: 769411
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 769280
+    end: 769411
+    beyond_core_bp: 0
+  supported_span:
+    start: 769280
+    end: 769411
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005807_C_parapsilosis_CDC317
+  start: 910580
+  end: 910810
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 910580
+    end: 910810
+    beyond_core_bp: 0
+  supported_span:
+    start: 910580
+    end: 910810
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005807_C_parapsilosis_CDC317
+  start: 1123585
+  end: 1123695
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 1123585
+    end: 1123695
+    beyond_core_bp: 0
+  supported_span:
+    start: 1123585
+    end: 1123695
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005807_C_parapsilosis_CDC317
+  start: 1164087
+  end: 1164203
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 1164087
+    end: 1164203
+    beyond_core_bp: 0
+  supported_span:
+    start: 1164087
+    end: 1164203
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005807_C_parapsilosis_CDC317
+  start: 1627680
+  end: 1627817
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 1627680
+    end: 1627817
+    beyond_core_bp: 0
+  supported_span:
+    start: 1627680
+    end: 1627817
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig006139_C_parapsilosis_CDC317
+  start: 617037
+  end: 617357
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 617226
+    end: 617342
+    beyond_core_bp: 204
+  supported_span:
+    start: 617037
+    end: 617357
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig006139_C_parapsilosis_CDC317
+  start: 774486
+  end: 774644
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 774486
+    end: 774644
+    beyond_core_bp: 0
+  supported_span:
+    start: 774486
+    end: 774644
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig006372_C_parapsilosis_CDC317
+  start: 214664
+  end: 214828
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 214664
+    end: 214828
+    beyond_core_bp: 0
+  supported_span:
+    start: 214664
+    end: 214828
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig006372_C_parapsilosis_CDC317
+  start: 330768
+  end: 330878
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 330768
+    end: 330878
+    beyond_core_bp: 0
+  supported_span:
+    start: 330768
+    end: 330878
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig006372_C_parapsilosis_CDC317
+  start: 443494
+  end: 443613
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 443494
+    end: 443613
+    beyond_core_bp: 0
+  supported_span:
+    start: 443494
+    end: 443613
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig006372_C_parapsilosis_CDC317
+  start: 594153
+  end: 594716
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 594153
+    end: 594716
+    beyond_core_bp: 0
+  supported_span:
+    start: 594153
+    end: 594716
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig006372_C_parapsilosis_CDC317
+  start: 860787
+  end: 860894
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 860787
+    end: 860894
+    beyond_core_bp: 0
+  supported_span:
+    start: 860787
+    end: 860894
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig006372_C_parapsilosis_CDC317
+  start: 911249
+  end: 911467
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 911249
+    end: 911467
+    beyond_core_bp: 0
+  supported_span:
+    start: 911249
+    end: 911467
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig006372_C_parapsilosis_CDC317
+  start: 1008977
+  end: 1009102
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 1008977
+    end: 1009102
+    beyond_core_bp: 0
+  supported_span:
+    start: 1008977
+    end: 1009102
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig006372_C_parapsilosis_CDC317
+  start: 1532286
+  end: 1535945
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 1532286
+    end: 1532375
+    beyond_core_bp: 3570
+  supported_span:
+    start: 1532286
+    end: 1532375
+    min_bitscore: 33.0
+    beyond_supported_bp: 3570
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig006372_C_parapsilosis_CDC317
+  start: 1772530
+  end: 1772682
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 1772530
+    end: 1772682
+    beyond_core_bp: 0
+  supported_span:
+    start: 1772530
+    end: 1772682
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005809_C_parapsilosis_CDC317
+  start: 872401
+  end: 878154
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - PIK1
+  core_span:
+    start: 872401
+    end: 878154
+    beyond_core_bp: 0
+  supported_span:
+    start: 872401
+    end: 878154
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.0
+  floor: 0.5
+  best_identity: 41.0
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Contig005809_C_parapsilosis_CDC317
+  start: 1464897
+  end: 1468130
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - PIK1
+  core_span:
+    start: 1464897
+    end: 1468130
+    beyond_core_bp: 0
+  supported_span:
+    start: 1464897
+    end: 1468130
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.0
+  floor: 0.5
+  best_identity: 36.5
+  idiomorph_classifier: null
+assembly_gap_at_locus: []
+zygosity: null
+two_idiomorphs: []
+receptor_arrays_note: 'Receptor arrays occur for both mating and non-mating STE3-like
+  receptors (the study found arrays holding paralogs beside the mating receptors in
+  Coprinopsis cinerea and Schizophyllum commune), so array membership does not establish
+  that a locus is a mating receptor. receptor_array_support is a flag on the evidence
+  behind an array; it never changes a call, its confidence or its verification label.
+  receptor_cassette_* fields describe pheromone-precursor cassette structure (2 or
+  more strict-CAAX ORFs within 5 kb of a receptor locus; class C when that many of
+  those ORFs also carry tblastn precursor homology). They are descriptive only: the
+  CAAX scan is also what admits a PR call, so cassettes are circular as confirmation;
+  own-species curated precursors are a self-hit for class C; tandem receptors may
+  be merged into one locus. They never change a call, tier, label, confidence or count.'
+receptor_arrays: []
+families_attempted:
+- Ascomycota:MTL
+detected:
+- family: Ascomycota:MTL
+  contig: Contig005806_C_parapsilosis_CDC317
+  start: 830236
+  end: 838733
+  core_span:
+    start: 830236
+    end: 838733
+    beyond_core_bp: 0
+  supported_span:
+    start: 830236
+    end: 838733
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  confidence: medium
+  resolution_flags: []
+  resolution_flag_genes: {}
+  idiomorph: A
+  idiomorph_class: MAT1-2
+  idiomorph_candidates:
+  - idiomorph: A
+    score: 140.0
+  detection_pass: strict
+  locus_class: mat_locus
+  idiomorph_unmodelled: false
+  verification: null
+  merged_from: []
+  subloci: []
+  polished_genes: 4
+  distinct_intervals: 5
+  span_exceeds_plausible_bound: false
+  idiomorph_margin: null
+  idiomorph_classifier: null
+  idiomorph_resolutions: []
+  ambiguous_with: []
+  genes_found:
+  - MTLA1
+  - MTLA2
+  - PAP1
+  - OBP1
+  - PIK1
+  genes_missing: []
+  genes_not_searchable: []
+  fragmented: false
+  reference_records:
+  - 5476_sc5314_MTL_A
+  segments:
+  - contig: Contig005806_C_parapsilosis_CDC317
+    start: 830236
+    end: 838733
+    contig_edge_distance: 201034
+  gene_evidence:
+  - gene: PAP1
+    role: flanking_variable
+    contig: Contig005806_C_parapsilosis_CDC317
+    start: 830236
+    end: 831894
+    strand: '-'
+    identity: 74.0
+    coverage: 99.6
+    reference_record: 5476_sc5314_MTL_A
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 3.76e-310
+    bitscore: 841.0
+  - gene: OBP1
+    role: flanking_variable
+    contig: Contig005806_C_parapsilosis_CDC317
+    start: 832251
+    end: 833570
+    strand: +
+    identity: 66.4
+    coverage: 99.3
+    reference_record: 5476_sc5314_MTL_A
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 2.51e-204
+    bitscore: 563.0
+  - gene: PIK1
+    role: flanking_variable
+    contig: Contig005806_C_parapsilosis_CDC317
+    start: 833828
+    end: 836641
+    strand: +
+    identity: 65.0
+    coverage: 99.4
+    reference_record: 5476_sc5314_MTL_A
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 0.0
+    bitscore: 1127.0
+  - gene: MTLA2
+    role: core_MAT
+    contig: Contig005806_C_parapsilosis_CDC317
+    start: 837296
+    end: 837953
+    strand: +
+    identity: 43.0
+    coverage: 99.0
+    reference_record: 5476_sc5314_MTL_A
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 9.72e-45
+    bitscore: 140.0
+  - gene: MTLA1
+    role: core_MAT
+    contig: Contig005806_C_parapsilosis_CDC317
+    start: 838335
+    end: 838733
+    strand: +
+    identity: 31.111
+    coverage: 53.0
+    reference_record: 5476_sc5314_MTL_A
+    method: tblastn_genome
+    status: unpolished
+    alternate_model: null
+    exons: null
+    evalue: 1.96e-07
+    bitscore: 49.7
+not_detected: []

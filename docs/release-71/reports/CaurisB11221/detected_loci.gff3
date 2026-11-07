@@ -1,0 +1,7 @@
+##gff-version 3
+##sequence-region PGLS01000002 189357 195813
+PGLS01000002	MATPredict	MAT_locus	189357	195813	.	.	.	ID=Ascomycota_MTL_0;family=Ascomycota:MTL;confidence=high;idiomorph=alpha;fragmented=false;core_start=189357;core_end=195813;beyond_core_bp=0;supported_start=189357;supported_end=195813;beyond_supported_bp=0;reference_records=498019_b11221_MTL_alpha
+PGLS01000002	MATPredict	gene	189357	191045	.	+	.	ID=Ascomycota_MTL_0.gene0;Parent=Ascomycota_MTL_0;Name=PAP1;role=flanking_variable;present=true;identity=100.0;reference_record=498019_b11221_MTL_alpha;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+PGLS01000002	MATPredict	gene	191042	191560	.	-	.	ID=Ascomycota_MTL_0.gene1;Parent=Ascomycota_MTL_0;Name=MTLalpha1;role=core_MAT;present=true;identity=100.0;reference_record=498019_b11221_MTL_alpha;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+PGLS01000002	MATPredict	gene	191653	194448	.	-	.	ID=Ascomycota_MTL_0.gene2;Parent=Ascomycota_MTL_0;Name=PIK1;role=flanking_variable;present=true;identity=100.0;reference_record=498019_b11221_MTL_alpha;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+PGLS01000002	MATPredict	gene	194620	195813	.	-	.	ID=Ascomycota_MTL_0.gene3;Parent=Ascomycota_MTL_0;Name=OBP1;role=flanking_variable;present=true;identity=100.0;reference_record=498019_b11221_MTL_alpha;method=diamond_proteome;status=not_polish_candidate;coverage=100.0

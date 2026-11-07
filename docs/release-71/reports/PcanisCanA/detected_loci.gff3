@@ -1,0 +1,7 @@
+##gff-version 3
+##sequence-region JACEFK010000014 206624 216433
+JACEFK010000014	MATPredict	MAT_locus	206624	216433	.	.	.	ID=Ascomycota_PM_0;family=Ascomycota:PM;confidence=medium;idiomorph=P;fragmented=false;core_start=206624;core_end=216433;beyond_core_bp=0;supported_start=206624;supported_end=216433;beyond_supported_bp=0;reference_records=42068_ru7_PM_combined,4754_b80_PM_combined
+JACEFK010000014	MATPredict	gene	206624	207319	.	-	.	ID=Ascomycota_PM_0.gene0;Parent=Ascomycota_PM_0;Name=matPi;role=core_MAT;present=true;identity=86.6;reference_record=42068_ru7_PM_combined;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+JACEFK010000014	MATPredict	gene	215711	216433	.	-	.	ID=Ascomycota_PM_0.gene1;Parent=Ascomycota_PM_0;Name=matMc;role=core_MAT;present=true;identity=77.0;reference_record=4754_b80_PM_combined;method=diamond_proteome;status=not_polish_candidate;coverage=82.3
+JACEFK010000014	MATPredict	gene	206624	216433	.	.	.	ID=Ascomycota_PM_0.gene2;Parent=Ascomycota_PM_0;Name=matMi;present=false
+JACEFK010000014	MATPredict	gene	206624	216433	.	.	.	ID=Ascomycota_PM_0.gene3;Parent=Ascomycota_PM_0;Name=matPc;present=false;not_searchable=true

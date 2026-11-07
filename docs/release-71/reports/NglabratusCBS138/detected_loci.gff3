@@ -1,0 +1,16 @@
+##gff-version 3
+##sequence-region ChrB_C_glabrata_CBS138 10582 114279
+ChrB_C_glabrata_CBS138	MATPredict	MAT_locus	10582	12102	.	.	.	ID=Ascomycota_MATsc_0;family=Ascomycota:MATsc;confidence=medium;idiomorph=MATalpha;fragmented=false;core_start=10582;core_end=12102;beyond_core_bp=0;supported_start=10582;supported_end=12102;beyond_supported_bp=0;reference_records=28985_nrrl-y-1140_MATsc_HMLalpha,4932_s288c_MATsc_HMRa,4932_s288c_MATsc_MATalpha
+ChrB_C_glabrata_CBS138	MATPredict	gene	10582	11136	.	-	.	ID=Ascomycota_MATsc_0.gene0;Parent=Ascomycota_MATsc_0;Name=MATALPHA1;role=core_MAT;present=true;identity=44.9;reference_record=4932_s288c_MATsc_MATalpha;method=diamond_proteome;status=not_polish_candidate;coverage=50.9
+ChrB_C_glabrata_CBS138	MATPredict	gene	11470	12102	.	+	.	ID=Ascomycota_MATsc_0.gene1;Parent=Ascomycota_MATsc_0;Name=MATA2;role=core_MAT;present=true;identity=52.6;reference_record=4932_s288c_MATsc_HMRa;method=diamond_proteome;status=not_polish_candidate;coverage=75.6
+ChrB_C_glabrata_CBS138	MATPredict	gene	11470	12102	.	+	.	ID=Ascomycota_MATsc_0.gene2;Parent=Ascomycota_MATsc_0;Name=MATALPHA2;role=core_MAT;present=true;identity=49.3;reference_record=28985_nrrl-y-1140_MATsc_HMLalpha;method=diamond_proteome;status=not_polish_candidate;coverage=30.5
+ChrB_C_glabrata_CBS138	MATPredict	gene	10582	12102	.	.	.	ID=Ascomycota_MATsc_0.gene3;Parent=Ascomycota_MATsc_0;Name=MATALPHA2;present=false
+ChrB_C_glabrata_CBS138	MATPredict	gene	10582	12102	.	.	.	ID=Ascomycota_MATsc_0.gene4;Parent=Ascomycota_MATsc_0;Name=MATA1;present=false
+ChrB_C_glabrata_CBS138	MATPredict	gene	10582	12102	.	.	.	ID=Ascomycota_MATsc_0.gene5;Parent=Ascomycota_MATsc_0;Name=cha1;present=false;not_searchable=true
+ChrB_C_glabrata_CBS138	MATPredict	MAT_locus	112831	114279	.	.	.	ID=Ascomycota_MATsc_1;family=Ascomycota:MATsc;confidence=medium;idiomorph=MATalpha;fragmented=false;core_start=112831;core_end=114279;beyond_core_bp=0;supported_start=112831;supported_end=114279;beyond_supported_bp=0;reference_records=28985_nrrl-y-1140_MATsc_HMLalpha,4932_s288c_MATsc_HMRa,4932_s288c_MATsc_MATalpha
+ChrB_C_glabrata_CBS138	MATPredict	gene	112831	113262	.	-	.	ID=Ascomycota_MATsc_1.gene0;Parent=Ascomycota_MATsc_1;Name=MATALPHA1;role=core_MAT;present=true;identity=44.9;reference_record=4932_s288c_MATsc_MATalpha;method=diamond_proteome;status=not_polish_candidate;coverage=50.9
+ChrB_C_glabrata_CBS138	MATPredict	gene	113719	114279	.	+	.	ID=Ascomycota_MATsc_1.gene1;Parent=Ascomycota_MATsc_1;Name=MATA2;role=core_MAT;present=true;identity=52.0;reference_record=4932_s288c_MATsc_HMRa;method=diamond_proteome;status=not_polish_candidate;coverage=77.3
+ChrB_C_glabrata_CBS138	MATPredict	gene	113719	114279	.	+	.	ID=Ascomycota_MATsc_1.gene2;Parent=Ascomycota_MATsc_1;Name=MATALPHA2;role=core_MAT;present=true;identity=48.4;reference_record=28985_nrrl-y-1140_MATsc_HMLalpha;method=diamond_proteome;status=not_polish_candidate;coverage=27.8
+ChrB_C_glabrata_CBS138	MATPredict	gene	112831	114279	.	.	.	ID=Ascomycota_MATsc_1.gene3;Parent=Ascomycota_MATsc_1;Name=MATALPHA2;present=false
+ChrB_C_glabrata_CBS138	MATPredict	gene	112831	114279	.	.	.	ID=Ascomycota_MATsc_1.gene4;Parent=Ascomycota_MATsc_1;Name=MATA1;present=false
+ChrB_C_glabrata_CBS138	MATPredict	gene	112831	114279	.	.	.	ID=Ascomycota_MATsc_1.gene5;Parent=Ascomycota_MATsc_1;Name=cha1;present=false;not_searchable=true

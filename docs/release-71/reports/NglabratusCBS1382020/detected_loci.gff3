@@ -1,0 +1,16 @@
+##gff-version 3
+##sequence-region CP048119 13592 117289
+CP048119	MATPredict	MAT_locus	13592	15112	.	.	.	ID=Ascomycota_MATsc_0;family=Ascomycota:MATsc;confidence=medium;idiomorph=MATalpha;fragmented=false;core_start=13592;core_end=15112;beyond_core_bp=0;supported_start=13592;supported_end=15112;beyond_supported_bp=0;reference_records=28985_nrrl-y-1140_MATsc_HMLalpha,4932_s288c_MATsc_HMRa,4932_s288c_MATsc_MATalpha
+CP048119	MATPredict	gene	13592	14146	.	-	.	ID=Ascomycota_MATsc_0.gene0;Parent=Ascomycota_MATsc_0;Name=MATALPHA1;role=core_MAT;present=true;identity=44.9;reference_record=4932_s288c_MATsc_MATalpha;method=diamond_proteome;status=not_polish_candidate;coverage=50.9
+CP048119	MATPredict	gene	14480	15112	.	+	.	ID=Ascomycota_MATsc_0.gene1;Parent=Ascomycota_MATsc_0;Name=MATA2;role=core_MAT;present=true;identity=52.6;reference_record=4932_s288c_MATsc_HMRa;method=diamond_proteome;status=not_polish_candidate;coverage=75.6
+CP048119	MATPredict	gene	14480	15112	.	+	.	ID=Ascomycota_MATsc_0.gene2;Parent=Ascomycota_MATsc_0;Name=MATALPHA2;role=core_MAT;present=true;identity=49.3;reference_record=28985_nrrl-y-1140_MATsc_HMLalpha;method=diamond_proteome;status=not_polish_candidate;coverage=30.5
+CP048119	MATPredict	gene	13592	15112	.	.	.	ID=Ascomycota_MATsc_0.gene3;Parent=Ascomycota_MATsc_0;Name=MATALPHA2;present=false
+CP048119	MATPredict	gene	13592	15112	.	.	.	ID=Ascomycota_MATsc_0.gene4;Parent=Ascomycota_MATsc_0;Name=MATA1;present=false
+CP048119	MATPredict	gene	13592	15112	.	.	.	ID=Ascomycota_MATsc_0.gene5;Parent=Ascomycota_MATsc_0;Name=cha1;present=false;not_searchable=true
+CP048119	MATPredict	MAT_locus	115841	117289	.	.	.	ID=Ascomycota_MATsc_1;family=Ascomycota:MATsc;confidence=medium;idiomorph=MATalpha;fragmented=false;core_start=115841;core_end=117289;beyond_core_bp=0;supported_start=115841;supported_end=117289;beyond_supported_bp=0;reference_records=28985_nrrl-y-1140_MATsc_HMLalpha,4932_s288c_MATsc_HMRa,4932_s288c_MATsc_MATalpha
+CP048119	MATPredict	gene	115841	116272	.	-	.	ID=Ascomycota_MATsc_1.gene0;Parent=Ascomycota_MATsc_1;Name=MATALPHA1;role=core_MAT;present=true;identity=44.9;reference_record=4932_s288c_MATsc_MATalpha;method=diamond_proteome;status=not_polish_candidate;coverage=50.9
+CP048119	MATPredict	gene	116729	117289	.	+	.	ID=Ascomycota_MATsc_1.gene1;Parent=Ascomycota_MATsc_1;Name=MATA2;role=core_MAT;present=true;identity=52.0;reference_record=4932_s288c_MATsc_HMRa;method=diamond_proteome;status=not_polish_candidate;coverage=77.3
+CP048119	MATPredict	gene	116729	117289	.	+	.	ID=Ascomycota_MATsc_1.gene2;Parent=Ascomycota_MATsc_1;Name=MATALPHA2;role=core_MAT;present=true;identity=48.4;reference_record=28985_nrrl-y-1140_MATsc_HMLalpha;method=diamond_proteome;status=not_polish_candidate;coverage=27.8
+CP048119	MATPredict	gene	115841	117289	.	.	.	ID=Ascomycota_MATsc_1.gene3;Parent=Ascomycota_MATsc_1;Name=MATALPHA2;present=false
+CP048119	MATPredict	gene	115841	117289	.	.	.	ID=Ascomycota_MATsc_1.gene4;Parent=Ascomycota_MATsc_1;Name=MATA1;present=false
+CP048119	MATPredict	gene	115841	117289	.	.	.	ID=Ascomycota_MATsc_1.gene5;Parent=Ascomycota_MATsc_1;Name=cha1;present=false;not_searchable=true

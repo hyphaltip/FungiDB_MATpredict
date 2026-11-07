@@ -1,0 +1,7 @@
+##gff-version 3
+##sequence-region AFWA02000013 71308 80799
+AFWA02000013	MATPredict	MAT_locus	71308	80799	.	.	.	ID=Ascomycota_PM_0;family=Ascomycota:PM;confidence=medium;idiomorph=P;fragmented=false;core_start=71308;core_end=80799;beyond_core_bp=0;supported_start=71308;supported_end=80799;beyond_supported_bp=0;reference_records=4754_b80_PM_combined
+AFWA02000013	MATPredict	gene	71308	72000	.	-	.	ID=Ascomycota_PM_0.gene0;Parent=Ascomycota_PM_0;Name=matPi;role=core_MAT;present=true;identity=90.0;reference_record=4754_b80_PM_combined;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+AFWA02000013	MATPredict	gene	80110	80799	.	-	.	ID=Ascomycota_PM_0.gene1;Parent=Ascomycota_PM_0;Name=matMc;role=core_MAT;present=true;identity=85.8;reference_record=4754_b80_PM_combined;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+AFWA02000013	MATPredict	gene	71308	80799	.	.	.	ID=Ascomycota_PM_0.gene2;Parent=Ascomycota_PM_0;Name=matMi;present=false
+AFWA02000013	MATPredict	gene	71308	80799	.	.	.	ID=Ascomycota_PM_0.gene3;Parent=Ascomycota_PM_0;Name=matPc;present=false;not_searchable=true

@@ -1,0 +1,748 @@
+run:
+  sample: CalbicansSC5314
+  organism: null
+  taxid: null
+  phylum: null
+  matpredict_version: 0.8.1
+  code:
+    git_describe: v0.8.1
+    dirty: false
+    commit: 3a62e6302b8e7633490237829e8febafef77e432
+    source_version: 0.8.1
+  database:
+    root: /bigdata/stajichlab/jstajich/projects/FungiDB_MATpredict/tools/MATPredict/db
+    content_sha256: 86f18d232e4fe95d19f5e26c1e6cfc758f36c8d235204ef790b01e19832510cc
+    records: 185
+  taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+  genome:
+    file: CalbicansSC5314.genome.fasta
+    sha256: 8fff7094a50808bec2696fdf9c4e5558f06d17c6218b1d3030ff228444d6e092
+    contigs: 9
+    length_bp: 14323086
+    n50: 2231883
+  proteins: CalbicansSC5314.proteins.fasta
+  parameters:
+    phylum: Ascomycota
+    phylum_guess:
+      requested: auto
+      status: ok
+      usable: true
+      reason: null
+      phylum: Ascomycota
+      phylum_taxid: 4890
+      deepest_rank: genus
+      routing_taxid: 766764
+      routing_taxid_rank: family
+      flags: []
+      gmg_version: gmg 0.3.2 (66055154a)
+      index: bfd-reps-2026.10.5-s20000.gmgi
+      index_sha256: 0f319567f1cab17643e1daf7ffdc0e3b312bd43913e351568108d67a4a19702c
+      index_spec: bfd-reps-2026.10.5-s20000.gmgi
+      note: GmG called phylum Ascomycota
+      action: routed
+      weak_call_accepted: false
+      genetic_code: 12
+      genetic_code_from: family taxid 766764
+      routed_by: family taxid 766764 (lineage)
+    exhaustive: false
+    genetic_code: 12
+    exclude_records: null
+    annotation: null
+    min_hits: 2
+    min_identity: null
+    require_core_role: true
+    max_polished_clusters_per_family: 6
+    polish_strong_identity: 50.0
+    polish_core_pair: true
+    preset: null
+    partial_core_policy: 'off'
+    homothallic_policy: 'off'
+    confidence_cap_policy: 'off'
+    cross_family_policy: 'off'
+    fallback_after_withheld_policy: 'off'
+    strong_single_gene_policy: 'off'
+    scoped_roster_policy: 'off'
+    scoped_roster: null
+    supported_min_bitscore: 33.0
+  started: '2026-11-07T02:31:19Z'
+  wall_seconds: 25
+routing_mode: lineage
+routing_error: null
+fallback_search: null
+not_searched_reason: null
+genetic_code: 12
+genetic_code_error: null
+taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+suppressed_unpolished: 24
+suppressed_flank_carried: 0
+suppressed_mat_gene_gate: 0
+suppressed_paralog_class: 0
+suppressed_loci:
+- family: Ascomycota:MTL
+  contig: Ca22chr1A_C_albicans_SC5314
+  start: 483219
+  end: 483491
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 483219
+    end: 483491
+    beyond_core_bp: 0
+  supported_span:
+    start: 483219
+    end: 483491
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr1A_C_albicans_SC5314
+  start: 757339
+  end: 757497
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 757339
+    end: 757497
+    beyond_core_bp: 0
+  supported_span:
+    start: 757339
+    end: 757497
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr1A_C_albicans_SC5314
+  start: 1739369
+  end: 1739512
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 1739369
+    end: 1739512
+    beyond_core_bp: 0
+  supported_span:
+    start: 1739369
+    end: 1739512
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr1A_C_albicans_SC5314
+  start: 2458246
+  end: 2460650
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  - MTLalpha1
+  core_span:
+    start: 2458246
+    end: 2460650
+    beyond_core_bp: 0
+  supported_span:
+    start: 2458246
+    end: 2460650
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr1A_C_albicans_SC5314
+  start: 2551893
+  end: 2552027
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 2551893
+    end: 2552027
+    beyond_core_bp: 0
+  supported_span:
+    start: 2551893
+    end: 2552027
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr1A_C_albicans_SC5314
+  start: 2748560
+  end: 2748928
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 2748560
+    end: 2748928
+    beyond_core_bp: 0
+  supported_span:
+    start: 2748560
+    end: 2748928
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr5A_C_albicans_SC5314
+  start: 1119139
+  end: 1119309
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 1119178
+    end: 1119294
+    beyond_core_bp: 54
+  supported_span:
+    start: 1119139
+    end: 1119309
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chrRA_C_albicans_SC5314
+  start: 261995
+  end: 262102
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 261995
+    end: 262102
+    beyond_core_bp: 0
+  supported_span:
+    start: 261995
+    end: 262102
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chrRA_C_albicans_SC5314
+  start: 686754
+  end: 686891
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 686754
+    end: 686891
+    beyond_core_bp: 0
+  supported_span:
+    start: 686754
+    end: 686891
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chrRA_C_albicans_SC5314
+  start: 757465
+  end: 772119
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 772015
+    end: 772119
+    beyond_core_bp: 14550
+  supported_span:
+    start: 772015
+    end: 772119
+    min_bitscore: 33.0
+    beyond_supported_bp: 14550
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chrRA_C_albicans_SC5314
+  start: 821489
+  end: 821608
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 821489
+    end: 821608
+    beyond_core_bp: 0
+  supported_span:
+    start: 821489
+    end: 821608
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chrRA_C_albicans_SC5314
+  start: 909556
+  end: 909711
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 909556
+    end: 909654
+    beyond_core_bp: 57
+  supported_span:
+    start: 909556
+    end: 909654
+    min_bitscore: 33.0
+    beyond_supported_bp: 57
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chrRA_C_albicans_SC5314
+  start: 1873612
+  end: 1873770
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 1873612
+    end: 1873770
+    beyond_core_bp: 0
+  supported_span:
+    start: 1873612
+    end: 1873770
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chrRA_C_albicans_SC5314
+  start: 2096035
+  end: 2096151
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 2096035
+    end: 2096151
+    beyond_core_bp: 0
+  supported_span:
+    start: 2096035
+    end: 2096151
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr6A_C_albicans_SC5314
+  start: 131196
+  end: 131483
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 131196
+    end: 131483
+    beyond_core_bp: 0
+  supported_span:
+    start: 131196
+    end: 131483
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr6A_C_albicans_SC5314
+  start: 740455
+  end: 740562
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 740455
+    end: 740562
+    beyond_core_bp: 0
+  supported_span:
+    start: 740455
+    end: 740562
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr3A_C_albicans_SC5314
+  start: 120380
+  end: 120520
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 120380
+    end: 120520
+    beyond_core_bp: 0
+  supported_span:
+    start: 120380
+    end: 120520
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr3A_C_albicans_SC5314
+  start: 724085
+  end: 724180
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 724085
+    end: 724180
+    beyond_core_bp: 0
+  supported_span:
+    start: 724085
+    end: 724180
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr3A_C_albicans_SC5314
+  start: 840136
+  end: 840237
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 840136
+    end: 840237
+    beyond_core_bp: 0
+  supported_span:
+    start: 840136
+    end: 840237
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr2A_C_albicans_SC5314
+  start: 1306734
+  end: 1306850
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 1306734
+    end: 1306850
+    beyond_core_bp: 0
+  supported_span:
+    start: 1306734
+    end: 1306850
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr7A_C_albicans_SC5314
+  start: 205339
+  end: 205545
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 205339
+    end: 205458
+    beyond_core_bp: 87
+  supported_span:
+    start: 205339
+    end: 205545
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr4A_C_albicans_SC5314
+  start: 121577
+  end: 121675
+  idiomorph: alpha
+  polished_genes: 0
+  genes_found:
+  - MTLalpha1
+  core_span:
+    start: 121577
+    end: 121675
+    beyond_core_bp: 0
+  supported_span:
+    start: 121577
+    end: 121675
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr4A_C_albicans_SC5314
+  start: 790070
+  end: 790222
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA2
+  core_span:
+    start: 790070
+    end: 790222
+    beyond_core_bp: 0
+  supported_span:
+    start: 790070
+    end: 790222
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr4A_C_albicans_SC5314
+  start: 955393
+  end: 955575
+  idiomorph: A
+  polished_genes: 0
+  genes_found:
+  - MTLA1
+  core_span:
+    start: 955393
+    end: 955575
+    beyond_core_bp: 0
+  supported_span:
+    start: 955393
+    end: 955575
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: modelled_gene_bar
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chr1A_C_albicans_SC5314
+  start: 1427895
+  end: 1430957
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - PIK1
+  core_span:
+    start: 1427895
+    end: 1430957
+    beyond_core_bp: 0
+  supported_span:
+    start: 1427895
+    end: 1430957
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.0
+  floor: 0.5
+  best_identity: 25.5
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chrRA_C_albicans_SC5314
+  start: 1006481
+  end: 1008139
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - OBP1
+  core_span:
+    start: 1006481
+    end: 1008139
+    beyond_core_bp: 0
+  supported_span:
+    start: 1006481
+    end: 1008139
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.0
+  floor: 0.5
+  best_identity: 23.5
+  idiomorph_classifier: null
+- family: Ascomycota:MTL
+  contig: Ca22chrRA_C_albicans_SC5314
+  start: 1540034
+  end: 1545817
+  idiomorph: undetermined
+  polished_genes: 1
+  genes_found:
+  - PIK1
+  core_span:
+    start: 1540034
+    end: 1545817
+    beyond_core_bp: 0
+  supported_span:
+    start: 1540034
+    end: 1545817
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  withheld_reason: below_fraction_floor
+  fraction_found: 0.0
+  floor: 0.5
+  best_identity: 40.7
+  idiomorph_classifier: null
+assembly_gap_at_locus: []
+zygosity: null
+two_idiomorphs: []
+receptor_arrays_note: 'Receptor arrays occur for both mating and non-mating STE3-like
+  receptors (the study found arrays holding paralogs beside the mating receptors in
+  Coprinopsis cinerea and Schizophyllum commune), so array membership does not establish
+  that a locus is a mating receptor. receptor_array_support is a flag on the evidence
+  behind an array; it never changes a call, its confidence or its verification label.
+  receptor_cassette_* fields describe pheromone-precursor cassette structure (2 or
+  more strict-CAAX ORFs within 5 kb of a receptor locus; class C when that many of
+  those ORFs also carry tblastn precursor homology). They are descriptive only: the
+  CAAX scan is also what admits a PR call, so cassettes are circular as confirmation;
+  own-species curated precursors are a self-hit for class C; tandem receptors may
+  be merged into one locus. They never change a call, tier, label, confidence or count.'
+receptor_arrays: []
+families_attempted:
+- Ascomycota:MTL
+detected:
+- family: Ascomycota:MTL
+  contig: Ca22chr5A_C_albicans_SC5314
+  start: 393493
+  end: 402144
+  core_span:
+    start: 393493
+    end: 402144
+    beyond_core_bp: 0
+  supported_span:
+    start: 393493
+    end: 402144
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  confidence: high
+  resolution_flags: []
+  resolution_flag_genes: {}
+  idiomorph: A
+  idiomorph_class: MAT1-2
+  idiomorph_candidates:
+  - idiomorph: A
+    score: 386.0
+  detection_pass: strict
+  locus_class: mat_locus
+  idiomorph_unmodelled: false
+  verification: null
+  merged_from: []
+  subloci: []
+  polished_genes: 5
+  distinct_intervals: 5
+  span_exceeds_plausible_bound: false
+  idiomorph_margin: null
+  idiomorph_classifier: null
+  idiomorph_resolutions: []
+  ambiguous_with: []
+  genes_found:
+  - MTLA1
+  - MTLA2
+  - PAP1
+  - OBP1
+  - PIK1
+  genes_missing: []
+  genes_not_searchable: []
+  fragmented: false
+  reference_records:
+  - 5476_sc5314_MTL_A
+  segments:
+  - contig: Ca22chr5A_C_albicans_SC5314
+    start: 393493
+    end: 402144
+    contig_edge_distance: 393492
+  gene_evidence:
+  - gene: MTLA1
+    role: core_MAT
+    contig: Ca22chr5A_C_albicans_SC5314
+    start: 393493
+    end: 394455
+    strand: '-'
+    identity: 99.5
+    coverage: 100.0
+    reference_record: 5476_sc5314_MTL_A
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 1.02e-137
+    bitscore: 376.0
+  - gene: MTLA2
+    role: core_MAT
+    contig: Ca22chr5A_C_albicans_SC5314
+    start: 394560
+    end: 395220
+    strand: '-'
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 5476_sc5314_MTL_A
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 5.57e-142
+    bitscore: 386.0
+  - gene: PIK1
+    role: flanking_variable
+    contig: Ca22chr5A_C_albicans_SC5314
+    start: 395335
+    end: 398205
+    strand: '-'
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 5476_sc5314_MTL_A
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 0.0
+    bitscore: 1822.0
+  - gene: OBP1
+    role: flanking_variable
+    contig: Ca22chr5A_C_albicans_SC5314
+    start: 398770
+    end: 400071
+    strand: '-'
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 5476_sc5314_MTL_A
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 2.93e-315
+    bitscore: 844.0
+  - gene: PAP1
+    role: flanking_variable
+    contig: Ca22chr5A_C_albicans_SC5314
+    start: 400477
+    end: 402144
+    strand: +
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 5476_sc5314_MTL_A
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 0.0
+    bitscore: 1102.0
+not_detected: []

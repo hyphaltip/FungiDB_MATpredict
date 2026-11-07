@@ -1,0 +1,7 @@
+##gff-version 3
+##sequence-region NC_088936 1430674 1451945
+NC_088936	MATPredict	MAT_locus	1430674	1451945	.	.	.	ID=Ascomycota_MAT_0;family=Ascomycota:MAT;confidence=medium;idiomorph=MAT1-1;fragmented=false;core_start=1430674;core_end=1451945;beyond_core_bp=0;supported_start=1430674;supported_end=1451945;beyond_supported_bp=0;reference_records=13684_sn436ga98_MAT_MAT1-2,1873960_unknown-1_MAT_MAT1-1,5501_rs_MAT_MAT1-2
+NC_088936	MATPredict	gene	1430674	1431837	.	+	.	ID=Ascomycota_MAT_0.gene0;Parent=Ascomycota_MAT_0;Name=MAT1-1-1;role=core_MAT;present=true;identity=55.3;reference_record=1873960_unknown-1_MAT_MAT1-1;method=diamond_proteome;status=not_polish_candidate;coverage=83.0
+NC_088936	MATPredict	gene	1451099	1451945	.	+	.	ID=Ascomycota_MAT_0.gene1;Parent=Ascomycota_MAT_0;Name=COX13;role=flanking_conserved;present=true;identity=67.7;reference_record=5501_rs_MAT_MAT1-2;method=diamond_proteome;status=not_polish_candidate;coverage=73.3
+NC_088936	MATPredict	gene	1430674	1451945	.	.	.	ID=Ascomycota_MAT_0.gene3;Parent=Ascomycota_MAT_0;Name=APN2;present=false
+NC_088936	MATPredict	gene	1430674	1451945	.	.	.	ID=Ascomycota_MAT_0.gene4;Parent=Ascomycota_MAT_0;Name=SLA2;present=false

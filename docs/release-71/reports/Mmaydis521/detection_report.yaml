@@ -1,0 +1,268 @@
+run:
+  sample: Mmaydis521
+  organism: null
+  taxid: null
+  phylum: null
+  matpredict_version: 0.8.1
+  code:
+    git_describe: v0.8.1
+    dirty: false
+    commit: 3a62e6302b8e7633490237829e8febafef77e432
+    source_version: 0.8.1
+  database:
+    root: /bigdata/stajichlab/jstajich/projects/FungiDB_MATpredict/tools/MATPredict/db
+    content_sha256: 86f18d232e4fe95d19f5e26c1e6cfc758f36c8d235204ef790b01e19832510cc
+    records: 185
+  taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+  genome:
+    file: Mmaydis521.genome.fasta
+    sha256: 0d5a2562baec11460f9937938b94aebfc066a4b6d6d92e50fca30363208e93a1
+    contigs: 27
+    length_bp: 19664356
+    n50: 884984
+  proteins: Mmaydis521.proteins.fasta
+  parameters:
+    phylum: Basidiomycota
+    phylum_guess:
+      requested: auto
+      status: ok
+      usable: true
+      reason: null
+      phylum: Basidiomycota
+      phylum_taxid: 5204
+      deepest_rank: species
+      routing_taxid: 5267
+      routing_taxid_rank: order
+      flags: []
+      gmg_version: gmg 0.3.2 (66055154a)
+      index: bfd-reps-2026.10.5-s20000.gmgi
+      index_sha256: 0f319567f1cab17643e1daf7ffdc0e3b312bd43913e351568108d67a4a19702c
+      index_spec: bfd-reps-2026.10.5-s20000.gmgi
+      note: GmG called phylum Basidiomycota
+      action: routed
+      weak_call_accepted: false
+      genetic_code: 1
+      genetic_code_from: order taxid 5267
+      routed_by: order taxid 5267 (direct)
+    exhaustive: false
+    genetic_code: 1
+    exclude_records: null
+    annotation: null
+    min_hits: 2
+    min_identity: null
+    require_core_role: true
+    max_polished_clusters_per_family: 6
+    polish_strong_identity: 50.0
+    polish_core_pair: true
+    preset: null
+    partial_core_policy: 'off'
+    homothallic_policy: 'off'
+    confidence_cap_policy: 'off'
+    cross_family_policy: 'off'
+    fallback_after_withheld_policy: 'off'
+    strong_single_gene_policy: 'off'
+    scoped_roster_policy: 'off'
+    scoped_roster: null
+    supported_min_bitscore: 33.0
+  started: '2026-11-07T02:32:33Z'
+  wall_seconds: 8
+routing_mode: direct
+routing_error: null
+fallback_search: null
+not_searched_reason: null
+genetic_code: 1
+genetic_code_error: null
+taxonomy_source: local NCBI taxonomy snapshot 2026-10-01
+suppressed_unpolished: 0
+suppressed_flank_carried: 0
+suppressed_mat_gene_gate: 0
+suppressed_paralog_class: 0
+suppressed_loci: []
+assembly_gap_at_locus: []
+zygosity: null
+two_idiomorphs: []
+receptor_arrays_note: 'Receptor arrays occur for both mating and non-mating STE3-like
+  receptors (the study found arrays holding paralogs beside the mating receptors in
+  Coprinopsis cinerea and Schizophyllum commune), so array membership does not establish
+  that a locus is a mating receptor. receptor_array_support is a flag on the evidence
+  behind an array; it never changes a call, its confidence or its verification label.
+  receptor_cassette_* fields describe pheromone-precursor cassette structure (2 or
+  more strict-CAAX ORFs within 5 kb of a receptor locus; class C when that many of
+  those ORFs also carry tblastn precursor homology). They are descriptive only: the
+  CAAX scan is also what admits a PR call, so cassettes are circular as confirmation;
+  own-species curated precursors are a self-hit for class C; tandem receptors may
+  be merged into one locus. They never change a call, tier, label, confidence or count.'
+receptor_arrays: []
+families_attempted:
+- Basidiomycota:aLocus
+- Basidiomycota:bLocus
+detected:
+- family: Basidiomycota:bLocus
+  contig: CM003140
+  start: 1688370
+  end: 1693905
+  core_span:
+    start: 1690004
+    end: 1693905
+    beyond_core_bp: 1634
+  supported_span:
+    start: 1688370
+    end: 1693905
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  confidence: high
+  resolution_flags: []
+  resolution_flag_genes: {}
+  idiomorph: undetermined
+  idiomorph_class: null
+  idiomorph_candidates: []
+  detection_pass: strict
+  locus_class: idiomorph_gene_only
+  idiomorph_unmodelled: false
+  verification: null
+  merged_from: []
+  subloci: []
+  polished_genes: 2
+  distinct_intervals: 2
+  span_exceeds_plausible_bound: false
+  idiomorph_margin: null
+  idiomorph_classifier: null
+  idiomorph_resolutions: []
+  ambiguous_with: []
+  genes_found:
+  - bE
+  - bW
+  genes_missing: []
+  genes_not_searchable: []
+  fragmented: false
+  reference_records:
+  - 5270_521_bLocus_b1
+  segments:
+  - contig: CM003140
+    start: 1688370
+    end: 1693905
+    contig_edge_distance: 782596
+  gene_evidence:
+  - gene: bE
+    role: core_MAT
+    contig: CM003140
+    start: 1690004
+    end: 1691499
+    strand: '-'
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 5270_521_bLocus_b1
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 0.0
+    bitscore: 916.0
+  - gene: bW
+    role: core_MAT
+    contig: CM003140
+    start: 1691754
+    end: 1693905
+    strand: +
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 5270_521_bLocus_b1
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 0.0
+    bitscore: 1206.0
+- family: Basidiomycota:aLocus
+  contig: CM003144
+  start: 1023522
+  end: 1028134
+  core_span:
+    start: 1023522
+    end: 1028134
+    beyond_core_bp: 0
+  supported_span:
+    start: 1023522
+    end: 1028134
+    min_bitscore: 33.0
+    beyond_supported_bp: 0
+  confidence: high
+  resolution_flags: []
+  resolution_flag_genes: {}
+  idiomorph: undetermined
+  idiomorph_class: null
+  idiomorph_candidates: []
+  detection_pass: strict
+  locus_class: mat_locus
+  idiomorph_unmodelled: false
+  verification: null
+  merged_from: []
+  subloci: []
+  polished_genes: 3
+  distinct_intervals: 3
+  span_exceeds_plausible_bound: false
+  idiomorph_margin: null
+  idiomorph_classifier: null
+  idiomorph_resolutions: []
+  ambiguous_with: []
+  genes_found:
+  - mfa1
+  - pra1
+  - rba1
+  genes_missing: []
+  genes_not_searchable: []
+  fragmented: false
+  reference_records:
+  - 5270_521_aLocus_a1
+  segments:
+  - contig: CM003144
+    start: 1023522
+    end: 1028134
+    contig_edge_distance: 365285
+  gene_evidence:
+  - gene: mfa1
+    role: core_MAT
+    contig: CM003144
+    start: 1023522
+    end: 1023644
+    strand: '-'
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 5270_521_aLocus_a1
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 1.01e-24
+    bitscore: 78.2
+  - gene: pra1
+    role: core_MAT
+    contig: CM003144
+    start: 1025469
+    end: 1026779
+    strand: '-'
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 5270_521_aLocus_a1
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 1.52e-258
+    bitscore: 694.0
+  - gene: rba1
+    role: flanking_variable
+    contig: CM003144
+    start: 1027492
+    end: 1028134
+    strand: '-'
+    identity: 100.0
+    coverage: 100.0
+    reference_record: 5270_521_aLocus_a1
+    method: diamond_proteome
+    status: not_polish_candidate
+    alternate_model: null
+    exons: null
+    evalue: 2.96e-86
+    bitscore: 239.0
+not_detected: []

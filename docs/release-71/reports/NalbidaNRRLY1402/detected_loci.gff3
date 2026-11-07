@@ -1,0 +1,5 @@
+##gff-version 3
+##sequence-region LKPZ01000271.1 4061 15584
+LKPZ01000271.1	MATPredict	MAT_locus	4061	15584	.	.	.	ID=Basidiomycota_bLocus_0;family=Basidiomycota:bLocus;confidence=high;idiomorph=undetermined;fragmented=false;core_start=4061;core_end=9477;beyond_core_bp=6107;supported_start=4061;supported_end=9879;beyond_supported_bp=5705;ambiguous_with=Basidiomycota:HD,Basidiomycota:Aalpha,Basidiomycota:aLocus;reference_records=203535_cbs-10006_bLocus_b1,76777_atcc-42132_bLocus_b1
+LKPZ01000271.1	MATPredict	gene	4061	7861	.	-	.	ID=Basidiomycota_bLocus_0.gene0;Parent=Basidiomycota_bLocus_0;Name=bW;role=core_MAT;present=true;identity=34.52;reference_record=203535_cbs-10006_bLocus_b1;method=miniprot_refine;status=polished_single;coverage=25.5
+LKPZ01000271.1	MATPredict	gene	9364	9477	.	+	.	ID=Basidiomycota_bLocus_0.gene1;Parent=Basidiomycota_bLocus_0;Name=bE;role=core_MAT;present=true;identity=52.63;reference_record=76777_atcc-42132_bLocus_b1;method=exonerate_refine;status=polished_disagree;coverage=13.1;alt_method=miniprot_refine;alt_contig=LKPZ01000271.1;alt_start=9280;alt_end=9459;alt_identity=33.33

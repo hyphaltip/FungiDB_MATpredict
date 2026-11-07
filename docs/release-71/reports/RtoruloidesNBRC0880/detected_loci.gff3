@@ -1,0 +1,9 @@
+##gff-version 3
+##sequence-region LCTV02000005 1270620 1276279
+##sequence-region LCTV02000013 476602 479053
+LCTV02000005	MATPredict	MAT_locus	1270620	1276279	.	.	.	ID=Basidiomycota_redHD_0;family=Basidiomycota:redHD;confidence=high;idiomorph=undetermined;fragmented=false;core_start=1270620;core_end=1276279;beyond_core_bp=0;supported_start=1270620;supported_end=1276279;beyond_supported_bp=0;reference_records=5286_nbrc-0880_redHD_B39
+LCTV02000005	MATPredict	gene	1270620	1271852	.	-	.	ID=Basidiomycota_redHD_0.gene0;Parent=Basidiomycota_redHD_0;Name=HD1;role=core_MAT;present=true;identity=100.0;reference_record=5286_nbrc-0880_redHD_B39;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+LCTV02000005	MATPredict	gene	1272303	1276279	.	+	.	ID=Basidiomycota_redHD_0.gene1;Parent=Basidiomycota_redHD_0;Name=HD2;role=core_MAT;present=true;identity=98.5;reference_record=5286_nbrc-0880_redHD_B39;method=diamond_proteome;status=not_polish_candidate;coverage=99.1
+LCTV02000013	MATPredict	MAT_locus	476602	479053	.	.	.	ID=Basidiomycota_redPR_1;family=Basidiomycota:redPR;confidence=high;idiomorph=A2;fragmented=false;core_start=476602;core_end=479053;beyond_core_bp=0;supported_start=476602;supported_end=479053;beyond_supported_bp=0;reference_records=217517_cbs-9654_redPR_A2,5286_cbs-14_redPR_A1,5286_nbrc-0880_redPR_A2
+LCTV02000013	MATPredict	gene	476602	477940	.	-	.	ID=Basidiomycota_redPR_1.gene0;Parent=Basidiomycota_redPR_1;Name=STE3a2;role=core_MAT;present=true;identity=100.0;reference_record=5286_nbrc-0880_redPR_A2;method=diamond_proteome;status=not_polish_candidate;coverage=100.0
+LCTV02000013	MATPredict	gene	478240	479053	.	-	.	ID=Basidiomycota_redPR_1.gene1;Parent=Basidiomycota_redPR_1;Name=RibL6;role=flanking_conserved;present=true;identity=60.6;reference_record=217517_cbs-9654_redPR_A2;method=diamond_proteome;status=not_polish_candidate;coverage=93.8

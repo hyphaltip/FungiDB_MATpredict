@@ -1,0 +1,9 @@
+##gff-version 3
+##sequence-region MU605945 39671 43124
+##sequence-region MU608201 13889 16716
+MU605945	MATPredict	MAT_locus	39671	43124	.	.	.	ID=Basidiomycota_rustHD_0;family=Basidiomycota:rustHD;confidence=high;idiomorph=undetermined;fragmented=false;core_start=39671;core_end=43124;beyond_core_bp=0;supported_start=39671;supported_end=43124;beyond_supported_bp=0;reference_records=418459_crl-75-36-700-3_rustHD_b1,630390_1-1-bbbd-race-1_rustHD_b2
+MU605945	MATPredict	gene	39671	41152	.	-	.	ID=Basidiomycota_rustHD_0.gene0;Parent=Basidiomycota_rustHD_0;Name=bW;role=core_MAT;present=true;identity=35.7;reference_record=418459_crl-75-36-700-3_rustHD_b1;method=diamond_proteome;status=not_polish_candidate;coverage=27.1
+MU605945	MATPredict	gene	42143	43124	.	+	.	ID=Basidiomycota_rustHD_0.gene1;Parent=Basidiomycota_rustHD_0;Name=bE;role=core_MAT;present=true;identity=36.3;reference_record=630390_1-1-bbbd-race-1_rustHD_b2;method=diamond_proteome;status=not_polish_candidate;coverage=55.1
+MU608201	MATPredict	MAT_locus	13889	16716	.	.	.	ID=Basidiomycota_rustHD_1;family=Basidiomycota:rustHD;confidence=high;idiomorph=undetermined;fragmented=false;core_start=13889;core_end=16716;beyond_core_bp=0;supported_start=13889;supported_end=16716;beyond_supported_bp=0;reference_records=747676_98ag31_rustHD_b1
+MU608201	MATPredict	gene	13889	15090	.	-	.	ID=Basidiomycota_rustHD_1.gene0;Parent=Basidiomycota_rustHD_1;Name=bW;role=core_MAT;present=true;identity=33.6;reference_record=747676_98ag31_rustHD_b1;method=diamond_proteome;status=not_polish_candidate;coverage=54.3
+MU608201	MATPredict	gene	15840	16716	.	+	.	ID=Basidiomycota_rustHD_1.gene1;Parent=Basidiomycota_rustHD_1;Name=bE;role=core_MAT;present=true;identity=72.2;reference_record=747676_98ag31_rustHD_b1;method=diamond_proteome;status=not_polish_candidate;coverage=9.2
