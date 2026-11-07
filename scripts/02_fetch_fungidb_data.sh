@@ -11,13 +11,19 @@ fetch() {   # fetch <abbrev> <subdir> <filename> <dest dir>
     local abbrev=$1 sub=$2 name=$3 dest=$4
     local target="$dest/$name"
     [ -s "$target" ] && { echo "have  $target"; return; }
+    [ -s "${target%.gz}" ] && { echo "have  ${target%.gz} (uncompressed)"; return; }
     local local_src="$FUNGIDB_LOCAL_MIRROR/$abbrev/$sub/data/$name"
     if [ -s "$local_src" ]; then
         ln -sfn "$local_src" "$target"; echo "link  $target -> $local_src"
+    elif [ "$FUNGIDB_DOWNLOAD" != 1 ]; then
+        echo "none  $name is not in the mirror and FUNGIDB_DOWNLOAD=$FUNGIDB_DOWNLOAD"
     else
-        echo "fetch $FUNGIDB_URL/$abbrev/$sub/data/$name"
-        curl -fsSL --retry 3 -o "$target.part" "$FUNGIDB_URL/$abbrev/$sub/data/$name"
-        mv "$target.part" "$target"
+        local url="$FUNGIDB_URL/$abbrev/$sub/data/$name"
+        if curl -fsSL --retry 3 -o "$target.part" "$url"; then
+            mv "$target.part" "$target"; echo "fetch $target"
+        else
+            rm -f "$target.part"; echo "none  $name is not in the mirror or at $url (genome-only entry?)"
+        fi
     fi
 }
 

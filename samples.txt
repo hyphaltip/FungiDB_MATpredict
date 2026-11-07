@@ -1,4 +1,0 @@
-# FungiDB organism abbreviations, one per line, as used in the FungiDB
-# download tree: https://fungidb.org/common/downloads/release-68/<ABBREV>/
-# Lines starting with # are ignored.
-AfumigatusA1163

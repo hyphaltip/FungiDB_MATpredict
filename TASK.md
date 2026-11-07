@@ -9,10 +9,13 @@ MATPredict finds that have no annotation.
 
 ## Inputs
 
-- `data/genome/`  : one genome assembly (FASTA) per species or strain.
-- `data/protein/` : the FungiDB annotated proteins, used for the MATPredict DIAMOND fast path.
-- `data/gff/`     : the FungiDB GFF3 annotation for each genome. The file
-  names must pair each GFF with its genome.
+FungiDB files are kept per release under `data/release-<N>/`. Release 71 is
+the primary set; release 68 is kept to see which genomes changed.
+
+- `data/release-<N>/genome/`  : one genome assembly (FASTA) per species or strain.
+- `data/release-<N>/protein/` : the FungiDB annotated proteins, used for the MATPredict DIAMOND fast path.
+- `data/release-<N>/gff/`     : the FungiDB GFF3 annotation for each genome. The file
+  names pair each GFF with its genome.
 
 `scripts/02_fetch_fungidb_data.sh` fills these folders from the FungiDB
 release named in `config.sh`, for every sample in `samples.txt`.
@@ -61,9 +64,11 @@ Each step is a numbered script in `scripts/`; see README.md.
 ## Publishing
 
 Publish results on the GitHub Pages site (https://hyphaltip.github.io/FungiDB_MATpredict/),
-which serves `docs/` on `main`:
+which serves `docs/` on `main`, one folder per release:
 
-- Copy each per-genome MATPredict `report.html` into `docs/reports/<genome>/`.
+- Copy each per-genome MATPredict `report.html` into `docs/release-<N>/reports/<genome>/`.
 - Copy the combined tables (`genomes.tsv`, `loci.tsv`) and the comparison
-  tables from the Deliverables section into `docs/tables/`.
-- Link every report and table from `docs/index.md`.
+  tables from the Deliverables section into `docs/release-<N>/tables/`.
+- Link every report and table from `docs/release-<N>/index.md`.
+- The top `docs/index.md` lists the releases, primary first, with summary
+  counts and the genomes that changed between releases.
