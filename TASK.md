@@ -9,14 +9,17 @@ MATPredict finds that have no annotation.
 
 ## Inputs
 
-- `data/genomes/` : one genome assembly (FASTA) per species or strain.
+- `data/genome/`  : one genome assembly (FASTA) per species or strain.
+- `data/protein/` : the FungiDB annotated proteins, used for the MATPredict DIAMOND fast path.
 - `data/gff/`     : the FungiDB GFF3 annotation for each genome. The file
   names must pair each GFF with its genome.
 
-Note: neither folder exists yet in this repository. Create them and add the
-data before step 2.
+`scripts/02_fetch_fungidb_data.sh` fills these folders from the FungiDB
+release named in `config.sh`, for every sample in `samples.txt`.
 
 ## Steps
+
+Each step is a numbered script in `scripts/`; see README.md.
 
 1. Install MATPredict (https://github.com/stajichlab/MATPredict) locally.
    Use `pixi` (the method the README recommends). Use `uv` only if pixi is

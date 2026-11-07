@@ -1,0 +1,11 @@
+# software installed by scripts/00_* and scripts/01_*
+tools/
+# data linked or downloaded by scripts/02_*
+data/
+# run output
+results/
+logs/
+# pixi and python
+.pixi/
+__pycache__/
+*.pyc
