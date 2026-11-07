@@ -28,6 +28,7 @@ FLANK = 5000
 W, TRACK_H, LANE_H = 1100, 34, 16
 ROLE_COLOR = {"core_MAT": "#b8471a", "flanking_conserved": "#2a6fb0"}
 OTHER = "#6b7480"
+FUNGIDB_GENE_URL = "https://fungidb.org/gene/"
 VERDICT_CLASS = {"annotated": "conf-high", "partial": "conf-medium", "novel": "warn"}
 
 CSS = """
@@ -126,6 +127,13 @@ def verdict(mp: dict, hits: list[dict]) -> tuple[str, str]:
     return "partial", f"{best['id']} overlaps only {frac:.0%} of it"
 
 
+def gene_link(g: dict | None) -> str:
+    if not g:
+        return "—"
+    label = html.escape(g["id"]) + (f" {html.escape(g['name'])}" if g["name"] else "")
+    return f'<a href="{FUNGIDB_GENE_URL}{html.escape(g["id"])}">{label}</a>'
+
+
 def assign_lanes(items: list[dict]) -> list[int]:
     """Greedy lane packing by genomic extent so labels do not collide."""
     lanes_end, out = [], []
@@ -202,7 +210,7 @@ def build_sample(sample: str, organism: str, mp_gff: Path, fdb_gff: Path, out_ht
              f"<a href='detected_loci.gff3'>GFF3</a></div>",
              "<p>Top track: the genes MATPredict modelled at the MAT locus. Bottom track: every FungiDB gene in the "
              f"same region (locus span, shaded, plus {FLANK // 1000} kb each side). A FungiDB gene is green when a "
-             "MATPredict gene overlaps it on the same strand. Hover a gene for its coordinates and product.</p>",
+             "MATPredict gene overlaps it on the same strand. Hover a gene for its coordinates and product; FungiDB gene IDs link to fungidb.org.</p>",
              "<p class='legend'><span><i style='background:#b8471a'></i>core MAT gene</span><span><i style='background:#2a6fb0'></i>"
              "flanking conserved gene</span><span><i style='background:#6b7480'></i>other</span><span><i style='background:#1d7a46'></i>"
              "FungiDB gene matched by MATPredict</span></p>"]
@@ -228,7 +236,7 @@ def build_sample(sample: str, organism: str, mp_gff: Path, fdb_gff: Path, out_ht
             table.append(f"<tr><td><b>{html.escape(g['name'])}</b></td><td>{html.escape(g['role'])}</td>"
                          f"<td class='mono'>{g['start']}-{g['end']} {g['strand']}</td>"
                          f"<td><span class='badge {VERDICT_CLASS[v]}'>{v}</span></td>"
-                         f"<td>{html.escape(best['id'] if best else '—')}{(' ' + html.escape(best['name'])) if best and best['name'] else ''}</td>"
+                         f"<td>{gene_link(best)}</td>"
                          f"<td>{html.escape(best['desc'] if best else '')}</td><td class='muted'>{html.escape(why)}</td></tr>")
         extra = [g for g in region if g["id"] not in matched and L["start"] <= g["end"] and g["start"] <= L["end"]]
         parts.append(f"<h2>{html.escape(L['id'])}: {html.escape(L['idiomorph'] or 'undetermined')} "
@@ -241,7 +249,7 @@ def build_sample(sample: str, organism: str, mp_gff: Path, fdb_gff: Path, out_ht
         if extra:
             parts.append("<p>FungiDB genes inside the locus span that MATPredict did not model:</p><table><thead><tr>"
                          "<th>FungiDB gene</th><th>Coordinates</th><th>Product</th></tr></thead><tbody>"
-                         + "".join(f"<tr><td>{html.escape(g['id'])}{(' ' + html.escape(g['name'])) if g['name'] else ''}</td>"
+                         + "".join(f"<tr><td>{gene_link(g)}</td>"
                                    f"<td class='mono'>{g['start']}-{g['end']} {g['strand']}</td><td>{html.escape(g['desc'])}</td></tr>"
                                    for g in extra) + "</tbody></table>")
     out_html.parent.mkdir(parents=True, exist_ok=True)

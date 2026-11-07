@@ -13,7 +13,15 @@ for run in "$RUNS_DIR"/*/; do
     s=$(basename "$run")
     [ -s "$run/report.html" ] || continue
     mkdir -p "$DOCS_RELEASE_DIR/reports/$s"
-    cp "$run/report.html" "$DOCS_RELEASE_DIR/reports/$s/index.html"
+    GFF="$DATA_DIR/gff/FungiDB-${FUNGIDB_RELEASE}_${s}.gff.gz"
+    if [ -s "$GFF" ]; then
+        # add a FungiDB gene column (links to fungidb.org/gene/<ID>) to the report's Gene evidence tables
+        python3 "$PROJECT_DIR/scripts/annotate_report.py" --report "$run/report.html" --gff "$GFF" \
+            --loci-gff3 "$run/detected_loci.gff3" --annotation-link annotation.html \
+            --out "$DOCS_RELEASE_DIR/reports/$s/index.html" 2>/dev/null
+    else
+        cp "$run/report.html" "$DOCS_RELEASE_DIR/reports/$s/index.html"
+    fi
     cp "$run/detected_loci.gff3" "$DOCS_RELEASE_DIR/reports/$s/" 2>/dev/null || true
     cp "$run/detection_report.yaml" "$DOCS_RELEASE_DIR/reports/$s/" 2>/dev/null || true
     [ -s "$COMPARE_DIR/annotation/$s.html" ] && cp "$COMPARE_DIR/annotation/$s.html" "$DOCS_RELEASE_DIR/reports/$s/annotation.html"
