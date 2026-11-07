@@ -17,7 +17,7 @@ for run in "$RUNS_DIR"/*/; do
     if [ -s "$GFF" ]; then
         # add a FungiDB gene column (links to fungidb.org/gene/<ID>) to the report's Gene evidence tables
         python3 "$PROJECT_DIR/scripts/annotate_report.py" --report "$run/report.html" --gff "$GFF" \
-            --loci-gff3 "$run/detected_loci.gff3" --annotation-link annotation.html \
+            --loci-gff3 "$run/detected_loci.gff3" --annotation-link annotation.html --release "$FUNGIDB_RELEASE" \
             --out "$DOCS_RELEASE_DIR/reports/$s/index.html" 2>/dev/null
     else
         cp "$run/report.html" "$DOCS_RELEASE_DIR/reports/$s/index.html"
