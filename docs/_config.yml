@@ -1,3 +1,4 @@
 title: FungiDB MATpredict
-description: Compare MATPredict mating-type locus calls with FungiDB gene annotations
-theme: jekyll-theme-minimal
+description: MATPredict mating-type locus calls on FungiDB genomes, compared with the FungiDB annotation
+theme: jekyll-theme-cayman
+show_downloads: false
